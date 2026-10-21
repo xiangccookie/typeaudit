@@ -38,8 +38,12 @@ auto.meta.json
 data/cbs_catalogue.tsv
 data/ncbi_Colletotrichum.tsv
 
-# ---- 打包产物（走 Release 附件）----
+# ---- 打包产物 ----
+# 一般 exe 不入库（体积大、可由源码重建）；
+# 但根目录这个「类型校对台.exe」是**瘦身后的启动器（约 13 MB）**，
+# 故意入库：它就是启动器，放在仓库根目录才能让 launch.py 直接找到代码。
 *.exe
+!类型校对台.exe
 _build/
 
 # ---- 本机便捷脚本（写死了本机路径，别人用不了）----
@@ -49,3 +53,5 @@ _build/
 # ---- 凭据（绝对禁止入库）----
 .env
 *.token
+# 运行时会自动改写的元数据（每次跑都会被更新，放版本库里只是噪声）
+data/*.meta.json
