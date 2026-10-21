@@ -3,7 +3,62 @@
 从公开数据库与分类学文献里，审计「类型材料保藏号」这一类元数据是否自洽。
 每个模块都能独立使用，**纯 Python，不依赖任何本项目数据**。
 
+## 两种用法：选一条
+
+### 路线一（不想碰命令行）：下载免安装 exe
+
+到本仓库 **Releases** 页面下载 **`类型校对台.exe`** → 双击 → 浏览器打开 <http://127.0.0.1:8765>
+
+- 不需要安装 Python、不需要装任何依赖
+- 它是**本机**网页服务：窗口关掉服务即停，数据不出本机
+- Windows 若提示「未知发布者」：更多信息 → 仍要运行
+
+### 路线二（想改代码 / 想审计实现）：命令行
+
+需要 **Python 3.8 或更高**；核心功能**零第三方依赖**（不装任何包也能跑）。
+
+```bash
+git clone https://github.com/xiangccookie/typeaudit.git
+cd typeaudit
+
+# 网页界面（然后浏览器打开 http://127.0.0.1:8765）
+python tools/pipeline_web.py
+
+# 或直接命令行跑全属扫描（--limit 20 = 先跑前 20 个种看效果）
+python -m typeaudit.pipeline --genus Colletotrichum --out out --limit 20
+```
+
+想知道装完是否正常，跑一次自检（不联网、不需要数据文件）：
+
+```bash
+python tests/smoke_test.py
+```
+
+## 跑之前：先准备外部数据（关键，别跳过）
+
+仓库里**不带**第三方数据快照（CBS 目录、NCBI 分类表、MycoBank 导出）——体积大且涉及第三方许可。
+不准备也能跑，但结果会缺少一部分源，表里会标「无公开数据库 / 未核」。
+**那不是「没问题」，是「没查」**，请勿当成核查通过。
+
+```bash
+# 1) NCBI 分类表（联网）
+python tools/setup_data.py --email 你的邮箱@example.com
+
+# 2) CBS 保藏目录（先 --check 只问总数，确认通了再正式拉）
+python tools/fetch_cbs_live.py --check
+python tools/setup_data.py --fetch-cbs --genus Colletotrichum --email 你的邮箱@example.com
+
+# 3) MycoBank：先在官网导出 MBlist 压缩包，再导入
+python tools/import_mycobank.py MBlist.zip -o data/mycobank_full.tsv
+```
+
+产物默认落在 `data/`。这些文件属第三方数据、体积较大，**不入库**（`.gitignore` 已排除），
+换机器时重新跑上面三步即可。
+
+---
+
 ## 装上
+
 
 ```bash
 git clone https://github.com/xiangccookie/typeaudit.git
