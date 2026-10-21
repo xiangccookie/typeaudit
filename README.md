@@ -6,6 +6,8 @@
 ## 装上
 
 ```bash
+git clone https://github.com/xiangccookie/typeaudit.git
+cd typeaudit
 pip install -e .            # 只用标准库
 pip install -e ".[ncbi]"    # 需要联网抓 PMC 全文时（装 biopython）
 ```
@@ -132,6 +134,57 @@ tx.species_in_genus("Colletotrichum")     # 已封装
 NCBI E-utilities 要求提供邮箱，且有限流（建议 ≥1 秒/请求）。
 用 `--email` 或环境变量 `NCBI_EMAIL` 提供自己的邮箱；抓取结果按
 `(接口, 参数)` 落盘缓存，重跑零请求。
+
+## 验证记录：洁净环境能跑（2026-10-21）
+
+目的：证明「别人拿到代码、在没有本机配置的机器上也能跑」，而不是只有开发机可用。
+
+### 做法
+
+1. 新建隔离环境（不带开发机 site-packages）：
+   ```bash
+   python -m venv <临时目录>
+   ```
+2. **清空 UTF-8 相关环境变量**（模拟中文 Windows 默认的 GBK 控制台）：
+   ```bat
+   set "PYTHONUTF8=" & set "PYTHONIOENCODING="
+   ```
+3. 用该环境的解释器跑自检：
+   ```bash
+   <venv>\Scripts\python.exe tests\smoke_test.py
+   ```
+
+### 结果
+
+| 检查项 | 结果 |
+|---|---|
+| `tests/smoke_test.py` | **47 项全部 OK，失败项 = 0，退出码 0，无 Traceback** |
+| `tools/check_known_errors.py --no-run` | 正常输出含 emoji 的报告，无 `UnicodeEncodeError`（退出码 2 是它自身的语料覆盖率语义，不是崩溃） |
+| `python -m typeaudit.pipeline --help` | 正常打印帮助 |
+
+### 这次验证抓出并修掉的一个真 bug
+
+**症状**（修之前，在洁净环境下必现）：
+
+```
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2194' in position 19: illegal multibyte sequence
+```
+
+**根因**：源码里大量用 `↔ ⇒ ⚠️ 🔴 🟠 🔵 ✅ ❌` 作为输出符号，而中文 Windows 的控制台默认是
+GBK(cp936)。开发机设了 UTF-8 环境变量，所以**本机永远看不出这个问题**；换一台干净机器直接崩。
+更要紧的是 `rules` / `reconcile` 的判定结果本身就用 🔴🟠🔵 当标记 —— 等于主功能也会崩。
+
+**修法**：
+
+- 新增 `src/typeaudit/_console.py`：把 `stdout`/`stderr` `reconfigure(encoding="utf-8", errors="replace")`；
+- `typeaudit/__init__.py` 导入即调用 → 覆盖所有 `import typeaudit` 的代码（主流水线 + 13 个工具）；
+- `tools/` 下**不**导入本包的 19 个独立脚本，各自顶部插入同样的引导代码。
+
+> **教训**：**「我本机能跑」不等于「别人能跑」**。
+> 只要输出里有非 ASCII 符号，就必须在**清空 UTF-8 环境变量的隔离环境**里验一遍；
+> 只在本机跑通就宣布可用，等于把一个必崩的版本发出去。
+
+---
 
 ## 许可
 
