@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# --- console utf8 bootstrap（Windows 控制台默认 GBK，输出 ↔ ⚠️ 🔴 会崩；详见 src/typeaudit/_console.py）
+import sys as _sys
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 """读 NCBI 结果表：给人看的视图。
 
 表里「值」列是 JSON（因为不同方法的返回形状不同，JSON 是保证精确重放的最简载体），

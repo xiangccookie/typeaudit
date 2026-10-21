@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# --- console utf8 bootstrap（Windows 控制台默认 GBK，输出 ↔ ⚠️ 🔴 会崩；详见 src/typeaudit/_console.py）
+import sys as _sys
+for _s in (_sys.stdout, _sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 r"""对账：结果表里的种，有没有从所有选项卡里消失的。
 
     python tools\check_conservation.py --out out_audit --genus Colletotrichum

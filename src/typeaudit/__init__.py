@@ -13,3 +13,7 @@
   3. 所有产物显式 utf-8，行为不依赖操作系统
 """
 __version__ = "0.1.0"
+
+# 导入本包即把控制台改成 UTF-8，避免 GBK 环境下 print 崩溃
+from . import _console as _console_fix  # noqa: E402,F401
+_console_fix.setup()
