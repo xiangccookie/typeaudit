@@ -1,0 +1,44 @@
+{
+ "_说明": "核数器规则示例。docs_dir/data_dir 可被命令行覆盖。body_marker 用于裁掉历史更正记录段。",
+ "docs_dir": "examples/docs",
+ "data_dir": "examples/data",
+ "body_marker": "## 更正记录",
+ "tables": {
+  "main": "main.tsv",
+  "audit": "audit.tsv"
+ },
+ "rules": [
+  {
+   "name": "示例·条目总数",
+   "doc": "paper.md",
+   "regex": "共 \\*\\*(\\d+)\\*\\* 条",
+   "op": "count_rows",
+   "args": {
+    "tsv": "main"
+   }
+  },
+  {
+   "name": "示例·某类条目数",
+   "doc": "paper.md",
+   "regex": "其中一致 (\\d+) 条",
+   "op": "value_counts",
+   "args": {
+    "tsv": "main",
+    "col": "verdict",
+    "key": "一致"
+   }
+  },
+  {
+   "name": "示例·查表取值",
+   "doc": "paper.md",
+   "regex": "错误率为 (\\d+\\.\\d+%)",
+   "op": "lookup",
+   "args": {
+    "tsv": "audit",
+    "key_col": "项",
+    "key": "错误率",
+    "col": "值"
+   }
+  }
+ ]
+}

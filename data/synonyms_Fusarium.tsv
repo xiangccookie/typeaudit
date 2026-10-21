@@ -1,0 +1,19 @@
+genus	synonym_genus	n	n_synonym	statuses	mutual
+Fusarium	Fusisporium	40	0	Legitimate:36;Invalid:2;Orthographic variant:2	1
+Fusarium	Gibberella	33	0	Legitimate:29;Illegitimate:2;Invalid:1;Orthographic variant:1	0
+Fusarium	Selenosporium	16	0	Legitimate:14;Invalid:1;Orthographic variant:1	0
+Fusarium	Botryosphaeria	7	0	Legitimate:7	0
+Fusarium	Fusidium	6	0	Legitimate:6	0
+Fusarium	Fusoma	6	0	Legitimate:6	0
+Fusarium	Sphaeria	6	0	Legitimate:6	0
+Fusarium	Gibbera	5	0	Legitimate:5	0
+Fusarium	Ramularia	5	0	Legitimate:5	1
+Fusarium	Gloeosporium	4	0	Legitimate:3;Illegitimate:1	1
+Fusarium	Cephalosporium	3	0	Legitimate:3	0
+Fusarium	Alysidium	2	0	Orthographic variant:1;Legitimate:1	1
+Fusarium	Cucurbitaria	2	0	Legitimate:2	0
+Fusarium	Hymenula	2	0	Legitimate:2	1
+Fusarium	Nectria	2	0	Legitimate:2	1
+Fusarium	Oospora	2	0	Legitimate:2	0
+Fusarium	Pseudofusarium	2	0	Legitimate:2	0
+Fusarium	Sporotrichum	2	0	Legitimate:2	0

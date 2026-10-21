@@ -1,0 +1,21 @@
+genus	synonym_genus	n	n_synonym	statuses	mutual
+Colletotrichum	Gloeosporium	37	0	Legitimate:34;Illegitimate:2;Orthographic variant:1	1
+Colletotrichum	Vermicularia	37	0	Legitimate:34;Illegitimate:2;Orthographic variant:1	1
+Colletotrichum	Glomerella	16	0	Legitimate:14;Invalid:1;Orthographic variant:1	0
+Colletotrichum	Fusarium	11	0	Legitimate:10;Orthographic variant:1	0
+Colletotrichum	Ramularia	6	0	Legitimate:5;Illegitimate:1	0
+Colletotrichum	Phyllosticta	5	0	Legitimate:4;Illegitimate:1	0
+Colletotrichum	Physalospora	5	0	Legitimate:5	0
+Colletotrichum	Ovularia	4	0	Legitimate:3;Orthographic variant:1	0
+Colletotrichum	Sphaeria	4	0	Legitimate:4	0
+Colletotrichum	Ellisiellina	3	0	Legitimate:3	0
+Colletotrichum	Steirochaete	3	0	Legitimate:3	0
+Colletotrichum	Volutella	3	0	Legitimate:2;Orthographic variant:1	0
+Colletotrichum	Colletotrichopsis	2	0	Legitimate:2	0
+Colletotrichum	Dicladium	2	0	Invalid:1;Orthographic variant:1	0
+Colletotrichum	Exosporium	2	0	Legitimate:2	1
+Colletotrichum	Gnomoniopsis	2	0	Legitimate:2	0
+Colletotrichum	Lasiella	2	0	Legitimate:2	0
+Colletotrichum	Macrophoma	2	0	Legitimate:2	1
+Colletotrichum	Myxosporium	2	0	Legitimate:2	0
+Colletotrichum	Physosporella	2	0	Legitimate:1;Orthographic variant:1	0

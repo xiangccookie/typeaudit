@@ -1,0 +1,33 @@
+id	类别	发现	宣告种	号	CBS名	期望标记	检验方式	期望下限	归类	依据
+F1	名称/目录	CBS 125378 目录名 Colletotrichum hymenocallidis 是声明种 siamense 的异名（非错）	Colletotrichum siamense	CBS 125378	colletotrichum hymenocallidis	异名（非错）	case		非错	MycoBank 接受名（C. hymenocallidis → C. siamense）+ CBS 目录 status 字段原文
+F3	机构编码	CGMG 不是登记机构，且形近 CGMCC ⇒ 判【书写错误】；但原号 3.14187 在 CGMCC 官网查无 ⇒ 给不出更正号	Colletotrichum falcatum	CGMG 3.14187		书写错误*	case		错值	① Biocollections 登记表里【无 CGMG、有 CGMCC】（编辑距离 2）——可独立核；② CGMCC 官网 3.14187 查无（found=False）——可独立核；③ 口径：只对 CBS/CGMCC/ICMP 下错值结论（使用者要求收紧，避免判定过宽）
+F4	机构编码	标本馆号不该拿培养物目录核	Colletotrichum arxii	CBS H-21492		标本号	case		不确定	号形如 CBS H-xxxx；CBS 的 H 前缀是标本馆号（herbarium），不该拿培养物目录核
+F5	机构编码	疑似宿主属名 Paphiopedilum 被当成机构代码	Colletotrichum arxii	Paphi 2-1		疑似非机构编号	case		不确定	Paphi 含小写字母、Biocollections 里无近似代码、号码 2-1 像分离株编号 —— 判据是启发式，故归类为「不确定」
+F6	机构编码	实验室内部编号被当成机构代码	Colletotrichum siamense	BPDI 2		疑似非机构编号	case		不确定	BPDI 不在登记表；号码 2 仅 1 位 ⇒ 不像保藏号（启发式）
+F7	机构编码	同上	Colletotrichum siamense	BPDI I2		疑似非机构编号	case		不确定	同上；号码 I2 仅 2 位
+F8	机构编码	同上	Colletotrichum siamense	CSSN 2		疑似非机构编号	case		不确定	CSSN 不在登记表；号码 2 仅 1 位
+F9	机构编码	同上	Colletotrichum siamense	NK 24		疑似非机构编号	case		不确定	NK 不在登记表；号码 24 仅 2 位；且 NK 只有 2 个字母，近似匹配无意义
+F10	机构编码	同上	Colletotrichum siamense	LLTA- 01		疑似非机构编号	case		不确定	LLTA 不在登记表；号码 01 仅 2 位
+F11	机构编码	ICMP 已接入官方库（SCD）：18578 核过且与声明一致（此前只能标「无目录」）	Colletotrichum siamense	ICMP 18578		—	case		非错	ICMP 官方库（NZGOAL）：Taxonomic name = Colletotrichum siamense，与 GenBank 声明一致 ⇒ 无问题
+F12	目录	号在 CBS 目录里但没记模式地位 ⇒ 未核（≠ 非模式菌株）	Colletotrichum arxii	CBS 132511		未核	case		不确定	CBS 目录该号 status 字段为空 ⇒ 目录无模式地位标注（≠ 非模式菌株）
+F13	目录	同上	Colletotrichum arxii	CBS 169.59		未核	case		不确定	同 F12
+F14	属级召回	CBS 记作 Glomerella cingulata、MycoBank 接受名是 Colletotrichum gloeosporioides —— 按属名单词筛捞不到	Colletotrichum gloeosporioides	CBS 113010,CBS 114054,CBS 116868,CBS 116869,CBS 118192,CBS 122487	glomerella cingulata	召回缺口	aggregate	0	非错	MycoBank 接受名链（Glomerella cingulata → Colletotrichum gloeosporioides）。⚠️ 2026-10-20 富字段合并后，这 6 个号已带 taxon_name，按属名单词筛能捞到，缺口闭合（n 由 6 降为 0）。若 n 回升 >0，说明 CBS 名称覆盖退化。
+F15	受控词表	CBS 受控词表把 Oomycete 拼成 Oomyceet（半自动：自动出清单，人工判拼写）	-	-			aggregate	半自动		人工阅读 CBS 受控词表发现 Oomyceet（正确拼法 Oomycete）；词表内无正确拼法可比 ⇒ 无法自动判
+F16	权威分歧	CBS 名的属 ≠ MycoBank 接受名的属（实测 colletotrichum cliviae → chaetostroma cliviae）	-	-		权威分歧	aggregate	1	错值	MycoBank 接受名（colletotrichum cliviae → chaetostroma cliviae）；归类改为错值：两家相反是客观事实，只有「哪家错」需裁决
+F17	数据质量	CBS 目录 75.9% 条目无模式地位标注 / 4 行非号码 / 1 组撞车键	-	-			aggregate	1		CBS 目录自身统计：62,740 行 / 15,098 行有标注 / 4 行非号码 / 1 组撞车键
+F18	数据质量	正名占位符被当数据（实测 CBS 147490 的正名为 []）	-	-		占位符	aggregate	1	错值	CBS 官方 API 返回的 Taxon name new 字段值就是字面量 []
+F19	归一化	编号写法撞车：CBS 100.06 与 CBS 10006 删点后同键（已修，现存 1 组真重复）	-	-			aggregate	0		CBS 目录 norm_key 撞车 2,709 组；CBS 100.06 与 CBS 10006 是不同菌株（Absidia glauca vs Pseudozyma thailandica，正名逐字相同=0 组）
+F26	多权威比名	ICMP 19118 记作 Colletotrichum jasmini-sambac，而 GenBank 声明它是 C. siamense；MycoBank 解析 jasmini-sambac 为 siamense 的异名 ⇒ 非错（但这条只有接入 ICMP 才看得见）	Colletotrichum siamense	ICMP 19118	colletotrichum jasmini-sambac	异名（非错）	case		非错	ICMP 官方库 Taxonomic name = Colletotrichum jasmini-sambac + MycoBank 接受名 C. siamense + GenBank 声明 C. siamense ⇒ 三方一致
+F27	机构编码	CMM（荷兰微生物菌种保藏中心）在登记表里，但本工具没有它的机读目录 ⇒ 无从核验，标「无目录」（≠ 号不存在，≠ 号有问题）	Colletotrichum siamense	CMM 3814		无公开数据库	case		不确定	Biocollections 登记表里有 CMM（type=herbarium）⇒ 机构真实存在；但本工具无 CMM 机读目录 ⇒ 无从核验
+F30	机构编码	CGMCC 号在官网接口查无（本轮官方复核 31 条之一）	Colletotrichum asianum	CGMCC 3.14177		号不存在*	case		错值	CGMCC 官网 cataloguelist 接口 totalRow=0（本轮逐号复核）
+F31	跨机构映射	无目录号经 CBS other_coll 映射到 CBS 130417（该号在 CBS 目录登记了 MFLU 090230）	Colletotrichum siamense	MFLU 090230		经映射*	case		不确定	CBS 130417 的 Other collections 字段 = MFLU 090230; ICMP 18578
+F32	跨机构映射	无目录号经 CBS other_coll 映射到 CBS 130420（该号登记了 MFLUCC 10-0277 与 CGMCC 3.14193）	Colletotrichum siamense	MFLUCC 10-0277		经映射*	case		不确定	CBS 130420 的 Other collections 字段 = MFLUCC 10-0277; CGMCC 3.14193
+F33	空白不计错	NCBI 声明 CGMCC 3.14925 为本种模式号，但 CGMCC 官网该学名下只有 3.17884（非模式）且 3.14925 查无 —— 属空白，不判号不存在	Colletotrichum camelliae	CGMCC 3.14925		NCBI 声明为模式号，机构无此记录	case		不确定	NCBI taxid 538528 的 type material 含 CGMCC 3.14925；CGMCC 官网 latinname 查得 3.17884 非模式、按号查 3.14925 为 0 条
+F34	空白不计错	NCBI 声明 CGMCC 3.16079 为 C. analogum 模式号，但 CGMCC 官网该学名 0 条 —— 属空白，不判号不存在	Colletotrichum analogum	CGMCC 3.16079		NCBI 声明为模式号，机构无此记录	case		不确定	NCBI taxid 2904270 的 type material 含 CGMCC 3.16079；CGMCC 官网 latinname=Colletotrichum analogum 返回 0 条
+F35	基名属	目录把该号记在基名属（Vermicularia/Gloeosporium/Glomerella）名下 —— 看起来像别种，实际是历史属名（非错）	Colletotrichum falcatum	CBS 275.54		基名属	case		非错	CBS 目录 status/taxon_name 为基名属名；MycoBank 接受名为 Colletotrichum 属下（此判定来自 name_relation）
+F36	模式地位不符	GenBank 记录原文写的是 culture from epitype of Colletotrichum acutatum，与 CBS 记的 Epitype 一致 —— 措辞准确，非错（旧版只看'号出现在类型材料字段'就报冲突，是误报）	Colletotrichum acutatum	CBS 112996		记录原文亦为 epitype*	case		非错	GenBank 记录 JN985206 等的 /type_material 原文：culture from epitype of Colletotrichum acutatum（外部证据＝记录本身，非本工具推断）
+F37	名字层·两皆接受名	声明为 alienum，但 CBS 目录记的是 gloeosporioides；两者都是现行接受名，须查原始发表	Colletotrichum alienum	CBS 516.97		并名冲突	findings		错值	CBS 目录该号 taxon_name/status = Colletotrichum gloeosporioides；MycoBank 亦接受 gloeosporioides
+F38	名字层·种下单元	CBS 记的是 gloeosporioides f. alatae（变型），末词是命名人不能当种加词比 —— 属种下单元，非错	Colletotrichum alatae	CBS 304.67		CBS 记为种下单元	findings		非错	CBS 目录 status='Type of Colletotrichum gloeosporioides f. alatae ...'；name_changes 记 'until Jan 2013'
+F39	名字层·负样本	该号目录记名与声明种完全一致（acutatum = acutatum），**不得**被判成「两皆接受名」	Colletotrichum acutatum	CBS 112996		!并名冲突	findings		非错	CBS 目录 taxon_name='Colletotrichum acutatum'。此条防「把一致误报成异名/两皆接受名」的回退（实测曾发生 84 例）
+F40	记录层·GenBank 无声明	CBS 称该号是本种模式材料，但 GenBank 里没有任何记录声明它	Colletotrichum urticicola	CBS 135938		GenBank 无声明	findings		不确定	反向审计 148 条里结论='GenBank 无声明'那 3 条之一
+F41	号层·两皆接受名	三列表在号层就给出「两皆接受名」，与名字层同一口径（目录记 gloeosporioides，MycoBank 亦接受该名，而声明是 alienum）	Colletotrichum alienum	CBS 516.97		并名冲突*	case		错值	CBS 目录 taxon_name=Colletotrichum gloeosporioides；MycoBank 接受名同为 gloeosporioides；声明种 alienum 亦为现行接受名

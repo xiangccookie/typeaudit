@@ -1,0 +1,9673 @@
+coll_code,type
+CCP,culture collection
+CDFW,museum
+CDFW:BIRD,museum
+CIRAD,germplasm repository
+CCCT,culture collection
+CREA-AA,culture collection
+CCA-Marburg,culture collection
+HJJT,herbarium
+KKU,herbarium
+KUST,museum
+LNPV,culture collection
+PPPPB,culture collection
+QCC,culture collection
+HECASA,herbarium
+UFOP,museum
+USJCC,culture collection
+ZSI,museum
+USNM,museum
+USNM:LAB,DNA bank
+USNM:ENT,museum
+USNM:FISH,museum
+USNM:HERP,museum
+USNM:IZ,museum
+USNM:BIRD,museum
+USNM:MAMM,museum
+USNM:Herp Image,museum
+USNM:Herp Tissue,museum
+USNM:Botany,herbarium
+USNM:PAL,museum
+MCZ,museum
+MCZ:HERP,museum
+MCZ:ICH,museum
+MCZ:IZ,museum
+MCZ:Mala,museum
+MCZ:MAMM,museum
+MCZ:ORN,museum
+MCZ:IP,museum
+MCZ:ENT,museum
+MCZ:Cryo,frozen tissue collection
+MCZ:PORa,museum
+AMS,museum
+AMS:R,museum
+AM,museum
+AM:Arachnology,museum
+AM:ENT,museum
+AM:Malacology,museum
+AM:Marine_Invertebrates,museum
+AM:HERP,museum
+AM:ICH,museum
+AM:MAMM,museum
+AM:ORN,museum
+AM:Palaeontology,museum
+AM:Mineralogy,museum
+AM:EBU,frozen tissue collection
+UOG,museum
+UOG:DEBU,museum
+UOG:BIO,DNA bank
+UWBM,museum
+UWBM:MAMM,museum
+UWBM:ORN,museum
+UWBM:HERP,museum
+AMNH,museum
+AMNH:HERP,museum
+AMNH:FISH,museum
+AMNH:ORN,museum
+AMNH:FM,museum
+AMNH:R,museum
+AMNH:M,museum
+CM,"herbarium, museum"
+CM:M,museum
+CM:O,museum
+CM:HERP,museum
+CM:VertPaleo,museum
+CAS,herbarium; museum
+CAS:HERP,museum
+CAS:ENT,museum
+CAS:ICH,museum
+CAS:ANTH,museum
+CAS:BOT,herbarium
+CAS:DIA,herbarium
+CAS:DS,herbarium
+CAS:EGG,museum
+CAS:TYPE,museum
+CAS:IU,museum
+CAS:IZ,museum
+CAS:MAMM,museum
+CAS:ORN,museum
+CAS:SUA,museum
+CAS:SUR,museum
+CAS:SU,museum
+USF,herbarium; culture collection
+USF:CBD,culture collection
+CMN,museum
+CMN:Annelid,museum
+CMN:MOLL,museum
+CMN:Crustacean,museum
+CMN:Insect,museum
+CMN:Parasite,museum
+CMN:GenInvert,museum
+CMN:FISH,museum
+CMN:HERP,museum
+CMN:BIRD,museum
+CMN:MAMM,museum
+CUMZ<THA>,museum
+CUMZ<THA>:R,museum
+CUMZ:THA>:A,museum
+JMRC,culture collection
+JMRC:SF,culture collection
+CUMV,museum
+CUMV:FISH,museum
+CUMV:AMPH,museum
+CUMV:BIRD,museum
+CUMV:MAMM,museum
+CUMV:REP,museum
+INPA,museum
+INPA:LMM,culture collection
+INPA:CR,museum
+INPA:H,museum
+INPA:ICT,museum
+KAUM,museum
+KAUM:I,museum
+KU,museum
+KU:I,museum
+KU:IT,frozen tissue collection
+KU:H,museum
+KU:IP,museum
+KU:IZ,museum
+KU:M,museum
+KU:O,museum
+KU:PB,museum
+KU:VP,museum
+ZMB,museum
+ZMB:Bryozoa,museum
+ZMB:Cnidaria,museum
+ZMB:CRUS,museum
+ZMB:Echinodermata,museum
+ZMB:Hydrozoa,museum
+ZMB:Porifera,museum
+ZMB:Vermes,museum
+ZMB:MAMM,museum
+ZMB:MOLL,museum
+ZMB:LEP,museum
+MNHN,museum
+MNHN:IM,museum
+MNHN:P,museum
+MNHN:IC,museum
+MNHN:IU,museum
+MNHN:M,museum
+MNHN:IE,museum
+MNHN:IK,museum
+MNHN:IA,museum
+MNHN:CH,museum
+MNHN:CEU,museum
+MNHN:CX,museum
+MNHN:RF,museum
+MNHN:TCCV,museum
+MNHN:EA,museum
+MNHN:AR,museum
+MNHN:RS,museum
+MNHN:IB,museum
+MNHN:EC,museum
+MNHN:ED,museum
+MNHN:EH,museum
+MNHN:EY,museum
+MNHN:EL,museum
+MNHN:EO,museum
+MNHN:EP,museum
+MNHN:MY,museum
+MNHN:IN,museum
+MNHN:IP,museum
+MNHN:IR,museum
+MNHN:IT,museum
+MNHN:ZO,museum
+MNHN:RA,museum
+MNHN:ZA,museum
+MNHN:LCP,museum
+MNK,museum
+MNK:R,museum
+MNK:A,museum
+NCHU,museum
+NCHU:ZOOL,museum
+QCAZ,museum
+QCAZ:A,museum
+QCAZ:R,museum
+QCAZ:M,museum
+ROM,museum
+ROM:ICH,museum
+ROM:ENT,museum
+ROM:HERP,museum
+ROM:MAMM,museum
+ROM:IZ,museum
+ROM:ORN,museum
+SYS,"herbarium, museum"
+SYS:Z,museum
+UKMHC,museum
+UKMHC:HC,museum
+I,herbarium
+A,herbarium
+CFAS,museum
+AFARG,Herbarium
+IPEE RAS,frozen tissue collection
+AA,herbarium
+TURA,herbarium
+AAC,culture collection
+AAFC,culture collection
+AAFC-PRC,museum
+AAG,herbarium
+AAH,herbarium
+AAMU,herbarium
+AAPI,museum
+AAR,herbarium
+AARI,museum
+AAS,herbarium
+AASU,herbarium
+AAU<ETH>,museum
+AAU<ETH>:A,museum
+AAU,herbarium
+AAUB,herbarium
+AAUF,herbarium
+ABDC,herbarium
+ABADRU,museum
+AIBU,herbarium
+ABB,culture collection
+ABBM,museum
+ABCL,museum
+ABD,herbarium
+ABDAM,herbarium
+ABDF,herbarium
+ABDH,herbarium
+ABDM,herbarium
+AWKUM,herbarium
+ABS<UK>,herbarium; culture collection
+ABFM,herbarium
+ABG,herbarium
+ABGI,hebarium
+ABH,herbarium
+ABHCH,Herbarium
+ABI,herbarium
+ACMB,museum
+ACU,herbarium
+ACUNHC,museum
+ACUNHC:MAMM,museum
+ACUNHC:ENT,museum
+ACUNHC:Paleo,museum
+ACUNHC:HERP,museum
+AWL,herbarium
+ABKMI,culture collection
+ABL,herbarium
+ABN,herbarium
+ABO,herbarium
+APIY,herbarium
+ABR,museum
+ABRB,museum
+ABRC,stock senter
+ABRI,museum
+ABRIICC,culture collection
+ABRN,herbarium
+ABS<USA>,museum
+ABSH,herbarium
+ABSL,herbarium
+ABSM,herbarium
+ABT,herbarium
+ABTC,frozen tissue
+ABTRI,culture collection
+ABU,herbarium
+ABUH,Herbarium
+AC,herbarium
+ALGOBANK,culture collection
+ACAM<GRC>,herbarium
+ACA-DC,culture collection
+ACAD<AUS>,museum
+ACAD,herbarium
+IOH,museum
+HACC<CUB>,herbarium
+IZAC<CUB>,museum
+HABA,herbarium
+SH,herbarium
+SWIBASC,museum
+CIS<CHN>,herbarium
+ASIO,museum
+ASIZB,museum
+ASIZP,museum
+ASIZT,museum
+AIS,museum
+AMMS,herbarium
+ANSP,"museum,herbarium"
+ANSP:Malacology,museum
+ANSP:HRP,museum
+ANSP:ORN,museum
+ANSP:FISH,museum
+ANSP:MAMM,museum
+PH,herbarium
+ISAR,museum
+ASAY,museum
+ASSL,museum
+CHIS,herbarium
+ZIL,museum
+AUW,museum
+ACAM,culture collection
+ACAP,museum
+AM<ARG>,museum
+ACBC,museum
+ACBR,culture collection
+ACBV,museum
+ACC,herbarium
+SIAC<ITA>,herbarium
+ACCC,culture collection
+ACD,herbarium
+ACDB,museum
+ACE<CHN>,herbarium
+ACE<EGY>,museum
+MSU<THA>,culture collection
+ACFS,Herbarium
+ACH,culture collection
+ANUH,herbarium
+ACHE,herbarium
+ACK,herbarium
+ACM<CHN>,herbarium
+ACM,culture collection
+ACNB,museum
+ACNS,museum
+ACOI,culture collection
+ACOR,herbarium
+ACQL,museum
+ACSSI,culture collection
+ACTC,museum
+AD,herbarium
+ADA,herbarium
+POZW,herbarium
+POZA,herbarium
+POZM,herbarium
+POZ,herbarium
+POZG,herbarium
+ASCC,museum
+ALAM,herbarium
+ETH<ETH>,herbarium
+KMN,herbarium
+AEC,Herbarium
+ADK,Herbarium
+LU:PCH,Museum
+ADMONT,herbarium
+AYDN,herbarium
+ADO,herbarium
+ADOL-LCL,museum
+ADR,herbarium
+ADRZ,herbarium
+ADSH,museum
+ADT,herbarium
+ADU,herbarium
+ADUG,museum
+ADUZ,museum
+ADW,herbarium
+MAY,herbarium
+AEF,herbarium
+IZ<TUR>,herbarium
+AEIC,museum
+AEI,museum
+AES,herbarium
+AESB,museum
+AF,herbarium
+AFAQ,museum
+AFES,herbarium
+AFGMC,museum
+AFKNU,Herbarium
+AFR,herbarium
+AFRC,museum
+AHL,Herbarium
+AFS,herbarium
+AFSDU,museum
+AFTC,frozen tissue collection
+AGG,seed bank
+AHMA,herbarium
+AMH,herbarium
+AGIL,museum
+ATB,museum
+AGMT,museum
+DECA,herbarium
+POZNB,herbarium
+GILAN,herbarium
+MAND,herbarium
+PPL,herbarium
+LWA,herbarium
+OH,herbarium
+CAIM<EGY>,herbarium
+TIK,herbarium
+ROO,herbarium
+NRRL,culture collection
+NRRL:PROK,culture collection
+NRRL:MOLD,culture collection
+NRRL:YEAST,culture collection
+WESTA,Herbarium
+ASINC,seed bank
+ASCU,museum
+AUMH,herbarium
+NLH,herbarium
+SOA,herbarium
+IRIPP,museum
+DAO,herbarium
+BRS,herbarium
+DAS,herbarium
+APEI,museum
+VICA,herbarium
+IRDA,herbarium
+LRS,herbarium
+AUH,herbarium
+HK,herbarium
+AGRITEC,germplasm repository
+AGRL,museum
+IPT,culture collection
+AGU,herbarium
+AGUAT,herbarium
+AGUCH,herbarium
+AH,herbarium
+AHBC,museum
+AHF,museum
+AHFH,herbarium
+AHLDA,culture collection
+AHN,culture collection
+AHNU,museum
+AHP,herbarium
+AHS,herbarium
+AHU<CHN>,museum
+AHU,culture collection
+AHUC,herbarium
+AIB,herbarium
+AICH,herbarium
+AUEZ,museum
+AIM,museum
+AIMS,herbarium
+ASUA,museum
+CAIA,herbarium
+AIR,Herbarium
+AISIY,herbarium
+AIU,Herbarium
+AIX,herbarium
+AJ,culture collection
+AJBC,herbarium
+AJOU,herbarium
+AJU,herbarium
+AK,herbarium
+AZAN,museum
+AKASH,museum
+AKDE,Herbarium
+AKDU,herbarium
+IBAAN,herbarium
+AKPM,herbarium
+APU,museum
+AKM,Museum
+AKSU,herbarium
+AQT,Herbarium
+AKU<JPN>,culture collection
+AKU<NZ>,herbarium
+AL,herbarium
+BAUH,Herbarium
+IABH,herbarium
+ULT,herbarium
+MUST,herbarium
+ALA<USA-AK>,herbarium
+ALA<USA-AL>,museum
+ALA<USA-AL>:IZ,museum
+ALU,herbarium
+ALAJ,herbarium
+UAA,museum
+JBCC,herbarium
+ALB,herbarium
+ALBA,herbarium
+AMGS,museum
+AMG,museum
+GRA,herbarium
+ALBC,herbarium
+FB,herbarium
+PSAE,museum
+CIC,herbarium
+CIMNH,museum
+CIDA,museum
+CYE,Herbarium
+ALBORZ,herbarium
+ALBU,herbarium
+ALCB,herbarium
+ALCP,culture collection
+ALD,herbarium
+ALDA,herbarium
+ELS,herbarium
+ALEX,herbarium
+MMKZ,museum
+BCK,herbarium
+ALF,herbarium
+BRM,herbarium
+DBUP,culture collection
+ARC<USA-NC>,culture collection
+ASW<AUT>,culture collection
+ASIB,culture collection
+APM,herbarium
+ALGU,herbarium
+AMUZ,museum
+ALIRU,culture collection
+ALJAWF,herbarium
+ALK,herbarium
+CLR,herbarium
+ARRIAM,culture collection
+VKM,culture collection
+MOSM,herbarium
+AUBSN,herbarium
+LEP,herbarium
+CHR,herbarium
+ALM,herbarium
+ALMA,herbarium
+ALME,herbarium
+ALN,herbarium
+ALNHS,herbarium
+ALT,herbarium
+ALTA,herbarium
+ALTB,herbarium
+HERA,herbarium
+ARAN,herbarium
+ALUH,herbarium
+HAU,herbarium
+AM<BLG>,museum
+AMAL,herbarium
+AMAPA,Herbarium
+AMAS,Herbarium
+KMK<ZAF>,museum
+AMAZ,herbarium
+AMB,herbarium
+AMCC,frozen tissue
+AMC,culture collection
+AMCL,museum
+AMD,herbarium
+AMDE,herbarium
+TRA,herbarium
+ATCC,culture collection
+BEI,herbarium
+AMES,herbarium
+AMF,museum
+AMIB,museum
+AMMRL,culture collection
+AMNH<ISL>,herbarium
+AMO,herbarium
+AMP<GBR>,herbarium
+AMP<AUS>,culture collection
+IND-AN,museum
+ASCOL Herbarium,herbarium
+ASCOL,herbarium
+ANLW,museum
+AMUP,Herbarium
+AMWH,herbarium
+ANA,herbarium
+ANACC,culture collection
+ESSE,herbarium
+ANES,herbarium
+ANC,herbarium
+ANCB,museum
+TRD,herbarium
+AND,herbarium
+ANDA,herbarium
+GLW,herbarium
+ANDES,museum
+ANDES:O,museum
+ANDES:A,museum
+ANDES:T,museum
+AUV,herbarium
+ANH,herbarium
+AUB,herbarium
+ANFC,museum
+ANFM,museum
+ANG,herbarium
+ASNHC,museum
+ASNHC:REP,museum
+ASNHC:MAMM,museum
+ASNHC:BIRD,museum
+SAT,herbarium
+ANGU,herbarium
+ANGUC,herbarium
+ANT,herbarium
+MSE,herbarium
+ANHC,herbarium
+EFHAAU,Herbarium
+ANUB,herbarium
+ANUG,herbarium
+ANU<CHN>,herbarium
+ANIC,museum
+APHA,museum
+ANK,herbarium
+ANKO,herbarium
+ANMR,culture collection
+CS<AUS>,culture collection
+ANSM,herbarium
+ARF,museum
+APCC,culture collection
+SV,herbarium
+ANTU,herbarium
+ANU<AUS>,museum
+ANUC,herbarium
+CANB,herbarium
+ANVL,herbarium
+ANWC,museum
+BSCA,herbarium
+AO,herbarium
+APMJ,museum
+AORI,museum
+APCR,herbarium
+APH,herbarium
+APHI,museum
+APP,herbarium
+BOON,herbarium
+APSC,herbarium
+AQC,herbarium
+AQP,herbarium
+AQUAMEB,culture collection
+AQUI,herbarium
+AR,herbarium
+ARA,museum
+ARAGO,herbarium
+ARAUCA,Herbarium
+ARAUCA-UNICENTRO,herbarium
+ARB,herbarium
+ARBH,herbarium
+MLY,herbarium
+ARWESP,herbarium
+BDPA,herbarium
+ARC<CAN>,museum
+ARC<ARG>,herbarium
+PPRI,culture collection
+ARCH,herbarium
+MFAP,museum
+ARD,herbarium
+ARDOT,herbarium
+ARER,museum
+ARG,herbarium
+IRABS,herbarium
+SINAI,herbarium
+TAU<GRC>,"herbarium, culture collection"
+TAUF,herbarium
+ARIZ,herbarium
+NEON,Herbarium
+ASUMC,museum
+AWC,herbarium
+ASDM,museum
+ARK,museum
+STAR,herbarium
+ASUMZ,museum
+SVG,herbarium
+ARKH,herbarium
+ARKNC,museum
+ARL,herbarium
+ARM,herbarium
+ARMFN,herbarium
+YAI,herbarium
+ARRI,herbarium
+ARSEF,culture collection
+ARS-SEL,museum
+MERA,herbarium
+GLAM,herbarium
+ARTH,herbarium
+PUR,herbarium
+ASM,herbarium
+AUL,museum
+ARUN,herbarium
+AS<PRY>,herbarium
+AS<DEU>,museum
+CGMCC,culture collection
+ASC,herbarium
+ASE,herbarium
+ASEDU,Herbarium
+ASH,herbarium
+ATREE,museum
+ASTN,herbarium
+LAGU,herbarium
+ASRC,herbarium
+ASSAM,herbarium
+AUSCH,herbarium
+ASTU,herbarium
+AUMC,culture collection
+AST,herbarium
+NUR,Herbarium
+ASTC,herbarium
+ASU,"herbarium, museum"
+ASUE,Herbarium
+ASUF,herbarium
+ASUT,museum
+ASUV,culture collection
+ASW,herbarium
+ASYA,culture collection
+ATA,herbarium
+ATCH,herbarium
+ATH,herbarium
+AUBH,herbarium
+ATHU,herbarium
+ATHUM,culture collection
+FFB,herbarium
+ATMP,museum
+ATSC,seed bank
+JACM,museum
+ATU,culture collection
+AU,herbarium
+AUA,herbarium
+AUBL,museum
+AUEM,museum
+AUM,museum
+AUM:FISH,museum
+AUM:INV,museum
+AUM:MOLL,museum
+AUCE,museum
+AUCH,herbarium
+SBAC,herbarium
+AUG,herbarium
+AUGD,museum
+AUGIE,herbarium
+ELMF,museum
+CLCC,museum
+AUR,herbarium
+AURO,herbarium
+KHUG,museum
+AUSERB,herbarium
+AUSPGRIS,germplasm repository
+AUSTIN,Herbarium
+CBG,herbarium
+FRI<AUST>,herbarium
+QRS,herbarium
+GAUBA,herbarium
+CNS,herbarium
+AWQC,culture collection
+AUT,herbarium
+AV,herbarium
+AVCH,herbarium
+AVE,herbarium
+MC,herbarium
+AVU,herbarium
+AWH,herbarium
+AWRI,culture collection
+AYBY,herbarium
+AYR,herbarium
+AZ,herbarium
+AZB,herbarium
+AZCM,museum
+BAK,herbarium
+AZMBI,museum
+AZTI,"museum, culture collection"
+AZU,herbarium
+AZUS,herbarium
+B,herbarium
+BKCC,Herbarium
+BABY,herbarium
+BA,herbarium
+BAA,herbarium
+BAAC,museum
+BAB,herbarium
+BUHN,Herbarium
+CL,herbarium
+BAC<IT>,culture collection
+BAC<CHN>,museum
+BAC<UK>,herbarium
+BACA,culture collection
+BACC,culture collection
+BACH,herbarium
+BKUCH,Herbarium
+BGSC,culture collection
+BACP,herbarium
+CBAS,culture collection
+NMI<POL>,culture collection
+USB,culture collection
+BEARU,museum
+BSMB,culture collection
+BBPP,culture collection
+BAE,herbarium
+KBA,herbarium
+BAF,herbarium
+BAFC,herbarium; culture collection
+BAG,herbarium
+BAT,herbarium
+BAH<BRZ>,herbarium
+BAH<GRM>,museum
+BAUP,Herbarium
+BDIARI,museum
+BAI,herbarium
+BAIK,herbarium
+BAIL,herbarium
+BMNSM,museum
+TOBYLKZ,herbarium
+BAJ,herbarium
+BAL,herbarium
+KBM,herbarium
+HUIB,herbarium
+BSUH,herbarium
+BSUMC,museum
+BALT,herbarium
+BWNC,herbarium
+BALU,herbarium
+BAM,Herbarium
+BMSC<CAN>,herbarium
+BAMU,herbarium
+BAN,herbarium
+GCC,herbarium
+BHUPP,herbarium
+BURI,herbarium
+VTB,culture collection
+ITAL,culture collection
+BGIV,culture collection
+BNA<ESP>,culture collection
+BNM,culture collection
+BMARI,botanical garden
+ZMBJ,museum
+BNFF,herbarium
+BNP,museum
+BANG,herbarium
+BK,herbarium
+DACB,herbarium
+BMNAS,museum
+HFX,herbarium
+BANLC,museum
+BANNU,herbarium
+BRFM,culture collection
+BAP,herbarium
+BAR,herbarium
+BARA,herbarium
+BMGB,museum
+BMLH,Herbarium
+BARC,"herbarium, museum"
+SRH,herbarium
+HBCFS,herbarium
+BCBL,Herbarium
+BARO,herbarium
+BART,herbarium
+BTRL,Herbarium
+BUHGC,herbarium
+BAS<CHE>,herbarium
+BAS<BGR>,museum
+BASBG,herbarium
+BASEF,Herbarium
+BCAC,culture collection
+BCUZ,museum
+BASSA,herbarium
+BASU,herbarium
+BATA,herbarium
+BCL,herbarium
+BATH,herbarium
+BGM,museum
+BATHG,herbarium
+BATSTATEU,herbarium
+BATU,herbarium
+BAU,herbarium
+BAV,herbarium
+BAY,herbarium
+BLWG,culture collection
+BSPG,museum
+SRCG,herbarium
+BAYLU,herbarium
+BUHR,herbarium
+BAZI,herbarium
+BB<ARG>,herbarium
+BB<USA-WY>,museum
+BBAZ,museum
+BBB,herbarium
+BBERT,museum
+BBF,herbarium
+BBG,herbarium
+BBGK,herbarium
+BBH,herbarium
+BBK,Herbarium
+BBLF,culture collection
+BBLM,herbarium
+BBNP,museum
+BBS,herbarium
+BBSL,museum
+BBSUK,herbarium
+BCCDC,culture collection
+BC<ESP>,herbarium
+BCB,herbarium
+BCBC,herbarium
+BCBHR,herbarium
+BCC<ESP>,herbarium
+BCC<THA>,culture collection
+BCCF,museum
+BCCM/DCG,culture collection
+BCCM/GENECORNER,culture collection
+BCCM/IHEM,culture collection
+BCCM/ITM,culture collection
+BCCM/LMG,culture collection
+BCCM/MUCL,culture collection
+BCCM/ULC,culture collection
+BCCN,culture collection
+BCCO,culture collection
+BCCUSP,culture collection
+BCF,herbarium
+BCFH,museum
+BCH,herbarium
+BCIRL,museum
+BCKN,herbarium
+BCM<SPN>,herbarium
+BCM<USA-NY>,museum
+BCMEX,herbarium
+BCMM,herbarium
+BCN,herbarium
+BCNP,museum
+BCNWR,Herbarium
+BCPM,museum
+BCRC,culture collection
+BCRJ,culture collection
+BCRU,herbarium
+BCTC,herbarium
+BCU,herbarium
+BCUE,museum
+BCW,herbarium
+BCWL,museum
+BCWS,herbarium
+BDCF,museum
+BDCP,museum
+BDCPHR,Herbarium
+BDD,herbarium
+BDI,herbarium
+BDK,herbarium
+BDLU,museum
+BDM,museum
+BDMU,museum
+BDNF,herbarium
+BDNHM,Herbarium
+BDU,culture collection
+BDUC,museum
+BDUN,culture collection
+BDUW,museum
+BDUZ,culture collection
+BDWC,museum
+BDWL,museum
+BDWR,herbarium
+BEAN,herbarium
+UBC,"museum, herbarium"
+UBC:CTC,museum
+UBC:FISH,museum
+UBC:SEM,museum
+BED,herbarium
+BEDF,herbarium
+BEDPL,herbarium
+BFD,herbarium
+BLCU,museum
+BEG,culture collection
+BEGO,herbarium
+BEI<USA>,culture collection
+BGMRC,culture collection
+BJFC,herbarium
+PEM<CHN>,herbarium
+BJM,herbarium
+BNHM<CHN>,museum
+BNU,herbarium
+PUC<CHN>,museum
+BPM,museum
+BEL,herbarium
+BIM<BLR>,culture collection
+BSMUPH,Herbarium
+MSKU,herbarium
+BELC,herbarium
+BLT,herbarium
+BST,herbarium
+BSU,herbarium
+BELL,museum
+MMNH<USA-MN>,museum
+MMNH<USA-MN>:BIRD,museum
+HAX,herbarium
+DPIC,museum
+BELUM,museum
+BELZ,herbarium
+BSCVC,museum
+BEMN,museum
+BPIC,culture collection
+HWBA,herbarium
+BNHD,museum
+BENH,museum
+BSPHH,Herbarium
+BENIN,herbarium
+BENN,herbarium
+BEO,herbarium
+BEOU,herbarium
+BER,herbarium
+BEREA,herbarium
+SBT,herbarium
+BSM,museum
+BMHP,museum
+BERN,herbarium
+BPI<ZAF>,museum
+BNI,culture collection
+BPBM,museum
+BPBM:FISH,museum
+BPBM:IZ,museum
+BLCC,culture collection
+BRWK,herbarium
+BESA,herbarium
+BESM,museum
+PIBS,herbarium
+BEUH,Herbarium
+BEV,herbarium
+KDR,herbarium
+BEX,herbarium
+BFBI,museum
+BFDL,herbarium
+BFIC,museum
+BFM,museum
+BFRS,herbarium
+BFT,herbarium
+BFUS,museum
+BFY,herbarium
+BG,herbarium
+BGAAS,herbarium
+BGF,Herbarium
+BGH,herbarium
+BGHan,museum
+BGMA,germplasm repository
+BGR,museum
+BGRB,museum
+BGS,museum
+BGSU,herbarium
+BGT,herbarium
+BH,herbarium
+BH-HU:ATRA,museum
+HBARC,herbarium
+BHAG,herbarium
+BHAV,herbarium
+BHCB,herbarium
+BHD,herbarium
+BHDL,herbarium
+BHDS,herbarium
+BHM<UK>,herbarium
+BHM<USA-SD>,museum
+BHMG,herbarium
+BHMH,herbarium
+BHO,herbarium
+BHPL,herbarium
+BHSC,herbarium
+BHU,herbarium
+BHUPM,herbarium
+BHZB,herbarium
+BI,herbarium
+BJ,herbarium
+BIA,herbarium
+BLS,herbarium
+QPLS,herbarium
+UNIMORE-BEU,museum
+BPAL,museum
+BQR,museum
+BMCS,museum
+BSLU,museum
+BIF,Herbarium
+BIDA,museum
+BIE,museum
+BIEL,herbarium
+BIGU,herbarium
+BIHM,museum
+BIL,herbarium
+BILAS,herbarium
+BIM,herbarium
+BIN,Herbarium
+BINASK,museum
+BING,herbarium
+BOC,museum
+EBCF00,Herbarium
+BIOUG<CAN>,museum
+BIO,herbarium
+BioCC,culture collection
+PORT,herbarium
+BMCC<NZL>,culture collection
+TCWC,museum
+TCWC:HERP,museum
+TCWC:BIRD,museum
+TCWC:MAMM,museum
+TCWC:FISH,museum
+TCWC:Invrt,museum
+BIOLACHC,herbarium
+ICPR,museum
+IBSBF,culture collection
+BZT,museum
+BLIH,museum
+MPKV,culture collection
+BSRM,museum
+BUCSAV,culture collection
+NBSI,herbarium
+LI,"herbarium, museum"
+LI:EVAR,museum
+LI:INS,museum
+LI:VERT,museum
+CUHK,culture collection
+BIOT,herbarium
+CBBC,Museum
+BTCC<INDO>,culture collection
+BIRDI,seed bank
+BIRA,herbarium
+SAEZIP,Herbarium
+BIRM,herbarium
+BRMI,herbarium
+LEUN,herbarium
+BISH,herbarium
+BULQ,herbarium
+ICBU,museum
+BITU,museum
+BIUB,museum
+BJA,herbarium
+BJB,Herbarium
+BJRI,germplasm repository
+BJTC,herbarium
+BKF,herbarium
+BKL,herbarium
+BKLU,herbarium
+BKNU,museum
+BKU,Herbarium
+BLA,herbarium
+BRF,Herbarium
+TEXA,herbarium
+BLAT,herbarium
+BLFU,herbarium
+BLGA,museum
+BLH,herbarium
+BLMAR,herbarium
+BLMBI,Herbarium
+BLMCAR,herbarium
+BLMGJFO,Herbarium
+BLMLK,herbarium
+BLMPR,herbarium
+BLMRD,herbarium
+BLRI,herbarium
+LEGEcc,culture collection
+BLUZ,museum
+BLV,museum
+BLY,herbarium
+BM,herbarium
+BM<GBR-BRISTOL>,museum
+NHMUK,museum
+BMKB,museum
+BMA,museum
+BMB,museum
+ZMBN,museum
+BMC,herbarium
+BMCC,culture collection
+BMFM-UNAM,culture collection
+BMH,herbarium
+BMM,museum
+BMNH,museum
+BMNH:ENT,museum
+BMNH:BOT,herbarium
+BMNH:ZOO,museum
+BMNHC,museum
+BMPS,herbarium
+BMR,museum
+BMRP,museum
+BMSA,museum
+BMSC,museum
+BMUK,museum
+BNA,herbarium
+BNBE,herbarium
+BNF,Herbarium
+BNFH,herbarium
+BNGR,museum
+BNH,herbarium
+BNHM<BGR>,Herbarium
+BNHM<IND>,museum
+BNHS,museum
+BNL,herbarium
+BNMMNH,museum
+BNPL,herbarium
+BNRH,herbarium
+BO,herbarium
+BOCH,herbarium
+BOD,herbarium
+KONL,herbarium
+BOG,herbarium
+MELIT,herbarium
+MZB,museum
+MZB:Amp,museum
+MZB:ORN,museum
+MZB:Lace,museum
+MZB:CRUS,museum
+BOGOS,botanical garden
+BOIS,herbarium
+SRP,herbarium
+BOL,herbarium
+BOLO,herbarium
+BONB,herbarium
+BONL,herbarium
+BON,herbarium
+BOLV,herbarium
+BONN,herbarium
+DBMU,culture collection
+BTN,herbarium
+YK,herbarium
+BSTN,herbarium
+BOR,herbarium
+MRGT,herbarium
+BORD,herbarium
+BORGM,museum
+BORH,herbarium
+BORN,museum
+BOROK,culture collection
+ERH,herbarium
+SDN,herbarium
+BORR,Herbarium
+BOSC,herbarium
+BSNH,museum
+BUTC,museum
+BSN,herbarium
+SRGH,herbarium
+FUBA,Herbarium
+BR<BEL>,herbarium
+SPT,herbarium
+MAL,herbarium
+TYM,herbarium
+BRPP,herbarium
+NABG,herbarium
+IAGB,herbarium
+VORB,herbarium
+SBG,herbarium
+QUETTA,herbarium
+VBGI,herbarium
+VGBI,herbarium
+IBY,herbarium
+TAD,herbarium
+IBL<PRT>,culture collection
+LD,herbarium
+O,herbarium
+BRC,herbarium
+BRCH,herbarium
+BRIT,herbarium
+EBH,herbarium
+GGW,herbarium
+BSL,herbarium
+BSS,Herbarium
+CAL,herbarium
+BSID,herbarium
+PBL,herbarium
+BSJO,herbarium
+BSA,herbarium
+BSIS,herbarium
+BSD,herbarium
+BSHC,herbarium
+BSI,herbarium
+M,herbarium
+HALLST,herbarium
+DORT,herbarium
+BOTP,Herbarium
+BOTR,Herbarium
+BOTSR,Herbarium
+BOTU,herbarium
+BOUM,herbarium
+BOV,museum
+SCARB,herbarium
+BOZ,herbarium
+BZCM,herbarium
+BP,herbarium
+PCMB,DNA bank
+BPI,"herbarium, culture collection"
+BPL,herbarium
+BPPT-ESC,culture collection
+BPS,herbarium
+BPU,herbarium
+BR<BRA>,culture collection
+BRA,herbarium
+BRAD,herbarium
+CMM,herbarium
+BREE,herbarium
+BRB,museum
+CBMAI,culture collection
+BRBA,herbarium
+BRCC,culture collection
+BRE,herbarium
+BREG,herbarium
+BREM,herbarium
+BRFL,herbarium
+BRG,herbarium
+BRGE,herbarium
+BRH,herbarium
+BRI,herbarium
+BRICIBSD,Herbarium
+BTJW,herbarium
+BRY,herbarium
+RICK,herbarium
+BRTN,herbarium
+BRIP,herbarium
+BRIST,herbarium
+BRISTM,herbarium
+BRL,herbarium
+BRSMG,museum
+CON,herbarium
+DMTH,herbarium
+WLK,herbarium
+BRIU,herbarium
+BRLU,herbarium
+BRN,herbarium
+BRNL,herbarium
+BRNM,herbarium
+BRNU,herbarium
+BROC,herbarium
+BU,herbarium
+NGM,herbarium
+BRU,herbarium
+BRSL,herbarium
+BRSN,herbarium
+BRSU,herbarium
+BRUN,herbarium
+BRV,museum
+BRVU,herbarium
+BSB,herbarium
+BSC,herbarium
+BSE,herbarium
+BSIP,herbarium
+BSKU,museum
+BSMP,museum
+BSNS,museum
+BSNS:HERP,museum
+BSNS:ORN,museum
+BSRA,herbarium
+BTCC<BULG>,culture collection
+BTH,herbarium
+BTT,herbarium
+BTU,herbarium
+BUA,herbarium
+BUAG,herbarium
+HUAP,herbarium
+BUC,herbarium
+BUCA,herbarium
+BUCF,herbarium
+BUPL,herbarium
+BUCM,herbarium
+BUE,herbarium
+BUEN,herbarium
+BVC,museum
+CHUR,herbarium
+BUF,herbarium
+ECK,herbarium
+BUH,herbarium
+FPRL,herbarium
+QAR,herbarium
+BUKH,Herbarium
+BUL,herbarium
+ZNG,herbarium
+SOM,herbarium
+SOMF,herbarium
+PIR,culture collection
+BULU,herbarium
+BUMMC,herbarium
+ZVS,herbarium
+BYBS,herbarium
+BUNH,herbarium
+BUNS,herbarium
+BUQ,culture collection
+BUU,herbarium
+BURD,herbarium
+CDH,herbarium
+SBLM,herbarium
+UI<USA-UT>,herbarium
+ELH,herbarium
+WDNE,herbarium
+UW,museum
+BURN,Herbarium
+BUTOF,Herbarium
+SPRY,herbarium
+UUDE,herbarium
+BUS,herbarium
+BUT,herbarium
+RSY,herbarium
+BVS,herbarium
+BXPM,museum
+BYDG,herbarium
+BYU,museum
+BZ,herbarium
+BZF,herbarium
+BZM,museum
+BZR,herbarium
+C,herbarium
+LOU,herbarium
+TGRC,seed bank
+CAIRNS,herbarium
+CA,museum
+CA:HERP,museum
+CA:FISH,museum
+CA:MAMM,museum
+CA:BIRD,museum
+CAB,culture collection
+CABI,culture collection
+IMI,culture collection
+CACA,museum
+CACC,culture collection
+CACS,herbarium
+MARK,herbarium
+CAEN,herbarium
+CGC,stock center
+CAES,museum
+CAF,herbarium
+CAFB,herbarium
+CAG,herbarium
+CAH,herbarium
+CAHS,herbarium
+CAHUP,herbarium
+CAI,herbarium
+CAIH,herbarium
+CAIM<MEX>,culture collection
+CAIRC,herbarium
+CAIRCC,culture collection
+CUFPM,Herbarium
+CUE,museum
+DZCU,museum
+CUH,herbarium
+CALI,herbarium
+CAS-IU,museum
+DS,herbarium
+CAS-SU,museum
+TIC,herbarium
+CDA<USA-CA>,herbarium
+CIS<USA-CA>,museum
+CPSU,museum
+CPUP,museum
+CSCA,museum
+MBMNH,herbarium
+HFRH,herbarium
+CSPU,herbarium
+CSPUP,museum
+CSLB,museum
+CSUCI,herbarium
+HAY,herbarium
+MACF,herbarium
+LOB,herbarium
+SACT,herbarium
+CHSC,herbarium
+CSUC,museum
+CSUC:BIRD,museum
+SFV,herbarium
+CSUF,museum
+FSC<USA-CA>,herbarium
+CSULB,museum
+CSULB:MAMM,museum
+CSULB:HERP,museum
+CSULB:FISH,museum
+CSULB:BIRD,museum
+CSUN,museum
+CSUSB,herbarium
+SHTC,herbarium
+CSCS<USA-CA>,museum
+CSLA,herbarium
+CKE,herbarium
+CALP,herbarium
+CALU,culture collection
+CALVIN,herbarium
+CAM<AUST>,museum
+CAM<UK>,herbarium
+CMBY,herbarium
+CGG,herbarium
+CGE,herbarium
+CUMZ<UK>,museum
+CAME,herbarium
+CPZOO,Museum
+CAMU<USA>,herbarium
+CUMZ<CMR>,museum
+CAMP,Herbarium
+REN,herbarium
+CAMS,culture collection
+SME<GBR>,museum
+SMC,museum
+CAMU,culture collection
+UMZ,museum
+UMZC,museum
+CAN,herbarium
+CANA,herbarium
+CCCM,culture collection
+CCFC,culture collection
+CDA<CAN>,culture collection
+CFIA,herbarium
+OTF,herbarium
+CDFN,herbarium
+NFRN,museum
+CFS,museum
+CIEE,museum
+CMH,museum
+NMC<CAN>,museum
+CMNAR,museum
+CANM,herbarium
+CMNFI,museum
+CANL,herbarium
+CMNC,museum
+CNCI,museum
+CNC,museum
+CNC:Arachnida,museum
+CNC:Coleoptera,museum
+CNC:Diptera,museum
+CNC:Hemiptera,
+CNC:Hymenoptera,museum
+CNC:Lepidoptera,museum
+CNC:Miscellaneous,museum
+CNC:Nematoda,museum
+CPCC,culture collection
+CNH,herbarium
+CANI,herbarium
+CANT,herbarium
+CANTE,herbarium
+CTY,herbarium
+CANTY,herbarium
+CMNZ,museum
+CANU,herbarium
+CAP,herbarium
+CBU<CAN>,museum
+CNU<CHN>,museum
+CAPM,culture collection
+CSMH,Herbarium
+CAR,herbarium
+CSVFC,herbarium
+CARAN,herbarium
+CARD,museum
+CDFM,herbarium
+CARE,museum
+CPUH,herbarium
+CARI,museum
+CPRC,museum
+CARIBBSR,Herbarium
+CARL,herbarium
+CCO,herbarium
+CUMZ<CAN>,museum
+CCNP,museum
+CARM,herbarium
+CCMT,herbarium
+CI,herbarium
+LMS,culture collection
+CARS,museum
+CARSON,Herbarium
+CART,herbarium
+CCM<USA-MT>,museum
+CCCC,museum
+CASA,herbarium
+HJBOP,Herbarium
+CASCT,herbarium
+CASM,museum
+CASMB,museum
+CCW,museum
+CBSIZA,museum
+CASS,museum
+CAT,herbarium
+CATA,herbarium
+OMC<NZL>,museum
+CATU,herbarium
+CZAA,museum
+CATH,herbarium
+LCU,herbarium
+LV,herbarium
+CUP<CHN>,museum
+CATIE,herbarium
+ROHB,herbarium
+CATTLE,museum
+CAU<KR>,culture collection
+CAU,museum
+CSR,herbarium
+CAUP<CZH>,culture collection
+CAUP<COL>,herbarium
+CAUSC,museum
+CAVA,herbarium
+CAWC,museum
+CICCM,culture collection
+CWDR,herbarium
+CAY,herbarium
+CAYM,herbarium
+CAZACC,museum
+CB<AUST>,culture collection
+CB<CZE>,herbarium
+CBAH,herbarium
+CBB,herbarium
+CBBG,Herbarium
+CBC,museum
+CBD<USA>,culture collection
+CBD<ITA>,museum
+CBF,museum
+MBUCV,museum
+CBFS,herbarium
+CBGM,Herbarium
+CBH,herbarium
+CBM,herbarium
+CBM:ZC,museum
+CBM:ZF,museum
+CBMC,herbarium
+CBNB,Herbarium
+CBNM,museum
+CBNSA,herbarium
+CBNU,herbarium
+CBPF,herbarium
+CBPM,herbarium
+CBRA,herbarium
+CBS,culture collection
+CBSS,museum
+CBTCCCAS,culture collection
+CBU<SKOR>,herbarium
+CBUCES,Herbarium
+CBUMAG,herbarium
+CBY,herbarium
+CC,culture collection
+CC-OBE,museum
+CCAA,herbarium
+CCAC<BRA>,museum
+CCAC<DEU>,culture collection
+CCALA,culture collection
+CCAM,culture collection
+CCAP,culture collection
+CCARM,culture collection
+CCAU,herbarium
+CCB<BRZ>,culture collection
+CCB<IND>,museum
+CCB-MBL,culture collection
+CCBAS,culture collection
+CCBAU,culture collection
+CCC<IND>,culture collection
+CCC<IRA>,culture collection
+CCC,culture collection
+CCCIEB,culture collection
+CCCR,herbarium
+CCCryo,culture collection
+CCCS,culture collection
+CCCZ,museum
+CCDB,museum
+CCDM<CHN>,culture collection
+CCDM<CZH>,culture collection
+CCDMBI,culture collection
+CCEB,culture collection
+CCEC,herbarium
+CCF<CUB>,culture collection
+CCF<CZE>,culture collection
+DAOM,"culture collection, herbarium"
+CCFEE,culture collection
+CCFHE,herbarium
+CCFL,museum
+CCFVB,culture collection
+CCG<GHN>,herbarium
+CCG<CHN>,museum
+CCG-UNAM,museum
+CCGB,culture collection
+CCGC,culture collection
+CCGVCC,culture collection
+CCH,herbarium
+CChRGM,culture collection
+CCIAL,culture collection
+CCIBSO,culture collection
+CCIBt,culture collection
+CCIM,culture collection
+CCLC,museum
+CCLU,museum
+CCM<CHN>,herbarium
+CCM,culture collection
+CCM-A,culture collection
+CCM-CIBE,culture collection
+CCM-UFV,culture collection
+CCM/UEA,culture collection
+CCMA-UFSCar,culture collection
+CCMAC,culture collection
+CCMB,culture collection
+CCMCU,culture collection
+CCMF,culture collection
+CCMGE,museum
+CCMH,herbarium
+CCMI,culture collection
+CCML,museum
+CCMM,culture collection
+CCMP,culture collection
+CCNH,museum
+CCNL,herbarium
+CCNP<POL>,culture collection
+CCNU,herbarium
+CCNY,museum
+CCOS,culture collection
+CCPF,culture collection
+CCR,herbarium
+CCRI<IND>,germplasm repository
+CCRI,culture collection
+CCRU,museum
+CCSIIA,culture collection
+CCSRL,museum
+CCSU,herbarium
+CCT,culture collection
+CCTCC,culture collection
+CCTM,culture collection
+CCTR,culture collection
+CCTS,herbarium
+CCTU,culture collection
+CCUF,museum
+CCUG,culture collection
+CCUH,herbarium
+CCVC,museum
+CCVCC,culture collection
+CCY<NLD>,culture collection
+CCY<SVK>,culture collection
+CDBB,culture collection
+CDBI,herbarium
+CDC<CHN>,herbarium
+CDC,culture collection
+CDCM,herbarium
+CDMB,herbarium
+CDMU,herbarium
+CDN,herbarium
+CDRI,herbarium
+CDRS,museum
+CDS,herbarium
+CDSC,herbarium
+CEAM,museum
+CEB<FRA>,culture collection
+CEB,herbarium
+CEBREM,museum
+CEBU,herbarium
+CSCS<PHL>,herbarium
+CEC-CUCSUR-UDG,museum
+CECA-JBBFJ,Herbarium
+CECON,museum
+CECT,culture collection
+CEDD,herbarium
+CEDESU-UACAM,museum
+CEDiT,herbarium
+CEDO,museum
+CEEF,museum
+CEET,museum
+CEIB-UAEM,museum
+CEL,herbarium
+CFBH,museum
+CELM,museum
+CELMS,culture collection
+CEMBP,museum
+CEMML,museum
+CEN,herbarium
+CENA<BRZ>,culture collection
+CENA<NIC>,museum
+CENACUMI,culture collection
+LBV,herbarium
+CENG,museum
+CENIPALMA,museum
+CMML,herbarium
+CFGR,museum
+CMMED,culture collection
+CIRM-BIA,culture collection
+CIRM-Levures,culture collection
+CESDER,Herbarium
+CVCC<CHN>,culture collection
+NEHAR,Herbarium
+MSKH,herbarium
+CUI,museum
+RJH,herbarium
+JNAMPGH,herbarium
+CEST,museum
+TSGM,museum
+GRMP,museum
+CIFE,museum
+CIMAP,herbarium
+GCL,culture collection
+CMFRI,museum
+CMC<USA-MI>,herbarium
+CMUH,herbarium
+CMERSC,museum
+CMSU,museum
+WARM,herbarium
+NTN,herbarium
+CMGP,museum
+COCC,herbarium
+CRIFC,museum
+NS,herbarium
+CUKH,Herbarium
+CUPB,Herbarium
+ELRG,herbarium
+CWC,herbarium
+CSFI,herbarium
+KBRYO,herbarium
+GABAS,herbarium
+HND,herbarium
+IEC,herbarium
+CHNCB,museum
+HCOM,herbarium
+CTM,culture collection
+EPU,herbarium
+UCBL,museum
+LFG,herbarium
+CRH,museum
+LWI,herbarium
+CRBO,culture collection
+IOEB,culture collection
+CRB-Toxoplasma,culture collection
+CY,culture collection
+CGN,herbarium
+UAMH,culture collection
+herbarium,Turkiye
+MKUBK,herbarium
+CMPR,herbarium
+UQ,Herbarium
+CPMR,herbarium
+KUKENS,culture collection
+CERMES,museum
+CSBD,museum
+CTBCH,Herbarium
+CIRM,museum
+CMV,herbarium
+CNARP,herbarium
+TEF,herbarium
+CNRS,museum
+CNRO,museum
+CNRZ,culture collection
+CNSF,herbarium
+LOCK,culture collection
+CRRHA,museum
+CSRS,herbarium
+FTI,culture collection
+CETI,museum
+HFSL,herbarium
+UNL<PRT>,museum
+CET,museum
+PY,herbarium
+LMJ,herbarium
+CIMO,museum
+CIBIO,museum
+CICESE,museum
+CICY,herbarium
+HCIAD,herbarium
+CISEAL,museum
+CIRPAC-INIFAP,museum
+CINVESTAV-IPN,museum
+CIEFAP,museum
+HCFC,herbarium
+CIES,culture collection
+CIAN<MEX-CO>,museum
+CODIMAR,culture collection
+HCIB,herbarium
+CIB<MEX-LaPaz>,museum
+CIB-UAEM,museum
+DTE,herbarium
+HZAC,herbarium
+CICV,culture collection
+CIP<COL>,museum
+CITRO,herbarium
+CIZ,museum
+CORBIDI,museum
+CPATU,herbarium
+CPAC,culture collection
+CPAP<BRA-Belem>,museum
+CPDC,museum
+CPPLIP,museum
+CRL,culture collection
+CZL,museum
+IICT,museum
+CZ-IICT,museum
+CREA-ENO-AT,museum
+CRA-OLI,germplasm repository
+CRA-PAV<ITA>,culture collection
+CRFA,museum
+CSMA,culture collection
+CIUC,museum
+CICIMAR,museum
+OAXM,museum
+CIMI,herbarium
+CIIDIR-IPN,museum
+CIAT,germplasm repository
+CIAT:Rhizobium,culture collection
+CIAT:Bean,germplasm repository
+CIAT:Cassava,germplasm repository
+CIAT:Forage,germplasm repository
+CIPHER,herbarium
+CIP<PER>,germplasm repository
+CIBM,museum
+CNM<ESP>,museum
+CNM-CM,culture collection
+CNPS,museum
+CNRG-INIFAP,museum
+CNRCB,museum
+CNRF-DGSV-SENASICA,museum
+TECLA,herbarium
+CPZ,culture collection
+CEPIM,culture collection
+CRIAP-IMIPAS,Museum
+CRISP-INSP,museum
+HVES,Herbarium
+PESA,herbarium
+FT,herbarium
+CSC-CLCH,culture collection
+PV,Herbarium
+CURLA,herbarium
+CVCM,culture collection
+PNALM-ODM,herbarium
+PGP,museum
+CEP,culture collection
+IE,culture collection
+CFQ,culture collection
+CUC,culture collection
+CEPEC,herbarium
+CEPH,cell lines
+CEPM,culture collection
+CEPUJ,museum
+CMMF,herbarium
+CERL/BIC,museum
+CES,museum
+CESJ,herbarium
+CESK,herbarium
+CETESB,culture collection
+CEU,museum
+CFCC,culture collection
+CFE,museum
+CFMR,"herbarium, culture collection"
+CFN,herbarium
+CFNL,herbarium
+CFRB,museum
+CFSHB,herbarium
+CFSZ,museum
+CFUA,museum
+CG,culture collection
+CGCC,herbarium
+CGEC,museum
+CGH,museum
+CGMC,herbarium
+CGMS,herbarium
+CGRB,museum
+CGRIS,germplasm repository
+CGSC,culture collection
+CH,museum
+CH-AG,culture collection
+CHA,herbarium
+CHAB,herbarium
+FACHB,culture collection
+CSCN,herbarium
+CSCCV,museum
+CSCCE,museum
+CHAF,herbarium
+D,Herbarium
+CHAM,herbarium
+CHAMB,museum
+PBS,herbarium
+SWE,herbarium
+CHAP,herbarium
+CHAPA,herbarium
+CHARL,herbarium
+CTR,museum
+CUP<CZE>,museum
+PRC,herbarium
+FAFUK,Herbarium
+CHM<USA-SC>,museum
+CSUNIV,herbarium
+CHARS,Herbarium
+GOD,herbarium
+CHAX,herbarium
+CHBG,herbarium
+CHBY,herbarium
+CHE,herbarium
+CHEB,herbarium
+CHEL,herbarium
+CHELB,herbarium
+CHFD,herbarium
+CHM<UK>,herbarium
+CHT,herbarium
+CHL,herbarium
+CNM,herbarium
+CHPU,herbarium
+CSUH,herbarium
+CIB<CHN>,museum
+CHEP,herbarium
+CHER,herbarium
+CHOH,Herbarium
+COCMSP,Herbarium
+CHFC-EA,museum
+CHI,herbarium
+CHIA,herbarium
+CMUB,herbarium
+CMUT,museum
+CMU,herbarium
+MTDO,herbarium
+CHIC,herbarium
+PNPC,museum
+CICC,culture collection
+CN<CHN>,culture collection
+CMMC,culture collection
+HCNGB,herbarium
+CPCC<CHN>,culture collection
+CPU,herbarium
+CWNU,museum
+IVF,herbarium
+IMM<CHN-Bejing>,herbarium
+IMDY,herbarium
+CNBG,culture collection
+CMMI,herbarium
+CNWGRGL,germplasm repository
+MSLH,museum
+CHINM,museum
+MFUW,herbarium
+CHIOC,museum
+CHIP,herbarium
+CYN,herbarium
+CHISA,herbarium
+CHIT,herbarium
+CRC,culture collection
+CHO,Herbarium
+CHOCO,herbarium
+CHOM,herbarium
+CNU<KOR>,museum
+JNU<KOR>,herbarium
+CQBG,herbarium
+SM<CHN>,herbarium
+CM<CHN>,museum
+CQNM,herbarium
+CTC,herbarium
+CTS,herbarium
+CNUFC,culture collection
+CHP,Herbarium
+CHRB,herbarium
+CHRG,herbarium
+HSM,herbarium
+CMS,herbarium
+KIEL,herbarium
+CPM,museum
+CHUFC,museum
+CHUG,herbarium
+CHULA,culture collection
+CHUNB,museum
+CNUK,herbarium
+CNU<KOR-TJ>,museum
+CNUMH,herbarium
+CIACOL,museum
+CIAN<MEX-AG>,herbarium
+CIB<MEX-Veracruz>,herbarium
+CIBC,museum
+CIBO,herbarium
+CICIM,culture collection
+CIECRO,herbarium
+CIIDIR,herbarium
+CIJC,museum
+CIMAR,museum
+CIMFI,Herbarium
+CIMMYT,germplasm repository
+CIMSC,culture collection
+CINC,herbarium
+CMC<USA-OH>,culture collection
+CNHM<USA-OH>,museum
+CNHM<USA-OH>:ORN,museum
+CIP<ECU>,culture collection
+CIP,culture collection
+CIPDE,culture collection
+CIPRU,museum
+CIPT,culture collection
+CIQR,herbarium
+CIR,herbarium
+CIRM-BP,culture collection
+CIRM-CF,culture collection
+CIRM-CFBP,culture collection
+CIRUV,museum
+CIS<USA-MI>,museum
+CISM<MEX>,culture collection
+CISM<THAI>,culture collection
+CIT,herbarium
+CITA,herbarium
+PER,herbarium
+WOS,herbarium
+PMH,herbarium
+CVM,herbarium
+CMSK,museum
+DBY,herbarium
+CIZ-UCE,museum
+CLA,herbarium
+CLARK,herbarium
+CUWM,museum
+CUW,herbarium
+CLCB,herbarium
+CLD,herbarium
+CLE,herbarium
+CMEI,museum
+CLEMS,herbarium
+CUAC,museum
+CUSC,museum
+CLEP,culture collection
+CLEV,museum
+CMP,Herbarium
+CLM,herbarium
+CLEY,herbarium
+CLF,herbarium
+CLI,herbarium
+KGY,herbarium
+CVCW,herbarium
+CMKKU,culture collection
+CLIOC,culture collection
+CLOE,herbarium
+CLMP,museum
+CLNP,museum
+CLP,herbarium
+CLQCA,culture collection
+CLU,herbarium
+GOW,herbarium
+CM-CNRG,culture collection
+CM-IEA,museum
+CM-MBM-UAC,museum
+CM-UFMG,culture collection
+CM-UMSNH,museum
+CMA,herbarium
+CMAA,culture collection
+CMBG,herbarium
+CMBGCAS,culture collection
+CMBK,museum
+CMC<MEX>,stock center
+CMCC,culture collection
+CMPUJ,culture collection
+CMIZASDPRK,museum
+CML<BRA>,culture collection
+CML,museum
+CMM<BRA>,culture collection
+CMMEX,herbarium
+CMNH,museum
+CMNH:BIRD,museum
+FMNH,museum
+FMNH:ARTH,museum
+FMNH:HERP,museum
+FMNH:ICH,museum
+FMNH:INVRT,museum
+FMNH:MAMM,museum
+FMNH:AVES,museum
+FMNH:F,herbarium
+CMNS,museum
+CMPH,herbarium
+CMRP,museum
+CMW,culture collection
+CMW-IA,culture collection
+CMY,herbarium
+CN<FR>,herbarium
+CNCM,culture collection
+CNCRU,culture collection
+CNCTC,culture collection
+CNE,herbarium
+CNEN-LABPC,culture collection
+CNF,herbarium
+CNHM<CRO>,herbarium
+CNHS,museum
+IBUNAM<CNIN>,museum
+CNMC,museum
+CNMS,museum
+CNMT,herbarium
+CNPO,herbarium
+CNPSo,culture collection
+CNR<UKR>,herbarium
+CNR,culture collection
+CNR-IBBA-MI,museum
+CNR-IBBA-PI,museum
+CNR-IBBR-FI,museum
+CNR-IBBR-NA,museum
+CNR-IBBR-PA,museum
+CNR-IBBR-PG,museum
+CNR-IBE-BO,museum
+CNR-IBE-FI,museum
+CNR-IBE-FL,museum
+CNR-IPSP-BA,museum
+CNR-IPSP-FI,museum
+CNR-IPSP-TO,museum
+CNR-IRSA-MI,museum
+CNR-ISA-AV,museum
+CNR-ISB-RM,museum
+CNR-ISMAR-BO,museum
+CNR-ISMAR-NA,museum
+CNR-ISPAAM-SS,museum
+CO,herbarium
+COA<USA-ME>,museum
+COA<USA-ME>:BIRD,museum
+COA<USA-ME>:HERP,museum
+COA<USA-ME>:MAMM,museum
+COA<USA-ME>:EGG,museum
+COA,herbarium
+COAD,culture collection
+COAH,herbarium
+COCA,herbarium
+COCAZ,herbarium
+COCH,herbarium
+COCO,herbarium
+CODAGEM,herbarium
+COFC,herbarium
+COI,herbarium
+COL,herbarium
+WAVI,herbarium
+IOC,culture collection
+SEMIA,culture collection
+Fiocruz/COLPROT,culture collection
+CRFS,museum
+Fiocruz/COLTRYP,museum
+UVCE,museum
+IGESALQ,culture collection
+CZACC,museum
+UVC,museum
+ITD,culture collection
+ENCB-IPN,culture collection
+LJC,culture collection
+TK<MEX>,museum
+ECOCHM,museum
+MHNLS,museum
+SAG<CHL>,culture collection
+INIF,culture collection
+MEAPA,culture collection
+INIR,museum
+ECOSCM,museum
+COP,museum
+SNGM,museum
+CTUA,museum
+CVULA,museum
+CZCEN,museum
+CZUT,museum
+CZRMA,museum
+COLEN-IASA,museum
+LS<CUB>,herbarium
+CSAT,herbarium
+CSJ,museum
+CSC,herbarium
+CSPM,museum
+COLG,herbarium
+GRCH,herbarium
+SSIC,culture collection
+UVGC,museum
+UMIP,culture collection
+CRBF,culture collection
+CRGF,culture collection
+CSUR,culture collection
+ECOL,museum
+QMOR,museum
+VIZR,culture collection
+IMMH,culture collection
+LID,culture collection
+IZSSA,culture collection
+ICCF,culture collection
+RV<ITA>,culture collection
+IBA<POL>,culture collection
+ENTOMOFOR,museum
+CPPIPP,culture collection
+KOS,culture collection
+PO<RUS>,museum
+CZEUM,culture collection
+CUETM,culture collection
+CUG,museum
+FSL,museum
+HTD,herbarium
+MOS,herbarium
+UTFH,herbarium
+HJAUP,herbarium
+GMBL,museum
+PRI,herbarium
+TRM<CHN>,culture collection
+HBUM,museum
+ZZUN,Herbarium
+FJTCM,museum
+FJTM,Herbarium
+HCOA,herbarium
+SOTO,herbarium
+CRMC,herbarium
+DOMO,herbarium
+CSGT,museum
+CRA-COLMIA<ITA>,culture collection
+HHM,herbarium
+COLO,herbarium
+MAFF<FJI>,museum
+COLOM,herbarium
+COM,museum
+JTPC,museum
+MCSC,museum
+CSU<USA-CO>,museum
+CS<USA-CO>,herbarium
+CSUTC,museum
+LGO,herbarium
+CSIRO,museum
+CSIRO:ICH,museum
+QUE,herbarium
+LUCCA,herbarium
+CONC,herbarium
+CONCF,Herbarium
+HPEA,Herbarium
+CONN,herbarium
+NHES,herbarium
+UNB,herbarium
+HNL,herbarium
+JA,herbarium
+MTK,herbarium
+GAP,herbarium
+MAO<MYT>,herbarium
+HYE,herbarium
+G,herbarium
+NCY,herbarium
+TAR,herbarium
+ISMAR,herbarium
+HRM,herbarium
+CONV,herbarium
+RUTPP,herbarium
+COR,herbarium
+CORB,herbarium
+CORD,herbarium
+CORIELL,"cell lines, DNA"
+MOVC,herbarium
+CU,herbarium & museum
+CUIC,museum
+CUP,herbarium
+EPL,herbarium
+CORO,herbarium
+UNISARC,museum
+CORS,herbarium
+CORT,herbarium
+CORU,herbarium
+GHG,museum
+CSIR,culture collection
+NTLN,herbarium
+COV,herbarium
+COVY,herbarium
+CP,herbarium
+CPAP<BRA-Corumba>,herbarium
+CPB,herbarium
+CPBH,Herbarium
+CPBPEW091,herbarium
+CPC,culture collection
+CPF,herbarium
+CPH,herbarium
+CPHS,culture collection
+CPMM,museum
+CPNP,herbarium
+CPRR,culture collection
+CPS<USA-WA>,museum
+CPS<USA-WY/CO>,museum
+CPSC,museum
+CPUN,herbarium
+CR,"herbarium, museum"
+ISPaVe,culture collection
+CRAF,herbarium
+CRAI,herbarium
+CRBK,herbarium
+CRLA,herbarium
+SKN,herbarium
+CRBY,herbarium
+CRCA,herbarium
+CRCM,museum
+CRCM:BIRD,museum
+CRCM:MAMM,museum
+CRCM:HERP,museum
+CRCM:FISH,museum
+CRCM:Paleo,museum
+CRCM:Teach,museum
+CRD,museum
+CRE,museum
+CREG,herbarium
+CRI,herbarium
+DMFS,herbarium
+CRK,herbarium
+CRMM,museum
+CRO,herbarium
+RICP,culture collection
+CRP,herbarium
+LIA,culture collection
+LTI,culture collection
+UAMb,herbarium
+UAMb:Herb,herbarium
+HKAS,herbarium
+MCTC,herbarium
+CS<FRA>,museum
+CSAEG,culture collection
+CSAU,herbarium
+CSB,herbarium
+CSCC,culture collection
+CSDS,museum
+CSGP,museum
+CSH,herbarium
+CSIRNEIST,herbarium
+PGRRI,herbarium
+DE-CSIRO,culture collection
+CSN,museum
+CSTIU,museum
+CSTR,Herbarium
+CSU<USA-OK>,herbarium
+CSWQRU,museum
+CT,herbarium
+CTB,Herbarium
+CTBS,herbarium
+CTES,herbarium
+CTESN,herbarium
+CTFCNG,herbarium
+CTN,herbarium
+CTNRC,museum
+CUBK,museum
+CUEF,Herbarium
+CUFEFB,Herbarium
+CUFH,herbarium
+CUFP,Herbarium
+DMic,culture collection
+DMST,culture collection
+LY,"culture collection, Herbarium"
+HUKUK,culture collection
+LIH-UNAM,culture collection
+IAFB,culture collection
+LGMF,culture collection
+MUAF,culture collection
+IPPAS,culture collection
+VURV,culture collection
+GLMC,culture collection
+STE-U,culture collection
+IMMIB,culture collection
+INA<RUS>,culture collection
+ZLVG,culture collection
+ORS,culture collection
+HSCC,culture collection
+NTCCI,culture collection
+CUMB,Herbarium
+CUNRC,museum
+CUS,herbarium
+CUVC,herbarium
+CUZ,herbarium
+CV,museum
+CVRD,herbarium
+CVUL,museum
+CW,herbarium
+CWAR,museum
+CWB,herbarium
+CWU,herbarium
+CYP,herbarium
+CZ-MGP,museum
+IECA,museum
+IEM,culture collection
+CZH,herbarium
+CZIP,museum
+CZUAA,museum
+CZUG,museum
+DMH,herbarium
+DLU,herbarium
+DABUH,museum
+DABZ,museum
+DAC,Herbarium
+DACL,museum
+DACT,culture collection
+DGU,herbarium
+TUT,herbarium
+DAFE,culture collection
+DAFH,museum
+DAG,herbarium
+DPC,culture collection
+DAKAR,herbarium
+DSUM,herbarium
+DWU,herbarium
+DAL,herbarium
+DLUCC,culture collection
+DNHM<CHN>,herbarium
+DALLAS,Museum
+DSCGA,herbarium
+DAM,herbarium
+DFB,Herbarium
+DP,herbarium
+DISKO,herbarium
+DANV,herbarium
+DQTC,herbarium
+DAR,"culture collection, herbarium"
+DARCC,"herbarium, culture-collection"
+DARI,museum
+DTN,herbarium
+DGN,herbarium
+DFD,herbarium
+HNH,herbarium
+DWN,herbarium
+DARWR,herbarium
+DASF,museum
+DAU,herbarium
+LAV,herbarium
+DAV,herbarium
+DAVFP,herbarium
+DAVH,herbarium
+DCH,herbarium
+DEWV,herbarium
+DMSP,museum
+DAWES,herbarium
+DMNH<USA-OH>,herbarium
+DB,culture collection
+DBAI,museum
+DBAU,museum
+DBC,herbarium
+DBCUCH,museum
+DBEV,herbarium
+DBFFEUCS,museum
+DBG,herbarium
+DBKKU,culture collection
+DBM,culture collection
+DBMU2,culture collection
+DBN,herbarium
+DBS,culture collection
+DBSE,museum
+DBUA,museum
+DBUM-IPT,culture collection
+DBV,culture collection
+DBVPG,culture collection
+DCBU,museum
+DCCBC,culture collection
+DCDS,museum
+DCMB,museum
+DCMD,museum
+DCMP,museum
+DCN-UNRC,museum
+DCR,herbarium
+DCSR,herbarium
+DD,herbarium
+DDFF,museum
+DDL,museum
+DDMS,herbarium
+DE,herbarium
+DLSUH,museum
+DVNM,museum
+DEVA,herbarium
+DEBU,museum
+DECHELETTE,museum
+DECV,herbarium
+DEDSZC-CUCSUR-UDG,museum
+DEE,herbarium
+DEES,museum
+DEFS,museum
+DEI,museum
+DEIB,museum
+DEK,herbarium
+DMNH<USA-DE>,museum
+DMNH<USA-DE>:BIRD,museum
+DOV,herbarium
+DUM<IND>,culture collection
+DELS,herbarium
+DELTA,herbarium
+DINH,herbarium
+WINDM,herbarium
+DSC<USA-MS>,herbarium
+DEN,herbarium
+DENA,herbarium
+DEND,herbarium
+DENF,herbarium
+DPNC,museum
+DMNS,museum
+DMNS:BIRD,museum
+DMNS:MAMM,museum
+DMNS:Para,museum
+DEP,herbarium
+IAL<BRA-SaoPaulo>,culture collection
+DZVMLP,museum
+UV<COL>,museum
+R<CHL>,museum
+MPUNR,museum
+UPVB,museum
+MHNUNC,museum
+DMCyP-CUCEI-UDG,museum
+LGM-USP,culture collection
+UFRJIM,culture collection
+DPBA,museum
+DPUA,culture collection
+SJ,herbarium
+IZ<BRA>,culture collection
+ZUFRJ,museum
+DZUC,museum
+DZUFRGS,museum
+DZSASP,museum
+DZUH,museum
+DZUL,museum
+DTIC,museum
+MUBR,herbarium
+UPM<FRA>,museum
+SAF,herbarium
+MAH,herbarium
+WAC,culture collection
+DPPC,museum
+TDA,museum
+DOA,culture collection
+EMBT,museum
+NDAT,museum
+NRPSU,culture collection
+MUFS,museum
+DTO,culture collection
+WB<USA-WI>,culture collection
+NRM-BIO,museum
+GEA-LAB,museum
+TOUB,museum
+SBUG,culture collection
+DZKU,museum
+XNC,museum
+OUT,culture collection
+MTKKU,culture collection
+GFGCRBG,Herbarium
+YU<JOR>,museum
+TENN,herbarium
+EFWM,museum
+IZiBB,museum
+EUQ,museum
+MMTT,"museum, herbarium"
+FAK,museum
+HACW,museum
+FTCMU,culture collection
+KUFF,herbarium
+NCF,museum
+SAR,herbarium
+DFEC<USA-NY>,museum
+HDCF,herbarium
+DOFPS,museum
+DGUB,culture collection
+LEIUG,museum
+DGBU,museum
+GUPA,Museum
+DHMB,museum
+UA<GRC>,museum
+DHISUB,museum
+IP,culture collection
+DNA,herbarium
+MUMF,museum
+DMMZ,culture collection
+DMIV,culture collection
+DMKU,culture collection
+MUL,culture collection
+DMKKU2,culture collection
+DMMU3,culture collection
+PCU,culture collection
+NU<THA>,culture collection
+DMUIJ,culture collection
+NUA,culture collection
+NUSDM,culture collection
+MPSU,culture collection
+DMBUK,culture collection
+DMPMC,culture collection
+DMVB,culture collection
+TF<THA>,museum
+SARAT,herbarium
+DMUR,culture collection
+NT,"herbarium, museum"
+FM<CHN-Fujian>,museum
+PU-HI,museum
+LSTM,culture collection
+RHMU,culture collection
+WUP,herbarium
+PPKU1,culture collection
+MLMJI,culture collection
+KATH,herbarium
+QPIM,museum
+DPIQM,museum
+TPNG,museum
+DPIH,museum
+DNAP,herbarium
+DSIR,museum
+SSKKU,culture collection
+SZCU,museum
+DVZUT,museum
+VRLI,culture collection
+TWTw,herbarium
+ZIUT,museum
+DZMU,museum
+ZUMT,museum
+MZMU,museum
+FC-DPV,museum
+DZSJRP,museum
+UFRJ<museum>,museum
+UFRJ<museum>:POR,museum
+DPU,herbarium
+ZMC,museum
+ZVC,museum
+DERM,herbarium
+DES,herbarium
+GRSW,museum
+REP,herbarium
+DFEC<CHN>,herbarium
+RSDR,herbarium
+VSM<NOR>,museum
+DSMZ,culture collection
+DSM,culture collection
+DEV,herbarium
+HSS,herbarium
+DZS,herbarium
+DSY,herbarium
+DEZA,museum
+DEZC,museum
+DFCZ,museum
+DFF,culture collection
+DFGFI,Herbarium
+DFLC,museum
+DFP,culture collection
+DFRU,museum
+DFS,herbarium
+DFSM,herbarium
+DFV,museum
+DGMBJ,herbarium
+DGMBJH,Herbarium
+DGR,DNA bank
+DGR:BIRD,frozen tissue collection
+DGR:ENT,frozen tissue collection
+DGR:FISH,frozen tissue collection
+DGR:HERP,frozen tissue collection
+DGR:MAMM,frozen tissue collection
+DGS,herbarium
+DH,herbarium
+DHBH,Herbarium
+DHL,herbarium
+DHM,herbarium
+MECN,museum
+DHNS,herbarium
+DI,herbarium
+DIA,herbarium
+DVCC,museum
+DVM,herbarium
+DIAM,herbarium
+KCK,herbarium
+DSC<USA-NY>,culture collection
+DIDAMAR,museum
+DIN,herbarium
+DIS,museum
+IBSD,herbarium
+DINO,museum
+DNHM<USA-UT>,museum
+UNITS-DSV,museum
+UNIBO-DISTAL,museum
+UNICAMPANIA-DISTABIF,museum
+DiSTA,herbarium
+STPH,herbarium
+QAME,herbarium
+DMRX,culture collection
+DISCA,museum
+DISCOLL,museum
+DISENTIS,museum
+DWP,herbarium
+HMLN,herbarium
+DNMNH,museum
+DNMNH:AC,museum
+DNMNH:BC,museum
+DNMNH:EC,museum
+DNMNH:HC,museum
+DNMNH:IC,museum
+DNMNH:MC,museum
+TM<ZAF>,museum
+TMSA,museum
+GUA,herbarium
+PKDC,herbarium
+NRC,culture collection
+NDO,herbarium
+NMPI,museum
+PNG,herbarium
+MODNR,herbarium
+DVBID,culture collection
+FHK,herbarium
+DIX,museum
+UTU,herbarium
+DKG,herbarium
+DLF,herbarium
+DLY,herbarium
+DM<USA-UT>,museum
+DM<NZ>,museum
+DMB,museum
+DMBC,museum
+DMCCUS,culture collection
+DMCU,culture collection
+DMDC,museum
+DMHN,herbarium
+DMP,Herbarium
+DMRP,culture collection
+DMSA,museum
+DMSC,herbarium
+DMSRDE,culture collection
+DMU,herbarium
+DMUP,culture collection
+DNATAX,DNA bank
+DSU,herbarium
+DNPM,museum
+DNS,herbarium
+DNZ,herbarium
+DO,herbarium
+DOH,herbarium
+HDR,herbarium
+DOR,herbarium
+DORC,museum
+DORCM,museum
+MDH<GBR>,herbarium
+DPMWA,museum
+RUT,herbarium
+DVR,herbarium
+DPG,herbarium
+DPUH,herbarium
+DPUP,museum
+DR,herbarium
+PND,herbarium
+DRK,herbarium
+DSSC,stock center
+DRURY,herbarium
+DSAH,Herbarium
+DSEC,museum
+DSM<TZA>,herbarium
+DSP,museum
+DSRC,herbarium
+DU,museum
+DUB,herbarium
+HUUD,herbarium
+DUBN,herbarium
+DUE,herbarium
+DUF,herbarium
+DUGAND,herbarium
+DUH,herbarium
+DUIS,herbarium
+DUKE,herbarium
+DUML,museum
+DUL,herbarium
+DUM<TUR>,museum
+DUP,herbarium
+UMO<USA-MO>,herbarium
+DUOF,herbarium
+DUR,herbarium
+DUSS,herbarium
+PD,culture collection
+DUTHIE,Herbarium
+DVPR,herbarium
+DWC,herbarium
+DWT,culture collection
+DZIB,museum
+DZUP,museum
+DZVU,museum
+E,herbarium
+ECRC,culture collection
+EA,herbarium
+EAA,herbarium
+EAC,herbarium
+EAD,herbarium
+EAFM,herbarium
+EALA,herbarium
+EAN,herbarium
+EAP,herbarium
+EAPZ,museum
+EAR,herbarium
+EARDC,museum
+JMM,museum
+EAUH,herbarium
+EAZH,herbarium
+ECUH,herbarium
+ECENT,museum
+ECSC,herbarium
+HSNU,herbarium
+ECSFI,museum
+RBY,herbarium
+SLC,herbarium
+ELM,museum
+ETSU,herbarium
+ET,museum
+EBE,herbarium
+GAW,herbarium
+EFSC,herbarium
+EIU,herbarium
+EKU,museum
+EKY,herbarium
+HAVI,herbarium
+EMC,herbarium
+EMU,museum
+ENLC,herbarium
+ENMU,"museum, herbarium"
+EOSCVM,museum
+EOSC,herbarium
+VSM<SVK>,herbarium
+EUSL,culture collection
+EWU,herbarium
+EATRO,culture collection
+EBA,herbarium
+EBCC,museum
+EBCH,herbarium
+EBD,museum
+TUB,herbarium
+EBF,herbarium
+EBI,herbarium
+EBL,herbarium
+EBMC,museum
+EBMI,museum
+EBMTV,museum
+EBNHS,herbarium
+EBSUH,Herbarium
+EBRG,museum
+EBUAP,museum
+EBUM,herbarium
+EBUSAC,museum
+EBV,herbarium
+EBYU,Herbarium
+ECACC,culture collection
+ECH,herbarium
+KYORO,museum
+ECM,herbarium
+ECNB,museum
+ECNU,museum
+ECOCH,museum
+ESN,herbarium
+MPA,herbarium
+ENEF,museum
+ENSA,herbarium
+TLA,herbarium
+HNM,herbarium
+ECOMAR,museum
+IDRO,museum
+ECON,herbarium
+EERU,museum
+LEF,herbarium
+ECOSC/ADN,museum
+ECOSUR,museum
+ECOT,herbarium
+ECT,herbarium
+ECU,herbarium
+EINS,museum
+ECUAMZ,herbarium
+ECWP,herbarium
+EDC,herbarium
+EDH,herbarium
+ENHP,Herbarium
+EDNC,museum
+EDTU,herbarium
+LMU,herbarium
+EEAVDR,museum
+EEBP,museum
+EELM,museum
+EFC,herbarium
+EFCC,culture collection
+EFH,herbarium
+EFM,herbarium
+EGE,herbarium
+EGE-MACC,culture collection
+IZEF,herbarium
+LEMT,museum
+EGH,herbarium
+EGHB,herbarium
+EGHF,herbarium
+EGNP,museum
+EGR,herbarium
+EMCC,culture collection
+EHCV,herbarium
+EHH,herbarium
+EPSM,museum
+EUMJ,museum
+MATSU,herbarium
+EI,museum
+EIDM,herbarium
+ETHZ,museum
+RUEB,herbarium
+ZT,herbarium
+EIF,herbarium
+SEHU,museum
+EIHU,museum
+EJ,museum
+EISC,museum
+EKAT,herbarium
+INIA<CHL>,germplasm repository
+TMFE,museum
+ELCAK,museum
+ELE,Herbarium
+ELN,herbarium
+EWM,herbarium
+ELKOFS,Herbarium
+PTN,herbarium
+ELON,herbarium
+ELVE,herbarium
+ELYFS,Herbarium
+EM,"herbarium, museum"
+EMA,herbarium
+EMAG,museum
+EMAU,museum
+IAN,herbarium
+HMS,herbarium
+EMEC,museum
+EMEC:UCIS,museum
+EMEC:EMEC,museum
+EMET,museum
+EMIT,museum
+EMMA,herbarium
+EMNH,herbarium
+GEO,herbarium
+EMPARN,culture collection
+KSTC,herbarium
+PAMG,herbarium
+IPA,herbarium
+IPA:germplasm bank,germplasm repository
+EMUS,museum
+EMY,museum
+ENACIF-UNAM,museum
+ENAG,herbarium
+ENCB<MEX-Mexico City>,herbarium
+ENCB<MEX-Ensenada>,museum
+TAIE,herbarium
+ENG,herbarium
+ENIH,museum
+ENMH-IPN,museum
+ENO,herbarium
+ENP,museum
+ERD,herbarium
+ENS,herbarium
+ENSJ,herbarium
+ENT,herbarium
+ESEC,museum
+LEB<LVA>,museum
+EPAL,museum
+KUEL,museum
+MBA,herbarium
+EONJ,herbarium
+EOSTS,herbarium
+EOWL,Herbarium
+EPF,herbarium
+EPHR,herbarium
+EPM,herbarium
+EPN,museum
+EPPRU,museum
+EPRL,museum
+ER,herbarium
+ERA,herbarium
+ERAEP,culture collection
+TSM,herbarium
+ERBG,herbarium
+ERCB,herbarium
+ERCG,Herbarium
+ERCH,herbarium
+ERCULE,culture collection
+ERDC,herbarium
+ERE,herbarium
+EREM,herbarium
+ERHM,herbarium
+TRTE,herbarium
+GFW,herbarium
+ERSAF,herbarium
+ERSK,herbarium
+EVCV,museum
+ERZ,herbarium
+ESA,herbarium
+ESAL,herbarium
+ESAP,culture collection
+ESRN,museum
+HENA,museum
+HJBL,herbarium
+HEH,herbarium
+MAA,herbarium
+ESFM,museum
+ESK,herbarium
+OUFE,herbarium
+ESNHS,herbarium
+ESRC,museum
+ESS,herbarium
+LISE,herbarium
+HOXA,herbarium
+MOBR,herbarium
+SEAC,museum
+ROIG,herbarium
+TAM,herbarium
+TAA,herbarium
+UGM,museum
+ESUW,museum
+ETH<CHE>,culture collection
+ETHOIKOS,museum
+ETL,herbarium
+ETNH,herbarium
+ETON,herbarium
+ETST,herbarium
+EU,herbarium
+EUB,museum
+EUNP,Herbarium
+NASC<UK>,stock center
+EVA,culture collection
+ICEB,herbarium
+IEC<BRA>,museum
+EVB,herbarium
+EVE,herbarium
+EVMU,herbarium
+EWH,herbarium
+EWNHM,museum
+EX,culture collection
+LUAI,herbarium
+EXN,herbarium
+EXR,herbarium
+F,herbarium
+MPE,herbarium
+GSU,herbarium
+FA-UANL,museum
+FA-UAS,museum
+FA-UNAM,museum
+FAA,herbarium
+FABR,herbarium
+FACEN,herbarium
+MBG,museum
+FACIMAR-UAS,museum
+FACS,museum
+NVU,herbarium
+UCME,museum
+FSP-USP,museum
+FCA-UNACH,museum
+FCBA-UV,museum
+HJAAA,herbarium
+FCB-UAEM,Museum
+FCB-UNE,museum
+FCB-UJED,Museum
+SDE,herbarium
+FCM,museum
+FESC,herbarium
+FESZ-UNAM,museum
+FITECMA-UMSNH,museum
+FIC-UAT,museum
+FI-UNAM,museum
+FMR,culture collection
+FMVZ-UNAM,museum
+FM-UNAM,museum
+FZ-UACH,museum
+FGGUB,museum
+NEM,culture collection
+TLP,herbarium
+NAM,herbarium
+UNSA-PPF,museum
+FAKOU,museum
+PLJ-UNS,museum
+FBGMU,culture collection
+KNUB,museum
+NGU,herbarium
+FRLM,museum
+FFSUC,museum
+FGG,museum
+FMJ,culture collection
+SSCMH,Herbarium
+MANS,Herbarium
+PMF_UNTZ,museum
+HEU,Herbarium
+KFSUH,Herbarium
+FSUNS,museum
+FCUL,museum
+FCUL:PCS_cicada,museum
+FSEF,museum
+FADR,museum
+FAFU,herbarium
+FAH,Herbarium
+SJFM,herbarium
+FMPC,museum
+FTG,herbarium
+FDUC,museum
+FWVA,herbarium
+FMUBOTH,herbarium
+FAKU,museum
+FRS,herbarium
+FLK,herbarium
+FAMU,herbarium
+FAN,herbarium
+FM<CHN-Beijing>,herbarium
+FAR,herbarium
+VLA,herbarium
+FEUH,herbarium
+FSFRL,museum
+FARM,herbarium
+FSUU-BIRC,Museum
+FJPGC,herbarium
+FMNC,herbarium
+FAU,herbarium
+FAUC,herbarium
+FAUN,museum
+FAVU,museum
+FBA,herbarium
+FBC,herbarium
+FBCC,culture collection
+FBCS,herbarium
+FBMN,herbarium
+FBQ,museum
+FBUB,museum
+FBWA,museum
+FC,Herbarium
+FCAB,herbarium
+FCBP,culture collection
+FCCM,herbarium
+FCDA,museum
+FCL,culture collection
+FCLR,museum
+FCME,herbarium
+FCMM,museum
+FCMNH,museum
+FCMV,Herbarium
+FCNI,museum
+FCO,herbarium
+FCP,herbarium
+FCQ,herbarium
+FCQB,Herbarium
+FCRM,museum
+FCSENRS,herbarium
+FCT,culture collection
+FCTH,museum
+FCU,herbarium
+FCUG,culture collection
+FDA,"museum, culture collection"
+FDC,culture collection
+FDG,herbarium
+FDLW,herbarium
+FDNR,museum
+FDWS,herbarium
+FHJ,herbarium
+WFBVA,herbarium
+FIFUNGI,herbarium
+HWR,herbarium
+TUVA,herbarium
+VNIIKR,herbarium
+FUBKH,herbarium
+UALF,herbarium
+VIES,herbarium
+FULPSB,Herbarium
+PALM,herbarium
+HARA,herbarium
+SHPR,herbarium
+HER<CAN>,culture collection
+FEN,herbarium
+FER,herbarium
+FUMH,herbarium
+HU-KFM,museum
+KMF,herbarium
+FSTU,herbarium
+FERM,culture collection
+FEZA,herbarium
+FFAAS,herbarium
+FFBNM,herbarium
+FFCL,museum
+FFR,herbarium
+FFS,herbarium
+FG,museum
+FGC,herbarium
+FGSC,culture collection
+FH,herbarium
+FHI,herbarium
+FHKS,museum
+FHKSC,herbarium
+FHL,herbarium
+FHMU,herbarium
+FHO,herbarium
+FHSM,museum
+FHSM:I,museum
+FHSM:HERP,museum
+FHSM:M,museum
+FI,herbarium
+FIAF,herbarium
+FICB,museum
+FIDS,museum
+FIE,museum
+FIEC,museum
+HUL,herbarium
+FLH,herbarium
+FINH,herbarium
+VYH,culture collection
+HFR,herbarium
+FMNH<FIN>,museum
+FIOC,museum
+FIOC:ColTryp,culture collection
+FIP,museum
+FIPF,herbarium
+FIPIA,herbarium
+FUH,herbarium
+FIRDI,culture collection
+FOSJ,museum
+FRCL,museum
+FRIHP,museum
+FNFR,herbarium
+KSK,herbarium
+FJFC,herbarium
+FJSI,herbarium
+FKE,herbarium
+FKEN,herbarium
+FKSE,Herbarium
+FLACC,culture collection
+HFCC,culture collection
+FLAS,herbarium
+FLAS:F,herbarium
+FLASF,Herbarium
+FVCC,herbarium
+FLC,museum
+FLD,herbarium
+FLHM,museum
+FLIN,museum
+FUSC,culture collection
+UF,museum
+UF:HERP,museum
+UF:ICH,museum
+UF:Invertebrate Zoology,museum
+UF:MAMM,museum
+UF:ORN,museum
+UF:Porifera,museum
+FLOR,herbarium
+PIHG,herbarium
+FWRI,museum
+FWRI:SEAMAP,culture collection
+FWRI:ICH,museum
+FWRI:INV,museum
+UF/FGS,museum
+SWF,herbarium
+ICTB,herbarium
+STPE,herbarium
+FSCL,herbarium
+FSCA,museum
+FSMC,museum
+FSUCML,museum
+FSUM,museum
+FSU,herbarium
+FLSP,herbarium
+FMB,herbarium
+FMC,herbarium
+FMH,herbarium
+FML,museum
+FMM,herbarium
+FMP,herbarium
+FMRC,herbarium
+FMSS,museum
+FMUH,herbarium
+FNCC,culture collection
+FNLO,herbarium
+FNM,herbarium
+FNML,museum
+FNP,museum
+FNPRU,museum
+FNPS,herbarium
+FNU<CHN>,herbarium
+FNU<JPN>,museum
+FOCM,museum
+FOF,herbarium
+GAI,herbarium
+VIA,herbarium
+JAY,herbarium
+FSNM,museum
+FST,Herbarium
+UMFFTD,culture collection
+FRI<SVK>,culture collection
+FRI<JPN>,culture collection
+FRR,culture collection
+FTCC,culture collection
+FOR,herbarium
+FRLC,museum
+VFM,herbarium
+MAD<USA-WI>,herbarium
+KHF,herbarium
+FRCS,museum
+NZFS,culture collection
+ZZEL,Herbarium
+KEP,herbarium
+FRIM,museum
+FRNZ,museum
+IBL<POL>,museum
+WAN,herbarium
+VNFSIH,herbarium
+OGDF,herbarium
+SFRF,herbarium
+POFS,herbarium
+FSSR,herbarium
+YAK,herbarium
+TFM,herbarium
+TF<JPN>,herbarium
+WINFM,herbarium
+WINF,herbarium
+HFBG,herbarium
+JLFC,herbarium
+VICF,herbarium
+LBC,herbarium
+FTOH,herbarium
+FTK,culture collection
+TAIC,herbarium
+TAIU,museum
+PMAE,herbarium
+FR,herbarium
+SMF<DEU>,museum
+SMF<DEU>:Amphibia fossil,museum
+SMF<DEU>:Anatomie,museum
+SMF<DEU>:Arachnologie,museum
+SMF<DEU>:Arachnologie fossil,museum
+SMF<DEU>:Aschelminthes,museum
+SMF<DEU>:Aves fossil,museum
+SMF<DEU>:Bernstein,museum
+SMF<DEU>:Brachiopoda fossil,museum
+SMF<DEU>:Bryozoa,museum
+SMF<DEU>:Chaetognatha,museum
+SMF<DEU>:Clitellata,museum
+SMF<DEU>:Cnidaria,museum
+SMF<DEU>:Cnidaria fossil,museum
+SMF<DEU>:Coleoptera,museum
+SMF<DEU>:Copepoda,museum
+SMF<DEU>:CRUS,museum
+SMF<DEU>:Ctenophora,museum
+SMF<DEU>:Diptera,museum
+SMF<DEU>:Echinodermata,museum
+SMF<DEU>:Echinodermata fossil,museum
+SMF<DEU>:Echiura,museum
+SMF<DEU>:Ephemeroptera,museum
+SMF<DEU>:Foraminifera,museum
+SMF<DEU>:Graptolithina fossil,museum
+SMF<DEU>:Hemichordata,museum
+SMF<DEU>:HERP,museum
+SMF<DEU>:Hunsruckschiefer,museum
+SMF<DEU>:Hymenoptera,museum
+SMF<DEU>:Hyolithen,museum
+SMF<DEU>:ICH,museum
+SMF<DEU>:Insecta fossil,museum
+SMF<DEU>:Lepidoptera,museum
+SMF<DEU>:Loricifera,museum
+SMF<DEU>:Malacology,museum
+SMF<DEU>:Mammalia fossil Grossauger,museum
+SMF<DEU>:Mammalia fossil Kleinsauger,museum
+SMF<DEU>:MAMM,museum
+SMF<DEU>:Mantodea,museum
+SMF<DEU>:Mineralogie,museum
+SMF<DEU>:Myriapoda,museum
+SMF<DEU>:Nemertini,museum
+SMF<DEU>:Odonata,museum
+SMF<DEU>:Onychophora,museum
+SMF<DEU>:Ornithologie-Alkohol,museum
+SMF<DEU>:Ornithologie-Balge,museum
+SMF<DEU>:Ornithologie-Skelette,museum
+SMF<DEU>:Orthoptera,museum
+SMF<DEU>:Ostracoda,museum
+SMF<DEU>:Otolithen,museum
+SMF<DEU>:Palaoanthropologie,museum
+SMF<DEU>:Palaoherpetologie,museum
+SMF<DEU>:Pantopoda,museum
+SMF<DEU>:Pentastomida,museum
+SMF<DEU>:Phoronida,museum
+SMF<DEU>:Pisces fossil,museum
+SMF<DEU>:Plathelminthes,museum
+SMF<DEU>:Plecoptera,museum
+SMF<DEU>:Polychaeta,museum
+SMF<DEU>:POR,museum
+SMF<DEU>:Reptilia fossil,museum
+SMF<DEU>:Sedimentologie,museum
+SMF<DEU>:Sipuncula,museum
+SMF<DEU>:Strepsiptera,museum
+SMF<DEU>:Stromatolithen,museum
+SMF<DEU>:Tardigrada,museum
+SMF<DEU>:Tentakulita fossil,museum
+SMF<DEU>:Thysanoptera,museum
+SMF<DEU>:Trichoptera,museum
+SMF<DEU>:Trilobita,museum
+SMF<DEU>:Tunicata,museum
+SMF<DEU>:Xiphosura,museum
+MHP,museum
+FTPK,Herbarium
+FQH,herbarium
+FWMSH,museum
+FWM,herbarium
+FWNC,Herbarium
+OU,museum
+FRLH,herbarium
+QK,herbarium
+SPH,herbarium
+FP,Herbarium
+FPDB,herbarium
+FPF,herbarium
+FPI,herbarium
+FPM,museum
+LUCAS,museum
+INRA,germplasm repository
+INRA:CGAB,germplasm repository
+JBC,botanical garden
+FRC<USA-PA>,culture collection
+FRC,herbarium
+FRDC,seed bank
+FSC<CAN>,culture collection
+GOFS,herbarium
+FUB,museum
+HIFP,herbarium
+GUBIOTJT,culture collection
+UFSCARCC,culture collection
+SCT,herbarium
+FRM,museum
+PSUC,museum
+FSUH,Herbarium
+FSUMC,museum
+FRP,herbarium
+FRSKU,museum
+FRU,herbarium
+FSABQ,herbarium
+FSAG,museum
+FSIU,museum
+FSLF,herbarium
+FSNRS,museum
+FTS,herbarium
+FTU,herbarium
+FU<JPN>,herbarium
+FU<CHN>,museum
+FUS,herbarium
+FUE,museum
+FUEL,herbarium
+FUGR,herbarium
+NCEF-FAAS,culture collection
+FUK,herbarium
+FULD,herbarium
+FUMT,museum
+HXBH,herbarium
+HUIRB,herbarium
+SFPA,herbarium
+FUNED,museum
+INCQS,culture collection
+HUTO,herbarium
+HERT,herbarium
+HBEI,herbarium
+HAS,herbarium
+MCNPV,museum
+HJBS,herbarium
+IMLA,museum
+GUYN,herbarium
+LIL,herbarium
+UNO,herbarium
+VPCI,culture collection
+UPSC,culture collection
+RRIASR,culture collection
+LCP,culture collection
+FYZU,herbarium
+YSUF,Herbarium
+MAKFUNGI,herbarium
+FUOR,Herbarium
+FURB,herbarium
+FW,herbarium
+VLV,herbarium
+KMM,culture collection
+GA,herbarium
+GAB,herbarium
+LUM,museum
+GAC,herbarium
+GCU,herbarium
+GACP,herbarium
+GADI,herbarium
+GAES,herbarium
+GAFS,herbarium
+GAILLAC,museum
+GNHNA,museum
+GALW,herbarium
+GAM<USA-GA>,herbarium
+GAM<VEN>,culture collection
+GNA,herbarium
+GAUF,herbarium
+GSFS,herbarium
+MQ,herbarium
+GWJ,herbarium
+NASBG,herbarium
+GARIN,herbarium
+GAS,herbarium
+GAT,herbarium
+GAUA,herbarium
+GUBH,herbarium
+GU-IITG,museum
+GML<USA-MO>,museum
+GAZI,herbarium
+TRGFGA,Herbarium
+GOPU,herbarium
+GB,herbarium
+GBAP,museum
+GBAR,museum
+GBAS,museum
+GBB,herbarium
+GBCA,museum
+GBFM,museum
+GBG<SWE>,botanical garden
+GBH,herbarium
+GBMT,museum
+GBNM,museum
+GBPUH,herbarium
+GBS,culture collection
+GBVB,museum
+GBVC,museum
+GBY,herbarium
+GC<USA-MD>,museum
+GC<GHN>,herbarium
+GCUSAH,herbarium
+GCABBT,Herbarium
+GCM<PAK>,museum
+GCM<GHN>,herbarium
+GCNP,herbarium
+GCR,museum
+GCRL,museum
+GCSU,herbarium
+GCT,herbarium
+GCTP,museum
+GDA,herbarium
+GDAC,herbarium
+UGDA,herbarium
+GDB,herbarium
+GDGM,herbarium
+GDI,museum
+GDMA,herbarium
+GDMCC,culture collection
+GDMM,herbarium
+GDMP,herbarium
+GDOR,herbarium
+GDZQU,Herbarium
+GE,herbarium
+GEIC,museum
+GEMMA,museum
+GEN,Herbarium
+GNE,cell lines
+QG,herbarium
+UNIBL_IGR,museum
+GENT,herbarium
+GSM,museum
+MGI,museum
+UVA,museum
+IGM<MNG>,museum
+GI-SPS,museum
+GIUV,museum
+GMAU,museum
+GMHH,museum
+ISI,museum
+GMUV,museum
+GSC,museum
+GSI,museum
+NSWGS,museum
+GSP,museum
+GPIH,museum
+GPI,museum
+GPMK,museum
+KGU,museum
+UTGD,museum
+MELG,museum
+HUMFST,Herbarium
+GHS,herbarium
+GLA,herbarium
+GMUF,herbarium
+SCHG,herbarium
+GVF,museum
+GMNH<USA-GA>,museum
+GSW,herbarium
+TBI,herbarium
+IZGAS,museum
+ZMT<GEO>,museum
+GERA,Herbarium
+NRZM,culture collection
+GES,herbarium
+GGB,herbarium
+GESU,herbarium
+GEVAUDAN,museum
+GRS,herbarium
+WM<SDN>,herbarium
+GF,herbarium
+GFA,herbarium
+GFBI,museum
+GFC,herbarium
+GFCC,culture collection
+GFJP,herbarium
+GFND,herbarium
+GFRC,museum
+GFS,herbarium
+GFT,herbarium
+GGM,museum
+GGO,herbarium
+GH,herbarium
+GHD,herbarium
+GHPG,herbarium
+GHRI,frozen tissue collection
+GI,herbarium
+HMGBH,herbarium
+HBOR,museum
+GIB,herbarium
+GZM,museum
+GIFU,herbarium
+GPM,museum
+GPM:Z,museum
+GPM:B,herbarium
+GTC,culture collection
+GTC-GIFU,culture collection
+TKY,herbarium
+GINCO,herbarium
+GRB,museum
+GIPR,herbarium
+GIT,museum
+GJO,herbarium
+GJW,Herbarium
+GK,Herbarium
+GKAR,herbarium
+GL,herbarium
+GLAC,museum
+GLNP,museum
+HMUG,museum
+GLAHM,museum
+GLANH,museum
+GMNGZ,museum
+GSO,herbarium
+GUM,museum
+GLEN,herbarium
+GLFR,museum
+GLG,herbarium
+GLLB,herbarium
+GLM,herbarium
+GLO,herbarium
+GLR,herbarium
+GLOW,herbarium
+GM,herbarium
+GMACC,culture collection
+GMB,herbarium
+GMBCC,culture collection
+GMC,museum
+GMCE,museum
+GMCGC,Herbarium
+GMDRC,herbarium
+GMH,museum
+GML<USA-IL>,museum
+GMNH<CHE>,museum
+GMNH-PV,museum
+GMNHJ,herbarium
+GMNP,herbarium
+GMS,herbarium
+GMU,herbarium
+GMUA,museum
+GMUG,museum
+GMUM,museum
+GMV,herbarium
+GN,museum
+GND,Herbarium
+GNDUH,herbarium
+GNH,herbarium
+GNHM,museum
+GNHS,herbarium
+GNM,museum
+GNNU,herbarium
+GNU<KOR>,museum
+GNU,herbarium
+GNUB,herbarium
+GNUC,herbarium
+GNUG,herbarium
+GO,herbarium
+GOE<GBR>,herbarium
+GOE<DEU>,museum
+GOET,herbarium
+HUBE,herbarium
+GSUH,herbarium
+HGMU,Herbarium
+WMGC,herbarium
+NHMG<SWE>,museum
+GUMACC,culture collection
+GU,herbarium
+VI<SWE>,herbarium
+PGMUZM,herbarium
+HGPGCM,herbarium
+GVCH,herbarium
+GP,museum
+GPA,herbarium
+GPIM,museum
+GPIT,museum
+GPPT,museum
+GR,herbarium
+GR-AUT-WM,museum
+GR-MZ-AUT,museum
+GRCAMC,museum
+GRJC,herbarium
+GRTE,herbarium
+GVSC,herbarium
+UCLGMZ,museum
+LDUCZ,museum
+GTM,herbarium
+MAR,culture collection
+GRAU,Herbarium
+GRBA,herbarium
+SSMF,herbarium
+GSDNM,museum
+GRSM,museum
+GSMNP,herbarium
+GREE,herbarium
+WCH,herbarium
+GTV,herbarium
+SWGC,herbarium
+GREZOSP,museum
+GRI,herbarium
+THL,herbarium
+GRIF,museum
+MNINGA,museum
+GRK,herbarium
+GRM,herbarium
+GRO,herbarium
+GRPM,museum
+GRSU,herbarium
+ZIT,museum
+GSAT,museum
+GSN,museum
+GUAD,herbarium
+GUADA,herbarium
+GUAM,herbarium
+GXFI,herbarium
+GXFS,herbarium
+GXDC,herbarium
+IBK,herbarium
+GXEM,herbarium
+GXF,herbarium
+GXMI,herbarium
+GXMG,herbarium
+GXNM,herbarium
+GXSP,herbarium
+GXCM,herbarium
+GUCM,herbarium
+GUAT,herbarium
+GUAY,herbarium
+GUCC,culture collection
+GUD,herbarium
+GUH,herbarium
+GUIDE,herbarium
+GUM<IRN>,herbarium
+SNHS,herbarium
+GZAAS,herbarium
+HGAS,herbarium
+GZAC,herbarium
+GZCC,culture collection
+GZUH,herbarium
+GZTM,"herbarium, museum"
+GUL,herbarium
+HGCRL,herbarium
+GW,herbarium
+GWALT,Herbarium
+GZU,herbarium
+H,herbarium
+H-GSP,museum
+KBHG,herbarium
+HA,herbarium
+HAB,museum
+HABAYC,herbarium
+HABE,herbarium
+HABIT,herbarium
+HAC,herbarium
+HACAM,Herbarium
+HACC<IND>,culture collection
+HUEF,herbarium
+HBH,herbarium
+HUIC,museum
+HUB,herbarium
+HAF,herbarium
+HAFB,herbarium
+HAG,herbarium
+HAH,herbarium
+HAHV,Herbarium
+HAI,herbarium
+HAIKIAM,herbarium
+HFB,herbarium
+HUTB,herbarium
+HAJB,herbarium
+HAJU,herbarium
+HAK,herbarium
+HAKS,herbarium
+HSUH,Herbarium
+HAL,herbarium
+HALA,herbarium
+HALE,herbarium
+HALX,herbarium
+HALLE,museum
+HHU,herbarium
+HALN,herbarium
+HAM,herbarium
+HAMAB,herbarium
+HAMBI,culture collection
+MCM<CAN>,herbarium
+HIWNT,herbarium
+HCMS,herbarium
+HPDL,herbarium
+HPD,herbarium
+HAMU,herbarium
+HAN,herbarium
+HANC,herbarium
+NEWHM,museum
+HMNT,museum
+HC,herbarium
+HHBG,herbarium
+HTC,herbarium
+HNHM<KOR>,herbarium
+HNIP,herbarium
+HNUE,museum
+HKI,culture collection
+HANU,herbarium
+HZTC,herbarium
+HAO,herbarium
+HAQ,herbarium
+HUHE,herbarium
+HBFH,herbarium
+HBOM,museum
+HSU<USA-TX>,herbarium
+HSUCV,museum
+HARG,herbarium
+HARI,Herbarium
+HLA,herbarium
+NWT,herbarium
+HARRAN,herbarium
+HUEH,Herbarium
+HWB,herbarium
+LIVU,herbarium
+HHH,herbarium
+HAUH,museum
+HNP,herbarium
+HHD,museum
+HME,herbarium
+HEMS,museum
+UHasselt,Museum
+HASSI,herbarium
+HAST,herbarium
+HCCA,museum
+HCCV,museum
+HM<USA-NE>,museum
+HASU,herbarium
+NICH,herbarium
+SZB,herbarium
+HAVO,museum
+HAW,herbarium
+HDOA,museum
+HPU<USA-HI>,museum
+HMNH,museum
+HUP,herbarium
+HB,herbarium
+HBA,herbarium
+HBAU,herbarium
+HBAUD,herbarium
+HBB,Herbarium
+HBBS,herbarium
+HBC,museum
+HBDC,herbarium
+HBE,herbarium
+HBED,herbarium
+HBFC,herbarium
+HBG<JPN>,botanical garden
+HBG,herbarium
+HBI,herbarium
+HBIL,herbarium
+HBJU,herbarium
+HBLU,herbarium
+HBMO,herbarium
+HBNA,herbarium
+HBNU,herbarium
+HBPD,herbarium
+HBPP,herbarium
+HBPR,herbarium
+HBPS,herbarium
+HBR,herbarium
+HBRA,herbarium
+HBRE,herbarium
+HBRM,herbarium
+HBSH,herbarium
+HBU,herbarium
+HCA,Herbarium
+HCAN,herbarium
+HCAT,herbarium
+HCB,herbarium
+HCCL,herbarium
+HCCN,herbarium
+HCDAL,herbarium
+HCEN,herbarium
+HCES,Herbarium
+HCF,herbarium
+HCFM,Herbarium
+HCH,herbarium
+HCHM,herbarium
+HCIO,herbarium
+HCJS,herbarium
+HCM,herbarium
+HCMZ,museum
+HCP,herbarium
+HCRU,museum
+HCSM,museum
+HCT,herbarium
+HCTR,museum
+HCUC,herbarium
+HD,Herbarium
+HDD,herbarium
+HDELTA,herbarium
+HDJF,herbarium
+HDSM,herbarium
+HDTC,herbarium
+HEAA,Herbarium
+HEAC,herbarium
+HEB,herbarium
+JUJ,herbarium
+HEBI,herbarium
+HUJ,"herbarium, museum"
+HUJ:INV,museum
+HUJ:R,museum
+HECM,herbarium
+HEFA,Herbarium
+HEFG,herbarium
+HEI,museum
+HEID,herbarium
+HNR,herbarium
+HLCM,herbarium
+HNHH,museum
+HLNM,herbarium
+HEL,herbarium
+HISR,museum
+HMUCC,culture collection
+HZI,culture collection
+HEM,herbarium
+HENNU,museum
+HENU,herbarium
+KAI,herbarium
+HEND,herbarium
+HSUMZ,museum
+HXC,herbarium
+HEPE,Herbarium
+HEPH,herbarium
+HER<ZAF>,herbarium
+HERBAM,herbarium
+HGV,herbarium
+HURLGT,herbarium
+UZ,herbarium
+XOLO,herbarium
+UFRJ<herbarium>,"herbarium, culture collection"
+UMCE,herbarium
+HFC,herbarium
+ICESI,herbarium
+JBAL,Herbarium
+LUTI,Herbarium
+LPB,herbarium
+MEXU,herbarium
+VEN,herbarium
+QCNE,herbarium
+HNOP,Herbarium
+HF,herbarium
+HSCH,Herbarium
+HT,herbarium
+WERI,Herbarium
+IAL<BRA-Bahia>,herbarium
+UB,"herbarium, culture collection"
+VER,herbarium
+SGO,herbarium
+RET,herbarium
+SHYL,herbarium
+NEGI,herbarium
+ORO,Herbarium
+HFAP,Herbarium
+HFN,herbarium
+JE,herbarium
+KOLK,herbarium
+JABU,Herbarium
+JES,herbarium
+MKMEL,herbarium
+HMUT,herbarium
+HIUT,Herbarium
+HGUP,herbarium
+HFU,herbarium
+HFJAU,Herbarium
+SAP,herbarium
+MNAIT,herbarium
+KHAS,herbarium
+HMJAU,herbarium
+SICAU,herbarium
+SWI,Herbarium
+TI,herbarium
+NTUH,Herbarium
+LPC,herbarium
+HUEST,herbarium
+YAAS,herbarium
+SVZ,Herbarium
+TDH,herbarium
+HUT<PER>,herbarium
+ZOM,herbarium
+KLA,herbarium
+UAAH,herbarium
+WA,herbarium
+SD,herbarium
+SHI,herbarium
+UARK,herbarium
+P,herbarium
+HFD,herbarium
+URCA-H,museum
+HERVA,Herbarium
+HERW,herbarium
+HERZ,herbarium
+HERZU,herbarium
+HLD,museum
+HLMD,museum
+HEUS,herbarium
+HYD,herbarium
+HFA,herbarium
+HFLA,herbarium
+HFP,culture collection
+HFRI,museum
+HFV,herbarium
+HG,herbarium
+HGI,herbarium
+HGM,museum
+HGOM,herbarium
+HGRES,Herbarium
+HGS,herbarium
+HGSB,museum
+HGTC,herbarium
+HGU,herbarium
+HH,herbarium
+HHC,herbarium
+HHE,herbarium
+HHNNR,herbarium
+HHUA,herbarium
+HHUAQ,herbarium
+HHUF,herbarium
+HIB,herbarium
+HIBG,herbarium
+HIBR,Herbarium
+HIC,museum
+HICPC,herbarium
+HIFPA,Herbarium
+SSFH,herbarium
+HPU,herbarium
+HSF,Herbarium
+HILL,herbarium
+HLSD,herbarium
+HWC,herbarium
+HIMC,herbarium
+HIN,herbarium
+HINS,herbarium
+HIP,herbarium
+HIPC,herbarium
+HIPE,herbarium
+HIRO,herbarium
+ZIHU,museum
+HIRU,herbarium
+HISA,herbarium
+LRL,herbarium
+HITBC,herbarium
+HTN,herbarium
+HIUW,museum
+HJ,herbarium
+HJBC,herbarium
+HJBG,herbarium
+HJSS,herbarium
+HKBU,herbarium
+HKFRS,museum
+HKGL,herbarium
+HKM,herbarium
+HKS,herbarium
+HKU,herbarium
+HKUCC,culture collection
+HL<NLD>,herbarium
+HL,herbarium
+HLAJ,herbarium
+HLDG,herbarium
+HLL,herbarium
+HLMA,herbarium
+HLO,herbarium
+HLU,herbarium
+HLUC,herbarium
+HLUL,herbarium
+HLX,herbarium
+HM<DEU>,museum
+HMAR,herbarium
+HMAS,"herbarium, culture collection"
+HMC,herbarium
+HMCM,museum
+HMCM:Arthro,museum
+HMCM:BIRD,museum
+HMCM:Herb,herbarium
+HMCM:HERP,museum
+HMCM:MAMM,museum
+HMH,museum
+HMIM,herbarium
+HMJU,herbarium
+HMM,herbarium
+HMMNH,herbarium
+HMN,museum
+HMNR,herbarium
+HMNS,museum
+HMP,herbarium
+UCLAF,culture collection
+HMSAU,herbarium
+HMSNMO,herbarium
+HN,herbarium
+HNBG<UKR>,botanical garden
+HNBG,Herbarium
+HNBU,herbarium
+HNCMB,culture collection
+HNG,herbarium
+HNHM<HUN>,museum
+HNHM<HUN>:MOLL,museum
+HNHM<HUN>:CGR,museum
+HNHPS,herbarium
+HNHR,museum
+HNIBR,culture collection
+HNIM,herbarium
+HNMN,herbarium
+HNN,herbarium
+HNNU,herbarium
+HNPGBI,herbarium
+HNT,herbarium
+HNTS,herbarium
+HNU<VNM>,herbarium
+HNU<CHN>,museum
+HNUB,herbarium
+HNUL,herbarium
+HNUP,herbarium
+HNWP,herbarium
+HNWU,herbarium
+HNYUOB,Herbarium
+HO,herbarium
+HOH,herbarium
+HOKM,museum
+SAPT,herbarium
+SAPA,herbarium
+SAPS,herbarium
+HUMZ,museum
+HOL,herbarium
+HWD,herbarium
+RTE,herbarium
+USEK,museum
+HOLZ,museum
+HOMP,herbarium
+HOMU,Herbarium
+HON,herbarium
+KFI,herbarium
+XUM,museum
+HREC,herbarium
+HORAIJI,museum
+PMG<BRA>,herbarium
+HOSP,herbarium
+HOU,herbarium
+HPC,herbarium
+HUDC,herbarium
+HWML,museum
+HPAN,herbarium
+HPBR,herbarium
+HPEC,Herbarium
+HPH,herbarium
+HPL,herbarium
+HPNP,herbarium
+HPP,herbarium
+HPPR,herbarium
+HPSU,herbarium
+HPUJ,herbarium
+HPVC,herbarium
+HQH,herbarium
+HR,herbarium
+HRB,herbarium
+HRCB,herbarium
+HRJ,herbarium
+HRNDC,herbarium
+HRP,herbarium
+HRS,museum
+HRSN,Herbarium
+HZMZ,museum
+HS,Herbarium
+HSB,herbarium
+HSBU,herbarium
+HSC,herbarium
+HSCU,Herbarium
+HSESJ,herbarium
+HSHU,herbarium
+HSI,herbarium
+HSIB,herbarium
+HSIC,museum
+HSJPN,Herbarium
+HSMC,herbarium
+HSNN,Herbarium
+HSP,herbarium
+HSTM,herbarium
+HSU<USA-CA>,museum
+HSU<USA-CA>:Amphibian,museum
+HSU<USA-CA>:BIRD,museum
+HSU<USA-CA>:MAMM,museum
+HSU<USA-CA>:Reptile,museum
+HSUD,herbarium
+HSUE,museum
+HSUVM,museum
+HSUVM:MAMM,museum
+HSUVM:HERP,museum
+HSUVM:BIRD,museum
+HSUWM,museum
+HTE,herbarium
+HTGN,herbarium
+HTIN,herbarium
+HTL,herbarium
+HTNF,herbarium
+HTO,herbarium
+HTSU,Herbarium
+HTTU,herbarium
+HTU,herbarium
+HTW,herbarium
+HU,herbarium
+HUA,herbarium
+HUAA,herbarium
+HUAL,herbarium
+HUAM,herbarium
+HUAN,Herbarium
+HUAPLI,herbarium
+HUAZ,herbarium
+HUBO,herbarium
+HUC,herbarium
+HUCLK,herbarium
+HUCM,herbarium
+HUCO,herbarium
+HUCP,herbarium
+HUCS,herbarium
+HUE,herbarium
+HUEB,herbarium
+HUEFS,herbarium
+HUEG,herbarium
+HUEM,herbarium
+HUENF,Herbarium
+HUESB,herbarium
+HUESBVC,herbarium
+HUF,herbarium
+HUFABC,herbarium
+HUFAP,Herbarium
+HUFS,museum
+HUFSJ,herbarium
+HUFSP,herbarium
+HUFU,herbarium
+PCE,herbarium
+HUGO,herbarium
+HUI,herbarium
+HUIF,herbarium
+HULE,herbarium
+HUM,museum
+HUMC,herbarium
+HUMO,herbarium
+HUMP,herbarium
+HUMZ<IRN>,herbarium
+HUTM,herbarium
+HUNST,herbarium
+HUST,herbarium
+HUNC,herbarium
+HUNEB,herbarium
+KFM,Herbarium
+HUNI,herbarium
+HUNPHU,herbarium
+HUNT,herbarium
+HUPG,herbarium
+HUQ,herbarium
+HURB,herbarium
+HURG,herbarium
+HURM,herbarium
+HURP,Herbarium
+HUS,herbarium
+HUSA,herbarium
+HUSC,herbarium
+HUSEC,culture collection
+SOB,herbarium
+HUT<JPN>,culture collection
+HUTI,herbarium
+HUTPL,herbarium
+HUVA,herbarium
+HVASF,herbarium
+HVAT,herbarium
+HVC,herbarium
+HVR,herbarium
+HWA,herbarium
+HY,herbarium
+HYO,herbarium
+HZM,museum
+HZU,herbarium
+MSUD,herbarium
+LCF,herbarium
+VMSL,herbarium
+IA,herbarium
+IAA,herbarium
+IAAA,museum
+IAAS,museum
+IABHU,museum
+IAC,herbarium
+IACC,museum
+IACM,herbarium
+IADIZA-CM,museum
+IALCEL,culture collection
+IALMIC,culture collection
+IAM<RUS>,museum
+IAM,culture collection
+IAPG,museum
+IARI,herbarium
+IASI,herbarium
+MPRHK,Herbarium
+IAUGH,herbarium
+IAUH,herbarium
+IAUM,herbarium
+IAUNT,herbarium
+IAV,herbarium
+IAVH,museum
+IAVH:A,museum
+IAVH:CT,frozen tissue collection
+IAVH:P,museum
+IB,"herbarium, museum"
+IBA<ESP>,herbarium
+IBAR,herbarium
+INM,museum
+IBAUNC,museum
+IBMUNC,museum
+IBBS,museum
+IBE<ESP>,museum
+IBE,herbarium
+IBEF,museum
+IBER,Herbarium
+IBF,herbarium
+IBGE,herbarium
+IBH,museum
+IBI,herbarium
+IBIGEO,museum
+IBIR,herbarium
+IBIUEMG,herbarium
+IBIW,herbarium
+IBK<UKR>,culture collection
+IBL<USA-MD>,culture collection
+IBL<ISR>,herbarium
+IBLP,museum
+IBMAS,museum
+IBOT-CAS-Trebon,herbarium
+IBP,herbarium
+IBPPM,culture collection
+IBRC,culture collection; herbarium
+IBREAM,Herbarium
+IBRG,herbarium
+IBRP<BRA>,museum
+IBRP<JPN>,museum
+IBS,herbarium
+IBSC,herbarium
+IBSI,museum
+IBSP,museum
+IBT,culture collection
+IBTS,museum
+IBUG,herbarium
+IBUN,museum
+UNAM,museum
+UNAM:CNPGG,museum
+UNAM:CNAV,museum
+UNAM:CNHE,museum
+UNAM:CNMO,museum
+UNAM:CNAC,museum
+UNAM:CNAN,museum
+UNAM:CNCR,museum
+UNAM:CNIN,museum
+UNAM:CNPE,museum
+UNAM:CNAR,museum
+UNAM:CNMA,museum
+UNAM:CNNE,museum
+IBUNAM,museum
+IBUNAM:CNHE,museum
+IBUNAM:CNMO,museum
+IBUNAM:CNAC,museum
+IBUNAM:CNAN,museum
+IBUNAM:CNCR,museum
+IBUNAM:CNIN,museum
+IBUNAM:CNPE,museum
+IBUNAM:CNAR,museum
+IBUNAM:CNAV,museum
+IBUNAM:CNMA,museum
+IBUNAM:CFB,photos
+IBUNAM:MEXU,herbarium
+IBUP,museum
+IBUS,museum
+IBUT,museum
+IC,museum
+ICA,herbarium
+ICAI,Herbarium
+ICAR,herbarium
+ICAR-DWR,museum
+ICARDA,herbarium
+ICBB,culture collection
+ICBR,herbarium
+ICCM,herbarium
+ICDPP,herbarium
+ICEBB,culture collection
+ICEL,herbarium
+ICF,herbarium
+ICFC,culture collection
+ICFP,herbarium
+ICFRE-TFRIJ,museum
+ICGC,museum
+ICGES,museum
+ICH,herbarium
+ICHAUWAY,herbarium
+UMSNH,museum
+ICHUM,museum
+ICI,culture collection
+ICIS,museum
+ICM,museum
+ICMI,museum
+ICMP,culture collection
+ICN<BRA>,herbarium
+ICN<COL>,museum
+ICN<COL>:AVES,museum
+ICN-MHN,museum
+ICP,herbarium
+ICPB,culture collection
+ICPPB,herbarium
+ICRC,museum
+ICRG,museum
+ICRI,museum
+ICRISAT,germplasm repository
+ICROPS,Herbarium
+ICS-CC,culture collection
+ICST,herbarium
+ICUI,museum
+ICVI,museum
+ID,herbarium
+IDAC,culture collection
+IFGD,museum
+IFGH,herbarium
+IDS,herbarium
+IDB,museum
+IDEA,museum
+IDF,herbarium
+IDFHU,Herbarium
+IE-UNAM,museum
+IEA,museum
+IEAB,museum
+IEAM,museum
+IEAP,museum
+IEAPM,culture collection
+IEAS,museum
+IEAU,museum
+IEB,herbarium
+IEBC,culture collection
+IEBR,museum
+IEEUACH,museum
+IEGG,museum
+IEGM,culture collection
+IEI,museum
+IEME,museum
+IEMM,museum
+IENU,museum
+IEPA,museum
+IER,herbarium
+IEUC,museum
+IEUP,museum
+IEVB,museum
+IF,Herbarium
+IFAHIRU,museum
+IFAM,culture collection
+IFAN,museum
+IFBM,culture collection
+IFE,herbarium
+IFFB,museum
+IFG,arboretum
+IFGP,herbarium
+IFI,museum
+IFIP,Herbarium
+ILF,herbarium
+IFM<JPN>,culture collection
+IFM<AUS>,culture collection
+IFMG,herbarium
+IFO,culture collection
+NBRC,culture collection
+iForNature,museum
+IFP,herbarium
+IFR-Varna,museum
+IFRD,herbarium
+IFRDCC,culture collection
+IFREMER,museum
+IFRI,museum
+IFRPD,culture collection
+IFSA,museum
+IFSH,Herbarium
+IG,museum
+IGA,herbarium
+IGB,germplasm repository
+SUMAS,herbarium
+IGBRU,museum
+IGC,culture collection
+PYCC,culture collection
+IGCAGS,museum
+IGCU,museum
+IGF,museum
+IGGDC,herbarium
+IGL,museum
+IGM<MEX>,museum
+IGPH,museum
+IGUS,museum
+IGWH,museum
+IH,herbarium
+IHASW,museum
+IHB,museum
+IHCAS,museum
+MZTG,museum
+IHUF,Herbarium
+IHUG,museum
+IIBBL,museum
+IIBM-UNAM,culture collection
+IIBO-UNAM,museum
+IIBUV,museum
+IID,culture collection
+IIES,museum
+IIO-UABC,museum
+IITA,germplasm repository
+IJ,herbarium
+IJFM,culture collection
+IJK,Herbarium
+IJSM,museum
+IK,museum
+ILCA,herbarium
+ILFE,culture collection
+ILH,herbarium
+ILL,herbarium
+ILLS,herbarium
+INHS,museum
+ISM,museum
+ISM:FISH,museum
+ISM:MAMM,museum
+ISM:AVES,museum
+ISM:HERP,museum
+ISU<USA-IL>,"herbarium, museum"
+ISU<USA-IL>:BIRD,museum
+ISU<USA-IL>:MAMM,museum
+ILMA,museum
+ILPLA,museum
+ILRI,museum
+ILSbio,museum
+IM<CUB>,herbarium
+IM<IND>,museum
+IMAGE,DNA bank
+IMAREFI-CUCBA-UDG,museum
+IMARPE,museum
+IMAS,culture collection
+IMAU,culture collection
+IMPC,herbarium
+IMC,herbarium
+IMCC,culture collection
+IMCN,museum
+IMD<CHN>,herbarium
+IMD,culture collection
+IMDC,herbarium
+IMET,culture collection
+IMFA,herbarium
+IML,museum
+IMM<CHN-Hohhot>,museum
+IMP,herbarium
+IMT<JPN>,museum
+IMPH,herbarium
+IMRU,culture collection
+IMS<USA-NC>,herbarium
+IMS<TZA>,museum
+IMSNU,culture collection
+IMSS,culture collection
+IMSSM,herbarium
+IMT<BRA>,culture collection
+IMTU,museum
+IMUFRJ,culture collection
+IMUR,culture collection
+IMVS,culture collection
+IMYZA,culture collection
+ZISP,herbarium
+IN,herbarium
+INA<PRT>,herbarium
+INAB,museum
+INABIOEC,Museum
+InaCC,culture collection
+INAH,museum
+INALI,museum
+INAT<TUN>,herbarium
+iNAT,Digital Repository
+INB,herbarium
+INBC,museum
+INBIO,museum
+INBP,museum
+INC,museum
+IND,herbarium
+IND-M,museum
+JCB,herbarium
+ITCC<IND>,culture collection
+ISMC,museum
+ISUVC,museum
+TER,herbarium
+ISU<USA-IN>,museum
+IUIC,museum
+IU,museum
+IUP,herbarium
+JEF,herbarium
+MB,museum
+ISRI,culture collection
+INDRE,culture collection
+InDRE-SSA,museum
+ITDI,culture collection
+INEGI,herbarium
+INEP,herbarium
+INER,museum
+INF,herbarium
+UPIE,stock center
+INFYB,herbarium
+INGU,herbarium
+INH,herbarium
+INH<ECU>,museum
+IUI,herbarium
+INHM,museum
+INIA,museum
+INIA<ESP>,germplasm repository
+INLA,museum
+INIAV,museum
+INIBP,museum
+INIDA,herbarium
+INIDEP,museum
+RELC,herbarium
+INIFAT,culture collection
+INIP,museum
+YUC,herbarium
+INMI,culture collection
+NMAC,herbarium
+NMCDC,museum
+NMFC,herbarium
+NMTC,herbarium
+INU,herbarium
+INPC,museum
+WAITE,culture collection
+SRNP,museum
+IZASK,museum
+LILLE,herbarium
+KISA,herbarium
+MAIS,herbarium
+ZAR,museum
+MCM<FRA>,museum
+SERG,herbarium
+IRD,museum
+IRD-Occitanie,museum
+NOU,herbarium
+IRAF,museum
+IREC,museum
+IRSC,herbarium
+QSA,herbarium
+ISEM,museum
+NHV,herbarium
+IPB<DEU>,museum
+IPUW,museum
+IPEF,museum
+ISH,museum
+IZUI,museum
+IZUW,museum
+TU<DEU>,museum
+IPHG,museum
+IPMGO,museum
+IPMB,DNA Bank
+Z,herbarium
+IRAG,museum
+KIP,herbarium
+YBI,herbarium
+LUKI,herbarium
+MLGU,herbarium
+IPMC,museum
+IPBCC,culture collection
+MAKAR,herbarium
+IRSM,museum
+IRSNB,museum
+ISCM,museum
+ISTPM,museum
+RAB,herbarium
+PI<DEU>,museum
+TIMGP,museum
+IUVV,museum
+IZW,museum
+IZAS,museum
+IRSAC,museum
+LBG<CHE>,culture collection
+SASY,herbarium
+RS-IBISS,museum
+PZZP,herbarium
+IPFUB,museum
+IPGR,germplasm repository
+KHA,herbarium
+TAAM,herbarium
+VIAM,culture collection
+MAG,herbarium
+TKBC,culture collection
+MKNH,herbarium
+MKNDC,herbarium
+LUBI,museum
+TAS,museum
+PRA,herbarium
+PE,herbarium
+NAS,herbarium
+SAV,herbarium
+SAV:F,herbarium
+ZPB,herbarium
+KOR,herbarium
+VBI,herbarium
+LWKS,herbarium
+PVB,herbarium
+RIFY,culture collection
+NR,herbarium
+QF,herbarium
+IOF-Hetauda Museum,museum
+UUH,herbarium
+MGUWR,museum
+PLP,herbarium
+WAHO,herbarium
+SIBS,herbarium
+NTOU,culture collection
+SAK,herbarium
+TIMM,culture collection
+UNIQEM,culture collection
+MBMU,culture collection
+ZTS,herbarium
+IOS,museum
+ION,Herbarium
+VNIRO,museum
+IOM,museum
+MBMCAS,herbarium
+IOCAS,museum
+TIPR,herbarium
+IPAE,museum
+SVER,herbarium
+IPBB,Herbarium
+VDAM,museum
+TUPH,museum
+NHR,herbarium
+ISBC,museum
+ISBC:CMF,culture collection
+ISS,culture collection
+ISB,museum
+ORIS,herbarium
+ISZP,museum
+ISEA,museum
+ITBCC,culture collection
+WRHM,herbarium
+TMN,herbarium
+ITEM,culture collection
+VNM,herbarium
+ITBCZ,museum
+ITBZC,museum
+ITFC,museum
+IVB,museum
+IVPP,museum
+MHH,culture collection
+IZ<KAZ>,museum
+IZFB,museum
+IZBE,museum
+TASZ,museum
+IZANAS,museum
+UZSAV,museum
+NAP<CHN>,museum
+IZCAS,museum
+ZISB,museum
+PACA,herbarium
+MERL,herbarium
+ORT,herbarium
+NUPEM,Herbarium
+UYIC,museum
+UFRG,museum
+TUX,herbarium
+SP,herbarium
+SI,herbarium
+UASA-ICML-UNAM,museum
+MZ-ICACH,museum
+RN,herbarium
+UMSA,museum
+XAL,herbarium
+UMCE_IE,Museum
+LUA,herbarium
+LMC,herbarium
+LISC,herbarium
+INVEMAR,museum
+MDQ,herbarium
+IO<PRT>,museum
+IPSN,museum
+IPRN,herbarium
+IPTB,museum
+IPLA,culture collection
+IREGEP-CP,museum
+IZ<CUB>,museum
+IZET-UCV,museum
+RIZ,herbarium
+MAC,herbarium
+POCA,herbarium
+UR,Herbarium
+SPSF,herbarium
+MAFST,herbarium
+SALLE,herbarium
+SLP,Herbarium
+LISFA,herbarium
+MAIA,herbarium
+PNICMM-INP,museum
+STL,herbarium
+IO<BRA>,museum
+IOP-SEMAR,museum
+IPB<BRA>,herbarium
+IPCN,herbarium
+MGA,herbarium
+IPE,museum
+JACA,herbarium
+IPN,museum
+OAX,herbarium
+IPICYT,museum
+LISI,herbarium
+LUBA,herbarium
+ITT,museum
+ITCV,herbarium
+ITLM,museum
+ITMM,museum
+ITO,museum
+ITVO,museum
+ZON,herbarium
+ITESM,museum
+MEMO,herbarium
+IVIC,museum
+ISBB,museum
+ISER,museum
+IVAU,museum
+ZMAN,museum
+ITHA,museum
+IPW,museum
+ISEAK,museum
+IPBIR,cell lines
+ISP,culture collection
+LEISHCRYOBANK,culture collection
+INVAM,culture collection
+KG,herbarium
+LCO,herbarium
+LCS,herbarium
+IRGC,germplasm repository
+IRRI,museum
+ISC<FRA>,culture collection
+ITC,germplasm repository
+RPPR,herbarium
+INV,herbarium
+INVA,herbarium
+IOAN,museum
+IOLR,herbarium
+IOPM,museum
+IORD,museum
+NKUA-BGIAD,herbarium
+IOUSP,culture collection
+TBPH,herbarium
+IOWA,museum
+ISUI,museum
+ISC<USA-IA>,herbarium
+IPK,germplasm repository
+IPKUP,museum
+IPMA,culture collection
+IPMM,museum
+IPMY,herbarium
+IPO,herbarium
+IPSLI,herbarium
+IPSM,museum
+IQW,herbarium
+IRAI,herbarium
+IRAN,"herbarium, culture collection"
+IRAQ,museum
+IRATI,herbarium
+IRBR,herbarium
+IRCW,museum
+LRVZ,Herbarium
+IRGN,museum
+IRIAF,Herbarium
+IRK,herbarium
+IRKU,herbarium
+IRP,herbarium
+RBINS,museum
+IRVC,herbarium
+IS,herbarium
+ISAB,museum
+ISE,herbarium
+IUT,museum
+ISKW,herbarium
+ISIS,herbarium
+ISL,herbarium
+STPCM,herbarium
+NHRI,museum
+ISNHC,museum
+ISNP,museum
+ISPRA-BIO-CGE,museum
+ISPRA-LEB,museum
+ISRA,herbarium
+ISTF,herbarium
+ISTC,herbarium
+ISTE,herbarium
+IZSI,museum
+IZCR,museum
+IZUG,museum
+IZUM,museum
+IZUP,museum
+TOM,herbarium
+ROPV,herbarium
+ISZA,museum
+PSAB,Herbarium
+ITAE,herbarium
+ITCO,museum
+ITETAC,museum
+ITCC<ITA>,museum
+ISTO,herbarium
+ISUC,museum
+ISV,herbarium
+IT,Herbarium
+ITALSL,culture collection
+ITALSM,culture collection
+ITG,culture collection
+ITH,culture collection
+ITIC,herbarium
+ITLJ,museum
+ITMH,herbarium
+IUK,herbarium
+IUM,herbarium
+IUQ,museum
+LW,herbarium
+IVGU,herbarium
+MIWG,museum
+IZA,museum
+IZAC<ARG>,herbarium
+IZBT,museum
+SAMC,museum
+IZPAN,museum
+IZPC,museum
+IZTA,herbarium
+IZUA,museum
+IZUC,museum
+IZUCS,museum
+IZUE,museum
+IZWU,museum
+J,herbarium
+JSPC<CZE>,museum
+JBWM,museum
+RUSI,museum
+PBG,herbarium
+JAC,herbarium
+JSU,herbarium
+JUFL,herbarium
+JAEN,herbarium
+KRA,herbarium
+JUH,herbarium
+JCT,culture collection
+JFBM,museum
+JMUH,herbarium
+TGM,herbarium
+UUC,culture collection
+JPMP,museum
+PECS,herbarium
+JPU,herbarium
+JCM,culture collection
+JCRB,cell lines
+JAR,Herbarium
+MADJ,herbarium
+NIT,herbarium
+RB,herbarium
+LISJC,herbarium
+JBAG,herbarium
+JVC,herbarium
+JBCVC,DNA bank
+LPA,herbarium
+JDJ,herbarium
+WLM,herbarium
+JBGP,herbarium
+JAUM,herbarium
+JBB,herbarium
+TULV,herbarium
+JBL,herbarium
+JBN,herbarium
+JBSD,herbarium
+JBGE,Herbarium
+JBUF,museum
+VTA,herbarium
+LYJB,herbarium
+JBVN,herbarium
+JBVPF,botanical garden
+MTJB,herbarium
+TAL,herbarium
+JAS,herbarium
+JROH,herbarium
+JATH,museum
+PAS,herbarium
+JSHC,museum
+JAZUH,herbarium
+JBG,herbarium
+JBRI,culture collection
+JCE,herbarium
+JNUB,herbarium
+JEL,culture collection
+JEL<LVA>,herbarium
+JJU,herbarium
+JEPS,herbarium
+JESM,herbarium
+JESSUP,herbarium
+JESW,herbarium
+JF,herbarium
+JFL,Herbarium
+JGSU,herbarium
+JHH,herbarium
+JHS,herbarium
+JHWU,herbarium
+JNU<CHN>,museum
+JMSMC,herbarium
+JSMI,herbarium
+JXAU,herbarium
+JXCM,herbarium
+JXF,herbarium
+JXM,herbarium
+JXU,herbarium
+JIC,germplasm repository
+MZ<CZE>,herbarium
+JII,herbarium
+JLAU,herbarium
+JLMP,herbarium
+JLDC,herbarium
+JU,herbarium
+JN,herbarium
+JIU,herbarium
+JJF,herbarium
+JJT,herbarium
+JNR,herbarium
+JIW,Herbarium
+JUG,herbarium
+JM,museum
+JME,herbarium
+JMH,herbarium
+JOE,herbarium
+MNHM<USA-CO>,museum
+JOMU,herbarium
+UNSW<AUS>,herbarium
+NVUJ,museum
+JOI,herbarium
+JSMPE,museum
+VRTC,herbarium
+JOLM,Museum
+JONK,herbarium
+JTNM,museum
+JOTR,herbarium
+JP,museum
+JPB,herbarium
+JRAU,herbarium
+JSCM,herbarium
+JSNM,herbarium
+JSPC<CHN>,herbarium
+JUA,herbarium
+JUHN,Herbarium
+JUNCT,Herbarium
+JUR,herbarium
+JURASSICA,museum
+JVR,herbarium
+JWC,Herbarium
+JYV,herbarium
+K,herbarium
+USPIY,herbarium
+KLH,herbarium
+OSEC,museum
+K(M),herbarium
+KA,herbarium
+KABA,herbarium
+KUFS,herbarium
+KAC,culture collection
+KACC,culture collection
+KFBG,herbarium
+KAG,herbarium
+KGPM,museum
+KAP,herbarium
+KUIC,museum
+KAGS,herbarium
+KASOF,Herbarium
+KUW,herbarium
+KPMC,museum
+KLGU,herbarium
+KAM,herbarium
+KAMA,herbarium
+OOM,herbarium
+KANA,herbarium
+KPM-NI,museum
+KPM,herbarium
+KAND,herbarium
+KNUC,museum
+KFH,Herbarium
+KWNU,herbarium
+KSEM,museum
+KSB,museum
+KSB:MAMM,museum
+KSC,herbarium
+KSUC,museum
+SAL,herbarium
+KANU,herbarium
+KFRS,museum
+KAR,herbarium
+KCSU,herbarium
+PHEO,herbarium
+KATO,herbarium
+KATO:Fungi,herbarium
+PTZ,herbarium
+KARI,museum
+PIMUZ,museum
+KMU,museum
+KMKV,herbarium
+OREB,herbarium
+KARS,museum
+KAS,herbarium
+KUFC,culture collection
+KKFC,herbarium
+KUMF,museum
+KASH,herbarium
+KCMI,museum
+KASSEL,herbarium
+KBH,Herbarium
+KEIB,museum
+SK,herbarium
+KHD,herbarium
+KAU,museum
+KAW,herbarium
+KAZ,herbarium
+KB,herbarium
+KBAI,herbarium
+KBFH,herbarium
+KBG,botanical garden
+KBL,Herbarium
+KBP MSU,culture collection
+KBSMS,herbarium
+KBT,herbarium
+KCCM,culture collection
+KCFS,herbarium
+KCH,Herbarium
+KCLB,culture collection
+KCM,museum
+KCMH,museum
+KCOM,culture collection
+KCS,herbarium
+KCTC,culture collection
+KD,herbarium
+KDL,herbarium
+KE,herbarium
+VMKSC,museum
+KRB,herbarium
+KRP,herbarium
+KESC,herbarium
+KEF,herbarium
+KEI,herbarium
+KEIU,museum
+KMS,museum
+KM<CAN>,museum
+KEM,herbarium
+KEMB,"museum, culture collection"
+KEMH,culture collection
+KEN,herbarium
+KNWR,museum
+KNWR:ENT,museum
+KNWR:Herb,herbarium
+KEND,herbarium
+KWP,museum
+KWP:ENT,museum
+KFRI,museum
+KFHERB,herbarium
+KF,herbarium
+KETOS,museum
+KTG,herbarium
+YMF,herbarium
+KFCC,culture collection
+KFGB,herbarium
+KFRA,herbarium
+KFTA,herbarium
+KFUH,herbarium
+KH,herbarium
+KITAAS,herbarium
+KHAM,Herbarium
+KHAMAI,museum
+ZDKU,museum
+KNHM<UKR>,museum
+KHAU,herbarium
+KHER,herbarium
+KHMM,museum
+KHMS,herbarium
+KKUA,museum
+KHOR,herbarium
+MRCH,herbarium
+KSRV,herbarium
+KHR,herbarium
+KHSU,museum
+KHU,herbarium
+KHUS,herbarium
+ZMKU,museum
+KIFB,museum
+KSAN,herbarium
+MUZ,herbarium
+KMH,Herbarium
+KSUP,herbarium
+KSU,herbarium
+KPBG,herbarium
+KNL,herbarium
+KIOM,herbarium
+KIRI,herbarium
+KRDY,herbarium
+KKM,herbarium
+KIS,herbarium
+KIT,culture collection
+KMNH,herbarium
+KIUJ,museum
+KVCH,herbarium
+KIZ,museum
+KKUK,museum
+KL,herbarium
+KNFHC,Herbarium
+KNFY,herbarium
+KLE,herbarium
+KLM,herbarium
+KLN,herbarium
+KLU,herbarium
+KM<CZE>,herbarium
+KM<RUS>,museum
+KMDMZ,museum
+KMG,herbarium
+KMK<MOL>,museum
+MRAC,museum
+RMCA,museum
+KMMCC,culture collection
+KMSC,museum
+KMUT,museum
+KMV,museum
+KMVC,museum
+KN,herbarium
+KNH,herbarium
+KNHM,museum
+KNK,herbarium
+KNOX,herbarium
+KNP,"herbarium, museum"
+KNU,herbarium
+KNUH,herbarium
+KNY,herbarium
+KNYA,herbarium
+KO,herbarium
+KU-MACC,culture collection
+KOBL,herbarium
+KOCH,herbarium
+MBK,herbarium
+KSHS,museum
+KOELN,herbarium
+ZMKR,museum
+TZM,museum
+KOLABIC,herbarium
+LE-BIN,culture collection
+SLO,herbarium
+SYKO,herbarium
+NBV,herbarium
+SRR,herbarium
+KOPRI,culture collection
+KOPRI:KCCPM,culture collection
+KRIB,herbarium
+KUS,herbarium
+KRSF,museum
+PIKN,museum
+KSPI,herbarium
+KOTLI,Herbarium
+KP,herbarium
+KPABG,herbarium
+KPE,museum
+KPU,herbarium
+KR,herbarium
+KRAM,herbarium
+KRAS,herbarium
+KRSU,herbarium
+KRF,herbarium
+KRFB,herbarium
+KRG,herbarium
+PUL,herbarium
+KRMS,herbarium
+KRRD,Herbarium
+KSA,herbarium
+KSBS,museum
+KSCFL,herbarium
+MBGH,herbarium
+KSM,herbarium
+KSNHM,museum
+KSNUH,Herbarium
+KSO,herbarium
+KSP,herbarium
+KTC,herbarium
+KTHM,Herbarium
+KTU,herbarium
+KTUH,herbarium
+KU<CHN>,herbarium
+KU Leuven,Museum
+SEMC,museum
+KUBH,herbarium
+KUBL,museum
+KUEC,museum
+KUELAP,herbarium
+KUH,herbarium
+KUHE,museum
+KUKI,museum
+KULPOL,Herbarium
+KUM,herbarium
+KUMA,herbarium
+KUMCC,culture collection
+KUN,herbarium
+KUNCC,culture collection
+KUNE,herbarium
+MHKMU,Herbarium
+KUO,herbarium
+KURS,herbarium
+KUU,herbarium
+KUZ,herbarium
+KUZ<JPN>,museum
+KUZC,museum
+KW,herbarium
+KZ,Herbarium
+NMP<ZAF>,museum
+KZNSB,museum
+KWHA,herbarium
+KWHU,herbarium
+KY<JPN>,culture collection
+KY,herbarium
+KYM,herbarium
+KYO,herbarium
+KYUM,museum
+L,herbarium
+LDPC,museum
+RIM,herbarium
+LA,herbarium
+NHNC,museum
+LPSC,culture collection
+LRTE,herbarium
+LOMA,herbarium
+LSUHC,museum
+STP,herbarium
+LTB,herbarium
+LAARB,Herbarium
+TUBSB,seed bank
+LCC<CAN>,culture collection
+LABCC,culture collection
+LABIOPAR,museum
+LBIT,museum
+RAU,herbarium
+UB<FRA>,museum
+LGICT,museum
+LMCH,culture collection
+LPVM,museum
+LPVPH,museum
+WBR,museum
+LPUP,museum
+ZFSN,museum
+LZUH,museum
+STM<FRA>,culture collection
+TALE,herbarium
+LZFD,museum
+LBRP,museum
+LBUCH,museum
+LBP,museum
+LBM<BRA>,culture collection
+LPD,herbarium
+LEMA-CUCBA-UDG,museum
+LGC,museum
+LGEMA,frozen tissue collection
+LGE,museum
+LIUSP,museum
+UEFS,museum
+LIRP,museum
+UPVLP,museum
+UNIFI-DAGRI-BADV,museum
+UNIFI-FLO,museum
+LPP,museum
+LMD,culture collection
+LPUB,museum
+LFBKU,museum
+LGPUT,museum
+LIAIP,museum
+TSY,culture collection
+LP<RUS>,museum
+LVP-GSC,museum
+LAC,herbarium
+LACM,museum
+LACM:CRUS,museum
+LACM:Echinoderms,museum
+LACM:ENT,museum
+LACM:HERP,museum
+LACM:ICH,museum
+LACM:Malacology,museum
+LACM:MAMM,museum
+LACM:ORN,museum
+LAE,herbarium
+LAF,herbarium
+LAG,herbarium
+LAGO,herbarium
+LSTH,Herbarium
+LAH,herbarium
+LCW,herbarium
+LHT,herbarium
+LYAC,herbarium
+LAJC,herbarium
+LBM<JPN>,museum
+LAME,museum
+LSP,herbarium
+LSSU,museum
+LKHD,herbarium
+LCVA,herbarium
+LYCC,culture collection
+LAM,herbarium
+LAMU,herbarium
+LAMTO,Herbarium
+LAMUA,Herbarium
+LAN,herbarium
+LANC,herbarium
+WBS,herbarium
+LUW,museum
+SZL,herbarium
+NHMK,museum
+LMKG,museum
+MJG<AUT>,museum
+LMO,herbarium
+LNKD,museum
+LMND,museum
+LSNO,Herbarium
+LCEU,herbarium
+LZAH,herbarium
+LZD,herbarium
+LZU,herbarium
+LAPC,herbarium
+LAPL,herbarium
+LARB,museum
+LARI,museum
+LARRI,museum
+LARRL,museum
+LASCA,herbarium
+LVNP,herbarium
+LAVO,museum
+LAT,herbarium
+VCH,Herbarium
+MLS<GBR>,herbarium
+LATV,herbarium
+LDM,museum
+SKR,herbarium
+RIGB,herbarium
+LMSZ,museum
+LAU,herbarium
+LAUN,herbarium
+LAUS,herbarium
+QFBE,herbarium
+QFB,herbarium
+SLU<CAN>,herbarium
+LUQ,museum
+LBE,herbarium
+LBG<CHN>,herbarium
+LBL,herbarium
+LBLC,herbarium
+LBMBP,herbarium
+LBN,museum
+LBR,museum
+LC,herbarium
+LCC<POL>,culture collection
+LCCH,Herbarium
+LCDI,herbarium
+LCFM,museum
+MHNC<CHE>,museum
+LCG,herbarium
+LCH,herbarium
+LCM,museum
+LCMI,museum
+LCN,herbarium
+LCR,herbarium
+NZAC,museum
+PDD,herbarium
+LCUF,herbarium
+LCUH,herbarium
+LDAA,museum
+LDL,herbarium
+LDS,herbarium
+LDSN,herbarium
+LDSP,herbarium
+LE<RUS>,herbarium
+LE<RUS>:BIN,culture collection
+LE<BRA>,culture collection
+LEA,herbarium
+LEB<ESP>,herbarium
+LEC,herbarium
+LECB,herbarium
+MNSCOL,herbarium
+LEDLIE,herbarium
+LLBO,Herbarium
+LES,herbarium
+LEH,herbarium
+LPFU,museum
+LEI,herbarium
+LSRFC,herbarium
+LSR,herbarium
+LUH<NLD>,culture collection
+LTCC-IOC,culture collection
+Lelo,museum
+LEMQ,museum
+LEMA,herbarium
+LEMAS,herbarium
+LIPIMC,culture collection
+LON,museum
+TAK,herbarium
+LENUD,herbarium
+LGM,museum
+LGU,museum
+LIPP,culture collection
+LHMS,DNA bank
+LET,herbarium
+LEV,herbarium
+LWSM,herbarium
+LGBG,herbarium
+LEYN,herbarium
+LFCC,herbarium
+LFM,museum
+LG,herbarium
+LGBH,herbarium
+LGHF,herbarium
+LGS,herbarium
+LHC,Herbarium
+LSDC,herbarium
+LNAF,herbarium
+LNCM,herbarium
+LNNU,herbarium
+RE,herbarium
+LIB,herbarium
+OLDM,herbarium
+LICPP,museum
+LIG,herbarium
+LIHUBA,museum
+LIM,herbarium
+SCA,herbarium
+LIMFC,herbarium
+LIMK,herbarium
+LIN-SB,culture collection
+LIMO,herbarium
+LINC,herbarium
+LINCO,herbarium
+LNCN,herbarium
+PCNZ,museum
+LUNZ,museum
+LLN,herbarium
+LINF,herbarium
+LU<CHN>,herbarium
+LINGU,museum
+LINHM,museum
+LINN,herbarium
+LS<GBR>,museum
+LIP,herbarium
+LISM,herbarium
+LISU,herbarium
+LISVA,herbarium
+LIT,herbarium
+PTHL,herbarium
+LITTLEROC,Museum
+LPN,herbarium
+LPSNU,herbarium
+LIV,museum
+LIVC,herbarium
+LIVCM,museum
+LIVNFC,herbarium
+LPM,herbarium
+LMRZ,museum
+LJF,herbarium
+LJM,herbarium
+LJS,herbarium
+LJU,herbarium
+LL,herbarium
+LLANOS,herbarium
+LLC,herbarium
+LLO,herbarium
+LM,herbarium
+LMA,herbarium
+LMAD,museum
+NCCB,culture collection
+LMM,Museum
+LMNH,museum
+LMZG,museum
+LNAU,herbarium
+LNHS,herbarium
+LNMO,museum
+LNU,Herbarium
+LO,museum
+LOC,herbarium
+LOD,herbarium
+LODZ,museum
+LOJA,herbarium
+MYX,herbarium
+LSHB,culture collection
+SOUT,herbarium
+POST,herbarium
+LSN,herbarium
+LUMH,Herbarium
+VNC,herbarium
+LSAM,museum
+LSUA,herbarium
+LSUM,herbarium
+LSU,herbarium
+LSUMZ,museum
+LSUMZ:HERP,museum
+LSUMZ:ICH,museum
+LSUMZ:MAMM,museum
+LSUMZ:ORN,museum
+LSUMZ:FrozenTissue,frozen tissue collection
+LTU,herbarium
+LTHP,herbarium
+LOUV,Herbarium
+LUC,herbarium
+LP<ARG>,herbarium
+LPAG,herbarium
+LPL,herbarium
+LPPH,Herbarium
+LPS,herbarium
+LPSP,museum
+LR,herbarium
+LRU,herbarium
+LSA,herbarium
+LSC,herbarium
+LSCR,herbarium
+LSHI,herbarium
+LSUS,herbarium
+LT,herbarium
+LTH,herbarium
+LTM,herbarium
+LTN,herbarium
+LTR,herbarium
+LU<RUS>,museum
+LU:LTA,museum
+LU:LTEtt,Museum
+LUB,herbarium
+LUBEE,zoo
+LUBG,Herbarium
+LUCH,herbarium
+LUD,herbarium
+MSB<DEU>,herbarium
+LUG,herbarium
+LUGO,herbarium
+LUH,herbarium
+LUJ,herbarium
+LUN,museum
+MZLU,museum
+ZMLU,museum
+LUS,herbarium
+LUSC,herbarium
+SHMC,museum
+YH,herbarium
+LUX,herbarium
+LWD,herbarium
+LWG,herbarium
+LWL,museum
+LWL:DNA,DNA bank
+LWS,herbarium
+LWU,herbarium
+LycoCC,culture collection
+LYD,herbarium
+LYN,herbarium
+VSC-L,museum
+LZ,herbarium
+LZLP,museum
+PPIU,herbarium
+MWH,herbarium
+MZAH,Herbarium
+MA,herbarium
+MA:Fungi,herbarium
+MA:FunHist,herbarium
+MA:Lichen,herbarium
+MA:Musci,herbarium
+MA:Hepat,herbarium
+MA:Algae,herbarium
+MA-IKIAM,museum
+MAAG,museum
+MAAS,herbarium
+MIMARU,herbarium
+MAB,herbarium
+MABIK,herbarium
+MACA,museum
+MISR,herbarium
+MACB,herbarium
+MMNHS,museum
+MACK,herbarium
+MMUS,museum
+MACN,museum
+MACO,herbarium
+MACOR,museum
+MQU,museum
+MCM<IND>,culture collection
+MAD<IND>,museum
+MTA,museum
+MADM,herbarium
+MCCM<IND>,museum
+MADS,herbarium
+MUHE,Herbarium
+MFLU,herbarium
+MFLUCC,culture collection
+MAF,herbarium
+MAFF,culture collection
+MAFI,museum
+MAGB,museum
+MAGD,museum
+OXM,herbarium
+MM<DEU>,museum
+MAGNT,museum
+MAGNT:W,museum
+MAGNT:P,museum
+MAGNT:A,museum
+MAGNT:C,museum
+MAGNT:Cr,museum
+MAGNT:D,museum
+MAGNT:E,museum
+MAGNT:G,museum
+MAGNT:I,museum
+MAGNT:M,museum
+MAGNT:N,museum
+MAGNT:Q,museum
+MAGNT:R,museum
+MAGNT:S,museum
+MAGNT:T,museum
+MAGNT:U,museum
+MAGNT:Z,museum
+MAGT,museum
+MMGMK,herbarium
+MNMB,museum
+MSCBUB,Herbarium
+MCH,Herbarium
+ZBMM,museum
+VMSU,Herbarium
+MUMNH,museum
+PBM,herbarium
+MAIC,herbarium
+MNE,herbarium
+MHA,herbarium
+MAINE,herbarium
+MJG<DEU>,herbarium
+MAK,herbarium
+MHU,herbarium
+MALA,herbarium
+MRA<USA-VA>,culture collection
+NICD,museum
+MFRU,museum
+MDI,herbarium
+MARDI,herbarium
+MMCC,culture collection
+MALC,museum
+MALG,herbarium
+MHM,herbarium
+MNF,herbarium
+SDNH<SWZ>,herbarium
+MALS,herbarium
+MTN,herbarium
+MAMU,museum
+MAN,herbarium
+SQU,herbarium
+MANCH,herbarium
+MBS,herbarium
+MCRBS,herbarium
+MCR,herbarium
+MNHS,herbarium
+MANU,Herbarium
+MANG,herbarium
+MUFM,museum
+MDNR,herbarium
+MM<CAN>,museum
+MMMN,herbarium
+MANK,herbarium
+UHM,museum
+MANSH,Herbarium
+MAO,culture collection
+MGAP,museum
+MAPR,herbarium
+MAR<BRA>,herbarium
+MIC,museum
+MTCHT,herbarium
+MVPS,Herbarium
+MARIUM,herbarium
+MARE,herbarium
+MFGC,culture collection
+MARI,herbarium
+YOLA,herbarium
+RCVC,herbarium
+SMB,herbarium
+SEL,herbarium
+MBRU,culture collection
+MBCSC,museum
+MBCSC:FISH,museum
+MIKU,museum
+SPWH,herbarium
+MBIC,culture collection
+MCCC,culture collection
+MFLB,museum
+MLS<AUS>,museum
+MMRF,culture collection
+VMO,Herbarium
+UPMSI,museum
+MSI,herbarium
+MSI:PMS-ICBG,culture collection
+MSM<JPN>,museum
+MBM<USA-NV>,museum
+MARO,herbarium
+MARS,herbarium
+MUHW,herbarium
+WVMS,museum
+MARSSJ,herbarium
+MLUH,museum
+NODCAR,culture collection
+MARY,herbarium
+MBU,Herbarium
+MWCF,herbarium
+TAWES,herbarium
+MASE,herbarium
+MASS,herbarium
+NASC<USA-MA>,herbarium
+MCP<USA-MA>,herbarium
+MDFW,museum
+MIT,culture collection
+MUNZ,museum
+MPN,herbarium
+TANG,herbarium
+MRSH,herbarium
+MFC,culture collection
+MMUIWV,herbarium
+MGHSJ,museum
+MAU,herbarium
+MAUAM,herbarium
+MAUR,museum
+MIMM,museum
+MSIR,museum
+MAZHAR,herbarium
+MB<DEU-Berlin>,museum
+MB<DEU-Marburg>,herbarium
+MB<PRT>,museum
+MBAB,museum
+MBAC,museum
+MBAP,museum
+MBBJ,museum
+MBC,botanical garden
+MBCG,museum
+MBL,museum
+MBLUZ,museum
+MBM<USA-CA>,museum
+MBM<BRA>,herbarium
+MBML,"herbarium, museum"
+MBML:Anfibios,museum
+MBML:Aves,museum
+MBML:Mamiferos,museum
+MBML:Peixes,museum
+MBML:Repteis,museum
+MBMP,herbarium
+MBMPRC,museum
+MBR,museum
+MBSL,herbarium
+MBSN,museum
+MBY,herbarium
+MBZH,museum
+MCMJ,museum
+MCA,herbarium
+MCALBA,herbarium
+MCAS,museum
+MCAT,herbarium
+MCBO,museum
+MCBR,museum
+MCC,culture collection
+NIES,culture collection
+MCC-UPLB,culture collection
+MCCA,herbarium
+MCCB,museum
+MCCC<USA>,herbarium
+MCCI,museum
+MCCM<DEU>,culture collection
+MCCN,museum
+MCD,museum
+MCDNL,herbarium
+MCDF,museum
+MCES,museum
+MCF,herbarium
+MCF-PVPH,museum
+MCFB,museum
+MCFM,museum
+MCFS,museum
+MCG,museum
+MTMG,herbarium
+RM<CAN>,museum
+MGL,museum
+MCGMK,museum
+MMK,museum
+MCGS,museum
+MGCL,museum
+MCIZ,museum
+MCJ,herbarium
+MCLSBB,museum
+MCM<PRT>,museum
+MCMC,museum
+MCMS,museum
+MCN,"herbarium, museum"
+MCNA,museum
+MCNB,museum
+MCNC,museum
+MCNG,museum
+MCNS,herbarium
+MCNV,museum
+MCNZ,museum
+MCOCF,museum
+MCP<BRA>,museum
+MCPPV,museum
+MCPM,museum
+MCRA,museum
+MCRE,museum
+MCSB,museum
+MCSF,museum
+MCSG,museum
+MCSN<ITA-Genova>,museum
+MCSN<ITA-Verona>,museum
+MCSNC,museum
+MCSNIO,museum
+MCST,museum
+MCT,herbarium
+MCTP,museum
+MCTF,herbarium
+MCUC,museum
+MCVE,herbarium
+MCVM,museum
+MCW,herbarium
+MCZR,museum
+MD<AGO>,museum
+MD<DEU>,museum
+MDA,museum
+MDC,culture collection
+MDE,museum
+MDH<USA-MI>,culture collection
+MDKY,herbarium
+MDLA,museum
+MDLT,Herbarium
+MDM,museum
+MDMC,museum
+MDMSBT,museum
+MDP,museum
+MDRG,museum
+MDTN,herbarium
+MDUG,museum
+MDZAU,museum
+MEAN,culture collection
+MECB,museum
+MECG,museum
+MEDA,herbarium
+MEDEL,herbarium
+RSCS,culture collection
+MML,culture collection
+TAMA<IDN>,herbarium
+MEFLG,museum
+MPM<JPN>,museum
+ZLMU,museum
+MEL,herbarium
+MELU,herbarium
+MEM,herbarium
+NFLD,herbarium
+MSUMZ,museum
+MEN,herbarium
+MENDE,herbarium
+MEPAN,museum
+MER,herbarium
+MERC,herbarium
+MERCA,herbarium
+MERF,herbarium
+MESA,herbarium
+MVNP,museum
+MSUDEN,herbarium
+METZ,herbarium
+MEUC,museum
+MEX,herbarium
+MFA,herbarium
+MFA-ZV-M,museum
+MFB,herbarium
+MFM,Herbarium
+MfN,museum
+MfN:LEP,museum
+ZMHB,museum
+MFP,museum
+MFPAM,museum
+MFPPARC,herbarium
+MFS,museum
+MFSL,museum
+MFSN,museum
+MFU,herbarium
+MFUM,museum
+MFW,museum
+MG<BRA>,herbarium
+MG<CHN>,museum
+MG-ZV-M,museum
+MGAB,museum
+MGB,museum
+MGBV,herbarium
+MGC,herbarium
+MGDL,museum
+MGE,museum
+MGF,museum
+MGFT,museum
+MGGC,museum
+MGH,museum
+MGHF,museum
+MGHNL,museum
+MGR,herbarium
+MGRI,museum
+MGS,herbarium
+MGSI,museum
+MGSP,museum
+MGUG,museum
+MGUH,museum
+MGUP,museum
+MGUV,museum
+MH<CHE>,museum
+MH<IND>,herbarium
+MHC,Herbarium
+MHES,herbarium
+MHHNU,herbarium
+MHL,herbarium
+MHLCLF,herbarium
+MHMN,museum
+MHNA,museum
+NMB<CHE>,museum
+MHNC<CHL>,museum
+MHNCI,museum
+MHNCSJ,museum
+MNHNSD,museum
+MHNG,museum
+MHNG:HERP,museum
+MHNG:INV,museum
+MHNH,museum
+MHNI,museum
+MNHNJP,museum
+MHNJP,museum
+MHNL,museum
+MHNLR,museum
+MHNM,"museum, herbarium"
+MHNM<MOZ>,museum
+MHNN<FRA>,museum
+MHNN<CHE>,museum
+MHNNICE,museum
+MHNP,museum
+MHNSM,museum
+MHNT,museum
+MHNTL,museum
+UCP,museum
+MHNV,museum
+MHNVB,museum
+MHUA,museum
+MHV,museum
+MHWK,herbarium
+MHYAU,museum
+MI,herbarium
+MU<USA-OH>,herbarium
+MYDC,herbarium
+MIB,museum
+MIB:ZPL,museum
+MICG,herbarium
+MICH,herbarium
+MICH:CZEUM,herbarium
+MTP,museum
+MSU<USA-MI>,museum
+MSC,herbarium
+MICKKU,culture collection
+MICOCL,herbarium
+MICODIF,herbarium
+MUM,culture collection
+MMBF,culture collection
+MZKI,culture collection
+MOLA,culture collection
+MSCL,culture collection
+MTCC,culture collection
+MLLD,culture collection
+UFRO,culture collection
+UNSW,culture collection
+NYNU,culture collection
+MUP<IDN>,culture collection
+MLRU,culture collection
+MSDS,culture collection
+MSCMU,culture collection
+MID,herbarium
+RUY,herbarium
+MSTFM,museum
+MTSU,herbarium
+MSSC,museum
+MU<USA-TX>,museum
+MIE,herbarium
+MUCC<JPN>,culture collection
+MUMH,herbarium
+MII,herbarium
+MIL,herbarium
+MVSC,herbarium
+OMC<USA>,herbarium
+MNKS,herbarium
+MPM,museum
+MIM,herbarium
+MIMB,museum
+MIN,herbarium
+MINA,Herbarium
+MINC,museum
+MSUIIT,museum
+MINI,museum
+QPAR,herbarium
+MVDA,herbarium
+OLAN,museum
+PPDD,museum
+TON,herbarium
+TCDU<UGA>,museum
+WIB,herbarium
+MISU,herbarium
+MIPV,herbarium
+MIR,herbarium
+MIRE,herbarium
+MUH,herbarium
+MIRR,herbarium
+MISC,museum
+MISS,herbarium
+MISSA,herbarium
+MMNS,"herbarium, museum"
+MSUZ,museum
+MSCW,herbarium
+MO,herbarium
+MNH<USA>,herbarium
+SMS,herbarium
+MWSJ,herbarium
+MIUH,herbarium
+TSU,herbarium
+MIZA,museum
+MIZL,museum
+MIZT,museum
+MJ,herbarium
+MJCM,museum
+MJG<ARG>,museum
+MJH,museum
+MJMO,museum
+MJS,herbarium
+MJSD,herbarium
+MK,museum
+NMKE,museum
+ML,museum
+MLA,herbarium
+MLAV,museum
+MLLS,herbarium
+MLP,museum
+MLS<COL>,museum
+MLSU,museum
+MLZ,museum
+MLZ:BIRD,museum
+MLZ:MAMM,museum
+MM<COL>,museum
+MM<FRA>,museum
+MMA,museum
+MMAP,museum
+MMBC,museum
+MMBS,museum
+MMCHPV,museum
+MMCM,museum
+MMF,museum
+MMG,museum
+MMH<FRA>,herbarium
+MMH,museum
+MMI,herbarium
+MMMZ,museum
+MMNH<MNG>,museum
+MMP,museum
+MMS,museum
+MMUA,museum
+MMUE,museum
+MNRJ,museum
+MN,museum
+MNA<ITA>,museum
+MNA,herbarium
+MNAT,museum
+MNAV,museum
+MNCE,museum
+MNCN,museum
+MNCN:ADN,DNA bank
+MNCN:HERP,museum
+MNCN:Ornit,museum
+MNCN:ENT,museum
+MNCN:ICTIO,museum
+MNCN:Inverte,museum
+MNCN:Malac,museum
+MNCN:MAMM,museum
+MNCR,museum
+MND,museum
+MNDG,museum
+MNDR,museum
+MNES,herbarium
+MNFD,museum
+MNG,museum
+MNGA,museum
+MNGC,museum
+MNH,museum
+MNHAH,museum
+MNHAZ,museum
+MNHNCU,museum
+MNHM<DEU>,herbarium
+MNHN<URY>,museum
+MNHN<CUB>,herbarium
+MNHNCH,museum
+MNHNLES,museum
+MNHNM,museum
+MNHNP,museum
+MNHNUL,museum
+MNHP,museum
+NMPC,museum
+NMPC:ENT,museum
+MNKNU,museum
+MNN,museum
+NMMBP,museum
+MNNC,museum
+MNNHN,museum
+MNNIT,culture collection
+MNNW,museum
+MNPDU,museum
+MNR,museum
+MNSB,museum
+MNSL,museum
+MNT,herbarium
+MNTGP,museum
+MNU,museum
+MNUFR,museum
+MNVD,herbarium
+MNVL,museum
+MNZ,museum
+MoA,museum
+MOAR,herbarium
+MOC,herbarium
+MOD,herbarium
+MOFUNG,museum
+MOG,herbarium
+MRCMRR,Herbarium
+MP<USA-NY>,museum
+MOL,herbarium
+MOLF,herbarium
+RV<RUS>,herbarium
+MOM,museum
+MOMCS,museum
+MUCV,herbarium
+UBA,herbarium
+UBE,Herbarium
+UBU,herbarium
+MONT,herbarium
+MTEC,museum
+MSUNH,herbarium
+MPC,museum
+MSEN,herbarium
+MONTU,herbarium
+MONZ,museum
+MRD,herbarium
+MOP,museum
+MOQ,herbarium
+MOR<USA-MT>,museum
+MOR<USA-IL>,herbarium
+MORA,Herbarium
+SZE<HUN>,herbarium
+MOSP,herbarium
+MW<RUS>,herbarium
+MWG,herbarium
+MOSG,museum
+MOSI,museum
+MOSN,museum
+MOSS,herbarium
+MSLY,herbarium
+MOST,Herbarium
+MOT,herbarium
+MOTH,museum
+MOUFPE,museum
+MRSC,herbarium
+MPR,herbarium
+ZAD,herbarium
+MRNP,museum
+MSMC,herbarium
+MOVI,museum
+MP<CZE>,herbarium
+MPCA,museum
+MUCPV,museum
+MPCNyO,museum
+MPCRM,museum
+MPDA,museum
+MPEF-PV,museum
+MPEG,museum
+MPEP,museum
+MPGB,museum
+MPH,herbarium
+MPL,museum
+MPLB,museum
+MPLN,museum
+MPMP,museum
+MPPD,herbarium
+MPPE,museum
+MPPG,museum
+MPSC,museum
+MPSN,museum
+MPSP,museum
+MPT,museum
+MPU,herbarium
+MPUC,herbarium
+MPUM,museum
+MPUN,museum
+MPV,museum
+MPZ,museum
+MRA,museum
+MRCA,museum
+MRC<ZAF>,culture collection
+MRC<TUR>,culture collection
+MRC<USA-MT>,herbarium
+MRCN,museum
+MRF,museum
+MRGS,museum
+MRI,herbarium
+MRSN<USA>,culture collection
+MRSN,"herbarium, museum"
+MRSP,museum
+MRST,museum
+MS,herbarium
+MSA,museum
+MSB<BGR>,museum
+MSB,museum
+MSB:BIRD,museum
+MSB:MAMM,museum
+MSB:FISH,museum
+MSB:Para,museum
+MSB:HERP,museum
+MSB:Host,museum
+MSB:INV,museum
+MSDB,museum
+MSEM,museum
+MSF,museum
+MSGP,museum
+MSIE,museum
+MSINR,museum
+MSJC,museum
+MSK,herbarium
+MSL,herbarium
+MSM<PRI>,herbarium
+MSNA,museum
+MSNF-SPE,museum
+MSNG,museum
+MSNLP,museum
+MSNM,herbarium
+MSNO,museum
+MSNP,museum
+MSNPC,museum
+MSNPI,museum
+MSNT<ITA-Torino>,museum
+MSNT<ITA-Torino>:FAZC,museum
+MSNT<ITA-Turin>,museum
+MSNU,museum
+MSNV,museum
+MSNVR,museum
+MSPC,museum
+MSPP,culture collection
+MSTARL,museum
+MSTR,herbarium
+MSTSI,museum
+MSUH,herbarium
+MSUMC,museum
+MSUN,herbarium
+MSUT,herbarium
+MSUT<ALB>,museum
+MSV,herbarium
+MT<CAN>,herbarium
+MT<RUS>,museum
+MTB,museum
+MTD,museum
+MTD:TD,frozen tissue collection
+MTD:T,frozen tissue collection
+MTKD,museum
+MTL,herbarium
+MTRO,herbarium
+MTSN,museum
+MTUF,museum
+MU<TUR>,culture collection
+MUA-AVP,museum
+MUAA,herbarium
+MUACC,culture collection
+MUAP,museum
+MUAQ,herbarium
+MUB,herbarium
+MUB:ALGAS,herbarium
+MUB:BRIOFITOS,herbarium
+MUB:HONGOS,herbarium
+MUBI,museum
+MUBL,herbarium
+MUCC,culture collection
+MUCH,museum
+MUCR,museum
+MUCUC,Herbarium
+MUDH,museum
+MUFAL,culture collection
+MUFE,herbarium
+MUGM,museum
+MUGT,museum
+MUHNAC,museum
+MUJ,museum
+MULU,museum
+MUMAB,museum
+MUMZ,museum
+MUNC,museum
+SPAL,herbarium
+RTHM,herbarium
+MUO,museum
+MUOB,Digital Repository
+MUP,museum
+MUR,herbarium
+MURAY,herbarium
+MURD,museum
+MURU,herbarium
+NHMV,herbarium
+MUS,herbarium
+MUSA,museum
+MUSAVE,museum
+MZL,museum
+PUY,herbarium
+SION,herbarium
+PAP,herbarium
+MZUS,museum
+ORM,herbarium
+QMP,herbarium
+MZUVN,museum
+MZN,museum
+UNIMORE-MA,museum
+MUSENUV,museum
+MUSENUV:Anopheles,museum
+UNIPR-PRMA,museum
+VIG,museum
+ROV,herbarium
+MZRO,museum
+STAZ,Herbarium
+PDN,museum
+SUS,museum
+VIT,herbarium
+TFMC,herbarium
+PAR,herbarium
+UNCM,museum
+MUSM,museum
+URP,museum
+MVUP,museum
+MZCR,museum
+MZFC,museum
+MZUABCS,museum
+MZUNAP,museum
+UAN,Museum
+MZUC<CHL>,museum
+MZUTI,museum
+MZBL,museum
+PASAEM,museum
+SGP,museum
+UG<ESP>,museum
+OST,museum
+RIC,museum
+WWF-CP,museum
+PFMR,museum
+SAEPS,museum
+SSP,museum
+UNICAM-MS,museum
+UNIBO-ACM,museum
+UNIBO-AAD,museum
+UNIBO-MAE,museum
+UNIBO-ANT,museum
+UNIPR-MED,museum
+UNIBO-CGC,museum
+UNIPR-CRI,museum
+UNIBO-FIS,museum
+UNIBO-MGC,museum
+UNIPD-MMV,museum
+UNIPR-MIN,museum
+UNIBO-MLB,museum
+UNIPR-PAL,museum
+UNIFE-MPPL,museum
+VVS,museum
+SGMR,museum
+TOGR,herbarium
+NOV,museum
+MZUB,museum
+MZLL,museum
+MZGO,museum
+MZUR,museum
+MZUR:BAU,museum
+UNIMORE-MZ,museum
+MZUT,museum
+PVSJ,museum
+SEAN,museum
+UDM,herbarium
+MVM,herbarium
+URMU,museum
+PNFM,museum
+ORC,museum
+OVMP,museum
+RVP,museum
+VSL,museum
+TR,herbarium
+MUSN,museum
+MVJB,herbarium
+MZRF,museum
+MZUP<ITA-Padova>,museum
+MZBS,museum
+MZAF,museum
+MZFN,museum
+MZC,museum
+MZUP<ITA-Parma>,museum
+MZUN,museum
+MZUF,museum
+MUZAC,museum
+ZUEC,museum
+ZUEC:AMP,museum
+ZUEC:AVES,museum
+ZUEC:MAMM,museum
+ZUEC:PIS,museum
+ZUEC:REP,museum
+MUVHN,museum
+MZUSP,museum
+MZSP,museum
+MZFS-DAR,museum
+MZUEL,museum
+MZUEL:PISC,museum
+MZUESC,museum
+MZUFV,museum
+MZUFBA,museum
+RA,Herbarium
+OSN,herbarium
+NTM,museum
+PRO,Herbarium
+NICE,herbarium
+NTM<FRA>,"herbarium, museum"
+NIM,herbarium
+TLON,herbarium
+TLM,herbarium
+NMPG<DEU>,museum
+PC,herbarium
+SA,museum
+PAT,herbarium
+RH-EF,museum
+SU-MMPMR,museum
+SPMN,museum
+MUV,
+MUV:Invertebrae Collection,museum
+NHST,museum
+WELT,herbarium
+SGBH,herbarium
+TNP,herbarium
+MZ<POL>,museum
+MVZ,museum
+MVZ:HERP,museum
+MVZ:EGG,museum
+MVZ:Img,images
+MVZ:MAMM,museum
+MVZ:BIRD,museum
+MVZ:Page,images
+MVZ:Hild,museum
+MVP,museum
+MVMA,museum
+MWC,museum
+YUMB,museum
+ZMUB,museum
+ZMUB:ICHT,museum
+ZMUB:BIRD,museum
+ZMUB:MAMM,museum
+MZVU,museum
+MZUTH,museum
+MZYU,museum
+NMV<AUS>,museum
+NMV<AUS>:K,museum
+NMV<AUS>:BUP,museum
+NMV<AUS>:COL,museum
+NMV<AUS>:J,museum
+NMV<AUS>:DIP,museum
+NMV<AUS>:G,DNA bank
+NMV<AUS>:AV,museum
+NMV<AUS>:T,museum
+NMV<AUS>:HEM,museum
+NMV<AUS>:D,museum
+NMV<AUS>:DTD,museum
+NMV<AUS>:HET,museum
+NMV<AUS>:H,museum
+NMV<AUS>:HYM,museum
+NMV<AUS>:A,museum
+NMV<AUS>:F,museum
+NMV<AUS>:ISO,museum
+NMV<AUS>:LEP,museum
+NMV<AUS>:C,museum
+NMV<AUS>:MEC,museum
+NMV<AUS>:MEG,museum
+NMV<AUS>:NEU,museum
+NMV<AUS>:NOH,museum
+NMV<AUS>:ODO,museum
+NMV<AUS>:B,museum
+NMV<AUS>:DTB,museum
+NMV<AUS>:BE,museum
+NMV<AUS>:HLW,museum
+NMV<AUS>:P,museum
+NMV<AUS>:TRI,museum
+NMV<AUS>:Z,frozen tissue collection
+MW<NLD>,museum
+WIES,herbarium
+MWNH,museum
+MZO,museum
+MZGZ,museum
+SCH,herbarium
+NEZ,museum
+MUSK,herbarium
+SSCN,museum
+MUT,culture collection
+UMT,herbarium
+MZV<POL>,museum
+NJM<CZE>,herbarium
+VYM,herbarium
+MZP,museum
+MV,museum
+MVC,herbarium
+MVEN,museum
+MVFA,herbarium
+MVFQ,herbarium
+MVHC,herbarium
+MVN,herbarium
+MWFB,museum
+MWI,herbarium
+MY,herbarium
+RAF,herbarium
+MYCL,herbarium
+MYCO,herbarium
+UNIPAR,herbarium
+TSH,herbarium
+TAMA,culture collection
+MYF,herbarium
+VI<NOR>,culture collection
+MZCP,museum
+MZH,museum
+MZNA,museum
+MZNC,museum
+MZPW,museum
+MZS,museum
+MZSF,museum
+MZUC<ITA>,museum
+UCR<CRI>,museum
+MZV<RUS>,museum
+N,herbarium
+TRN,herbarium
+NNSU,herbarium
+WIR,herbarium
+NRWC,museum
+VSRI,museum
+NPP,culture collection
+NA,herbarium
+NAAG,museum
+NABDA,museum
+NAC,herbarium
+NACHO,Herbarium
+NAFUPYR,museum
+NI<JPN>,culture collection
+NUM,herbarium
+NAI,herbarium
+NAIC,museum
+NAIMCC,culture collection
+NRN,herbarium
+NMV<JPN>,museum
+NNH,herbarium
+NIGP,museum
+NAKU,herbarium
+NAN,herbarium
+UNAB<CIV>,museum
+UNA<CIV>,museum
+NOI,museum
+NAU,herbarium
+NF,herbarium
+NGI,museum
+NIGL,museum
+NPA,herbarium
+NJNU,herbarium
+NAUJ,museum
+NKUM,museum
+NKMU,museum
+NKU,herbarium
+NNA,herbarium
+NCC<FRA>,culture collection
+NMMA,herbarium
+NYA,herbarium
+NGCPR,herbarium
+NAP<ITA>,herbarium
+NARA,museum
+NARI,museum
+NARIPH,Herbarium
+NARL,museum
+NMP<CZE>,museum
+NASU,museum
+NAT,herbarium
+NMSA,museum
+NPB,herbarium
+NATC,herbarium
+U,herbarium
+RGM,museum
+NNMN,museum
+NNM,museum
+TASH,herbarium
+ZIA,museum
+RIY,herbarium
+SMVM,museum
+NBIMCC,culture collection
+NBRP,germplasm repository
+THIM,herbarium
+NBSB,museum
+NBSB:BIRD,museum
+NBSB:MAMM,museum
+NBPC,museum
+NBGW,Herbarium
+TC,Herbarium
+NBGB,botanical garden
+STE,herbarium
+NBG,herbarium
+PRE,herbarium
+WIND,herbarium
+NBAIR,museum
+NBAIM,culture collection
+NBFGR,museum
+NBFGR:CHN,museum
+NBPGR,germplasm repository
+NHCP,herbarium
+NBME,museum
+NCARE,museum
+NCMA<USA-ME>,culture collection
+NCVCJF,herbarium
+NCSC<THA>,culture collection
+NCBS<IND>,museum
+NCKU,herbarium
+TCB,herbarium
+TCF,herbarium
+NCAIM,culture collection
+NCAM,culture collection
+NCDC,culture collection
+NCFB,culture collection
+NCIM,culture collection
+NCIMB,culture collection
+NCP,herbarium
+NCPF,culture collection
+NCPV,culture collection
+NCPPB,culture collection
+NCTC,culture collection
+NCWRF,culture collection
+NCYC,culture collection
+NCWCD,museum
+NCB,culture collection
+NCCP,culture collection
+NCCP<PAK>,culture collection
+NCCPF,culture collection
+NDSR,museum
+NFRDI,culture collection
+NFCCI,culture collection
+NFCCP,culture collection
+NGBT,seed bank
+NGMC,museum
+YA,herbarium
+NHJ,herbarium
+NSW,herbarium
+NIFI,museum
+NICC,museum
+NIAES,culture collection
+NIBSC,stock center
+NIAB,germplasm repository
+NIAS,DNA bank
+NIAID,culture collection
+NIAH,culture collection
+NIBR,museum
+NIBH,culture collection
+NIFSMC,Herbarium
+NIFS,museum
+NIHHS,herbarium
+NHL,culture collection
+NIMM,herbarium
+NIO,herbarium
+NIOCC,culture collection
+NIPR,herbarium
+NIPH,culture collection
+RHMD,herbarium
+NISR,Herbarium
+NIWA,museum
+NKMC,museum
+NMFSH,museum
+NMML,museum
+NMMTB,frozen tissue collection
+NML,culture collection
+PNGM,museum
+NMTT,museum
+NMA,museum
+PR,herbarium
+NMID,museum
+NMKL,museum
+NMNW,museum
+QC,museum
+NMNH<IND>,museum
+SOFM,museum
+NMNS,museum
+TNM,herbarium
+NSMT,museum
+NMNK,museum
+NMNZ,museum
+NMNZ:OR,museum
+NMNZ:CR,museum
+NMNZ:P,museum
+NMNZ:S,museum
+NMNZ:AS,museum
+NMNZ:AI,museum
+NMNZ:MM,museum
+NMNZ:M,museum
+NMNZ:RE,museum
+NMNZ:AM,museum
+NMNZ:TS,frozen tissue collection
+NMNZ:TSA,frozen tissue collection
+NMSL,museum
+NMWZ,museum
+NMWC,museum
+NMZL,museum
+NMZB,museum
+NMBO,museum
+NMB<ZAF>,"herbarium, museum"
+NMB<ZAF>:P,museum
+NMBA<ARG>,museum
+PRM,herbarium
+NMW<GBR>,herbarium
+NMK,museum; herbarium
+NMK:HERP,museum
+NMK:ICH,museum
+NMK:ORN,museum
+NMS,museum
+NMS-G,museum
+NMCBT,Herbarium
+NNHMK,museum
+NOAA,frozen tissue collection
+NOAA:MarFor,frozen tissue collection
+NOCS-DC,museum
+NOCC,herbarium
+STOLBY,Herbarium
+SHEN,Herbarium
+YM<USA-CA>,herbarium
+NPCCAA,culture collection
+PPI,herbarium
+WAGPD,herbarium
+NPC,museum
+NRCS,culture collection
+NREL,culture collection
+NRC<EGY>,museum
+NRCC,herbarium
+NRIBAS,museum
+RIB,culture collection
+NIFRS,museum
+NSMK,museum
+TNS,herbarium
+NSCPM,culture collection
+SYSU,"herbarium, museum"
+NSYU,museum
+NTNU,museum
+TNU,herbarium
+NTUM,museum
+NTUF,herbarium
+TAI,herbarium
+PTBG,herbarium
+NTCC,culture collection
+NUOL,museum
+ROML,herbarium
+NUBIP,herbarium
+PET,herbarium
+SAMOA,herbarium
+TS,herbarium
+SINU,herbarium
+NUUZ,Herbarium
+RIVUN,herbarium
+NWC<GBR>,germplasm repository
+NZG,museum
+NKA,culture collection
+NBSBC,museum
+NMLS,museum
+NMLU,herbarium
+NHI,herbarium
+NHMB<HUN>,museum
+NHMF,herbarium
+SUEL,museum
+NHMC<GRC>,"herbarium, museum"
+NHMG<CHN>,museum
+NHMM <MNE>,Herbarium
+NHMO,museum
+NHMO:HERP,museum
+NHMO:PISC,museum
+NHMO:MAMM,museum
+NHMO:BI,museum
+NMBZ,museum
+NHMR<HRV>,herbarium
+NHMS,herbarium
+NHMA,museum
+NHMUK<PAK>,museum
+ZGLC,museum
+SOIC,museum
+NHMC<MMR>,museum
+NHMR<ISL>,museum
+NHMTU,museum
+NHML,museum
+UBM,herbarium
+NHSD,herbarium
+NSMUK,museum
+UPCC,culture collection
+WAG,herbarium
+RMNHD,museum
+RMNH,museum
+RMNH:INS,museum
+RMNH:COEL,museum
+RMNH:AVES,museum
+RMNH:PISC,museum
+RMNH:BRY,museum
+RMNH:POR,museum
+RMNH:BRA,museum
+RMNH:MOL,museum
+RMNH:ACA,museum
+RMNH:CRUS,museum
+RMNH:CRUS.D,museum
+RMNH:MAM,museum
+NCCH,herbarium
+NCCBH,herbarium
+NCCE,herbarium
+NCCN,herbarium
+URI,Herbarium
+NVRL,museum
+NHG,herbarium
+NHMBe,museum
+NMBA<AUT>,museum
+NMBE,museum
+NMSR,museum
+W,herbarium
+NMAG,museum
+NHMB<CHE>,museum
+NMBA<CHE>,museum
+NHM<CHE>,museum
+NHMW,museum
+NMW<AUT>,herbarium
+NHMM-LS,museum
+NVRW,museum
+NHRM,museum
+NRS,museum
+NMCL,museum
+NKME,herbarium
+NKM,Herbarium
+NMEG,museum
+NMSG,herbarium
+NWSW,museum
+NWSGL,Museum
+NSMW,museum
+NHME,museum
+NHMR<NLD>,museum
+NHMM,museum
+NMBT,herbarium
+NMNL,herbarium
+NAUF,museum
+NAUVM,museum
+NAVA,herbarium
+NMRC,culture collection
+NMRC:RDD,culture collection
+NBM,herbarium
+NBMB,museum
+NBU,Herbarium
+NBUTSH,Herbarium
+NBY,herbarium
+NBYC,herbarium
+NCAS,herbarium
+NCATG,herbarium
+NCAW,museum
+NCBS,"herbarium, museum"
+NCC<USA-CA>,herbarium
+NCE,herbarium
+NCH,herbarium
+NCIP,museum
+SANC,museum
+NCK,herbarium
+NCLN,herbarium
+NCMA<USA-NC>,museum
+NCMH,culture collection
+NCMK,museum
+NCMS,herbarium
+NCPGR,Herbarium
+NCRPIS,museum
+NCS,museum
+NCSC<USA-NC>,herbarium
+NCSLG,herbarium
+NCSM,museum
+NCSM:BIRD,museum
+NCSM:FISH,museum
+NCSM:HERP,museum
+NCSM:Mammals,museum
+NCSU,"museum, herbarium"
+NCU,herbarium
+NCUT,museum
+NCZP,herbarium
+ND,herbarium
+NDG,herbarium
+NDA,herbarium
+NDAA,museum
+NDFC,museum
+NDOA,herbarium
+NDSU,museum
+NDTC,herbarium
+NE,herbarium
+NEUN,herbarium
+NEB,herbarium
+NEBC,herbarium
+NEBK,herbarium
+NEFI,herbarium
+NEHU,herbarium
+NRL,culture collection
+NPM,museum
+NEMO,herbarium
+NEMSU,museum
+NEMU,herbarium
+NENU,herbarium
+NEPCC,culture collection
+NESH,herbarium
+NEU,herbarium
+NSDA,herbarium
+NTS,herbarium
+NVDA,museum
+NVMC,museum
+NSMC<USA-NV>,herbarium
+NSMHS,museum
+NEW,museum
+NHNE,herbarium
+NJMA,Herbarium
+NJSM,museum
+NMED,museum
+NMHU,herbarium
+NMMNH,museum
+NMMNH:MAMM,museum
+NMSU<USA-NM>,museum
+NMCR,herbarium
+NMC,herbarium
+NNMB,museum
+NOAS,museum
+NRGH,Herbarium
+NSWA,museum
+NY,herbarium
+NYBG,museum
+NYSM,museum
+NYSM:ZO,museum
+NYSM:ZM,museum
+NYS,herbarium
+NYZS,museum
+NZP,culture collection
+NZFRI,herbarium
+NZOI,museum
+WARC,culture collection
+NZRP,culture collection
+NZRD,culture collection
+NZRM,culture collection
+NWK,herbarium
+NINF,museum
+NFM,herbarium
+NPT,herbarium
+NGBB,herbarium
+NFO,herbarium
+NFRC,museum
+NFRI,culture collection
+SVALP,Herbarium
+NGR,culture collection
+NH,herbarium
+NHA,herbarium
+NHIC,herbarium
+NHM<GBR-Nottingham>,herbarium
+NHMD,museum
+ZMUC,museum
+ZMUC:R,museum
+ZMUC:AVES,museum
+ZMUC:Fisk,museum
+NHMN,museum
+NHRS,museum
+NHT,herbarium
+NI<SVK>,herbarium
+THIB,herbarium
+WNLM,herbarium
+NLHD,museum
+NIMR,museum
+NUF,museum
+NUSMBS,museum
+NPH,museum
+NMB,culture collection
+NXF,herbarium
+NXAC,herbarium
+NJM<JPN>,culture collection
+NSSM,museum
+NISL,culture collection
+NORCCA,culture collection
+NTPI,Herbarium
+NJ,herbarium
+NLPS,herbarium
+NLSN,herbarium
+NLU,herbarium
+NLUH,herbarium
+NLUV,herbarium
+NM,"herbarium, museum"
+NMAIST,herbarium
+NMCC,culture collection
+NMCI<JPN>,museum
+NMCI<JPN>:P,museum
+NMCI<JPN>:MO,museum
+NMCI<JPN>:AR,museum
+NMCI<JPN>:EC,museum
+NMCI<JPN>:IV,museum
+NMCI<JPN>:S,herbarium
+NME,museum
+NMMH,museum
+NMN,herbarium
+PNM,museum
+NMPG<CHN>,herbarium
+NMR,herbarium
+NMSRC,herbarium
+NMSU<USA-MO>,herbarium
+RSM<GBR>,museum
+NMU,museum
+NMU:BIRD,museum
+NMU:MAMM,museum
+NMU:HERP,museum
+NMU:Para,museum
+NMU:Herb,herbarium
+NMU:ENT,museum
+NNKN,museum
+NO,herbarium
+NOCA,Herbarium
+NRIC,culture collection
+NoF,culture collection
+NOLS,herbarium
+NPL,museum
+NWH,herbarium
+SHSND,museum
+WXM,herbarium
+NSCA,herbarium
+NWAU,museum
+PUC<ZAF>,herbarium
+NSU,museum
+NOSU,herbarium
+NUVC,museum
+NPWRC,herbarium
+NPSC,museum
+NTDPIF,museum
+NRNZ,museum
+NWMSU,museum
+NWTC,herbarium
+NWUB,herbarium
+NPIB,museum
+YL,herbarium
+NWFC,herbarium
+WNU,herbarium
+WUK,herbarium
+NWOSU,herbarium
+NSUL,museum
+NWU,herbarium
+TRH,herbarium
+NTNU-VM,museum
+NUV,herbarium
+NOT,herbarium
+NOTM,herbarium
+NSAC,herbarium
+NSNR,museum
+NSMC<CAN>,museum
+NSM<CAN>,museum
+NSPM,herbarium
+NSRF,herbarium
+NSCNFB,culture collection
+NPRI,herbarium
+NPS,frozen tissue collection
+NRI,museum
+SMNH<SWE>,museum
+NRM,museum
+NRRI,Herbarium
+NSK,herbarium
+NSM<CHN>,herbarium
+NSM<JPN>,museum
+NSS,herbarium
+NSWF,herbarium
+NTSC,herbarium
+NTUCC,culture collection
+NU<ZAF>,herbarium
+NWC,museum
+NX,herbarium
+UFS,herbarium
+NYAS,herbarium
+NZCS,museum
+NZFRIM,herbarium
+NZSI,museum
+OAC,herbarium
+ORNL,Herbarium
+OAKL,herbarium
+OUHC,herbarium
+OAMB,museum
+OB,herbarium
+OC,herbarium
+OLML,museum
+OBG,herbarium
+OBI,herbarium
+OCCM,museum
+OMKH,herbarium
+OBPF,herbarium
+OGL,frozen tissue collection
+OGL:OGR,frozen tissue collection
+ORI,museum
+QD,herbarium
+OCF,Herbarium
+OCHA,herbarium
+OCNF,herbarium
+OCLA,herbarium
+OCM,culture collection
+OCRI,germplasm repository
+OCSA,museum
+OCU,herbarium
+ODAC,museum
+OGU,museum
+ODU,herbarium
+OEKO,museum
+UBT,herbarium
+OF,herbarium
+OFC,herbarium
+ORSC,museum
+ORST,museum
+ONNC,museum
+ORSTOM,museum
+OHBR,museum
+OHHI,herbarium
+OHSC,museum
+OS<USA-OH>,herbarium
+OSAL,museum
+OSUMZ,museum
+OSUMZ:FISH,museum
+OSUMZ:AMPH,museum
+OSUMZ:BIRD,museum
+OSUMZ:MAMM,museum
+OSUMZ:REP,museum
+OUIP,museum
+OUVC,museum
+OWU,herbarium
+OHM,herbarium
+OHN,herbarium
+OHT,herbarium
+OISO,museum
+OJBC,Herbarium
+OKA,herbarium
+OKAY,herbarium
+OKCZOO,herbarium
+OPM,museum
+OKL,herbarium
+OKLA,herbarium
+WNHM,museum
+OMNH<USA-OK>,museum
+OMNH<USA-OK>:Amphibian,museum
+OMNH<USA-OK>:BIRD,museum
+OMNH<USA-OK>:FISH,museum
+OMNH<USA-OK>:MAMM,museum
+OMNH<USA-OK>:Reptile,museum
+OMNH<USA-OK>:EGG,museum
+OSUS,museum
+OSU<USA-OK>,museum
+OUSM,museum
+OMJ,herbarium
+SOKO,herbarium
+OVMB,herbarium
+VM,herbarium
+SUM<CZE>,herbarium
+OL,herbarium
+OLD,herbarium
+OTM,museum
+OLDS,herbarium
+OLE,herbarium
+TRZYNT,herbarium
+OLV,herbarium
+OLM,herbarium
+OLP,herbarium
+OLS,herbarium
+OLTC,herbarium
+OLYM,herbarium
+ONPC,museum
+OMNZ,museum
+OMA,herbarium
+ON,herbarium
+OMM,museum
+OMNHO,museum
+OMNH<JPN>,museum
+OMNHN,museum
+OMP,herbarium
+OMPB,museum
+OMPG,museum
+OMPS,museum
+OMSK,herbarium
+OMSKM,herbarium
+OMUB,herbarium
+OP,herbarium
+OPANM,museum
+OPH,Herbarium
+ORU,herbarium
+OSI,herbarium
+ORE,herbarium
+OSAC,museum
+OS<USA-OR>,museum
+OS<USA-OR>:FISH,museum
+OS<USA-OR>:HERP,museum
+OSC,herbarium
+OSUFW,museum
+OSUF,herbarium
+OSUO,museum
+SFAHAN,herbarium
+OTSC,museum
+ORIT,museum
+ORSAY,botanical garden
+PVNH,herbarium
+ORTN,herbarium
+UNIFE-BOT,herbarium
+UNIBO-BOT,herbarium
+OSA,herbarium
+UOPJ,museum
+OSB,herbarium
+OSBU,herbarium
+OSH,herbarium
+OSM,herbarium
+OSMC,herbarium
+OSTR,herbarium
+VOA,herbarium
+OSW,herbarium
+OSWY,herbarium
+OTA,herbarium
+OTT,herbarium
+OUA,herbarium
+OUF,herbarium
+OULU,herbarium
+OUM,museum
+OUPR,herbarium
+OXD,herbarium
+OXF,herbarium
+PPSIO,museum
+PA,herbarium
+PAC,herbarium
+PACC,culture collection
+PACE,Herbarium
+PUCMF,museum
+PBC,culture collection
+PFCA,museum
+VGEO,herbarium
+PGMNH,museum
+PGM,herbarium
+PLU,herbarium
+PMS<USA-CA>,herbarium
+PRIH,herbarium
+PFRS,herbarium
+PUA,herbarium
+PUCMNH,museum
+PACMA,herbarium
+PAD,herbarium
+PADA,museum
+PDM-GOB,museum
+PAE,herbarium
+PSY,herbarium
+PMG<GBR>,museum
+PAY,herbarium
+RAW,herbarium
+PPFI,herbarium
+PMNH<PAK>,herbarium
+PTCC,culture collection
+PAL,herbarium
+SOGS,museum
+PMAA,museum
+PIMUI,museum
+PMHU,museum
+PICRC,herbarium
+PPC,herbarium
+PALE,herbarium
+PARC,museum
+PDTFAU,museum
+PALEON,museum
+PVPH,museum
+PVL,museum
+SLGINNSB,museum
+PW,museum
+PIHU,museum
+PIUU,museum
+PIN<RUS>,museum
+PMU<RUS>,museum
+PMU<SWE>,museum
+PASG,museum
+PSS<MNG>,museum
+PMNHH,herbarium
+PASM,herbarium
+SPL,herbarium
+PAM,herbarium
+PLMH,Herbarium
+PAMC,culture collection
+PAMP,herbarium
+PAMUH,herbarium
+PAN,herbarium
+PAUMC,museum
+PPHM,museum
+PMFP,museum
+PSP,herbarium
+PBZT,museum
+TAN,herbarium
+PNC,herbarium
+PBFC,museum
+PNLM,museum
+PMC,culture collection
+PMC-ALCP,culture collection
+PARMA,herbarium
+PCTY-UNAM,museum
+PTHM,museum
+PASA,herbarium
+PASSM,museum
+SRD,herbarium
+PCC,culture collection
+PBP,herbarium
+PRFH,herbarium
+PRR,herbarium
+PWRC,museum
+PAUH,herbarium
+PEI,culture collection
+PAUP,museum
+PAV,herbarium
+PBB,herbarium
+PBF,culture collection
+PBH,herbarium
+PCA,Herbarium
+PCH,herbarium
+PCI,culture collection
+PCM<IND>,herbarium
+PCM<POL>,culture collection
+PCPR,herbarium
+PCYU,museum
+PDA,herbarium
+PDBK,DNA bank
+PMS<USA-MA>,museum
+PM,herbarium
+PMNH<USA-CT>,museum
+PECA,museum
+PISR,museum
+PEFO,museum
+PEY,herbarium
+PEL,herbarium
+PEL:LIPP,culture collection
+PEM<ZAF>,museum
+PEMB,herbarium
+PMBR,Herbarium
+PEN,herbarium
+PENC,herbarium
+PNZ,herbarium
+PENN,herbarium
+TREC,Herbarium
+PSU<USA-PA>,museum
+POKM<RUS-PENZA>,museum
+PZL,herbarium
+PHG,herbarium
+PPWD,herbarium
+PTH,herbarium
+PERC,museum
+PFI,museum
+SSPW,herbarium
+PERM,herbarium
+POKM<RUS-PERM>,herbarium
+PPU,herbarium
+PTCCI,culture collection
+PERTH,herbarium
+PMAG,museum
+PRH,herbarium
+PERU,herbarium
+PES,herbarium
+PWM,museum
+PFES,herbarium
+PMAU,museum
+PGC,culture collection
+PFSS,museum
+PZV,herbarium
+PMSD,museum
+PEU,herbarium
+PEUFR,herbarium
+POLL,herbarium
+PFC,herbarium
+PFRA,museum
+PG,herbarium
+PGFA,herbarium
+PGL,museum
+PGR,culture collection
+PGRC,germplasm repository
+PGRC:CN,germplasm repository
+PGSC,culture collection
+PHA,herbarium
+UCDFST,culture collection
+PHARB,herbarium
+PHARM,herbarium
+PHBL,culture collection
+PHEL,museum
+PHH,herbarium
+PHIL,herbarium
+UMZM,museum
+PNCM-BIOTECH,culture collection
+PNH,herbarium
+SETON,museum
+PIN<GBR>,herbarium
+PSS<GBR>,herbarium
+PHL,herbarium
+PQFC,seed bank
+PMBC,museum
+PHYCOP,Herbarium
+PI<ITA>,herbarium
+PIAGR,herbarium
+PINN,museum
+PMAS,herbarium
+PSUMC,museum
+PKM,herbarium
+PKNU,Herbarium
+PL,herbarium
+PPCC<AUS>,culture collection
+RHS,culture collection
+PPKMI,culture collection
+PPCC<NZL>,museum
+VICH,museum
+PPIHAS,culture collection
+PPRZ,museum
+PRCM,herbarium
+RIPO,culture collection
+PVGB,culture collection
+PROIMI,culture collection
+PLAT,herbarium
+PLE,herbarium
+PLES,herbarium
+PLFV,museum
+PLH,herbarium
+PLY,herbarium
+PLYMOUTH,culture collection
+PSH,herbarium
+PLYP,herbarium
+PM<USA-IA>,museum
+PM<USA-AK>,museum
+PMA<CAN>,museum
+PMA<PAN>,herbarium
+PMB,museum
+PMHNS,museum
+PMHPS,herbarium
+PMK<SVK>,herbarium
+PMK<RUS>,museum
+PMNH<USA-MA>,museum
+PMQ,museum
+PMR,museum
+PMS<MKD>,museum
+PMSL,museum
+PMSP,herbarium
+PMV,museum
+PNBG,herbarium
+PNL,herbarium
+PNUH,herbarium
+PO<PRT>,herbarium
+PPNP,museum
+PORE,herbarium
+POL,Herbarium
+POL-F,museum
+PUPH,herbarium
+POM,herbarium
+PUCV,herbarium
+SSUC,"herbarium, museum"
+QCAM,herbarium
+QCA,herbarium
+UCMM,herbarium
+POONCH,herbarium
+POP,herbarium
+POR,herbarium
+PSU<USA-OR>,museum
+PSU<USA-OR>:MAMM,museum
+PUO,museum
+PORUN,herbarium
+PRV,herbarium
+PTIS,herbarium
+PPCD,museum
+PPRL,herbarium
+PRAGATI,herbarium
+PRB,herbarium
+PRL,culture collection
+TPV,herbarium
+PTTC,culture collection
+PREM,herbarium
+PRF,herbarium
+PRG,herbarium
+PSU<THA>,herbarium
+SMI,herbarium
+PSUZC,museum
+PU,museum
+YPM/PU,museum
+VT,herbarium
+STD,herbarium
+SLS,herbarium
+QPNRA,herbarium
+PRU,herbarium
+PSGCASH,Herbarium
+PSGB,herbarium
+PSK,herbarium
+PSM,museum
+PSO,herbarium
+PSUB,herbarium
+RHM,herbarium
+PUCP,museum
+UPR,herbarium
+PUH,herbarium
+PUM,museum
+PUN,herbarium
+PUP,herbarium
+PURC,museum
+PUS,herbarium
+PVF,culture collection
+PUSC,herbarium
+PVHR,museum
+PW<UKR>,herbarium
+PWU,herbarium
+PYU,herbarium
+Q,herbarium
+QA,herbarium
+QAP,herbarium
+QARSHI,herbarium
+QBG,herbarium
+QDC,herbarium
+QDPC,museum
+QDPI,museum
+QEF,herbarium
+QNA,Herbarium
+QFA,herbarium
+QFMQ,museum
+QFNU,herbarium
+QFS,herbarium
+QNUN,herbarium
+QIBX,museum
+QIMR,museum
+QUA,herbarium
+QYTC,herbarium
+QL,Herbarium
+QTC,herbarium
+QM,museum
+QMB,museum
+QMC,herbarium
+QMEX,herbarium
+QMT,museum
+QPH,herbarium
+QSMI,museum
+QUC,herbarium
+QVMS,museum
+QVM,museum
+QVG,museum
+QUSF,herbarium
+QWA,herbarium
+R<BRA>,herbarium
+RDNCP,Herbarium
+RMA,culture collection
+UCDC,museum
+RABH,herbarium
+RFE,herbarium
+RUHV,herbarium
+RM<SGP>,museum
+RMBR,museum
+RGPG,museum
+RBF,culture collection
+RUSLH,Herbarium
+RMRIMS,stock center
+RGCA,culture collection
+RAM<CAN>,museum
+RAM,herbarium
+RKMVCCH,herbarium
+RAME,museum
+RAMK,herbarium
+RAMM,herbarium
+RSA,herbarium
+RMWC,herbarium
+RANG,herbarium
+RANK,herbarium
+YZB,herbarium
+RARI,herbarium
+RARIM,herbarium
+RARISVPH,Herbarium
+RARO,herbarium
+RARS,museum
+RAS,herbarium
+WDds,culture collection
+RAWWU,Herbarium
+RAYAT,Herbarium
+RKMM,Herbarium
+RUHK,herbarium
+RBCAR,museum
+V,herbarium
+RBCM,museum
+RBCM:MAMM,museum
+RBCM:ORN,museum
+RBE,herbarium
+RBR,herbarium
+RBS,herbarium
+RC CCM,culture collection
+RCAM,culture collection
+RCAT,culture collection
+RCB,culture collection
+RCC,culture collection
+RCDM,culture collection
+RCHM,herbarium
+RCHP,herbarium
+RCMC,museum
+RCN,herbarium
+RCPF,culture collection
+RCPL,herbarium
+RCR,herbarium
+RCS,museum
+RCSL,museum
+RDAF,museum
+RDG,herbarium
+RDS,herbarium
+RPM,herbarium
+RED,herbarium
+RHMC,herbarium
+REED,herbarium
+RSKK,culture collection
+REG,herbarium
+REGGIO,herbarium
+RIEM,Herbarium
+RMRC,stock center
+RMNHB,museum
+RMNHP,museum
+RRCBI,herbarium
+RKT,herbarium
+RRICH,Herbarium
+RRLH,herbarium
+RRLB,herbarium
+REH,herbarium
+RENO,herbarium
+RENZ,herbarium
+RPTN,herbarium
+RNMUT,herbarium
+RESC,herbarium
+WSBC<DEU>,culture collection
+WSLC,culture collection
+SM<DEU-Frankfurt>,museum
+RIBM,culture collection
+RIFAV,seed bank
+RIMD,culture collection
+RIN,herbarium
+RITFC,culture collection
+RIVE<SVK>,culture collection
+RIEAFO,museum
+TARI<IRN>,herbarium
+RIFFL,museum
+TBIP,herbarium
+XZE,herbarium
+RTCI,culture collection
+SIUC,museum
+SIUC:H,museum
+RHLCY,museum
+REU,herbarium
+RFA,herbarium
+RFFP,herbarium
+RFNS,herbarium
+RGY,herbarium
+UPMR,culture collection
+RHK,herbarium
+RISD,herbarium
+SWMT,herbarium
+RUDZ,museum
+RUH,herbarium
+RHT,herbarium
+RI,herbarium
+RIA,culture collection
+RMFM,museum
+RMNP,museum
+RIG,herbarium
+RIGG,herbarium
+RPSC,herbarium
+RIOC,herbarium
+RPN,herbarium
+RTM,museum
+RIVE<USA-WI>,herbarium
+RLS,herbarium
+RM<USA-WY>,herbarium
+RM<NZL>,culture collection
+RMBH,museum
+RMBL,museum
+RMDRC,museum
+RMF,culture collection
+RMS,herbarium
+RMSC,museum
+RMSCC,culture collection
+RMTV,herbarium
+RNG,herbarium
+RO,herbarium
+ROAN,herbarium
+SARC,herbarium
+SBSC,herbarium
+THO,herbarium
+RUNYON,herbarium
+ROCH,herbarium
+RSPP,Herbarium
+USFS,herbarium
+ROMO,museum
+SSLP,herbarium
+RPMH,museum
+RWPM,herbarium
+ROK,Herbarium
+ROME,museum
+RON,herbarium
+RPPMC,museum
+SLUI,herbarium
+RYCC,culture collection
+ROST,herbarium
+RWBG,herbarium
+SHY,herbarium
+TRU,herbarium
+WSY,herbarium
+TRO,herbarium
+TRTC,herbarium
+TRT,herbarium
+RSM<CAN>,museum
+RTMP,museum
+RUPP,herbarium
+ROZ,herbarium
+YAV,Herbarium
+RPSP,museum
+RRJ,culture collection
+RS-BGAC-AGRIF,museum
+RSPF,herbarium
+RSU,herbarium
+RTC,herbarium
+RU,herbarium
+UIDEP,Herbarium
+RUBL,herbarium
+RUIC,museum
+RUMF,museum
+VKPM,culture collection
+RUSU,herbarium
+RWDN,herbarium
+RWLC,museum
+RYD,herbarium
+RYU,herbarium
+URB,museum
+S,herbarium
+SBH,museum
+SAAR,herbarium
+SAAS,herbarium
+SAAS<ZAF>,herbarium
+SAB,herbarium
+SMJM,museum
+SPM,museum
+SNP<MYS>,herbarium
+SUSL,Herbarium
+SAC,Herbarium
+SACA,museum
+SACC,museum
+SACL,herbarium
+SACON,museum
+SSC,museum
+SHC,herbarium
+SACS,museum
+SAFB,herbarium
+SWNHS,herbarium
+SWN,herbarium
+SAFU,herbarium
+SAG,culture collection
+SAIAB,museum
+SAIM,museum
+STAC,Herbarium
+SB,herbarium
+SBU,herbarium
+SCSC,museum
+SEU,Herbarium
+SJUBC,museum
+SLUM,museum
+WINO,herbarium
+SMH,herbarium
+SMCW,herbarium
+SNC,herbarium
+SPFUE,Herbarium
+SMNH<JPN>,herbarium
+SZM,museum
+SAITP,culture collection
+SARI,museum
+SAKU,Herbarium
+SAKH,herbarium
+SALA,herbarium
+SCBUCN,museum
+SALAF,herbarium
+SC,herbarium
+SAWV,herbarium
+SALF,herbarium
+SALFM,herbarium
+SFB,herbarium
+SBY,herbarium
+SUHC,"herbarium, museum"
+SALK,herbarium
+SGSC,culture collection
+SLCTNL,herbarium
+SPMO,culture collection
+SAMA,museum
+SAMA:HERP,museum
+SAM<ZAF>,museum
+SHST,herbarium
+SHSU,museum
+SNOMNH,museum
+TLT,Herbarium
+SMR,herbarium
+SAMDU,herbarium
+SAMES,herbarium
+SAMF,herbarium
+SAS,museum
+SGWG,museum
+SSF,museum
+SSL,museum
+SAO,museum
+SSD,museum
+SVCK,culture collection
+SAMU,herbarium
+SAN,herbarium
+SBCM,museum
+SDBG,herbarium
+SDM<USA-CA>,herbarium
+SDNHM,museum
+SDNHM:BIRD,museum
+SDNHM:ENT,museum
+SDNHM:HERP,museum
+SDNHM:MAMM,museum
+SDSU<USA-CA>,herbarium
+SDSU<USA-CA>:HERP,museum
+SDSU<USA-CA>:BIRD,museum
+SDSU<USA-CA>:FISH,museum
+SDSU<USA-CA>:MAMM,museum
+SDSU<USA-CA>:Arthropods,museum
+SDSU<USA-CA>:Herbarium,herbarium
+SDSU<USA-CA>:Greenhouse,botanical garden
+SFVS,museum
+SFSU,herbarium
+SJAC,museum
+SSJC,herbarium
+SJSU,herbarium
+SJSC,museum
+SJNM,herbarium
+SSOFM,museum
+SANBI,botanical garden
+SANDC,herbarium
+SFGRH,herbarium
+SM<USA-FL>,museum
+SMWU,museum
+SMU<KOR>,museum
+SEBR,culture collection
+SANT,herbarium
+SANT:Algae,herbarium
+SANT:Lich,herbarium
+SANT:Bryo,herbarium
+SBBG,herbarium
+SBCC,herbarium
+SBM,herbarium
+SBMNH,museum
+SCIR,herbarium
+SFBG,herbarium
+SMMSH,herbarium
+SRJC,Herbarium
+STUM,museum
+SANU,herbarium
+SAPCL,herbarium
+SARA,herbarium
+SSU,museum
+SARBG,herbarium
+SFDK,museum
+SMK,museum
+SMK:Mesozoa,
+SARCC,culture collection
+SARDI,museum
+SARGU,herbarium
+SASK,herbarium
+SMNH<CAN>,museum
+SASSA,herbarium
+SASSC,seed bank
+SAU<CHN>,herbarium
+SAU<USA-AR>,museum
+SAUCE-P,museum
+SNMNH,museum
+SAUF,herbarium
+SAUFC,herbarium
+SAUT,herbarium
+SSM<USA-GA>,museum
+SPPU,herbarium
+SSHZ,herbarium
+SBA,museum
+SBAH,herbarium
+SBC,herbarium
+SBDE,museum
+SBKA,museum
+SBP,museum
+SBR,museum
+SBSFU,culture collection
+SCAC,museum
+SCCAP,culture collection
+SCAPPC,culture collection
+SCAR,herbarium
+TRTS,herbarium
+SCPS,herbarium
+SCAUB,herbarium
+SCB,herbarium
+SCBI,museum
+SCCBC,herbarium
+SCCN,herbarium
+SCDH,museum
+SCFI,"herbarium, museum"
+SCFQ,herbarium
+SCFS,herbarium
+SIZK,museum
+SMNH<USA-KS>,museum
+SCHN,herbarium
+USBS,museum
+SMTWA,culture collection
+SMW<GBR>,herbarium
+STMC,museum
+VUT,culture collection
+SM<DEU-Langenaltheim>,museum
+SCIEA,museum
+SECM,museum
+SMM,museum
+SSMJI,culture collection
+SCL,herbarium
+SCM,herbarium
+SCMN,museum
+SCN,museum
+SCNHM,museum
+SCNU,"herbarium, museum"
+SCP,herbarium
+SCPNCH,herbarium
+SCR,herbarium
+SIO,museum
+SIO:BIC,museum
+SIO:Marine Vertebrates,museum
+SCS,herbarium
+SCSFRI,museum
+SCSG,herbarium
+SCSIO,culture collection
+SCSM,museum
+SCSU,herbarium
+SCTCC,culture collection
+SCU,herbarium
+SCUF,museum
+SCUI,herbarium
+SCUM,museum
+SCV,cell lines
+STRI,herbarium
+STRI:ICBG-Panama,culture collection
+SCZ,herbarium
+SDAKS,museum
+SDAU,herbarium
+SDC,herbarium
+SDCM,herbarium
+SDFH,herbarium
+SDFI,herbarium
+SDFS,herbarium
+SDI,herbarium
+SDM<GBR>,museum
+SDMP,herbarium
+SDNCU,DNA bank
+SDNU,herbarium
+SDSM,museum
+SDSU<USA-SD>,museum
+SDU,herbarium
+SFRS,museum
+SEAARI,museum
+SEAMEO,culture collection
+SPC,herbarium
+SMIP,culture collection
+SVIEC,culture collection
+SMMC,museum
+SEMARNAT,museum
+SSG,museum
+SEFES,herbarium
+SEFSC,frozen tissue collection
+SEFSC:MMMGL,frozen tissue collection
+SNPH,herbarium
+SEIG,museum
+SMKM,museum
+SELU,herbarium
+SVVC,museum
+SEMK,museum
+SEMM,museum
+SEMO,herbarium
+SMNG,museum
+SMNG:Acari fossil,museum
+SMNG:Arachnologie,museum
+SMNG:Collembola,museum
+SMNG:Heteroptera,museum
+SMNG:Malacology,museum
+SMNG:Orthoptera,museum
+SMNG:Siphonaptera fossil,museum
+SNSD,museum
+SNSD:MOLL,museum
+SNSD:Arachnida,museum
+SNSD:CRUS,museum
+SNSD:Hemiptera,museum
+SNSD:HERP,museum
+SNSD:ICH,museum
+SNSD:Lepidoptera,museum
+SNSD:Malacology,museum
+SNSD:MAMM,museum
+SNSD:Myriapoda,museum
+SNSD:ORN,museum
+SIF,museum
+SFC,herbarium
+SNU,herbarium
+SNUA,herbarium
+SEPA,herbarium
+THRI,herbarium
+SERC<CHN>,herbarium
+SERC<USA-MD>,museum
+SRI,museum
+SERO,herbarium
+SERTC,museum
+TFAV,herbarium
+SES,herbarium
+SETE,Herbarium
+SMBL,museum
+SEV,herbarium
+SIEMEA,museum
+SEVF,herbarium
+SEY,herbarium
+SF,herbarium
+SFAC,museum
+SFD,herbarium
+SFDL,herbarium
+SFDN,herbarium
+SFI,germplasm repository
+SFRI,museum
+SFRP,herbarium
+SFS,herbarium
+SFT,herbarium
+SFU,museum
+SFUC,museum
+SFUV,herbarium
+SG,herbarium
+SGBG,herbarium
+SGE,herbarium
+SGEL,herbarium
+SGGS,herbarium
+SGGW,museum
+SGH,Herbarium
+SGMA,museum
+SGN,herbarium
+SXMP,herbarium
+SXDC,herbarium
+SXIM,herbarium
+SNTCM,herbarium
+SLUBGH,herbarium
+TMRC,herbarium
+SHB,herbarium
+SHDC,herbarium
+SHMI,herbarium
+SHMU,herbarium
+SHM<CHN>,herbarium
+SHCT,herbarium
+SHTU,herbarium
+SQNU,herbarium
+SRF,herbarium
+TYF,herbarium
+SXAU,herbarium
+TY,herbarium
+SSMM,herbarium
+SXU,herbarium
+SNHBM,herbarium
+STNF,herbarium
+SHCP,museum
+SHD,herbarium
+SYAU,herbarium
+SYAUF,herbarium
+SYPC,herbarium
+SY,herbarium
+SZG,herbarium
+SZPT,museum
+SZPT:ENT,museum
+SIMS,herbarium
+ZCM,herbarium
+SHG,herbarium
+SUF,museum
+SHIN,herbarium
+SHIP,Herbarium
+SUVM,museum
+SUK,herbarium
+SHJ,herbarium
+SHM<USA-SD>,museum
+SHMH,herbarium
+SMRU,museum
+SHOR,herbarium
+SHYN,herbarium
+SHYP,herbarium
+SHYB,herbarium
+SNW,herbarium
+SHYAN,herbarium
+SMU<USA-TX>,museum
+SIAC<CHN>,museum
+SIB,herbarium
+SIBAC,museum
+SZMN,museum
+SICAUCC,culture collection
+SICH,herbarium
+SIFS,herbarium
+SR,herbarium
+SPNRI,museum
+STC,museum
+SITC,herbarium
+SZ,herbarium
+SIE,museum
+SIENA,herbarium
+SPIF,herbarium
+SIEZC,museum
+SIGMA,herbarium
+SIIRT,herbarium
+SUFAF,herbarium
+SIIS,museum
+SOSN,herbarium
+SIM,herbarium
+SMN,herbarium
+SMAO,herbarium
+SIMF,herbarium
+SKUK,culture collection
+SINDH,herbarium
+SING,herbarium
+STVSVD,culture collection
+SJC,herbarium
+SIU,herbarium
+SIUCM,museum
+SIUE,museum
+SJB,Herbarium
+SJCA,museum
+SJCRY,herbarium
+SJER,museum
+SJRP,herbarium
+SKA,museum
+SKK,herbarium
+SKM,herbarium
+SKT,herbarium
+SKU,herbarium
+SL,herbarium
+SLA,herbarium
+SLFC,herbarium
+SLBI,herbarium
+SLCMB,Herbarium
+SMOC,museum
+SLRO,herbarium
+SLJG,museum
+SLL,herbarium
+SMOP,herbarium
+SNM<SVK>,museum
+TM<SVK>,"herbarium, museum"
+SNMC,museum
+SLPM,herbarium
+SLR,Herbarium
+SLSC,museum
+SLSK,herbarium
+SLTC,herbarium
+SLU<USA-LA>,museum
+SLUB,museum
+SM<USA-TX>,museum
+SMAG,museum
+SMBB,herbarium
+SMCC,culture collection
+SMCC-W,culture collection
+SMDB,herbarium
+SME<FRA>,museum
+SMF<PER>,herbarium
+US,herbarium
+USNC,herbarium
+SMNH<UKR>,museum
+SMNHTAU,museum
+SMNK,museum
+SMNS,museum
+SMP<SUR>,museum
+SMP<USA-PA>,"museum, herbarium"
+SMRG,culture collection
+SMRS,herbarium
+SZP,museum
+SMTP,museum
+SMU,museum
+SMW<NAM>,museum
+SN,herbarium
+SNCBSH,museum
+SNCH,herbarium
+SNHM,museum
+UKMS<SDN>,museum
+SNJB,Herbarium
+SNM<USA-NM>,herbarium
+SNMB,museum
+SNMBR,museum
+SNMG,museum
+SNMH,herbarium
+SNMS,museum
+ZSMC,museum
+SO,herbarium
+SOC,herbarium
+SSNR,museum
+VAN,herbarium
+SQB,herbarium
+SPP,herbarium
+SOF,herbarium
+SOFRI,seed bank
+SUMCC,Herbarium
+SOI,museum
+SSCMU,culture collection
+SUA,herbarium
+SRLAR,herbarium
+SRPARI,herbarium
+TTN,herbarium
+SORO,herbarium
+SOSCMVNH,museum
+SOTON,herbarium
+SPLT,herbarium
+SVU,museum
+SPN,herbarium
+STDCM,herbarium
+SRRC,culture collection
+SUU,herbarium
+SPTS,herbarium
+SWAU,herbarium
+SWFSC,frozen tissue collection
+SWFC,herbarium
+SWFU,museum
+SWFCCC,culture collection
+SWJTU,herbarium
+SWCTU,herbarium
+UVST,herbarium
+SWT,herbarium
+XIN,herbarium
+WOH,herbarium
+SWRS,museum
+SPA,herbarium
+SPB,herbarium
+SPF,herbarium
+SPFR,herbarium
+SPHU,Herbarium
+SPI,herbarium
+SPMCC,culture collection
+SPMS,herbarium
+SPR,herbarium
+ZNPC,museum
+SSM<USA-MA>,museum
+SPSC,herbarium
+SPSU,herbarium
+SQF,herbarium
+SQUCC,culture collection
+SQUH,herbarium
+SRAICC,culture collection
+SRFA,herbarium
+SVUTY,herbarium
+SRS,herbarium
+SRSC,herbarium
+SRSU,museum
+SS,herbarium
+SSI,culture collection
+SSMS,museum
+ST,herbarium
+STCALPY,Herbarium
+ZML,museum
+STB,herbarium
+STASH,herbarium
+STFX,herbarium
+STG,herbarium
+STMU,herbarium
+STPS,herbarium
+STCHK,herbarium
+STC<IND>,herbarium
+STT,herbarium
+XCH,herbarium
+STA,herbarium
+STU,herbarium
+STAL,herbarium
+STANAU,herbarium
+SU<USA-CA>,museum
+WPMM,museum
+VECTOR,museum
+SUCN,museum
+UEMA,museum
+SUNY,museum
+SYRF,herbarium
+SUNYO,museum
+SUCO,herbarium
+WGC,herbarium
+UNOPA,herbarium
+STLIN,Museum
+STCR,herbarium
+SUM<ZAF>,museum
+STM<DEU>,museum
+STEU,herbarium
+STI,herbarium
+STIU,herbarium
+STK,herbarium
+STM<GBR>,herbarium
+STO,herbarium
+SYT,herbarium
+UCMS,museum
+STR,herbarium
+YM<CHN>,culture collection
+STS,herbarium
+SUD,herbarium
+SU<CHN>,herbarium
+SUB,museum
+SUCEA,museum
+SUCH,herbarium
+SUFA,herbarium
+SUG,museum
+ZSS,herbarium
+SUN,herbarium
+SYSU<CHN>,culture collection
+SUND,herbarium
+SWU,herbarium
+SUNIV,herbarium
+SUNYPO,herbarium
+SURCO,herbarium
+SUVA,herbarium
+SUWS,herbarium
+SWA,herbarium
+SWC,herbarium
+SWAT,herbarium
+SWBR,herbarium
+SWTN,herbarium
+WSL,DNA bank
+SWSL,herbarium
+SYD,herbarium
+SYKT,herbarium
+SYR,herbarium
+SYSBM,"museum,herbarium"
+SZCZ,herbarium
+SZE<TUR>,museum
+SZMC,culture collection
+SZN,museum
+SZU,herbarium
+SZUB,herbarium
+T,museum
+TA,museum
+TDMP,museum
+TBZFPH,herbarium
+TAC,herbarium
+TAES,herbarium
+TAFIRI,museum
+TAH,herbarium
+TAUH,Herbarium
+TAIF,herbarium
+TAIM,herbarium
+TIMJ,museum
+TARI<CHN>,museum
+TESRI,museum
+TFRI,museum
+TMTC,museum
+TYH,Herbarium
+TYNUB,herbarium
+TALL,herbarium
+TTRSNHM,museum
+TTRS,"herbarium, museum"
+TTRS:MAMM,museum
+TTRS:ORN,museum
+TMHNS,museum
+TFA,herbarium
+TMAL,herbarium
+TNAU,museum
+TMP,herbarium
+TAMU,herbarium
+TAMUCC,herbarium
+TAMUIC,museum
+TANE,herbarium
+TFD,herbarium
+TARI<TUR>,museum
+TCM,museum
+TSC,museum
+TFC<EST>,culture collection
+TUZ,museum
+TASM,herbarium
+TCFB,culture collection
+TDAH,museum
+TFDA,museum
+TFIC,museum
+TMAG,museum
+TMH,museum
+TELY,herbarium
+TMC<AUS>,museum
+TMBS,museum
+TAU<ISR>,museum
+TAU-MAC,culture collection
+TXEX,museum
+TAY,herbarium
+TB,herbarium
+TBG,botanical garden
+TBGH,Herbarium
+TBGT,herbarium
+TBRC,culture collection
+TBW,herbarium
+TBY,herbarium
+TCC,culture collection
+TCC/USP,culture collection
+TCD,herbarium
+TCDL,herbarium
+TCDU<IRL>,DNA bank
+TCH,herbarium
+TCMM,culture collection
+TCNJ,herbarium
+TCNM,museum
+TCSW,herbarium
+TDN,herbarium
+TDNA,DNA bank
+TDS,museum
+TDY,herbarium
+TEA,herbarium
+TEB,herbarium
+ZV,herbarium
+THBC,museum
+TMW,culture collection
+TUM,herbarium
+TESH,Herbarium
+USTF,museum
+TEFH,herbarium
+TEH,herbarium
+TUH,herbarium
+TEU,herbarium
+UTAI,museum
+TELA,herbarium
+TIEMT,Herbarium
+TENHS,herbarium
+TWRA,museum
+TEPB,herbarium
+TTMB,museum
+TERN,Herbarium
+TESC,museum
+TSSMC,museum
+TSC<USA>,stock center
+TEUI,herbarium
+TEX,herbarium
+TLU,herbarium
+TMMC,museum
+TMM,museum
+TNHC,museum
+TNHC:Herpetology,museum
+TNHC:Ichthyology,museum
+TPWDSP,herbarium
+TTCC,museum
+TTC,herbarium
+TTU,museum
+TWC,museum
+TMHN,museum
+TM<DEU>,museum
+TSMHN,museum
+TFB,Herbarium
+TFC,herbarium
+TGPI,museum
+TGU,herbarium
+TH,herbarium
+TTM,herbarium
+TNSM,museum
+UAAM,museum
+ZMD,museum
+WILLI,herbarium
+UTEX,culture collection
+ZCU,museum
+TMC<USA-ID>,culture collection
+TRIN,herbarium
+TOSEHIM,Herbarium
+TPI,museum
+TPI:ENT,museum
+TKM,Herbarium
+YALT,herbarium
+UCCCB,culture collection
+UHIM,museum
+UWIZM,museum
+UTF,herbarium
+WRL,culture collection
+YMUK,museum
+YNP,museum
+YSU,herbarium
+ZGC,herbarium
+TNSC<BEL>,museum
+TIO,Herbarium
+THM,museum
+THM:AP,museum
+VENDA,herbarium
+THS,herbarium
+TLHR,museum
+THUP,museum
+TJMP,herbarium
+TJDC,herbarium
+TMNH,museum
+TNZ,museum
+TIE,herbarium
+XZDC,herbarium
+XZ,herbarium
+TMPH,herbarium
+TLMF,museum
+TISTR,culture collection
+TIU,museum
+TK,herbarium
+TKB,herbarium
+TKDN,Herbarium
+TKNM,herbarium
+TKPM,herbarium
+TKU,herbarium
+TL,herbarium
+TLF,herbarium
+TLJ,herbarium
+TLS,herbarium
+TLXM,herbarium
+TMC<USA-CO>,culture collection
+TMCC,Herbarium
+TMDU,museum
+TMI,herbarium
+TMS,museum
+TNF,herbarium
+TNFC,herbarium
+TNFS,herbarium
+TNHM,museum
+TNSC<USA-NJ>,museum
+TO,herbarium
+TOB,Herbarium
+TOD,herbarium
+TOFO,herbarium
+TOGO,herbarium
+TOHO,herbarium
+TUSG,herbarium
+TUS,herbarium
+TOKE,herbarium
+TUAT,herbarium
+TULE,museum
+TUFIL,museum
+TOLI,herbarium
+TOM<CAN>,culture collection
+TONG,herbarium
+TOOL,herbarium
+TOR,herbarium
+TUMH,herbarium
+TRPM,herbarium
+TUFC,culture collection
+TOU,herbarium
+TOYA,herbarium
+TOZZI,Herbarium
+WPR,Herbarium
+TRV,herbarium
+TSBAI,herbarium
+TRE,herbarium
+TUP,herbarium
+TRES,herbarium
+TUCH,herbarium
+TRM,herbarium
+TROM,herbarium
+TSTN,herbarium
+TROY,herbarium
+TSB,herbarium
+TSNIGRI,museum
+TTY,herbarium
+TU<USA-LA>,museum
+TU<USA-LA>:FISH,museum
+TU<USA-LA>:BIRD,museum
+TU<USA-LA>:Herptiles,museum
+TU<USA-LA>:INV,museum
+TU<USA-LA>:MAMM,museum
+TU<EST>,herbarium
+TUCIM,culture collection
+TUC,herbarium
+TUF,herbarium
+TUFT,herbarium
+TUL,herbarium
+TULGU,Herbarium
+TULS,herbarium
+TUN,herbarium
+TUNG,herbarium
+TUTC,museum
+TUR,herbarium
+TURP,herbarium
+TVY,herbarium
+TVBG,herbarium
+USBCF,museum
+USFC,museum
+VFWO,herbarium
+USGS,museum
+USGS:ASC,museum
+USNTC,museum
+USSC,herbarium
+UA<USA-AL>,frozen tissue collection
+UA<USA-AZ>,museum
+UACCC,culture collection
+UAAAC,museum
+UAAAN,museum
+UAB,museum
+UABC,museum
+UABCS,museum
+UABD,museum
+UAC<PRT>,museum
+UAC<PRT>:DTP,museum
+UAC,herbarium
+UACAM,Herbarium
+UACB-UAZ,Museum
+UACC,museum
+UACJ,museum
+UADBA,museum
+UADBG,herbarium
+UAdeO,museum
+UADY,herbarium
+UAEM,museum
+UAEM-UAG,museum
+UAEU,museum
+UAM,museum
+UAM:MAMM,museum
+UAM:BIRD,museum
+UAM:Bryo,museum
+UAM:CRUS,museum
+UAM:FISH,museum
+UAM:HERP,museum
+UAM:ENT,museum
+UAM:MOLL,museum
+UAM:Herb,herbarium
+UAM:Paleo,museum
+UAM:ES,museum
+UAM:INV,museum
+UAM:Alg,herbarium
+UAGC,herbarium
+UAIC<USA-AZ>,museum
+UAIC<USA-AL>,museum
+UAIC<CIV>,museum
+UALRVC,museum
+UAVP,museum
+UAM<USA-AL>,museum
+UAM<USA-AR>,herbarium
+UAM<ESP>,culture collection
+UAMI,museum
+UAMIZ,herbarium
+UAMM,museum
+UAMX,museum
+UAMZ,museum
+UAMZC,museum
+UANL,museum
+UAO,Herbarium
+UAPC,herbarium
+UAS,herbarium
+UAS-B,museum
+UASB,museum
+UASK,museum
+UASM,museum
+UAT,herbarium
+UAWC<WBK>,seed bank
+UAY,museum
+UAZ,museum
+UBCC,culture collection
+UBCZ,museum
+UBDH,herbarium
+UMBB,museum
+UMB,museum
+UBIH,Herbarium
+UBJTL,museum
+UBL,museum
+UBOCC,culture collection
+UC<AUS>,frozen tissue collection
+UC<USA-MI>,culture collection
+UC<USA-CA>,herbarium
+UCSD,Herbarium
+UCAC,herbarium
+UCAM,herbarium
+UCAR,Museum
+UCB,museum
+UCBD,Herbarium
+UCBG,herbarium
+UCBMG,culture collection
+UCC<IRL>,museum
+UCC,museum
+UCCC,museum
+UCCM,culture collection
+UCD,"museum, culture-collection"
+UCDBA,museum
+UCFC,museum
+UCGC,museum
+UCGE,culture collection
+UCH,herbarium
+UCHT,herbarium
+UCI,herbarium
+UCJ,herbarium
+UCL<GBR>,museum
+UCLA,museum
+UCLZ,museum
+UCM<USA-CO>,museum
+UCM<USA-CO>:MAMM,museum
+UCM<USA-CO>:BIRD,museum
+UCM<USA-CO>:FISH,museum
+UCM<USA-CO>:HERP,museum
+UCM<USA-CO>:EGG,museum
+UCM<UKR>,culture collection
+UCMC,museum
+UCM<ESP>,museum
+UCMP,museum
+UCNW,herbarium
+UCNZ,museum
+UCOB,herbarium
+UCOCV,museum
+UCOL,herbarium
+UCONN,museum
+UCR<USA-CA>,"herbarium, museum"
+UCR<USA-CA>:ENT,museum
+UCR<USA-CA>:ESM,museum
+UCRC ESM,museum
+UCS<USA-CT>,museum
+UCS<USA-NY>,herbarium
+UCSA,herbarium
+UCSB,herbarium
+UCSC,herbarium
+UCSW,herbarium
+UCVC,museum
+UCWI,herbarium
+UDBC,herbarium
+UDCC,museum
+UDEL,museum
+UDLAP,Herbarium
+UDU,herbarium
+UDONECI,museum
+UPM<RUS>,museum
+UDS,museum
+UDSM,museum
+UDW,herbarium
+UE,Herbarium
+UEA,herbarium
+UEC,herbarium
+UEGQ,herbarium
+UEH,Herbarium
+UENF,museum
+UES,Museum
+UESC,herbarium
+UESS,museum
+UESTCC,culture collection
+UEVH,herbarium
+UFA,herbarium
+UFACPZ,herbarium
+UFC,museum
+UFES,museum
+UFG,herbarium
+UFH,herbarium
+UFHNH,museum
+UFJF,museum
+UFMA,herbarium
+UFMA:LMBA,culture collection
+UFMG,museum
+UFMI,museum
+UFMT,"herbarium, museum"
+UFNH,museum
+UFP,herbarium
+UFPA,"museum, culture collection"
+UFPB,museum
+UFPEDA,culture collection
+UFRGS,museum
+UFRN,herbarium
+UFRN:Fungos,herbarium
+UFROH,herbarium
+UFRPE,museum
+UFRR,herbarium
+UFSC,museum
+UFU,herbarium
+UFV,herbarium
+UFVB,museum
+UG<GHA>,museum
+UGAMNH,museum
+UMKU,museum
+UGCA,museum
+UGDZ,museum
+UGGE,museum
+UGGG,museum
+UGMD,museum
+UGSB,museum
+UWIFORT,museum
+UH,museum
+UHCC,culture collection
+UHI,herbarium
+UI<NGA>,museum
+UICC,culture collection
+UIDA,museum
+UIH,herbarium
+UIM,museum
+UIMNH,museum
+UIS,"herbarium, museum"
+UIS:H,museum
+UISMHN,museum
+UIU,herbarium
+UJAT,herbarium
+UJB,culture collection
+UJFCC,culture collection
+UJIM,museum
+UK<USA-KY>,museum
+ULKY,museum
+UKC,herbarium
+UKEN,museum
+UKKP,culture collection
+UKKY,museum
+UKM<DEU>,museum
+UKMB,herbarium
+UKMCC,culture collection
+UKMS<MYS>,herbarium
+ZIK,museum
+USRCB,culture collection
+UKS,museum
+UKSPI,herbarium
+UL,museum
+ULABG,museum
+ULCI,museum
+ULF,herbarium
+ULLZ,museum
+ULM,herbarium
+ULMG,museum
+ULN,herbarium
+ULQC,museum
+ULS,herbarium
+ULV,herbarium
+UPSU,herbarium
+UM,herbarium
+UMA,museum
+UMACI,museum
+UMAD,herbarium
+UMAN,museum
+UMAR,herbarium
+UMARPA,Herbarium
+UMYUH,herbarium
+UMBC,museum
+UMBS,herbarium
+UMCC,culture collection
+UMD,museum
+UMDC,museum
+UMO<USA-ME>,museum
+UMDE,museum
+UME,herbarium
+UMEC,museum
+UMED,museum
+UMF<USA-MI>,herbarium
+UMF<USA-ME>,museum
+UMF<USA-FL>,museum
+UMFK,herbarium
+UMH,herbarium
+UMHB,museum
+UMIC,museum
+UMIM,museum
+UMKC,museum
+UMKJ,herbarium
+UMKL,museum
+UMM,herbarium
+UQUH,herbarium
+UMML,museum
+UMMP,museum
+UMMZ,museum
+UMMZ:MC,museum
+UMMZ:BIRD,museum
+UMMZ:HERP,museum
+UMMZ:MAMM,museum
+UMMZ:ICH,museum
+UMN-ANTHRO,museum
+UMNGH,Herbarium
+UMNH,museum
+UMNH:MAMM,museum
+UMNH:BIRD,museum
+UMNH:HERP,museum
+UMNH:UT (Botany),museum
+UMNH:UT-M (Mycology),museum
+UMO<GBR>,museum
+UMOC,museum
+UMPH,herbarium
+UMPI,Herbarium
+UMR CNRS,museum
+UMRC,culture collection
+UMRM,museum
+UMS,museum
+UMSP,museum
+UMSS,museum
+UMTP,herbarium
+UMUT,museum
+UN,museum
+UNA,herbarium
+UNAB,museum
+UNAC,museum
+UNAD,museum
+UNAF,herbarium
+UNAH,museum
+UNAN,museum
+UNASAM,herbarium
+UNB<BRA>,museum
+UNBC,Herbarium
+UNC-B,museum
+UNCA,herbarium
+UNCAT,Herbarium
+UNCB,museum
+UNCC<USA-NC>,herbarium
+UNCC<COL>,museum
+UNCG,culture collection
+UNCG:MAMM,museum
+UNCG:Para,museum
+UNCOQ,herbarium
+UNCP,museum
+UNCW,museum
+UNDH,herbarium
+UNEFM,museum
+UNEVR,museum
+UNEX,herbarium
+UNEX:FECRGA,culture collection
+UNG,herbarium
+UNGGVH,herbarium
+UNH,museum
+UNI,museum
+UNIBAS:DUW,museum
+UNIBAS:IPNA,museum
+Unicauca,Museum
+UZA,museum
+UNIFG,museum
+UNIFR,museum
+UNIMAS,museum
+UNIMIB-ZPL,herbarium
+UNIN,herbarium
+UNINE:ARCZ,museum
+UNIP,herbarium
+UNISZA,herbarium
+UNITEC,herbarium
+USCWH,herbarium
+USDA,museum; culture collection
+USDA:GRIN,germplasm repository
+USDA:CFRA,seed bank
+USDA:NCGR,germplasm repository
+USDA:PGRU,herbarium
+USDA:USNPC,museum
+USDA:NSGC,germplasm repository
+UNIUD,museum
+VALDF,herbarium
+VALD,herbarium
+UNL<MEX>,herbarium
+USD<DOM>,herbarium
+USZ,herbarium
+VBCM,museum
+USJ,herbarium
+ZEA,herbarium
+UNSIJ,museum
+VALPL,herbarium
+UQROO,museum
+USCG,herbarium
+USAC<GTM>,museum
+USON,herbarium
+UTAL,herbarium
+VF,herbarium
+UVCO,museum
+UTMC,herbarium
+UOJ,herbarium
+UVG,museum
+UVAL,herbarium
+UZMC,museum
+ZUFES,museum
+UPRG,museum
+VALLE,herbarium
+UNPSJB-Pv,museum
+UNLP,museum
+UNMDP,museum
+UNR<ARG>,herbarium
+UNSL,herbarium
+UNT,museum
+UNNEC,museum
+UNLO,museum
+USM<PER>,herbarium
+UPOS,herbarium
+UPTC,herbarium
+UPCT,herbarium
+VALA,herbarium
+UPNA,herbarium
+USP<ESP>,herbarium; museum
+UTCEC,herbarium
+XALU,herbarium
+USP<BRA>,museum
+UNOP,herbarium
+URM<BRA>,"culture collection, herbarium"
+ZUFSM,museum
+VIC,herbarium
+UPCB,herbarium
+UTV,herbarium
+URT,herbarium
+ZIUN,museum
+UVV,herbarium
+WHB,herbarium
+ZIS,museum
+ZIUW,museum
+VAL,herbarium
+VAB,herbarium
+WU,herbarium
+WU:MYC,herbarium
+WB<DEU>,herbarium
+UZH:IEM,museum
+UNNF,museum
+VIL,herbarium
+UPF,herbarium
+UQAM,herbarium
+UQAR,herbarium
+UQTR,herbarium
+UQAT,Herbarium
+ZMA,museum
+ZMA:POR,museum
+ZMA:MOL,museum
+ZMUO<NOR>,museum
+ZMUL,museum
+UPM<MYS>,herbarium
+USMP,herbarium
+USM<MYS>,museum
+USM<MYS>:VCRU,museum
+USMMC,herbarium
+UTHM,herbarium
+UZMH,museum
+ZUAC,museum
+WRO,herbarium
+ZMUD,museum
+UODH,herbarium
+UOK,museum
+WCE,herbarium
+WYE,herbarium
+USLH,herbarium
+WIN,herbarium
+UOM,museum
+UNSA,museum
+UNSM,museum
+UNL<USA-NE>,museum
+UNLV,herbarium
+UNR<USA-NV>,museum
+UNR<USA-NV>:HERP,museum
+UNR<USA-NV>:MAMM,museum
+UNMC,museum
+UNM,herbarium
+UNOVC,museum
+UNN,herbarium
+WNC,herbarium
+UNWH,herbarium
+UNOAL,museum
+UOBH,Herbarium
+UOBS,Herbarium
+UO,museum
+UOMZ,museum
+UOP,museum
+UOIC,museum
+UOMNH,museum
+UO<CZE>,museum
+ZMUO<FIN>,museum
+UP,museum
+UPNG,herbarium
+UPA,herbarium
+UPLB,museum
+WSRP,herbarium
+UPSA,museum
+UPEI,herbarium
+UPH,Herbarium
+UPRM,culture collection
+UPRP,museum
+UPRRP,herbarium
+ZMLP,museum
+UQH,herbarium
+UQIC,museum
+USRC,museum
+USAS,herbarium
+URIC,museum
+URIMC,museum
+URV,herbarium
+USCP,museum
+USTH,herbarium
+USTCMS,culture collection
+UNSA-VFS,museum
+USTK,museum
+UNS,museum
+USA,museum
+USAM,herbarium
+USANHC,museum
+USCH,herbarium
+USCS,herbarium
+USD<USA-SD>,museum
+USC,herbarium
+USCC,museum
+USI,museum
+USMS,herbarium
+USJH,Herbarium
+US<ZAF>,frozen tissue collection
+USCC<UK>,culture collection
+UTE,museum
+UTLH,herbarium
+UTKI,museum
+UTMC<IRN>,culture collection
+UT<USA-TN>,museum
+UTCI,museum
+UTM,herbarium
+UTIM,museum
+UTMZ,museum
+UTA,museum
+UTA:A,museum
+UTA:R,museum
+UTLPA,museum
+UTEP,museum
+UTEP:ENT,museum
+UTEP:BIRD,museum
+UTEP:ES,museum
+UTEP:FISH,museum
+UTEP:INV,museum
+UTEP:Herb,museum
+UTEP:Zoo,museum
+UTEP:HERP,museum
+UTEP:MAMM,museum
+UTHSC,culture collection
+UTPB <<USA-TX>,herbarium
+UTD,herbarium
+UPPC,museum
+UPVMICC,culture collection
+UPVMI,museum
+UPVMI:I,museum
+URO,herbarium
+URM<JPN>,museum
+USP<FJI>,museum
+UOS,herbarium
+VIST,herbarium
+UWI,museum
+UWIJ,museum
+UWIMona,Museum
+UWIC,museum
+UWC,herbarium
+ZMUT,museum
+UTZM,museum
+UTG,museum
+UU<SWE>,museum
+UT<USA-UT>,herbarium
+UU<USA-UT>,museum
+UUVP,museum
+UV<CHL>,herbarium
+UVCC,museum
+ZTNH,museum
+UVAS,Herbarium
+VETMED,herbarium
+UVIC,herbarium
+VA,herbarium
+WAH,Herbarium
+WAIK,herbarium
+UWM<POL>,museum
+WABG,herbarium
+WTU,herbarium
+WTU:F,herbarium
+WTUH,herbarium
+UWB,herbarium
+UWFC,museum
+UWFC:ICH,museum
+UWCC,culture collection
+WAT,herbarium
+UWAL,herbarium
+UWFP,herbarium
+USAC<AUS>,museum
+UWA,herbarium
+UWOPS,culture collection
+UWOC,museum
+WOCB,herbarium
+UWPG,herbarium
+UWST,herbarium
+UWW,herbarium
+UWGM,museum
+UWGB,herbarium
+UWSP,herbarium
+UWM,herbarium
+UWL,herbarium
+WIS,herbarium
+UWEC,herbarium
+UWMA,museum
+UWMIL,museum
+UWZM,museum
+WUM,museum
+WOLL,herbarium
+UWP,museum
+UWCP,museum
+UWYMV,museum
+UWYMV:MAMM,museum
+UWYMV:BIRD,museum
+UWYMV:HERP,museum
+UWYMV:FISH,museum
+WYAC,herbarium
+UOZH,Herbarium
+ZAGR,herbarium
+ZAHO,herbarium
+UZFS,museum
+UZL,herbarium
+ZULU,herbarium
+UPOL,museum
+UOA,museum
+UOA/HCPF<GRC>,culture collection
+UPP,herbarium
+ZMUU,museum
+ZIUU,museum
+UZIU,museum
+UPSV,herbarium
+UPS,herbarium
+UUZM,museum
+USDAK,museum
+USH,herbarium
+USU,museum
+USUUB,herbarium
+UTC,herbarium
+UVP,museum
+UVSC,herbarium
+UU<UKR>,herbarium
+UVM,museum
+UZMO,museum
+VHW,Herbarium
+VAFS,herbarium
+VAIC,museum
+VSC,herbarium
+VPH,herbarium
+VMM,museum
+VDB,herbarium
+VANF,herbarium
+VANH,Herbarium
+VAS,herbarium
+VIGG,museum
+VBCCA,culture collection
+VCRC,culture collection
+VCT,herbarium
+VCU,herbarium
+VDAC,herbarium
+VHS,culture collection
+VFWD,museum
+ZVCB,museum
+WMW,herbarium
+VIAY,herbarium
+VPB,culture collection
+VNUF,museum
+VGAVM,Museum
+VGG,museum
+VGZ,herbarium
+VH,herbarium
+VHLV,herbarium
+VPRI,culture collection
+VUW,museum
+WELTU,herbarium
+VNF,herbarium
+VNMN,museum
+VTCC,culture collection
+WI,herbarium
+VIMS,museum
+VMI,herbarium
+VMIL,herbarium
+VMNH,museum
+VPI,herbarium; culture-collection
+VPI:F,herbarium
+VPIC,museum
+VPIMM,museum
+VSUH,herbarium
+VTMH,herbarium
+VSCA,museum
+VSUBGH,herbarium
+VSU,Museum
+VLIZ,Museum
+VNGA,museum
+VO,herbarium
+VPM,museum
+VRBG,herbarium
+VSCC,herbarium
+VOR,herbarium
+VORG,herbarium
+VU,herbarium
+VU<NLD>,museum
+VTT,culture collection
+WFBM,museum
+WAB,herbarium
+WACA<USA-AZ>,museum
+WACA<USA-OR>,museum
+WACC,culture collection
+WADA,museum
+WANP,museum
+WAL,culture collection
+WFIS,museum
+WAI,herbarium
+WBG,herbarium
+WINC,museum
+WMNH,herbarium
+WFU,herbarium
+WFUVC,museum
+WKDS,herbarium
+WKD,herbarium
+WMS,herbarium
+WCAS,herbarium
+WCP,herbarium
+WAM,museum
+WAM:MAMM,museum
+WAM:R,museum
+WAMP,museum
+WANF,herbarium
+WXDC,herbarium
+WAPA,herbarium
+WAR,herbarium
+WARK,herbarium
+WFRC,herbarium
+WARMS,herbarium
+WWC,herbarium
+WRNFC,herbarium
+WRN,herbarium
+WARS,museum
+WAUF,herbarium
+WET,herbarium
+WASH,herbarium
+WGD,museum
+WS,herbarium
+WSU<USA-WA>,museum
+WSP,herbarium
+WPH,herbarium
+WAU,herbarium
+WEIC,museum
+WBU,herbarium
+WU<USA-TX>,museum
+WUD,herbarium
+WSUMNH,museum
+WSUSoM,museum
+WBCH,herbarium
+WBH,Museum
+WCL,herbarium
+WCR,herbarium
+WCRP,herbarium
+WCSBG,herbarium
+WCSU,herbarium
+WCU,herbarium
+WCUH,herbarium
+WCUM,culture collection
+WCUUM,museum
+WCW,herbarium
+WSU<USA-UT>,museum
+WSCO,herbarium
+WECO,herbarium
+WELC,herbarium
+WWF,herbarium
+WZUH,herbarium
+WERN,herbarium
+WWM,museum
+WHM,herbarium
+WIBF,museum
+WLMH,museum
+WTS,herbarium
+WTSU,museum
+WVBS,museum
+WVHP,herbarium
+WVDH,culture collection
+WVUC,museum
+WVIT,herbarium
+WVA,herbarium
+WVW,herbarium
+WSM<AUS>,culture collection
+WFPL,culture collection
+WFVZ,museum
+WGRS,museum
+WIUC,museum
+WIU,museum
+WKSU,museum
+WKU,herbarium
+WMU,herbarium
+WNMU,museum
+WNMU:BIRD,museum
+WNMU:FISH,museum
+WNMU:MAMM,museum
+WWUC,museum
+WWB,herbarium
+WSCH,herbarium
+WSC,museum
+WM,culture collection
+WSM,herbarium
+WEWO,herbarium
+WWSP,museum
+WFF,Herbarium
+WGCH,herbarium
+WGMM,herbarium
+WGRB,stock center
+WGRC,germplasm repository
+WH,herbarium
+WOCSB,germplasm repository
+WHIT,herbarium
+WHY,herbarium
+WMRC,Herbarium
+WSNM,museum
+WPL,herbarium
+WHN,herbarium
+WVN,herbarium
+WNRE,herbarium
+WHOI,museum
+WHT,museum
+WHYNC,herbarium
+WIAP,museum
+WIBG,museum
+WICA,museum
+WICH,herbarium
+WSBC,museum
+WNS,museum
+WII,herbarium
+WLH,herbarium
+WRC,DNA bank
+WLU,herbarium
+WILK,herbarium
+WUME,museum
+WILLU,herbarium
+WJC,herbarium
+WSFA,herbarium
+WTR,herbarium
+WING,Herbarium
+WINU,herbarium
+WSF,culture collection
+WITTE,Herbarium
+WMM,museum
+WL,herbarium
+WOSNH,herbarium
+WPC,culture collection
+WPBS,culture collection
+WRSL,herbarium
+WUH,herbarium
+WYCO,herbarium
+XAG,herbarium
+XBGH,herbarium
+XFCFC,museum
+XMBG,herbarium
+XMU,museum
+XIAS,herbarium
+XJFA,herbarium
+XJA,herbarium
+XJDC,herbarium
+XJBI,herbarium
+XTNM,herbarium
+XM,herbarium
+XJNU,herbarium
+XJU,herbarium
+XJUG,herbarium
+XYTC,herbarium
+XZTC,herbarium
+Y,herbarium
+YAF,herbarium
+YIT,
+YFTC,frozen tissue collection
+YPM,museum
+YPM:ENT,museum
+YPM:IZ,museum
+YPM:HER,museum
+YPM:ICH,museum
+YPM:MAMM,museum
+YPM:ORN,museum
+YPM:VP,museum
+YU<USA-CT>,herbarium
+YAM,herbarium
+YAMA,herbarium
+YBLF,culture collection
+YIO,museum
+YF,herbarium
+YZUH,herbarium
+YAR,herbarium
+YCCSK,herbarium
+YUH,herbarium
+YUZM,museum
+YCH,herbarium
+YBDC,herbarium
+YBU,museum
+YCE,herbarium
+YCM,museum
+YCP,herbarium
+YDC,herbarium
+YELLO,herbarium
+YPMC,museum
+YEO,herbarium
+YNUH,herbarium
+YFCC,culture collection
+YFS,herbarium
+YP,museum
+YHH,herbarium
+YIM,culture collection
+YIM<herbarium>,herbarium
+YKN,herbarium
+YLAH,Herbarium
+YLD,herbarium
+YM<GBR>,museum
+YNTCEM,herbarium
+YNU,herbarium
+YNUB,herbarium
+YNUGI,museum
+YorkU,museum
+YUTO,herbarium
+YRK,herbarium
+YUO,herbarium
+YU<CHN>,museum
+YUKONU,herbarium
+YUKU,herbarium
+YXDC,herbarium
+YZU,herbarium
+ZIUZ,museum
+ZAHBRI,Herbarium
+ZMT<CZE>,herbarium
+ZAU,herbarium
+ZAUC,museum
+ZZN,culture collection
+ZBAH,herbarium
+ZCA,herbarium
+ZDC,herbarium
+ZDEU,museum
+ZDM,museum
+ZMSZ,museum
+ZMS,museum
+ZTBB,Herbarium
+ZFMK,museum
+ZFMK:COL,museum
+ZFMK:ICH,museum
+ZFMK:FSJF,museum
+ZFMK:LIB,museum
+ZHAN,herbarium
+ZYTC,herbarium
+ZJMA,herbarium
+ZJMR,Herbarium
+ZJFC,herbarium
+ZJFI,herbarium
+ZJSC,herbarium
+ZMU,herbarium
+ZMNH,museum
+ZM,herbarium
+ZNM,museum
+ZNU,herbarium
+ZJFU,herbarium
+ZJU,stock center
+ZhM,museum
+ZZU,herbarium
+ZHR,herbarium
+ZHKU,herbarium
+ZHKUCC,culture collection
+ZIAN,museum
+ZICUP,museum
+ZIKU,museum
+ZIM,culture collection
+ZIN,museum; culture collection
+ZNP,"museum, herbarium"
+ZITIU,museum
+ZIUG,museum
+ZIUL,museum
+ZIUS<AUT>,museum
+ZIUS<SWE>,museum
+ZLSYU,museum
+ZMAU,museum
+ZMFMIB,museum
+ZMG<DEU-Greifswald>,museum
+ZMG<DEU-Gottingen>,museum
+ZMG<DEU-Gottingen>:CRUS,museum
+ZMH,museum
+ZMHU,museum
+ZMJU,museum
+ZMK<NOR>,museum
+ZMK<DNK>,museum
+ZMK<DEU>,museum
+ZMKU<THA>,museum
+ZMKU<THA>:R,museum
+ZMMU,museum
+ZMMU:MAMM,museum
+ZMMU:BIRD,museum
+ZMMU:HERP,museum
+ZMMU:FISH,museum
+ZMMU:Insect,museum
+ZMMU:INV,museum
+ZMMU:WS,museum
+ZMMGU,museum
+ZMO,museum
+ZMUA<GRC>,museum
+ZMUA<CHN>,museum
+ZMUAS,museum
+ZMUH<DEU>,museum
+ZMUH<VNM>,museum
+ZMUI,museum
+ZMUN,museum
+ZMUP,museum
+ZMUZ,museum
+ZUAB,museum
+ZPAL,museum
+ZUTC,museum
+ZRC,museum
+ZSLC,museum
+ZSP<USA-PA>,museum
+ZSI-WRS,museum
+ZSIC,museum
+ZSI-E,museum
+ZSI-M,museum
+ZSI-NRS,museum
+ZSI/ANRC,museum
+ZSI-CRS,museum
+ZSISRS,museum
+ZSI-SRS,museum
+ZSP<PAK>,museum
+ZSBS,museum
+ZSM,museum
+ZSM:LEP,museum
+ZSM:Mol,museum
+ZZSZ,museum
+ZY,herbarium

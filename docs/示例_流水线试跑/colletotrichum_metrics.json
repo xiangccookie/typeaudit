@@ -1,0 +1,37 @@
+{
+ "genus": "Colletotrichum",
+ "n_species": 5,
+ "n_numbers": 44,
+ "flag_counts": {
+  "未核": 4,
+  "标本号": 1,
+  "无目录": 23,
+  "基名属": 1,
+  "目录记为别种": 1
+ },
+ "conventions": {
+  "col2": "菌株号 = 序列库记录的 /culture_collection + /strain",
+  "col3": "模式菌 = NCBI Taxonomy type material + GenBank /type_material",
+  "flag_vocab": [
+   "号不存在",
+   "目录记为别种",
+   "属异名",
+   "一株多名",
+   "位数孤例",
+   "仅数据库有",
+   "仅文献有",
+   "未核"
+  ],
+  "note": "机构词典不全时只漏检不误报 ⇒ 任何计数均为【下界】",
+  "col2_coverage": "第 2 列只覆盖 /culture_collection 字段存在的记录。该字段在宽搜记录里罕见（实测 200 条里：fructicola/gloeosporioides/siamense 均为 0，falcatum 2，arxii 18），故本列对多数种是【下界】，不宜用『该列表为空』反推『该种无保藏号』。",
+  "col3_note": "第 3 列含非保藏号写法（标本馆号 `CBS H-xxxx` 标『标本号』；`Paphi 2-1` 这类个人编号标『无目录』）。",
+  "flag_meaning": {
+   "号不存在": "该号在对应机构目录中确实查无（仅在机构目录可得时判）",
+   "目录记为别种": "目录把该号标为另一个种/属（基名属已排除）",
+   "基名属": "目录记的是基名属（如 Vermicularia→Colletotrichum），非错",
+   "标本号": "标本馆号，不该拿培养物目录核",
+   "无目录": "该机构无公开机读目录 ⇒ 无法核验（**不等于号不存在**）",
+   "未核": "号存在但目录无地位标注"
+  }
+ }
+}

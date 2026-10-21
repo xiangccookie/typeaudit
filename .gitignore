@@ -1,0 +1,51 @@
+# ============================================================
+#  typeaudit  .gitignore
+#  原则：别人 clone 下来能重新生成的东西，一律不入库
+#        （见 docs 与《扫描工具》说明第四、五节）
+# ============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv*/
+venv*/
+
+# ---- 运行产物（本项目重点：50 多个 out* 目录）----
+out/
+out_*/
+out_*/*
+cache/
+.cache/
+tree_auto/
+mafft.*/
+*.log
+
+# ---- 备份与调试残留 ----
+*.bak_*
+*.tmp
+_*.json
+_knaw_*/
+_knaw_js/
+_scd_*.html
+_scd_*.js
+auto
+auto.meta.json
+
+# ---- 大数据 / 第三方数据快照（用 tools/ 里的脚本自行获取）----
+data/cbs_catalogue.tsv
+data/ncbi_Colletotrichum.tsv
+
+# ---- 打包产物（走 Release 附件）----
+*.exe
+_build/
+
+# ---- 本机便捷脚本（写死了本机路径，别人用不了）----
+*.bat
+*.ps1
+
+# ---- 凭据（绝对禁止入库）----
+.env
+*.token

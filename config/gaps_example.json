@@ -1,0 +1,59 @@
+{
+ "_说明": "缺环分类器配置示例。classes 的顺序即优先级；impact_order 决定多标签时取哪一类算影响。",
+ "sources": [
+  {
+   "tsv": "ledger.tsv",
+   "label": "查证台账",
+   "id_cols": [
+    "物种"
+   ],
+   "status_col": "查证结果",
+   "evidence_col": "证据",
+   "text_cols": [
+    "证据",
+    "备注",
+    "查证结果"
+   ]
+  }
+ ],
+ "blocker_regex": "未证实|未决|待补",
+ "classes": [
+  {
+   "name": "unresolvable",
+   "regex": "一号两主|两主|矛盾已确认|至少一方有误|不唯一|哪一方"
+  },
+  {
+   "name": "need_prefix",
+   "regex": "前缀|拼写|第三种写法|零命中"
+  },
+  {
+   "name": "need_protologue",
+   "regex": "原描述|原始描述|protologue|Mycologia|Persoonia"
+  },
+  {
+   "name": "need_catalogue",
+   "regex": "机构目录|保藏中心目录|馆藏目录|catalogue|ATCC|CBS|NRRL|BPI"
+  }
+ ],
+ "needs": {
+  "need_protologue": "该篇原始描述（指定该种模式的那篇）",
+  "need_catalogue": "对应保藏中心的公开目录（或人工查询）",
+  "need_prefix": "机构前缀词典（收录该机构的全部拼写变体）",
+  "unresolvable": "人工裁定（需要分类学判断，脚本不得自动定）",
+  "no_local_evidence": "待定：需先确认是否存在可用的第三方桥"
+ },
+ "impact_order": [
+  "unresolvable",
+  "need_catalogue",
+  "need_prefix",
+  "need_protologue",
+  "no_local_evidence"
+ ],
+ "impact": {
+  "unresolvable": "高 —— 影响定性",
+  "need_catalogue": "中 —— 只影响证据档位",
+  "need_protologue": "低 —— 落在存疑桶",
+  "need_prefix": "低 —— 落在存疑桶",
+  "no_local_evidence": "低 —— 落在存疑桶"
+ }
+}
