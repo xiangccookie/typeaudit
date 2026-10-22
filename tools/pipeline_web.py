@@ -1945,7 +1945,9 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       height:340px;overflow:auto;font:12px/1.45 Consolas,monospace;white-space:pre-wrap;margin-top:8px"></pre>
   </div>
   <div id="findview" style="display:none">
-    <div class="tiny" style="margin-bottom:6px;background:#f8fafc;border-left:3px solid #93c5fd;padding:5px 8px">
+    <details style="margin-bottom:6px">
+      <summary class="tiny" style="cursor:pointer;color:#2563eb">📖 这一页怎么用 · 能查出哪些类别（点开看）</summary>
+    <div class="tiny" style="margin-top:4px;background:#f8fafc;border-left:3px solid #93c5fd;padding:5px 8px">
       <b>一次跑完就够了。</b>点「▶ 开始」会自动串完：号层 → 名字层（并名异名）→
       记录层（GenBank 声明）→ 汇总。<b>不需要你分层操作</b>；下面的「层级」列只是告诉你
       这条证据来自哪一步。<br>
@@ -1960,6 +1962,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       记录层（GenBank 声明缺失）｜目录层（CBS 目录自身问题）。
       每条都带<b>层级 / 归类 / 来源 / 证据</b>。<b>不确定</b>是诚实边界，不是没查。
     </div>
+    </details>
     <div style="margin-bottom:6px">
       <button onclick="runFind()">↻ 重新汇总</button>
       <button onclick="runEnrich(false)">↻ 只重跑核验（不重跑审计）</button>
