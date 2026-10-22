@@ -2290,6 +2290,26 @@ function renderFindKinds(){
       '<span style="color:'+(CLS[k]||'#111')+'">●</span> '+
       k.replace(/（.*$/,'')+' <b>'+v+'</b></span>').join('');
 }
+// 类别的白话解释：很多条目的「发现」列只是重复类别，读者看不出所以然。
+// 只在【发现 === 类别】时替换为这段解释；数据本身一个字不改（统计仍按类别算）。
+const FIND_WHY = {
+  '无公开数据库':'该机构没有可机读的公开目录，无从核对',
+  '未核':'号在机构目录中存在，但目录未标注它的模式地位',
+  '疑似非机构编号':'形如「人名缩写+序号」的工作编号，疑似非机构保藏号',
+  'NCBI 声明为模式号，机构无此记录':'GenBank 标为模式材料，但机构目录里查不到该号',
+  '标本号':'这是标本馆号（如 CBS H-xxxx），不能拿培养物目录去核',
+  '基名属':'记录用的是基名所属的属名（属名已变更），种加词未变',
+  'CBS 记为别种':'CBS 目录把该号记在另一个种名下',
+  'ICMP 记为别种':'ICMP 目录把该号记在另一个种名下',
+  'CGMCC 记为非模式菌株':'CGMCC 目录明确标注该号不是模式菌株',
+  '模式地位冲突':'GenBank 与机构目录对模式类型的说法不一致',
+  '待核':'模式号归属待核'
+};
+function whyOf(r){
+  const f=(r['发现']||'').trim(), c=(r['类别']||'').trim();
+  if(f===c && FIND_WHY[c]) return FIND_WHY[c];
+  return f;
+}
 function renderFindTable(){
   const rows = FIND_FILTER==='all' ? FIND_ROWS
              : FIND_ROWS.filter(function(r){ return (r['归类']||'')===FIND_FILTER; });
@@ -2309,8 +2329,10 @@ function renderFindTable(){
     h+='<tr style="border-top:1px solid #e5e7eb">'+cols.map(function(c){
       const v=String(r[c]||'');
       const style=(c==='归类')?(' style="color:'+color+';font-weight:600"'):'';
-      const txt=(c==='发现'||c==='对象')?v.slice(0,120):v;
-      return '<td'+style+'>'+_escAuto(txt)+'</td>';
+      const raw=(c==='发现')?whyOf(r):v;
+      const txt=(c==='发现'||c==='对象')?raw.slice(0,120):raw;
+      const tip=(c==='发现'&&raw.length>40)?(' title="'+_escAuto(raw)+'"'):'';
+      return '<td'+style+tip+'>'+_escAuto(txt)+'</td>';
     }).join('')+'</tr>';
   });
   document.getElementById('findtable').innerHTML=h+'</table>';
