@@ -1974,7 +1974,10 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       <button class="gray" onclick="runEnrich(true)">↻ 只重跑核验 + 号连接</button>
       <span class="tiny" id="findsum" style="margin-left:8px"></span>
     </div>
-    <div style="margin-bottom:6px" class="tiny">
+    <details style="margin-bottom:6px">
+      <summary class="tiny" style="cursor:pointer;color:#2563eb">📋 表格：卡片管不了的发现
+        （异名/独立种分歧 · 一株多名 · GenBank 无声明 · 目录自身问题）—— 点开查看</summary>
+    <div style="margin-top:6px" class="tiny">
       筛选：<button class="gray" onclick="setFindFilter('all')">全部</button>
       <button class="gray" onclick="setFindFilter('错值')">只看错值</button>
       <button class="gray" onclick="setFindFilter('矛盾')">只看矛盾</button>
@@ -1985,6 +1988,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       </label>
     </div>
     <div id="findtable" style="max-height:520px;overflow:auto"></div>
+    </details>
     <pre id="findlog" style="display:none;background:#0f172a;color:#d7dde8;padding:8px;
       border-radius:6px;height:120px;overflow:auto;font:12px/1.45 Consolas,monospace;
       white-space:pre-wrap;margin-top:8px"></pre>
