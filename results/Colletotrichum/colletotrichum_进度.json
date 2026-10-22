@@ -1,9 +1,0 @@
-{
- "genus": "Colletotrichum",
- "done": 3,
- "total": 3,
- "finished": true,
- "updated": "2026-10-23 04:07:56",
- "out_tsv": "results/Colletotrichum\\colletotrichum_三列表.tsv",
- "_说明": "finished=false 表示这是【部分结果】：只跑了 done/total 个种。不要把它当成全属结论；接着跑不会重复下载已完成的种。"
-}

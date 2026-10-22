@@ -1133,6 +1133,24 @@ def write_tables(rows, out_dir, genus, fw=None, quiet=False):
         return re.sub(r"[\s\u3000]+", " ", s).strip()
 
     p1 = os.path.join(out_dir, "{}_三列表.tsv".format(g))
+
+    # 【护栏】部分运行不得覆盖完整结果表。
+    # 实测事故：网页端「限制种数」默认 3，有人把输出目录指到 results/Colletotrichum
+    # 后点「开始」→ 用 3 行覆盖了 408 行的正式结果表（文件从 136,825 字节掉到 678 字节）。
+    # 这里改为：若新结果比已有表更少，写到 <name>.partial.tsv，原表一个字节都不动。
+    _existing = 0
+    if os.path.exists(p1):
+        try:
+            with io.open(p1, encoding="utf-8-sig") as _f:
+                _existing = max(0, len(_f.read().splitlines()) - 1)
+        except Exception:
+            _existing = 0
+    if _existing and len(rows) < _existing:
+        p1 = os.path.join(out_dir, "{}_三列表.partial.tsv".format(g))
+        if not quiet:
+            print("[report] ⚠️ 本次只产出 {} 行，少于已存在的 {} 行 —— "
+                  "为免覆盖完整结果表，改写 partial：{}".format(len(rows), _existing, p1))
+
     with io.open(p1, "w", encoding="utf-8-sig", newline="") as f:
         f.write("种名\t菌株号（含问题）\t模式菌（含问题）\n")
         for r in rows:
