@@ -1815,10 +1815,15 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
  .filters button.on{background:#2563eb;color:#fff}
 </style></head><body>
 <header>类型材料审计 · 流水线 + 审稿系统　<span class="tiny" style="color:#9ca3af">机器只出候选，人裁定；裁定一律留痕</span></header>
-  <div class="card" id="sumcard" style="margin:10px 16px 0">
-    <b>三属审计结论速览</b>
-    <span class="tiny" style="color:#6b7280">（读 results/summary.json；不联网、不跑流水线）</span>
-    <div id="sumbody" class="tiny" style="margin-top:6px;line-height:1.9">加载中…</div>
+  <div class="card" id="sumcard" style="margin:10px 16px 0;padding:7px 12px">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <b style="font-size:13px;white-space:nowrap">三属审计结论</b>
+      <span id="sumline" class="tiny" style="color:#374151">加载中…</span>
+      <a href="javascript:void(0)" onclick="toggleSum()" id="sumtoggle"
+         class="tiny" style="color:#2563eb;margin-left:auto;white-space:nowrap">展开详情 ▾</a>
+    </div>
+    <div id="sumbody" class="tiny" style="display:none;margin-top:8px;line-height:1.85;
+         border-top:1px dashed #d1d5db;padding-top:8px"></div>
   </div>
 <div id="depbar" style="display:none;background:#fef3c7;border-bottom:1px solid #fcd34d;
      padding:8px 16px;font-size:13px;color:#92400e"></div>
@@ -1829,6 +1834,8 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <div><label>限制种数（先填 3 试）</label><input type="number" id="limit" value="3"></div>
     <div><label>NCBI 邮箱</label><input type="text" id="email" placeholder="you@example.org"></div>
   </div>
+  <details style="margin:4px 0">
+    <summary class="tiny" style="cursor:pointer;color:#6b7280">第三方数据源（只在自己重跑时需要填；看结论不必填）</summary>
   <label>CBS 目录（不填 → 不会有错误标注）</label>
   <div style="display:flex;gap:8px;align-items:center">
     <input type="text" id="cbs" placeholder="...\cbs_catalogue.tsv" style="flex:1">
@@ -1847,6 +1854,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     机构登记表：<b>仓库已内置</b>（<code>data/biocollections_codes.csv</code>，9,672 行），自动使用，无需填。
   </div>
   <div class="tiny" id="refhint" style="margin-top:2px"></div>
+  </details>
   <label>输出目录</label><input type="text" id="out" value="out_audit">
   <div class="tiny" style="margin-top:5px;line-height:1.9;padding:6px 8px;
        background:#ecfdf5;border:1px solid #a7f3d0;border-radius:6px">
@@ -2163,15 +2171,22 @@ async function judge(k,verdict){
   const j=await r.json();
   if(j.ok){REVIEWS[key(c)]=body;render();}else{alert('保存失败：'+(j.msg||''));}
 }
+function toggleSum(){
+  const b=$('sumbody'), a=$('sumtoggle');
+  const open=b.style.display==='none';
+  b.style.display=open?'block':'none';
+  a.textContent=open?'收起 ▴':'展开详情 ▾';
+}
 async function loadSummary(){
-  const b=$('sumbody');
+  const b=$('sumbody'), ln=$('sumline');
   try{
     const r=await fetch('/api/summary'); const d=await r.json();
-    if(d.error){ b.innerHTML='<span style="color:#b91c1c">未找到 results/summary.json（'+d.error+'）</span>'; return; }
+    if(d.error){ ln.innerHTML='<span style="color:#b91c1c">未找到 results/summary.json</span>'; return; }
+    ln.textContent=d.headline||'';
     let h='';
     for(const k of (d.blocks||[])){ h+='<div style="margin-bottom:6px"><b>'+k.title+'</b><br>'+k.lines.join('<br>')+'</div>'; }
     b.innerHTML=h||'（summary.json 里没有 blocks）';
-  }catch(e){ b.innerHTML='<span style="color:#b91c1c">读取失败：'+e+'</span>'; }
+  }catch(e){ ln.innerHTML='<span style="color:#b91c1c">读取失败：'+e+'</span>'; }
 }
 async function loadResults(v){
   if(!v) return;
