@@ -69,6 +69,24 @@ def _write(logfile, msg):
         pass
 
 
+def show_error(msg):
+    """在无控制台模式下也能让人看到原因。
+
+    为什么需要：exe 是 console=False，出错时连黑窗都不弹，
+    用户双击后「什么也没发生」——这是最糟的失败方式。
+    ctypes 调 Windows 原生 MessageBox，不依赖 tkinter（打包时已被排除）。
+    """
+    try:
+        import ctypes
+        ctypes.windll.user32.MessageBoxW(0, str(msg), "类型校对台 · 启动失败", 0x10)
+    except Exception:
+        pass
+    try:
+        sys.stdout.write(str(msg) + "\n")
+    except Exception:
+        pass
+
+
 def find_repo():
     """按上面写的四个顺序找仓库根目录，返回绝对路径或 None。"""
     marks = os.path.join("src", "typeaudit", "pipeline.py")
@@ -87,6 +105,11 @@ def find_repo():
             p = io.open(rp, encoding="utf-8-sig").read().strip().splitlines()
             if p and os.path.exists(os.path.join(p[0].strip(), marks)):
                 return os.path.abspath(p[0].strip())
+
+    # ②b 同目录下的 typeaudit/ 子目录（用户把仓库整个放进一个文件夹的常见情形）
+    for cand in (os.path.join(here, "typeaudit"), os.path.join(os.path.dirname(here), "typeaudit")):
+        if os.path.exists(os.path.join(cand, marks)):
+            return os.path.abspath(cand)
 
     # ③ 从所在目录逐级往上找
     cur = here
@@ -146,8 +169,24 @@ def main():
     if not repo:
         # 连日志都写不了，只能退到临时目录
         tmp = os.path.join(os.environ.get("TEMP", "."), "_launcher.log")
-        _write(tmp, "❌ 找不到仓库（需要含 src/typeaudit/pipeline.py 的目录）。"
-                    "请在 exe 旁边放一个 repo.txt，里面写仓库路径。")
+        here0 = os.path.dirname(os.path.abspath(sys.executable if getattr(sys, "frozen", False)
+                                               else __file__))
+        msg = ("找不到项目代码目录（需要含 src/typeaudit/pipeline.py 的文件夹）。\n\n"
+               "这个 exe 只是启动器，本身不含代码。请任选一种：\n"
+               "  1) 把整个仓库解压后，双击仓库文件夹里的 类型校对台.exe；\n"
+               "  2) 在本文件旁边新建 repo.txt，第一行写仓库路径；\n"
+               "  3) 设置环境变量 TYPEPAUDIT_REPO=仓库路径。\n\n"
+               "已查找位置：{}\n及其上 6 级父目录、typeaudit/ 子目录。".format(here0))
+        _write(tmp, "❌ 找不到仓库。" + msg)
+        show_error(msg)
+        try:
+            tpl = os.path.join(here0, "repo.txt")
+            if not os.path.exists(tpl):
+                io.open(tpl, "w", encoding="utf-8", newline="\n").write(
+                    "# 把下面一行换成你电脑上仓库的完整路径，保存后重新双击 exe\n"
+                    "C:\\路径\\到\\colleto-type-audit\n")
+        except Exception:
+            pass
         return 2
 
     log = _log_path(repo)
@@ -171,13 +210,17 @@ def main():
         return 0
 
     if not port_free(host, port):
-        _write(log, "❌ 端口 {} 被占用，但访问不通。换端口：--port 9000".format(port))
+        m = "端口 {} 被占用，但访问不通。请关掉占用程序，或改用：--port 9000".format(port)
+        _write(log, "❌ " + m)
+        show_error(m)
         return 3
 
     try:
         import pipeline_web as PW
     except Exception:
-        _write(log, "❌ 导入 pipeline_web 失败:\n" + traceback.format_exc())
+        tb = traceback.format_exc()
+        _write(log, "❌ 导入 pipeline_web 失败:\n" + tb)
+        show_error("导入 pipeline_web 失败。\n日志：{}\n\n{}".format(log, tb[-600:]))
         return 4
 
     import http.server

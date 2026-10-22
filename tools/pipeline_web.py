@@ -1815,6 +1815,11 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
  .filters button.on{background:#2563eb;color:#fff}
 </style></head><body>
 <header>类型材料审计 · 流水线 + 审稿系统　<span class="tiny" style="color:#9ca3af">机器只出候选，人裁定；裁定一律留痕</span></header>
+  <div class="card" id="sumcard" style="margin:10px 16px 0">
+    <b>三属审计结论速览</b>
+    <span class="tiny" style="color:#6b7280">（读 results/summary.json；不联网、不跑流水线）</span>
+    <div id="sumbody" class="tiny" style="margin-top:6px;line-height:1.9">加载中…</div>
+  </div>
 <div id="depbar" style="display:none;background:#fef3c7;border-bottom:1px solid #fcd34d;
      padding:8px 16px;font-size:13px;color:#92400e"></div>
 <div class="wrap">
@@ -1843,6 +1848,16 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
   </div>
   <div class="tiny" id="refhint" style="margin-top:2px"></div>
   <label>输出目录</label><input type="text" id="out" value="out_audit">
+  <div class="tiny" style="margin-top:5px;line-height:1.9;padding:6px 8px;
+       background:#ecfdf5;border:1px solid #a7f3d0;border-radius:6px">
+    <b>不想跑流水线？</b> 直接载入仓库里已有的结果（不联网、不占 CPU）：
+    <select id="loadres" onchange="loadResults(this.value)" style="font-size:12px;padding:2px 4px">
+      <option value="">— 选择属 —</option>
+      <option value="Colletotrichum|results/Colletotrichum">Colletotrichum（408 种 · 3,633 个号）</option>
+      <option value="Trichoderma|results/Trichoderma">Trichoderma（445 种 · 4,200 个号）</option>
+      <option value="Diaporthe|results/Diaporthe">Diaporthe（507 种 · 3,270 个号）</option>
+    </select>
+  </div>
   <label>框架论文 / 物种清单（可选）</label>
   <input type="text" id="framework" placeholder="框架论文 txt（可选）">
   <label>物种清单（可选）—— <b>每行一个种名</b>；填了就不联网取种名，直接跑这些种</label>
@@ -2148,7 +2163,25 @@ async function judge(k,verdict){
   const j=await r.json();
   if(j.ok){REVIEWS[key(c)]=body;render();}else{alert('保存失败：'+(j.msg||''));}
 }
-async function setTab(t){
+async async function loadSummary(){
+  const b=$('sumbody');
+  try{
+    const r=await fetch('/api/summary'); const d=await r.json();
+    if(d.error){ b.innerHTML='<span style="color:#b91c1c">未找到 results/summary.json（'+d.error+'）</span>'; return; }
+    let h='';
+    for(const k of (d.blocks||[])){ h+='<div style="margin-bottom:6px"><b>'+k.title+'</b><br>'+k.lines.join('<br>')+'</div>'; }
+    b.innerHTML=h||'（summary.json 里没有 blocks）';
+  }catch(e){ b.innerHTML='<span style="color:#b91c1c">读取失败：'+e+'</span>'; }
+}
+async function loadResults(v){
+  if(!v) return;
+  const p=v.split('|');
+  $('genus').value=p[0]; $('out').value=p[1];
+  CANDS=[];                       // 清掉上一属的卡片，避免串味
+  try{ await loadCands(); }catch(e){}
+  setTab('err');                  // 切到「确定错（审稿区）」，同时渲染全部发现
+}
+function setTab(t){
   TAB=t;
   $('tabErr').classList.toggle('on',t==='err');
   $('tabUnk').classList.toggle('on',t==='unk');
@@ -2489,6 +2522,8 @@ async function renderTrust(){  if(TRUSTED===null){
         '<span style="color:#6b7280">检查通过，无标记</span>'}</td></tr>`).join('')+
     `</tbody></table>`;
 }
+// 页面打开即拉一次「结论速览」——不联网、不依赖任何选择
+try{ loadSummary(); }catch(e){}
 function exportTrusted(){
   if(!TRUSTED)return;
   const tsv=['种名\t模式菌株\t菌株号']
@@ -2560,6 +2595,16 @@ class H(BaseHTTPRequestHandler):
             od = qs.get("out", "out_audit")
             p, rows = read_undecidable(od, qs.get("genus", ""))
             return self._json({"file": p, "rows": rows, "mtime": _mtime(p)})
+        if u.path == "/api/summary":
+            # 三属结论速览：直接读 results/summary.json。
+            # 为什么要它：论文读者多半不写代码，打开网页只想看「结论是什么」，
+            # 而审稿区是逐条卡片、看不出全局数字。
+            sp = os.path.join(REPO, "results", "summary.json")
+            try:
+                d = json.load(io.open(sp, encoding="utf-8"))
+            except Exception as e:
+                d = {"error": "{}: {}".format(type(e).__name__, str(e)[:80])}
+            return self._json(d)
         if u.path == "/api/coverage":
             # 覆盖声明：哪些种因为 GenBank 记录太多，本次只扫了一部分。
             # 为什么要单开一个接口：这件事决定「这张表可信到什么程度」，
