@@ -65,6 +65,11 @@ def from_table(out_dir, genus, classify):
                 num = m.group(1).strip()
                 for fl in [x.strip() for x in m.group(2).split(";")
                            if x.strip() and x.strip() not in ("—", "-")]:
+                    # 「同名异物：…」「已核：…」是种级裁决（我的名字层给的判决），
+                    # 不是号层标记；同一现象已由「异名/独立种分歧」记过一条，
+                    # 在这里再按号记一次会让 4 个种各多 1 条（实测 1,596 → 1,600）。
+                    if fl.startswith(("同名异物", "已核")):
+                        continue
                     rows.append({"层级": "号", "类别": fl.split("（")[0],
                                  "对象": "{} / {}".format(sp, num),
                                  "发现": fl, "归类": classify(fl),
@@ -103,7 +108,18 @@ def from_species(out_dir, classify):
                 d = json.loads(nj)
             except Exception:
                 d = {}
-            if d.get("verdict") == "分歧":
+            if d.get("verdict") == "拼写变体":
+                # 拼写变体：同一个名字的两种写法（MycoBank 标 Orthographic variant）。
+                # 它不该进「异名/独立种分歧」，也不该算不一致 —— 归「非错」。
+                rows.append({"层级": "名字", "类别": "拼写变体（非错）",
+                             "对象": sp,
+                             "发现": "MycoBank 标为 Orthographic variant（{}）；NCBI 另立 taxid".format(
+                                 d.get("mycobank", "")),
+                             "归类": "非错",
+                             "来源": "四方核验·名称分歧",
+                             "证据": "status={} ｜ taxid={}".format(
+                                 d.get("status", ""), r.get("NCBI_taxid", ""))})
+            elif d.get("verdict") == "分歧":
                 rows.append({"层级": "名字", "类别": "异名/独立种分歧",
                              "对象": sp,
                              "发现": "NCBI：{} ｜ MycoBank：{}".format(
@@ -174,6 +190,11 @@ def from_names(out_dir, genus, repo, classify):
                     continue
                 v = (r.get("verdict") or "").strip()
                 if not v or v.startswith("一致"):
+                    continue
+                # 同名异物 / 已核 这两类裁决是「种级」判断，同一现象已由
+                # from_fourway 的「异名/独立种分歧」记过一条；此处再按号记一次
+                # 会让 4 个种各多出 1 条重复（实测 1,596 → 1,600）。
+                if v.startswith("同名异物") or v.startswith("已核"):
                     continue
                 cls = "非错" if "非错" in v else "不确定"
                 rows.append({"层级": "名字", "类别": v,

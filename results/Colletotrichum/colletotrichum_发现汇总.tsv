@@ -1697,20 +1697,20 @@
 1696	号	疑似非机构编号	Colletotrichum zhejiangense / NN 076215	疑似非机构编号	错值	三列表·模式菌列	out=out_v2 ｜ 列=模式菌 ｜ 号=NN 076215
 1697	号	无公开数据库	Colletotrichum zoysiae / MAFF 238573	无公开数据库	不确定	三列表·菌株号列	out=out_v2 ｜ 列=菌株号 ｜ 号=MAFF 238573
 1698	号	无公开数据库	Colletotrichum zoysiae / BPI 884090	无公开数据库	不确定	三列表·模式菌列	out=out_v2 ｜ 列=模式菌 ｜ 号=BPI 884090
-1699	名字	异名/独立种分歧	Colletotrichum acidae	NCBI：独立 taxid(2100429) ｜ MycoBank：独立（acidi）	矛盾	四方核验·名称分歧	taxid=2100429 ｜ 接受名=Colletotrichum acidi M.C. Samar. & K.D. Hyde, Mycosphere 9 (
+1699	名字	拼写变体（非错）	Colletotrichum acidae	MycoBank 标为 Orthographic variant（独立（acidi））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2100429
 1700	名字	异名/独立种分歧	Colletotrichum analogum	NCBI：独立 taxid(2904270) ｜ MycoBank：独立（camelliae）	矛盾	四方核验·名称分歧	taxid=2904270 ｜ 接受名=Colletotrichum camelliae Massee, Bull. Misc. Inform. Kew 189
 1701	名字	待核	Colletotrichum asianum	模式号归属待核	错值	四方核验	out=out_v2 ｜ 待核明细
 1702	名字	异名/独立种分歧	Colletotrichum celtidis	NCBI：独立 taxid(2778923) ｜ MycoBank：独立（karsti）	矛盾	四方核验·名称分歧	taxid=2778923 ｜ 接受名=Colletotrichum karsti You L. Yang, Zuo Y. Liu, K.D. Hyde & L
 1703	名字	异名/独立种分歧	Colletotrichum citri	NCBI：独立 taxid(1365444) ｜ MycoBank：独立（nymphaeae）	矛盾	四方核验·名称分歧	taxid=1365444 ｜ 接受名=Colletotrichum nymphaeae (Pass.) Aa, Netherlands J. Pl. Path
 1704	名字	异名/独立种分歧	Colletotrichum citrulli	NCBI：独立 taxid(2975258) ｜ MycoBank：独立（gloeosporioides）	矛盾	四方核验·名称分歧	taxid=2975258 ｜ 接受名=Colletotrichum gloeosporioides (Penz.) Penz. & Sacc., Atti I
-1705	名字	异名/独立种分歧	Colletotrichum citrus-medicae	NCBI：独立 taxid(2699250) ｜ MycoBank：独立（citri-medicae）	矛盾	四方核验·名称分歧	taxid=2699250 ｜ 接受名=Colletotrichum citri-medicae Qian Zhang, Yong Wang bis, Jaya
+1705	名字	拼写变体（非错）	Colletotrichum citrus-medicae	MycoBank 标为 Orthographic variant（独立（citri-medicae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2699250
 1706	名字	异名/独立种分歧	Colletotrichum dimorphum	NCBI：独立 taxid(2904272) ｜ MycoBank：独立（gloeosporioides）	矛盾	四方核验·名称分歧	taxid=2904272 ｜ 接受名=Colletotrichum gloeosporioides (Penz.) Penz. & Sacc., Atti I
-1707	名字	异名/独立种分歧	Colletotrichum dolichoconidiophori	NCBI：独立 taxid(2859257) ｜ MycoBank：独立（dolichoconidiophorum）	矛盾	四方核验·名称分歧	taxid=2859257 ｜ 接受名=Colletotrichum dolichoconidiophorum F. Liu, W.P. Wu & L. Cai
-1708	名字	异名/独立种分歧	Colletotrichum duohuaense	NCBI：独立 taxid(3112628) ｜ MycoBank：独立（duohua）	矛盾	四方核验·名称分歧	taxid=3112628 ｜ 接受名=Colletotrichum duohua H.L. Hu, Y.P. Hu, Hao Yu & X.Z. Zhou, 
+1707	名字	拼写变体（非错）	Colletotrichum dolichoconidiophori	MycoBank 标为 Orthographic variant（独立（dolichoconidiophorum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2859257
+1708	名字	拼写变体（非错）	Colletotrichum duohuaense	MycoBank 标为 Orthographic variant（独立（duohua））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3112628
 1709	名字	异名/独立种分歧	Colletotrichum falcatum	NCBI：独立 taxid(129314) ｜ MycoBank：独立（graminicola）	矛盾	四方核验·名称分歧	taxid=129314 ｜ 接受名=Colletotrichum graminicola (Ces. ex Sacc.) G.W. Wilson, Phyt
 1710	名字	异名/独立种分歧	Colletotrichum fragariae	NCBI：独立 taxid(27359) ｜ MycoBank：独立（theobromicola）	矛盾	四方核验·名称分歧	taxid=27359 ｜ 接受名=Colletotrichum theobromicola Delacr., Bull. Soc. Mycol. Fran
 1711	名字	异名/独立种分歧	Colletotrichum gracile	NCBI：独立 taxid(2904273) ｜ MycoBank：独立（jiangxiense）	矛盾	四方核验·名称分歧	taxid=2904273 ｜ 接受名=Colletotrichum jiangxiense F. Liu & L. Cai, Persoonia 35: 82
-1712	名字	异名/独立种分歧	Colletotrichum grossum	NCBI：独立 taxid(1789210) ｜ MycoBank：独立（grossi）	矛盾	四方核验·名称分歧	taxid=1789210 ｜ 接受名=Colletotrichum grossi Y.Z. Diao, C. Zhang, L. Cai & X.L. Liu
+1712	名字	拼写变体（非错）	Colletotrichum grossum	MycoBank 标为 Orthographic variant（独立（grossi））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1789210
 1713	名字	待核	Colletotrichum hebeiense	模式号归属待核	错值	四方核验	out=out_v2 ｜ 待核明细
 1714	名字	异名/独立种分歧	Colletotrichum hymenocallidicola	NCBI：独立 taxid(1764284) ｜ MycoBank：独立（orchidearum）	矛盾	四方核验·名称分歧	taxid=1764284 ｜ 接受名=Colletotrichum orchidearum Allesch., Rabenhorst's Kryptogame
 1715	名字	异名/独立种分歧	Colletotrichum juglandicola	NCBI：独立 taxid(3439428) ｜ MycoBank：独立（gloeosporioides）	矛盾	四方核验·名称分歧	taxid=3439428 ｜ 接受名=Colletotrichum gloeosporioides (Penz.) Penz. & Sacc., Atti I
@@ -1724,7 +1724,7 @@
 1723	名字	异名/独立种分歧	Colletotrichum nullisetosum	NCBI：独立 taxid(2904275) ｜ MycoBank：独立（jiangxiense）	矛盾	四方核验·名称分歧	taxid=2904275 ｜ 接受名=Colletotrichum jiangxiense F. Liu & L. Cai, Persoonia 35: 82
 1724	名字	异名/独立种分歧	Colletotrichum oblongisporum	NCBI：独立 taxid(2904276) ｜ MycoBank：独立（jiangxiense）	矛盾	四方核验·名称分歧	taxid=2904276 ｜ 接受名=Colletotrichum jiangxiense F. Liu & L. Cai, Persoonia 35: 82
 1725	名字	异名/独立种分歧	Colletotrichum orientale	NCBI：独立 taxid(1480135) ｜ MycoBank：独立（fioriniae）	矛盾	四方核验·名称分歧	taxid=1480135 ｜ 接受名=Colletotrichum fioriniae (Marcelino & Gouli) Pennycook, Myco
-1726	名字	异名/独立种分歧	Colletotrichum ovataense	NCBI：独立 taxid(2914976) ｜ MycoBank：独立（ovatense）	矛盾	四方核验·名称分歧	taxid=2914976 ｜ 接受名=Colletotrichum ovatense O. Hassan, Ju Sung Kim, B.B.N.D. Rom
+1726	名字	拼写变体（非错）	Colletotrichum ovataense	MycoBank 标为 Orthographic variant（独立（ovatense））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2914976
 1727	名字	异名/独立种分歧	Colletotrichum pandanicola	NCBI：独立 taxid(2259871) ｜ MycoBank：独立（siamense）	矛盾	四方核验·名称分歧	taxid=2259871 ｜ 接受名=Colletotrichum siamense Prihast., L. Cai & K.D. Hyde, Fungal
 1728	名字	异名/独立种分歧	Colletotrichum parvisporum	NCBI：独立 taxid(2904277) ｜ MycoBank：独立（siamense）	矛盾	四方核验·名称分歧	taxid=2904277 ｜ 接受名=Colletotrichum siamense Prihast., L. Cai & K.D. Hyde, Fungal
 1729	名字	异名/独立种分歧	Colletotrichum peakense	NCBI：独立 taxid(3439429) ｜ MycoBank：独立（gloeosporioides）	矛盾	四方核验·名称分歧	taxid=3439429 ｜ 接受名=Colletotrichum gloeosporioides (Penz.) Penz. & Sacc., Atti I
@@ -1734,7 +1734,7 @@
 1733	名字	异名/独立种分歧	Colletotrichum speciosum	NCBI：独立 taxid(3020405) ｜ MycoBank：独立（nymphaeae）	矛盾	四方核验·名称分歧	taxid=3020405 ｜ 接受名=Colletotrichum nymphaeae (Pass.) Aa, Netherlands J. Pl. Path
 1734	名字	异名/独立种分歧	Colletotrichum spicati	NCBI：独立 taxid(2919563) ｜ MycoBank：独立（karsti）	矛盾	四方核验·名称分歧	taxid=2919563 ｜ 接受名=Colletotrichum karsti You L. Yang, Zuo Y. Liu, K.D. Hyde & L
 1735	名字	异名/独立种分歧	Colletotrichum subplurivorum	NCBI：独立 taxid(3156081) ｜ MycoBank：独立（plurivorum）	矛盾	四方核验·名称分歧	taxid=3156081 ｜ 接受名=Colletotrichum plurivorum Damm, Alizadeh & Toy. Sato, Stud. 
-1736	名字	异名/独立种分歧	Colletotrichum tabaci	NCBI：独立 taxid(1209068) ｜ MycoBank：独立（tabacum）	矛盾	四方核验·名称分歧	taxid=1209068 ｜ 接受名=Colletotrichum tabacum Böning, Prakt. Blätt. Pflanzenbau Pfl
+1736	名字	拼写变体（非错）	Colletotrichum tabaci	MycoBank 标为 Orthographic variant（独立（tabacum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1209068
 1737	名字	异名/独立种分歧	Colletotrichum tengchongense	NCBI：独立 taxid(2903976) ｜ MycoBank：独立（jiangxiense）	矛盾	四方核验·名称分歧	taxid=2903976 ｜ 接受名=Colletotrichum jiangxiense F. Liu & L. Cai, Persoonia 35: 82
 1738	名字	异名/独立种分歧	Colletotrichum wuxuhaiense	NCBI：独立 taxid(2903979) ｜ MycoBank：独立（karsti）	矛盾	四方核验·名称分歧	taxid=2903979 ｜ 接受名=Colletotrichum karsti You L. Yang, Zuo Y. Liu, K.D. Hyde & L
 1739	名字	异名/独立种分歧	Colletotrichum yulongense	NCBI：独立 taxid(2490375) ｜ MycoBank：独立（henanense）	矛盾	四方核验·名称分歧	taxid=2490375 ｜ 接受名=Colletotrichum henanense F. Liu & L. Cai, Persoonia 35: 80 (
@@ -1743,8 +1743,8 @@
 1742	名字	CBS 记为种下单元（变型/变种，非错）	Colletotrichum cigarro / CBS 112984	声明为 cigarro；该机构记名 Colletotrichum kahawae subsp. ciggaro；MycoBank 接受名 —	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1743	名字	CBS 记为种下单元（变型/变种，非错）	Colletotrichum cigarro / CBS 114499	声明为 cigarro；该机构记名 Colletotrichum kahawae subsp. ciggaro；MycoBank 接受名 —	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1744	名字	CBS 记为种下单元（变型/变种，非错）	Colletotrichum cigarro / CBS 115194	声明为 cigarro；该机构记名 Colletotrichum kahawae subsp. ciggaro；MycoBank 接受名 —	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
-1745	名字	并名冲突（须查原始出处）	Colletotrichum cliviicola / CBS 125375	声明为 cliviicola；该机构记名 Colletotrichum cliviae；MycoBank 接受名 Chaetostroma cliviae Oudem., Verslagen Gewone Vergad. Wis-en Natuurk. Afd. Kon. Akad. Wetensch. Amsterdam 5: 5 (1896)	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
-1746	名字	并名冲突（须查原始出处）	Colletotrichum cliviicola / CBS 133705	声明为 cliviicola；该机构记名 Colletotrichum cliviae；MycoBank 接受名 Chaetostroma cliviae Oudem., Verslagen Gewone Vergad. Wis-en Natuurk. Afd. Kon. Akad. Wetensch. Amsterdam 5: 5 (1896)	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
+1745	名字	并名冲突（须查原始出处）	Colletotrichum cliviicola / CBS 125375	声明为 cliviicola；该机构记名 Colletotrichum cliviae；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
+1746	名字	并名冲突（须查原始出处）	Colletotrichum cliviicola / CBS 133705	声明为 cliviicola；该机构记名 Colletotrichum cliviae；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1747	名字	别的属（须查原始出处）	Colletotrichum gloeosporioides / CBS 152.26	声明为 gloeosporioides；该机构记名 Gnomonia cingulata Beck；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1748	名字	拼写变体（非错）	Colletotrichum karsti / CBS 128550	声明为 karsti；该机构记名 Colletotrichum karstii；MycoBank 接受名 Colletotrichum karsti You L. Yang, Zuo Y. Liu, K.D. Hyde & L. Cai, Cryptog. Mycol. 32 (3): 241 (2011)	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1749	名字	拼写变体（非错）	Colletotrichum karsti / CBS 130641	声明为 karsti；该机构记名 Colletotrichum karstii；MycoBank 接受名 Colletotrichum karsti You L. Yang, Zuo Y. Liu, K.D. Hyde & L. Cai, Cryptog. Mycol. 32 (3): 241 (2011)	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name

@@ -2200,16 +2200,16 @@
 2199	号	无公开数据库	Trichoderma viride / WU 24013a	无公开数据库	不确定	三列表·模式菌列	out=out_trichoderma ｜ 列=模式菌 ｜ 号=WU 24013a
 2200	号	无公开数据库	Trichoderma viride / WU 24093	无公开数据库	不确定	三列表·模式菌列	out=out_trichoderma ｜ 列=模式菌 ｜ 号=WU 24093
 2201	名字	异名/独立种分歧	Trichoderma crystallinum	NCBI：独立 taxid(3687506) ｜ MycoBank：独立（crystalligenum）	矛盾	四方核验·名称分歧	taxid=3687506 ｜ 接受名=Trichoderma crystalligenum W.T. Qin & W.Y. Zhuang, Phytotaxa
-2202	名字	异名/独立种分歧	Trichoderma indica	NCBI：独立 taxid(3073394) ｜ MycoBank：独立（indicum）	矛盾	四方核验·名称分歧	taxid=3073394 ｜ 接受名=Trichoderma indicum A.C. Lagashetti, S.K. Singh & P.N. Singh
+2202	名字	拼写变体（非错）	Trichoderma indica	MycoBank 标为 Orthographic variant（独立（indicum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3073394
 2203	名字	异名/独立种分歧	Trichoderma latizonatum	NCBI：独立 taxid(3121417) ｜ MycoBank：独立（latizonata）	矛盾	四方核验·名称分歧	taxid=3121417 ｜ 接受名=Hypocrea latizonata Peck, The North American Pyrenomycetes: 
-2204	名字	异名/独立种分歧	Trichoderma zhuangii	NCBI：独立 taxid(3698429) ｜ MycoBank：独立（zhuangiae）	矛盾	四方核验·名称分歧	taxid=3698429 ｜ 接受名=Trichoderma zhuangiae X.C. Wang & L.Y. Peng, Mycosphere 16 (
-2205	名字	异名/独立种分歧	Trichoderma hipposiderocola	NCBI：独立 taxid(3056457) ｜ MycoBank：独立（hipposidericola）	矛盾	四方核验·名称分歧	taxid=3056457 ｜ 接受名=Trichoderma hipposidericola Karun., Tibpromma & X.F. Liu, My
-2206	名字	异名/独立种分歧	Trichoderma aquatica	NCBI：独立 taxid(2692700) ｜ MycoBank：独立（aquaticum）	矛盾	四方核验·名称分歧	taxid=2692700 ｜ 接受名=Trichoderma aquaticum Z.F. Yu & X. Du, J. Fungi 7 (6, no. 46
+2204	名字	拼写变体（非错）	Trichoderma zhuangii	MycoBank 标为 Orthographic variant（独立（zhuangiae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3698429
+2205	名字	拼写变体（非错）	Trichoderma hipposiderocola	MycoBank 标为 Orthographic variant（独立（hipposidericola））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3056457
+2206	名字	拼写变体（非错）	Trichoderma aquatica	MycoBank 标为 Orthographic variant（独立（aquaticum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2692700
 2207	名字	异名/独立种分歧	Trichoderma rugulosum	NCBI：独立 taxid(2589070) ｜ MycoBank：独立（rugulosa）	矛盾	四方核验·名称分歧	taxid=2589070 ｜ 接受名=Hypocrea rugulosa Berk. & Cooke, Grevillea 12 (63): 79 (1884
-2208	名字	异名/独立种分歧	Trichoderma tibetica	NCBI：独立 taxid(2692705) ｜ MycoBank：独立（tibeticum）	矛盾	四方核验·名称分歧	taxid=2692705 ｜ 接受名=Trichoderma tibeticum Z.F. Yu & X. Du, J. Fungi 7 (6, no. 46
-2209	名字	异名/独立种分歧	Trichoderma christiani	NCBI：独立 taxid(1604594) ｜ MycoBank：独立（christianii）	矛盾	四方核验·名称分歧	taxid=1604594 ｜ 接受名=Trichoderma christianii Jaklitsch & Voglmayr, Stud. Mycol. 8
-2210	名字	异名/独立种分歧	Trichoderma fassatiae	NCBI：独立 taxid(1672015) ｜ MycoBank：独立（fassatiovae）	矛盾	四方核验·名称分歧	taxid=1672015 ｜ 接受名=Trichoderma fassatiovae A. Nováková, Kubátová, Valinová, Hub
-2211	名字	异名/独立种分歧	Trichoderma longifialidicum	NCBI：独立 taxid(1684289) ｜ MycoBank：独立（longiphialidicum）	矛盾	四方核验·名称分歧	taxid=1684289 ｜ 接受名=Trichoderma longiphialidicum Q.V. Montoya, L.A. Meirelles, P
+2208	名字	拼写变体（非错）	Trichoderma tibetica	MycoBank 标为 Orthographic variant（独立（tibeticum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2692705
+2209	名字	拼写变体（非错）	Trichoderma christiani	MycoBank 标为 Orthographic variant（独立（christianii））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1604594
+2210	名字	拼写变体（非错）	Trichoderma fassatiae	MycoBank 标为 Orthographic variant（独立（fassatiovae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1672015
+2211	名字	拼写变体（非错）	Trichoderma longifialidicum	MycoBank 标为 Orthographic variant（独立（longiphialidicum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1684289
 2212	名字	异名/独立种分歧	Trichoderma neocrassum	NCBI：独立 taxid(1738390) ｜ MycoBank：独立（crassa）	矛盾	四方核验·名称分歧	taxid=1738390 ｜ 接受名=Hypocrea crassa P. Chaverri & Samuels, Stud. Mycol. 48: 61 (
 2213	名字	异名/独立种分歧	Trichoderma patellotropicum	NCBI：独立 taxid(1747394) ｜ MycoBank：独立（patella）	矛盾	四方核验·名称分歧	taxid=1747394 ｜ 接受名=Hypocrea patella f. tropica Yoshim. Doi, Bull. Natl. Sci. Mu
 2214	名字	异名/独立种分歧	Trichoderma protopulvinatum	NCBI：独立 taxid(1491003) ｜ MycoBank：独立（protopulvinata）	矛盾	四方核验·名称分歧	taxid=1491003 ｜ 接受名=Hypocrea protopulvinata Yoshim. Doi, Bull. Natl. Sci. Mus. T

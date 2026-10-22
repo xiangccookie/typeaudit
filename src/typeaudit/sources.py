@@ -1982,7 +1982,14 @@ def species_status(name, sources, use_cgmcc=True, weights=None):
     try:
         if mb is not None and getattr(mb, "n_rows", lambda: 0)() > 0:
             cur = mb.current_name(name) or ""
-            out["myco"] = {"ok": bool(cur), "current": cur}
+            # Name status 必须一起取：Orthographic variant（拼写变体）与真异名
+            # 在「接受名不同」这件事上长得一样，只有 status 能把两者分开。
+            _st = ""
+            try:
+                _st = (mb.status_of(name) or "").strip()
+            except Exception:
+                _st = ""
+            out["myco"] = {"ok": bool(cur), "current": cur, "status": _st}
         else:
             out["notes"].append("MycoBank 未加载（空表）—— 不参与判定")
     except Exception:
@@ -2168,12 +2175,19 @@ def species_status(name, sources, use_cgmcc=True, weights=None):
             w = str(cur).split()
             accept = "{} {}".format(w[0], w[1]) if len(w) >= 2 else str(cur)
             same = accept.split()[-1].lower() == name.split()[-1].lower()
+            # 拼写变体先于「分歧」判定：parvae/parva、tuyouyou/eucommiae 这类，
+            # 种加词确实不同，但 MycoBank 已明确标 Orthographic variant —— 同一个名字的
+            # 两种写法，不是两个物种。判成「分歧」会让 127 条分歧里混进 7 条假分歧。
+            _st = (out["myco"].get("status") or "").lower()
+            _is_ortho = _st.startswith("orthographic")
             nb = out["name_conflict"] = {
                 "ncbi": "独立 taxid({})".format(out["ncbi"]["taxid"]),
                 "mycobank": ("异名 → {}".format(accept.split()[-1]) if same
                              else "独立（{}）".format(accept.split()[-1])),
-                "verdict": "一致" if same else "分歧"}
-            if not same:
+                "status": out["myco"].get("status", ""),
+                "verdict": ("一致" if same
+                            else ("拼写变体" if _is_ortho else "分歧"))}
+            if not same and not _is_ortho:
                 lvl = "矛盾" if min(W["ncbi"], W["myco"]) >= 2 else "提示"
                 out["name_conflict"]["level"] = lvl
                 note = ("NCBI 把 {} 当独立种（taxid {}），MycoBank 把它的接受名判为 {}"

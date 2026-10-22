@@ -1426,7 +1426,7 @@
 1425	名字	异名/独立种分歧	Diaporthe machili	NCBI：独立 taxid(3037358) ｜ MycoBank：独立（sackstonii）	矛盾	四方核验·名称分歧	taxid=3037358 ｜ 接受名=Diaporthe sackstonii R.G. Shivas, S.M. Thomps. & Y.P. Tan, P
 1426	名字	异名/独立种分歧	Diaporthe morindae	NCBI：独立 taxid(2937312) ｜ MycoBank：独立（glabrae）	矛盾	四方核验·名称分歧	taxid=2937312 ｜ 接受名=Diaporthe glabrae (C.Q. Chang, Z.D. Jiang & P.K. Chi) Y.H. G
 1427	名字	异名/独立种分歧	Diaporthe samaneae	NCBI：独立 taxid(3033752) ｜ MycoBank：独立（inconspicua）	矛盾	四方核验·名称分歧	taxid=3033752 ｜ 接受名=Diaporthe inconspicua R.R. Gomes, Glienke & Crous, Persoonia
-1428	名字	异名/独立种分歧	Diaporthe tuyouyou	NCBI：独立 taxid(3045974) ｜ MycoBank：独立（eucommiae）	矛盾	四方核验·名称分歧	taxid=3045974 ｜ 接受名=Diaporthe eucommiae (F.X. Chao & P.K. Chi) Y.H. Gao & L. Cai
+1428	名字	拼写变体（非错）	Diaporthe tuyouyou	MycoBank 标为 Orthographic variant（独立（eucommiae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3045974
 1429	名字	异名/独立种分歧	Diaporthe viciae	NCBI：独立 taxid(2985000) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2985000 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1430	名字	异名/独立种分歧	Diaporthe annellsiae	NCBI：独立 taxid(2923297) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2923297 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1431	名字	异名/独立种分歧	Diaporthe australpacifica	NCBI：独立 taxid(2923298) ｜ MycoBank：独立（micheliae）	矛盾	四方核验·名称分歧	taxid=2923298 ｜ 接受名=Diaporthe micheliae Y.H. Gao & L. Cai, IMA Fungus 8 (1): 184
@@ -1469,7 +1469,7 @@
 1468	名字	异名/独立种分歧	Diaporthe meliae	NCBI：独立 taxid(2508974) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2508974 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1469	名字	异名/独立种分歧	Diaporthe oculi	NCBI：独立 taxid(2507492) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2507492 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1470	名字	异名/独立种分歧	Diaporthe ovoidea	NCBI：独立 taxid(2687227) ｜ MycoBank：独立（amygdali）	矛盾	四方核验·名称分歧	taxid=2687227 ｜ 接受名=Diaporthe amygdali (Delacr.) Udayanga, Crous & K.D. Hyde, Fu
-1471	名字	异名/独立种分歧	Diaporthe parvae	NCBI：独立 taxid(2709234) ｜ MycoBank：独立（parva）	矛盾	四方核验·名称分歧	taxid=2709234 ｜ 接受名=Diaporthe parva Y.S. Guo & G.P. Wang, Persoonia 45: 154 (202
+1471	名字	拼写变体（非错）	Diaporthe parvae	MycoBank 标为 Orthographic variant（独立（parva））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2709234
 1472	名字	异名/独立种分歧	Diaporthe pimpinellae	NCBI：独立 taxid(2575767) ｜ MycoBank：独立（cytosporella）	矛盾	四方核验·名称分歧	taxid=2575767 ｜ 接受名=Diaporthe cytosporella (Penz. & Sacc.) Udayanga & Castl., Pe
 1473	名字	异名/独立种分歧	Diaporthe pseudooculi	NCBI：独立 taxid(2507493) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2507493 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1474	名字	异名/独立种分歧	Diaporthe rhodomyrti	NCBI：独立 taxid(2508975) ｜ MycoBank：独立（eucommiae）	矛盾	四方核验·名称分歧	taxid=2508975 ｜ 接受名=Diaporthe eucommiae (F.X. Chao & P.K. Chi) Y.H. Gao & L. Cai
@@ -1482,13 +1482,13 @@
 1481	名字	异名/独立种分歧	Diaporthe liquidambaris	NCBI：独立 taxid(2025498) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2025498 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1482	名字	异名/独立种分歧	Diaporthe melitensis	NCBI：独立 taxid(2060961) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2060961 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1483	名字	异名/独立种分歧	Diaporthe millettiae	NCBI：独立 taxid(2506402) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2506402 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
-1484	名字	异名/独立种分歧	Diaporthe multigutullata	NCBI：独立 taxid(2034415) ｜ MycoBank：独立（multiguttulata）	矛盾	四方核验·名称分歧	taxid=2034415 ｜ 接受名=Diaporthe multiguttulata F. Huang, K.D. Hyde & Hong Y. Li, F
+1484	名字	拼写变体（非错）	Diaporthe multigutullata	MycoBank 标为 Orthographic variant（独立（multiguttulata））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2034415
 1485	名字	异名/独立种分歧	Diaporthe osmanthi	NCBI：独立 taxid(2506403) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2506403 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1486	名字	异名/独立种分歧	Diaporthe pandanicola	NCBI：独立 taxid(2259872) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2259872 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1487	名字	异名/独立种分歧	Diaporthe pseudoinconspicua	NCBI：独立 taxid(2301204) ｜ MycoBank：独立（inconspicua）	矛盾	四方核验·名称分歧	taxid=2301204 ｜ 接受名=Diaporthe inconspicua R.R. Gomes, Glienke & Crous, Persoonia
 1488	名字	异名/独立种分歧	Diaporthe rosae	NCBI：独立 taxid(2081976) ｜ MycoBank：独立（ueckeri）	矛盾	四方核验·名称分歧	taxid=2081976 ｜ 接受名=Diaporthe ueckeri Udayanga & Castl., Fungal Biol. 119 (5): 4
 1489	名字	异名/独立种分歧	Diaporthe rumicicola	NCBI：独立 taxid(2315966) ｜ MycoBank：独立（foeniculina）	矛盾	四方核验·名称分歧	taxid=2315966 ｜ 接受名=Diaporthe foeniculina (Sacc.) Udayanga & Castl., Persoonia 3
-1490	名字	异名/独立种分歧	Diaporthe sambucusii	NCBI：独立 taxid(2081006) ｜ MycoBank：独立（sambuci）	矛盾	四方核验·名称分歧	taxid=2081006 ｜ 接受名=Diaporthe sambuci C.M. Tian & Qin Yang, Phytotaxa 336 (2): 1
+1490	名字	拼写变体（非错）	Diaporthe sambucusii	MycoBank 标为 Orthographic variant（独立（sambuci））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2081006
 1491	名字	异名/独立种分歧	Diaporthe subcylindrospora	NCBI：独立 taxid(2233986) ｜ MycoBank：独立（cynaroidis）	矛盾	四方核验·名称分歧	taxid=2233986 ｜ 接受名=Diaporthe cynaroidis Marinc., M.J. Wingf. & Crous, CBS Biodi
 1492	名字	异名/独立种分歧	Diaporthe viniferae	NCBI：独立 taxid(2498998) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=2498998 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1493	名字	异名/独立种分歧	Diaporthe caryae	NCBI：独立 taxid(1837985) ｜ MycoBank：独立（sackstonii）	矛盾	四方核验·名称分歧	taxid=1837985 ｜ 接受名=Diaporthe sackstonii R.G. Shivas, S.M. Thomps. & Y.P. Tan, P
@@ -1506,7 +1506,7 @@
 1505	名字	异名/独立种分歧	Diaporthe taoicola	NCBI：独立 taxid(1871665) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1871665 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1506	名字	异名/独立种分歧	Diaporthe tectonae	NCBI：独立 taxid(1856116) ｜ MycoBank：独立（glabrae）	矛盾	四方核验·名称分歧	taxid=1856116 ｜ 接受名=Diaporthe glabrae (C.Q. Chang, Z.D. Jiang & P.K. Chi) Y.H. G
 1507	名字	异名/独立种分歧	Diaporthe tectonigena	NCBI：独立 taxid(1856115) ｜ MycoBank：独立（aseana）	矛盾	四方核验·名称分歧	taxid=1856115 ｜ 接受名=Diaporthe aseana Dissan., Tangthir. & K.D. Hyde, Fungal Dive
-1508	名字	异名/独立种分歧	Diaporthe xishuangbanica	NCBI：独立 taxid(1968851) ｜ MycoBank：独立（xishuangbannica）	矛盾	四方核验·名称分歧	taxid=1968851 ｜ 接受名=Diaporthe xishuangbannica Y.H. Gao & L. Cai, IMA Fungus 8 (1
+1508	名字	拼写变体（非错）	Diaporthe xishuangbanica	MycoBank 标为 Orthographic variant（独立（xishuangbannica））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1968851
 1509	名字	待核	Diaporthe apiculata	模式号归属待核	错值	四方核验	out=out_diaporthe ｜ 待核明细
 1510	名字	异名/独立种分歧	Diaporthe baccae	NCBI：独立 taxid(1530370) ｜ MycoBank：独立（foeniculina）	矛盾	四方核验·名称分歧	taxid=1530370 ｜ 接受名=Diaporthe foeniculina (Sacc.) Udayanga & Castl., Persoonia 3
 1511	名字	待核	Diaporthe compacta	模式号归属待核	错值	四方核验	out=out_diaporthe ｜ 待核明细
@@ -1519,21 +1519,21 @@
 1518	名字	异名/独立种分歧	Diaporthe thunbergiicola	NCBI：独立 taxid(1659682) ｜ MycoBank：独立（ueckeri）	矛盾	四方核验·名称分歧	taxid=1659682 ｜ 接受名=Diaporthe ueckeri Udayanga & Castl., Fungal Biol. 119 (5): 4
 1519	名字	异名/独立种分歧	Diaporthe unshiuensis	NCBI：独立 taxid(1705999) ｜ MycoBank：独立（longicolla）	矛盾	四方核验·名称分歧	taxid=1705999 ｜ 接受名=Diaporthe longicolla (Hobbs) J.M. Santos, Vrandecic & A.J.L.
 1520	名字	异名/独立种分歧	Diaporthe arengae	NCBI：独立 taxid(1304152) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1304152 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
-1521	名字	异名/独立种分歧	Diaporthe biguttusis	NCBI：独立 taxid(1462939) ｜ MycoBank：独立（eres）	矛盾	四方核验·名称分歧	taxid=1462939 ｜ 接受名=Diaporthe eres Nitschke, Pyrenomycetes Germanici 2: 245 (187
+1521	名字	拼写变体（非错）	Diaporthe biguttusis	MycoBank 标为 Orthographic variant（独立（eres））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1462939
 1522	名字	矛盾	Diaporthe ellipicola	模式/普通冲突	错值	四方核验	out=out_diaporthe ｜ 矛盾明细
-1523	名字	异名/独立种分歧	Diaporthe ellipicola	NCBI：独立 taxid(1462940) ｜ MycoBank：独立（eres）	矛盾	四方核验·名称分歧	taxid=1462940 ｜ 接受名=Diaporthe eres Nitschke, Pyrenomycetes Germanici 2: 245 (187
+1523	名字	拼写变体（非错）	Diaporthe ellipicola	MycoBank 标为 Orthographic variant（独立（eres））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1462940
 1524	名字	异名/独立种分歧	Diaporthe fraxini-angustifoliae	NCBI：独立 taxid(1344527) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1344527 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1525	名字	异名/独立种分歧	Diaporthe fusicola	NCBI：独立 taxid(1462941) ｜ MycoBank：独立（amygdali）	矛盾	四方核验·名称分歧	taxid=1462941 ｜ 接受名=Diaporthe amygdali (Delacr.) Udayanga, Crous & K.D. Hyde, Fu
 1526	名字	异名/独立种分歧	Diaporthe hongkongensis	NCBI：独立 taxid(1303581) ｜ MycoBank：独立（eucommiae）	矛盾	四方核验·名称分歧	taxid=1303581 ｜ 接受名=Diaporthe eucommiae (F.X. Chao & P.K. Chi) Y.H. Gao & L. Cai
 1527	名字	异名/独立种分歧	Diaporthe infecunda	NCBI：独立 taxid(1303584) ｜ MycoBank：独立（leucospermi）	矛盾	四方核验·名称分歧	taxid=1303584 ｜ 接受名=Diaporthe leucospermi Crous & Summerell, Persoonia 27: 32 (2
 1528	名字	异名/独立种分歧	Diaporthe litchiicola	NCBI：独立 taxid(1344528) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1344528 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
-1529	名字	异名/独立种分歧	Diaporthe ovoicicola	NCBI：独立 taxid(1462943) ｜ MycoBank：独立（amygdali）	矛盾	四方核验·名称分歧	taxid=1462943 ｜ 接受名=Diaporthe amygdali (Delacr.) Udayanga, Crous & K.D. Hyde, Fu
+1529	名字	拼写变体（非错）	Diaporthe ovoicicola	MycoBank 标为 Orthographic variant（独立（amygdali））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1462943
 1530	名字	异名/独立种分歧	Diaporthe pascoei	NCBI：独立 taxid(1344530) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1344530 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1531	名字	异名/独立种分歧	Diaporthe pseudomangiferae	NCBI：独立 taxid(1303594) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1303594 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1532	名字	异名/独立种分歧	Diaporthe pseudophoenicicola	NCBI：独立 taxid(1303595) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1303595 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1533	名字	异名/独立种分歧	Diaporthe salicicola	NCBI：独立 taxid(1344531) ｜ MycoBank：独立（cynaroidis）	矛盾	四方核验·名称分歧	taxid=1344531 ｜ 接受名=Diaporthe cynaroidis Marinc., M.J. Wingf. & Crous, CBS Biodi
 1534	名字	异名/独立种分歧	Diaporthe eucalyptorum	NCBI：独立 taxid(1196424) ｜ MycoBank：独立（eucommiae）	矛盾	四方核验·名称分歧	taxid=1196424 ｜ 接受名=Diaporthe eucommiae (F.X. Chao & P.K. Chi) Y.H. Gao & L. Cai
-1535	名字	异名/独立种分歧	Diaporthe manihotia	NCBI：独立 taxid(1303507) ｜ MycoBank：独立（manihotis）	矛盾	四方核验·名称分歧	taxid=1303507 ｜ 接受名=Diaporthe manihotis Punith., Kavaka 3: 29 (1976)
+1535	名字	拼写变体（非错）	Diaporthe manihotia	MycoBank 标为 Orthographic variant（独立（manihotis））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1303507
 1536	名字	异名/独立种分歧	Diaporthe pterocarpicola	NCBI：独立 taxid(1214576) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1214576 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1537	名字	异名/独立种分歧	Diaporthe woodii	NCBI：独立 taxid(1303516) ｜ MycoBank：独立（leptostromiformis）	矛盾	四方核验·名称分歧	taxid=1303516 ｜ 接受名=Diaporthe leptostromiformis (J.G. Kühn) Rossman & Udayanga, 
 1538	名字	异名/独立种分歧	Diaporthe ceratozamiae	NCBI：独立 taxid(1130416) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1130416 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
@@ -1545,7 +1545,7 @@
 1544	名字	异名/独立种分歧	Diaporthe musigena	NCBI：独立 taxid(1050727) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=1050727 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1545	名字	异名/独立种分歧	Diaporthe phyllanthicola	NCBI：独立 taxid(280248) ｜ MycoBank：独立（arecae）	矛盾	四方核验·名称分歧	taxid=280248 ｜ 接受名=Diaporthe arecae (H.C. Srivast., Zakia & Govindar.) R.R. Gom
 1546	名字	异名/独立种分歧	Diaporthe pseudolongicolla	NCBI：独立 taxid(1137938) ｜ MycoBank：独立（novem）	矛盾	四方核验·名称分歧	taxid=1137938 ｜ 接受名=Diaporthe novem J.M. Santos, Vrandečić & A.J.L. Phillips, Pe
-1547	名字	异名/独立种分歧	Diaporthe rhusicola	NCBI：独立 taxid(1050738) ｜ MycoBank：独立（foeniculina）	矛盾	四方核验·名称分歧	taxid=1050738 ｜ 接受名=Diaporthe foeniculina (Sacc.) Udayanga & Castl., Persoonia 3
+1547	名字	拼写变体（非错）	Diaporthe rhusicola	MycoBank 标为 Orthographic variant（独立（foeniculina））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1050738
 1548	名字	待核	Diaporthe australafricana	模式号归属待核	错值	四方核验	out=out_diaporthe ｜ 待核明细
 1549	名字	并名冲突（须查原始出处）	Diaporthe foeniculina / CBS 123208	声明为 foeniculina；该机构记名 Diaporthe neotheicola A.J.L. Phillips & J.M. Santos；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 1550	名字	别的属（须查原始出处）	Diaporthe foeniculina / CBS 187.27	声明为 foeniculina；该机构记名 Phomopsis theicola Curzi;epitype of Diaporthe theicola；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name

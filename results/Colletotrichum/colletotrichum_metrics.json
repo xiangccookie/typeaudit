@@ -1,0 +1,66 @@
+{
+ "genus": "Colletotrichum",
+ "n_species": 3,
+ "n_numbers": 20,
+ "generated": "2026-10-23 04:07:56",
+ "code_version": {
+  "file": "src/typeaudit/pipeline.py",
+  "sha256_12": "0f6420487a9c",
+  "mtime": "2026-10-23 02:29"
+ },
+ "data_snapshot": {
+  "cbs_catalogue.tsv": {
+   "sha256_12": "e7c92969d483",
+   "mtime": "2026-10-20 01:05",
+   "bytes": 3641352
+  },
+  "biocollections_codes.csv": {
+   "sha256_12": "309b33caf36d",
+   "mtime": "2026-10-16 13:20",
+   "bytes": 152349
+  }
+ },
+ "denominator": {
+  "primary": "n_numbers",
+  "note": "错误率以号数（n_numbers）为分母；种数 n_species 作辅助"
+ },
+ "flag_counts": {
+  "疑似非机构编号": 3
+ },
+ "conventions": {
+  "col2": "菌株号 = 序列库记录的 /culture_collection + /strain",
+  "col3": "模式菌 = NCBI Taxonomy type material + GenBank /type_material",
+  "flag_vocab": [
+   "号不存在",
+   "记为别种",
+   "未知机构代码",
+   "属异名",
+   "一株多名",
+   "位数孤例",
+   "仅数据库有",
+   "仅文献有",
+   "无公开数据库",
+   "标本号",
+   "基名属",
+   "异名（非错）",
+   "疑似非机构编号",
+   "记为非模式菌株",
+   "未核"
+  ],
+  "note": "机构词典不全时只漏检不误报 ⇒ 任何计数均为【下界】",
+  "col2_coverage": "第 2 列只覆盖 /culture_collection 字段存在的记录。该字段在宽搜记录里罕见（实测 200 条里：fructicola/gloeosporioides/siamense 均为 0，falcatum 2，arxii 18），故本列对多数种是【下界】，不宜用『该列表为空』反推『该种无保藏号』。",
+  "col3_note": "第 3 列含非保藏号写法（标本馆号 `CBS H-xxxx` 标『标本号』；`Paphi 2-1` 这类个人编号标『无目录』）。",
+  "flag_meaning": {
+   "号不存在": "该号在对应机构的公开记录里确实查无（仅在该机构有公开数据时判）",
+   "目录记为别种": "该机构把该号标为另一个种/属（基名属已排除）",
+   "基名属": "该机构记的是基名属，非错",
+   "异名（非错）": "机构记的名与声明名【同属不同种】，且 MycoBank 接受名就是声明种（如 Colletotrichum hymenocallidis → C. siamense），非错",
+   "标本号": "标本馆号（CBS H-xxxx），不走菌种保藏记录",
+   "无目录": "该机构没有公开的机读数据库 ⇒ 无法核验（**不等于号不存在**）",
+   "未核": "号存在，但该机构没标它的模式地位",
+   "未知机构代码": "机构代码不在 Biocollections 登记表内 ⇒ **候选错值**（如 CGMG 少了 C）；但登记表未必收录齐全，须人判",
+   "目录记为非模式": "记录把该号当类型材料用，但该机构（如 CGMCC 官网）标注为非模式菌株 ⇒ 候选错值",
+   "疑似非机构编号": "不在登记表、且不像写错的代码（含小写字母 / 号码≤2位 / 无近似代码）⇒ 多半是实验室编号或宿主标签被误当机构代码，**优先看「未知机构代码」那一档**"
+  }
+ }
+}
