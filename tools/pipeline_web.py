@@ -2163,7 +2163,7 @@ async function judge(k,verdict){
   const j=await r.json();
   if(j.ok){REVIEWS[key(c)]=body;render();}else{alert('保存失败：'+(j.msg||''));}
 }
-async async function loadSummary(){
+async function loadSummary(){
   const b=$('sumbody');
   try{
     const r=await fetch('/api/summary'); const d=await r.json();
@@ -2181,7 +2181,7 @@ async function loadResults(v){
   try{ await loadCands(); }catch(e){}
   setTab('err');                  // 切到「确定错（审稿区）」，同时渲染全部发现
 }
-function setTab(t){
+async function setTab(t){
   TAB=t;
   $('tabErr').classList.toggle('on',t==='err');
   $('tabUnk').classList.toggle('on',t==='unk');
