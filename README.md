@@ -169,6 +169,9 @@ python -m typeaudit.gaps --config config/gaps_example.json --data-dir examples/d
 
 ---
 
+> ⚠️ **换版本请先看 [`CHANGELOG.md`](CHANGELOG.md)**：v1.1.0 修正了 25 条拼写变体误分类，
+> 其「非错 / 矛盾 / 异名分歧」计数与 v1.0.9 不同（总数不变）。
+
 ## 如何引用
 
 若使用本仓库的代码或结果表，请引用：
