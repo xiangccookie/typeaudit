@@ -1952,7 +1952,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       <b>一次跑完就够了。</b>点「▶ 开始」会自动串完：号层 → 名字层（并名异名）→
       记录层（GenBank 声明）→ 汇总。<b>不需要你分层操作</b>；下面的「层级」列只是告诉你
       这条证据来自哪一步。<br>
-      <b>发现不都在这一页。</b>「确定错」「不确定」两页是<b>逐号卡片</b>（可裁定）；
+      <b>本表默认不含号层。</b>号层（三列表逐号标记）在下方「逐号卡片」里已经一条一条列出、并且可以逐条裁定；本表只列卡片里没有的部分：名字层、序列层、记录层、源库层。想看全部，勾选上面的「含号层」。<br><b>发现不都在这一页。</b>「确定错」「不确定」两页是<b>逐号卡片</b>（可裁定）；
       本表是<b>四层汇总</b>（号 / 名字 / 记录 / 目录），含卡片里没有的
       <b>并名异名分歧</b>、<b>GenBank 无声明</b>、<b>CBS 目录自身问题</b>。
       找不齐时先看本表。
@@ -1979,6 +1979,10 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
       <button class="gray" onclick="setFindFilter('错值')">只看错值</button>
       <button class="gray" onclick="setFindFilter('矛盾')">只看矛盾</button>
       <button class="gray" onclick="setFindFilter('不确定')">只看不确定</button>
+      <label style="margin-left:12px;cursor:pointer;color:#6b7280">
+        <input type="checkbox" id="showhao" style="vertical-align:-2px"
+               onchange="SHOW_HAO=this.checked;renderFindTable()"> 含号层（与下方卡片重复）
+      </label>
     </div>
     <div id="findtable" style="max-height:520px;overflow:auto"></div>
     <pre id="findlog" style="display:none;background:#0f172a;color:#d7dde8;padding:8px;
@@ -2313,13 +2317,23 @@ function whyOf(r){
   if(f===c && FIND_WHY[c]) return FIND_WHY[c];
   return f;
 }
+// 号层（三列表逐号标记）在下方「逐号卡片」里已经一条一条显示，并且可以裁定。
+// 本表默认只列【卡片里没有的】那部分：名字层 / 序列层 / 记录层 / 源库层。
+// 勾上「含号层」才会列全（会与下方卡片重复）。
+let SHOW_HAO=false;
 function renderFindTable(){
-  const rows = FIND_FILTER==='all' ? FIND_ROWS
+  let rows = FIND_FILTER==='all' ? FIND_ROWS
              : FIND_ROWS.filter(function(r){ return (r['归类']||'')===FIND_FILTER; });
+  const nBefore=rows.length;
+  if(!SHOW_HAO) rows = rows.filter(function(r){ return (r['层级']||'')!=='号'; });
+  const hid=nBefore-rows.length;
   const by=FIND_BY||{};
   const parts=Object.keys(by).sort().map(function(k){ return k+' '+by[k]; });
   document.getElementById('findsum').textContent =
-    (FIND_ROWS.length? ('共 '+FIND_ROWS.length+' 条 ｜ '+parts.join(' ｜ ')) : '还没有汇总结果，点「重新汇总」');
+    (FIND_ROWS.length? ('本表 '+rows.length+' 条'+
+      (SHOW_HAO?'':'（另有 '+hid+' 条号层已在下方卡片，可逐条裁定）')+
+      ' ｜ 全部 '+FIND_ROWS.length+' 条 ｜ '+parts.join(' ｜ '))
+    : '还没有汇总结果，点「重新汇总」');
   if(!rows.length){ document.getElementById('findtable').innerHTML=''; return; }
   const cols=['序号','层级','类别','对象','发现','归类','来源'];
   let h='<table style="width:100%;border-collapse:collapse;font-size:11px">';
