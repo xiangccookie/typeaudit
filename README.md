@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23574863.svg)](https://doi.org/10.5281/zenodo.23574863)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## 两种用法：
 
@@ -164,3 +166,27 @@ python -m typeaudit.gaps --config config/gaps_example.json --data-dir examples/d
 
 - **`docs/bug判别特征手册.md`** —— 本项目实测的 bug 判别特征（症状 → 判别特征 → 根因 → 正解）。
   新写代码前扫一眼，尤其是「顺序敏感」和「静默失败」两节。
+
+---
+
+## 如何引用
+
+若使用本仓库的代码或结果表，请引用：
+
+> 类型校对台 / typeaudit，v1.0.9。
+> Zenodo. https://doi.org/10.5281/zenodo.23575367
+
+概念 DOI（始终指向最新版本）：https://doi.org/10.5281/zenodo.23574863
+
+BibTeX：
+
+```bibtex
+@software{typeaudit_2026,
+  title   = {typeaudit: 真菌分类学类型材料元数据审计工具（三属：Colletotrichum, Trichoderma, Diaporthe）},
+  author  = {xiangccookie},
+  year    = {2026},
+  version = {v1.0.9},
+  doi     = {10.5281/zenodo.23575367},
+  url     = {https://github.com/xiangccookie/typeaudit}
+}
+```
