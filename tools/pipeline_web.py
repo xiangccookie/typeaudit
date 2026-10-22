@@ -1811,7 +1811,8 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
  .item{margin-bottom:5px}
  .item:last-child{margin-bottom:0}
  .tiny{font-size:11px;color:#6b7280}
- .filters{margin:6px 0 10px}.filters button{background:#e5e7eb;color:#111;margin-right:5px}
+ .filters{margin:4px 0 8px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+  .filters button{padding:2px 8px;font-size:12px;white-space:nowrap}.filters button{background:#e5e7eb;color:#111;margin-right:5px}
  .filters button.on{background:#2563eb;color:#fff}
 </style></head><body>
 <header>类型材料审计 · 流水线 + 审稿系统　<span class="tiny" style="color:#9ca3af">机器只出候选，人裁定；裁定一律留痕</span></header>
@@ -1960,7 +1961,11 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <div class="tiny" style="margin-bottom:6px">
       把<b>四个来源</b>的发现合成一张表：号层（三列表标记）｜名字层（并名/异名分歧）｜
       记录层（GenBank 声明缺失）｜目录层（CBS 目录自身问题）。
-      每条都带<b>层级 / 归类 / 来源 / 证据</b>。<b>不确定</b>是诚实边界，不是没查。
+      每条都带<b>层级 / 归类 / 来源 / 证据</b>。<b>不确定</b>是诚实边界，不是没查。<br><br>
+      <b>三档归类</b>　<b>确定错</b> = 语料鉴定过、判为出错（只有这一栏能下结论）；
+      <b>不确定</b> = 语料没判过的一律进这里 —— 这就是我们的诚实边界；
+      <b>受信菌株表</b> = 没有任何问题标记的号。界外的事（序列是否属于该种、
+      是否真模式菌株、论文声明）本工具答不了。
     </div>
     </details>
     <div style="margin-bottom:6px">
@@ -1988,12 +1993,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <button data-f="确认" onclick="setFilter('确认',this)">已确认</button>
     <button data-f="驳回" onclick="setFilter('驳回',this)">已驳回</button>
     <button data-f="存疑" onclick="setFilter('存疑',this)">存疑</button>
-    <input type="text" id="kw" placeholder="搜索种名/号..." oninput="render()" style="width:200px;display:inline-block;margin-left:8px">
-    <div class="tiny" style="margin-top:5px;background:#f9fafb;border-left:3px solid #d1d5db;padding:4px 8px">
-      <b>三档归类</b>　<b>确定错</b> = 语料鉴定过、判为出错（只有这一栏能下结论）；
-      <b>不确定</b> = 语料没判过的一律进这里 —— <b>这就是我们的诚实边界</b>；
-      <b>受信菌株表</b> = 没有任何问题标记的号。界外的事（序列是否属于该种、是否真模式菌株、论文声明）本工具答不了。
-    </div>
+    <input type="text" id="kw" placeholder="搜索种名/号..." oninput="render()" style="width:150px;padding:2px 6px;font-size:12px">
   </div>
   <div id="cards"></div>
   <div id="dlg" style="display:none;position:fixed;left:0;top:0;right:0;bottom:0;
