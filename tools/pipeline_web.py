@@ -1834,7 +1834,7 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <div><label>限制种数（先填 3 试）</label><input type="number" id="limit" value="3"></div>
     <div><label>NCBI 邮箱</label><input type="text" id="email" placeholder="you@example.org"></div>
   </div>
-  <details style="margin:4px 0">
+  <details open style="margin:4px 0">
     <summary class="tiny" style="cursor:pointer;color:#6b7280">第三方数据源（只在自己重跑时需要填；看结论不必填）</summary>
   <label>CBS 目录（不填 → 不会有错误标注）</label>
   <div style="display:flex;gap:8px;align-items:center">
