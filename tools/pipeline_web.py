@@ -824,6 +824,34 @@ def tree_worker(workdir, pair, acc_range, email, phylo_bin):
 # ---------------------------------------------------------------- 读三列表 → 候选卡
 BASIONYM_GENERA = {"vermicularia", "gloeosporium", "glomerella"}
 
+# 【有性型属名】一菌两名：有性世代（teleomorph）用的属名，与无性世代属名指同一批物种。
+# 2013 年「一菌一名」后，下列后者是接受名、前者并入。
+# ⚠️ 为什么要表：原来只把 BASIONYM_GENERA 写死成炭疽菌的三个基名属，
+#    换到 Trichoderma 后 Hypocrea 不在表里 → 40 条「Hypocrea xxx」被判成
+#    「别的属 → 错值」。而它们只是同一物种的有性世代名，**不是错**。
+TELEOMORPH_OF = {
+    "hypocrea": "trichoderma",
+    "glomerella": "colletotrichum",
+    "nectria": "fusarium",
+    "haematonectria": "fusarium",
+    "gibberella": "fusarium",
+    "calonectria": "cylindrocladium",
+    "mycosphaerella": "pseudocercospora",
+}
+
+
+def _epithet_stem(e):
+    """种加词词干：去掉随属名性别变化的词尾（-us/-um/-a/-is/-e）。
+
+    实测例子：Hypocrea cerace**a** ↔ Trichoderma cerace**um** —— 同一个种，
+    只因属名性别不同，词尾一个 a 一个 um。直接比字符串会判成"不同种"。
+    """
+    e = (e or "").lower()
+    for suf in ("um", "us", "is", "ae", "a", "e"):
+        if e.endswith(suf) and len(e) - len(suf) >= 4:
+            return e[: -len(suf)]
+    return e
+
 
 def name_relation(number, claimed_species, sources):
     """给一个号，回答三件事：目录怎么记的、MycoBank 的接受名是什么、两者与声明名什么关系。
@@ -854,6 +882,7 @@ def name_relation(number, claimed_species, sources):
     gen = (parts[0].lower() if parts else "")
     cat_epi = (parts[1].lower() if len(parts) > 1 else "")
     sp_epi = (claimed_species.split()[-1].lower() if claimed_species else "")
+    decl_gen = (claimed_species.split()[0].lower() if claimed_species else "")
     cur = (out["current_name"] or "").strip()
     mcur = re.match(r"^[A-Z][a-z]+\s+([a-z][a-z\-]+)", cur)
     cur_epi = (mcur.group(1).lower() if mcur else "")
@@ -874,8 +903,20 @@ def name_relation(number, claimed_species, sources):
         out["verdict"] = "一致（机构记名与声明种相同）"
     elif is_infra:
         out["verdict"] = "CBS 记为种下单元（变型/变种，非错）"
-    elif gen and gen != "colletotrichum":
-        out["verdict"] = "别的属（须查原始出处）"
+    elif gen and decl_gen and gen != decl_gen:
+        # 属名不同，三种可能必须分开（混在一起就会把"有性型"当错）：
+        #   ① 有性型属名（Hypocrea ↔ Trichoderma、Glomerella ↔ Colletotrichum …）→ 非错
+        #   ② 真·别的属 → 须查
+        # 词尾按词干比（ceracea ↔ ceraceum 是同一种）。
+        if TELEOMORPH_OF.get(gen) == decl_gen:
+            if _epithet_stem(cat_epi) and _epithet_stem(cat_epi) == _epithet_stem(sp_epi):
+                out["verdict"] = "有性型属名（非错）"
+            else:
+                out["verdict"] = "别的属（须查原始出处）"
+        elif cur_epi and sp_epi and cur_epi == sp_epi:
+            out["verdict"] = "异名（非错）"
+        else:
+            out["verdict"] = "别的属（须查原始出处）"
     elif cur_epi and cur_epi == cat_epi:
         out["verdict"] = "并名冲突（须查原始出处）"
     elif cur_epi and sp_epi and cur_epi == sp_epi:
@@ -959,6 +1000,9 @@ FLAG_EXPLAIN = {
                 "该机构记的种与声明种不同，而两者都是现行接受名 —— 不是异名，也不一定是错。",
                 "须查原始发表确认是同一菌还是两株。异名是\"该机构用了已并入的旧名\"，"
                 "这一档是两个名字都还活着，性质不同。"),
+    "机构旧代码": ("非错",
+                   "这个代码是机构的历史名称（如 AS＝Academia Sinica，即 CGMCC 的前身），不是编造。",
+                   "按现行代码能查到同一管菌即判非错；查不到才继续按疑似非机构编号处理。"),
     "模式地位冲突": ("错值",
                     "记录原文写的是正模（holotype/neotype/lectotype），而机构把这个号记成次要模式。",
                     "两边指的类型等级不同，至少一方写错了 —— 须查原始发表确认。"),
@@ -1349,6 +1393,10 @@ FLAG_CLASS_PREFIX = [
     # 两个都还在接受名里 ⇒ **必有一方错**（记录标错，或机构目录滞后）。
     # 「错是确定的，方向未定」——所以进确定错，但标记里写明须查原始出处。
     ("并名冲突", "错值"),
+    # 机构旧代码（如 AS = CGMCC 前身）：不是编造，是机构改名/合并留下的历史代码 → 非错
+    ("机构旧代码", "非错"),
+    # 有性型属名（Hypocrea→Trichoderma 等）：同一物种的另一个世代名，不是错
+    ("有性型属名", "非错"),
     # —— 类型材料等级（2026-10-21 改进：核对记录原文）——
     # 只有「记录称正模、机构记次要模式」才算冲突（错值）；
     # 记录原文也是 epitype 的本就一致 → 非错；记录没有该字段 → 待核。
@@ -1823,11 +1871,13 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <button id="tabUnk" class="tabb" onclick="setTab('unk')">不确定</button>
     <button id="tabTrust" class="tabb" onclick="setTab('trust')">受信菌株表</button>
     <button id="tabNA" class="tabb" onclick="setTab('na')">暂无法判定</button>
+    <button id="tabCov" class="tabb" onclick="setTab('cov')">📋 覆盖声明</button>
     <button id="tabT" class="tabb" onclick="setTab('tree')">🌳 并名裁决</button>
     <span class="tiny" id="errcnt"></span>
   </div>
   <div id="trustview" style="display:none"></div>
   <div id="naview" style="display:none"></div>
+  <div id="covview" style="display:none"></div>
   <div id="errview" style="display:none"></div>
   <div id="treeview" style="display:none">
     <div style="border:1px solid #d1d5db;border-radius:8px;padding:10px;margin-bottom:12px;background:#fbfdff">
@@ -2105,9 +2155,11 @@ async function setTab(t){
   $('tabTrust').classList.toggle('on',t==='trust');
   $('tabNA').classList.toggle('on',t==='na');
   $('tabT').classList.toggle('on',t==='tree');
+  $('tabCov').classList.toggle('on',t==='cov');
   $('trustview').style.display=(t==='trust')?'block':'none';
   $('naview').style.display=(t==='na')?'block':'none';
   $('treeview').style.display=(t==='tree')?'block':'none';
+  $('covview').style.display=(t==='cov')?'block':'none';
   // 「全部发现」已并入审稿区：只在「确定错」这一页显示
   $('findview').style.display=(t==='err')?'block':'none';
   $('errview').style.display='none';
@@ -2117,6 +2169,7 @@ async function setTab(t){
   $('empty').style.display='none';
   if(t==='trust')await renderTrust();
   else if(t==='na')await renderNA();
+  else if(t==='cov')await renderCov();
   else if(t==='err')await renderFind();
   // ⚠️ 「确定错/不确定」靠 CANDS 渲染，而 CANDS 只在 loadCands() 里加载 ——
   //    页面加载时**不会自动拉**。于是刚刷新完页面切到「不确定」是空的，
@@ -2355,6 +2408,32 @@ function closeDetail(){ $('dlg').style.display='none'; }
 
 // ---------------- 受信菌株表 ----------------
 let NA=null;
+async function renderCov(){
+  // 覆盖声明页：把「哪些种没扫全」摆出来。
+  // 为什么必须单列：读者看到一张表，会默认它是"全查过了"。
+  // 实际上记录数超限的种只扫了前 N 条 —— 不说，就是把没查完当成没问题。
+  let rows=[];
+  try{
+    const r=await fetch('/api/coverage?'+q());const j=await r.json();
+    rows=j.rows||[];
+  }catch(e){ }
+  let h=`<div class="tiny" style="margin-bottom:8px;background:#fffbeb;border-left:3px solid #f59e0b;padding:7px 9px">
+    <b>覆盖声明</b>：下面这些种的 GenBank 记录条数超过本次扫描上限，
+    <b>只扫了前面一部分</b>。因此它们的「号」可能不全 —— 这是<b>覆盖不足</b>，不是「查过且没问题」。
+    <br>写报告时请把这类种单列，不要与完整扫描的种混在一起算错误率。
+  </div>`;
+  if(!rows.length){
+    h+=`<div class="tiny">（本批没有记录数超限的种）</div>`;
+  }else{
+    h+=`<div class="tiny" style="margin-bottom:6px">共 <b>${rows.length}</b> 个种记录数超限</div>`;
+    h+='<table class="et"><thead><tr><th>种名</th><th>覆盖情况</th></tr></thead><tbody>';
+    for(const x of rows){
+      h+=`<tr><td>${(x.species||'').replace('Colletotrichum ','')}</td><td class="tiny">${x.note||''}</td></tr>`;
+    }
+    h+='</tbody></table>';
+  }
+  $('covview').innerHTML=h;
+}
 async function renderNA(){
   if(NA===null){
     const r=await fetch('/api/undecidable?'+q());const j=await r.json();
@@ -2480,6 +2559,30 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/undecidable":
             od = qs.get("out", "out_audit")
             p, rows = read_undecidable(od, qs.get("genus", ""))
+            return self._json({"file": p, "rows": rows, "mtime": _mtime(p)})
+        if u.path == "/api/coverage":
+            # 覆盖声明：哪些种因为 GenBank 记录太多，本次只扫了一部分。
+            # 为什么要单开一个接口：这件事决定「这张表可信到什么程度」，
+            # 但三列表每格必须是「号＋[标记]」，塞不进去 —— 所以单列一处展示。
+            od = qs.get("out", "out_audit")
+            if not os.path.isabs(od):
+                od = os.path.join(REPO, od)
+            g = (qs.get("genus") or "").lower()
+            cand = []
+            if g:
+                cand.append(os.path.join(od, "{}_覆盖声明.tsv".format(g)))
+            cand.append(os.path.join(od, "覆盖声明.tsv"))
+            p = next((x for x in cand if os.path.exists(x)), "")
+            rows = []
+            if p:
+                try:
+                    for l in io.open(p, encoding="utf-8-sig").read().splitlines()[1:]:
+                        c = l.split("\t")
+                        if c and c[0].strip():
+                            rows.append({"species": c[0].strip(),
+                                         "note": (c[1] if len(c) > 1 else "").strip()})
+                except Exception:
+                    rows = []
             return self._json({"file": p, "rows": rows, "mtime": _mtime(p)})
         if u.path == "/api/refs":
             return self._json(REFS)

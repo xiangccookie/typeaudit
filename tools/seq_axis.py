@@ -36,6 +36,13 @@ def wsl(cmd, timeout=600):
     return r.returncode, (r.stdout or "") + (r.stderr or "")
 
 
+# 【属名】由 main() 按 --genus 设置。
+# ⚠️ 为什么需要：本文件原来把 "Colletotrichum" 写死在检索式和正则里，
+#    换属（Trichoderma）后序列轴仍然只匹配炭疽菌的记录 → 命中 0 条，
+#    而且**不报错**（跑满 9012 秒、结果表 0 行）。这是换属验证才暴露出来的。
+GENUS = "colletotrichum"
+
+
 def its_of_number(code, number, email, log=print):
     """取该号在 GenBank 里的 ITS 序列（有缓存）。返回 (acc, seq) 或 (None, None)。"""
     from Bio import Entrez
@@ -46,7 +53,7 @@ def its_of_number(code, number, email, log=print):
         import json
         d = json.load(io.open(cp, encoding="utf-8"))
         return d.get("acc"), d.get("seq")
-    term = '"{} {}"[All Fields] AND Colletotrichum[Organism]'.format(code, number)
+    term = '"{} {}"[All Fields] AND {}[Organism]'.format(code, number, GENUS.capitalize())
     acc = seq = None
     try:
         h = Entrez.esearch(db="nuccore", term=term, retmax=50)
@@ -63,7 +70,7 @@ def its_of_number(code, number, email, log=print):
                 if not re.search(r"internal transcribed spacer|ITS[12]?\b", head, re.I):
                     continue
                 macc = re.search(r"^ACCESSION\s+(\S+)", head, re.M)
-                morg = re.search(r'/(?:organism)="?Colletotrichum', head)
+                morg = re.search(r'/(?:organism)="?' + re.escape(GENUS.capitalize()), head)
                 if not (macc and morg):
                     continue
                 body = rec.split("ORIGIN")[-1]
@@ -183,7 +190,8 @@ def scan_same_number(out_dir, genus, email, log=print, max_numbers=400, sleep=0.
             def _base(x):
                 # ⚠️ sp./cf./aff. 不是种加词 —— 不过滤会把「Colletotrichum sp. CBS 129823」
                 #    当成第二个种（实测误判 2 条）。
-                m = re.match(r"^(Colletotrichum [a-z][a-z\-]+)", x.strip(), re.I)
+                m = re.match(r"^(" + re.escape(genus.capitalize()) + r" [a-z][a-z\-]+)",
+                             x.strip(), re.I)
                 if not m:
                     return ""
                 epi = m.group(1).split()[-1].lower()
@@ -203,14 +211,24 @@ def scan_same_number(out_dir, genus, email, log=print, max_numbers=400, sleep=0.
         json.dump(cache, io.open(cp, "w", encoding="utf-8"))
     except Exception:
         pass
+    def _clean(s):
+        """单元格清洗：把换行/制表符/全角空格压成单个半角空格。
+
+        ⚠️ 为什么必须有（实测）：GenBank 的 /organism 里可能带换行 ——
+           "Colletotrichum lupini var. setosum (nom.\n inval.)"
+           直接写进 TSV 会把一行拆成两行，后面的列全部错位。
+           74 行里错了 1 行（1.4%），看上去像"判定字段变成了登录号"。
+        """
+        return re.sub(r"[\s\u3000]+", " ", str(s)).strip()
+
     res = os.path.join(out_dir, "序列轴_同号多名.tsv")
     with io.open(res, "w", encoding="utf-8", newline="\n") as f:
         f.write("种\t号\tGenBank里出现的种名\t判定\t记录数\t登录号\n")
         for r in rows:
             f.write("{}\t{} {}\t{}\t{}\t{}\t{}\n".format(
-                r["species_claimed"], r["code"], r["number"],
-                " ｜ ".join(r["organisms"]), r["kind"], len(r["accs"]),
-                ",".join(a for _, a in r["accs"][:8])))
+                _clean(r["species_claimed"]), _clean(r["code"]), _clean(r["number"]),
+                _clean(" ｜ ".join(r["organisms"])), _clean(r["kind"]), len(r["accs"]),
+                _clean(",".join(a for _, a in r["accs"][:8]))))
     log("序列轴·同号多名：命中 {} 个号 → {}".format(len(rows), os.path.relpath(res, REPO)))
     for r in rows[:10]:
         log("  {:<30} {} {}  →  {}".format(
@@ -470,6 +488,10 @@ def main():
                     choices=["same_number", "type_collision", "taxon_info", "self_check", "nn"],
                     help="same_number=同号多名（便宜、证据直接）；nn=按株最近邻（要比对）")
     a = ap.parse_args()
+
+    # 把属名写进模块级变量，供 its_of_number 这类没有 genus 入参的函数用
+    global GENUS
+    GENUS = (a.genus or "colletotrichum").strip().lower()
 
     out_dir = a.out if os.path.isabs(a.out) else os.path.join(REPO, a.out)
     if a.mode == "self_check":

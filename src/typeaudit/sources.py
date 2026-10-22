@@ -380,6 +380,8 @@ class MycoBank(Source):
         self.byname = {}
         self.odd_status = {}      # 非 Legitimate 的状态（拼写变体 / 无效 / 不合法）
         self.species_cur = {}     # 两词归并：种名 → {接受名…}（供并名自洽性检查）
+        self.dup_conflict = {}    # 同名多行且接受名互相矛盾 → {名: [(状态, 接受名), …]}
+        self._rows = {}           # 临时：名 → [(状态, 接受名), …]
         if path and os.path.exists(path):
             import csv as _csv
             with io.open(path, encoding="utf-8-sig", newline="", errors="replace") as f:
@@ -396,6 +398,9 @@ class MycoBank(Source):
                             if st and st.lower() != "legitimate" and n:
                                 self.odd_status[n.lower()] = st
                         c = (r.get(c_c) or "").strip()
+                        if n:
+                            self._rows.setdefault(n.lower().strip(), []).append(
+                                ((r.get(c_s) or "").strip() if c_s else "", c))
                         if n and c and n.lower() != c.lower():
                             self.byname[n.lower()] = c
                             # 两词（属+种）归并后的「名 → 接受名集合」。
@@ -406,6 +411,26 @@ class MycoBank(Source):
                             b2 = " ".join(c.lower().split()[:2])
                             if a2 and b2 and a2 != b2:
                                 self.species_cur.setdefault(a2, set()).add(b2)
+        # ── 同名重复条目消歧（必须在 __init__ 里做）──────────────────
+        # ⚠️ 实测 MycoBank 同一个名字可能有多行，且**接受名互相矛盾**：
+        #    `Diaporthe biguttulata` 一行 Illegitimate→pseudobiguttulata、
+        #    另一行 Legitimate→eres；`chinensis`/`longispora`/`salinicola` 同理。
+        #    旧逻辑 byname 取【最后一行】、odd_status 取【第一行非 Legitimate】，
+        #    名字与状态来自不同的行 —— 两者不可能同时成立。
+        #    现在：优先取 Legitimate 行的接受名；矛盾对子记入 dup_conflict 供上层标"待消歧"。
+        for _k, _vs in self._rows.items():
+            _curs = {v[1] for v in _vs if v[1]}
+            if len(_curs) > 1:
+                self.dup_conflict[_k] = _vs
+                # ⚠️ 不能"优先取 Legitimate 行"：同名的两个条目可能是【同名异物】
+                #    （不同作者、不同年份的同一个双名），Legitimate 那行很可能是
+                #    另一个作者描述的另一物种。
+                #    实测 Diaporthe biguttulata：NCBI 的 taxon 是 F. Huang 2015
+                #    （模式 ZJUD 47），而 MycoBank 里 Legitimate 的那行是 Y.H. Gao &
+                #    L. Cai 2014（后被并入 eres）—— 取 Legitimate 行会张冠李戴。
+                #    正确做法：条目间作者无法区分时不猜，删掉映射并留给上层标"待消歧"。
+                self.byname.pop(_k, None)
+        self._rows = {}
 
     def current_name(self, name):
         return self.byname.get((name or "").strip().lower())

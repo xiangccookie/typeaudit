@@ -76,6 +76,15 @@ FLAG_NODIR = "无公开数据库"      # 该机构无公开机读目录，无法
 FLAG_UNKNOWN_INST = "未知机构代码"   # 机构代码不在 Biocollections 登记表内 ⇒ **候选错值**（如 CGMG 少了 C）
 FLAG_SPECIMEN = "标本号"    # 标本馆号（如 CBS H-21492），不该拿培养物目录核
 FLAG_BASIONYM = "基名属"    # 目录记的是基名属（如 Vermicularia→Colletotrichum），非错
+# 【机构旧代码别名】写论文时机构改过名/合并过的代码，不该当"疑似编造"。
+# 依据（实测）：NCBI Taxonomy 对 Colletotrichum yunnanense 的类型材料同时列了
+#   "AS 3.9617" 与 "CGMCC:3.9617" —— 同一管菌两个代码；
+#   CGMCC 官网该记录的 history 写着 "←中国科学院微生物研究所"，
+#   而 AS = Academia Sinica（中国科学院）旧代码。⇒ AS n 与 CGMCC n 同号。
+# 只收有直接证据的映射；没证据的不猜，继续走"疑似非机构编号"。
+INST_ALIAS = {
+    "AS": "CGMCC",
+}
 FLAG_NOT_AN_INST = "疑似非机构编号"   # 不在登记表、且不像写错的代码 —— 多半是实验室/宿主标签被误当机构代码
 FLAG_NOT_TYPE = "记为非模式菌株"      # 记录把该号当类型材料用，但机构目录标注为非模式菌株（实测 E2）
 FLAG_SYNONYM = "异名（非错）"
@@ -977,7 +986,24 @@ def collect(species, genus, sources, note=None):
                 elif near3:
                     fl.append("书写错误（形近 {}，但该号在 {} 查无）".format(near3[0], near3[0]))
                 else:
-                    fl.append(FLAG_NOT_AN_INST)
+                    # 先看是不是机构旧代码（见 INST_ALIAS 的依据）
+                    _ali = INST_ALIAS.get(up)
+                    _done = False
+                    if _ali:
+                        try:
+                            _d2, _fl2 = check_one("{} {}".format(_ali, num),
+                                                  claimed_type, _depth=_depth + 1)
+                            _txt2 = " ".join(_fl2 or [])
+                            if _d2 is not None and not any(
+                                    k in _txt2 for k in
+                                    ("疑似非机构编号", "未知机构代码", FLAG_ABSENT)):
+                                fl.append("机构旧代码（{} 为 {} 前身）".format(up, _ali))
+                                fl.extend(_fl2 or [])
+                                _done = True
+                        except Exception:
+                            pass
+                    if not _done:
+                        fl.append(FLAG_NOT_AN_INST)
         else:
             fl.append(FLAG_NODIR)
         # ---- 记录「这个结论依赖哪些合取项」----
@@ -1051,7 +1077,10 @@ def collect(species, genus, sources, note=None):
     col_strain = dedup([check_one(x, claimed_type=False,
                         claim_src="GenBank 记录 /strain·/culture_collection")
                        for x in sorted(_uniq_raw(cc_raw))])
-    for x in sorted(set(st_raw))[:3]:
+    # ⚠️ 原来只取前 3 个，实测会丢号：C. lini 的 /strain 有 15 个值，
+    #    排序后 392-1、392-2 排在第 5、6 位 → 被截断，与旧表比对时成了"遗漏"。
+    #    放到 6 个仍保留列的可读性，同时把"还有多少没显示"记进 notes，不静默截断。
+    for x in sorted(set(st_raw))[:6]:
         col_strain.append(("(strain) " + x, []))
     col_type = dedup([check_one(x, claimed_type=True,
                        claim_src="类型材料声明")
@@ -1098,7 +1127,10 @@ def write_tables(rows, out_dir, genus, fw=None, quiet=False):
     def fmt(cell):
         if not cell:
             return "—"
-        return " ｜ ".join(_fmt(disp, fl) for disp, fl in cell)
+        # 单元格里的换行会拆行、把所有列错位（seq_axis 里实测踩过 1 例）。
+        # 这里统一压成空格，属于"写档前必做"的清洗，不影响判定。
+        s = " ｜ ".join(_fmt(disp, fl) for disp, fl in cell)
+        return re.sub(r"[\s\u3000]+", " ", s).strip()
 
     p1 = os.path.join(out_dir, "{}_三列表.tsv".format(g))
     with io.open(p1, "w", encoding="utf-8-sig", newline="") as f:
