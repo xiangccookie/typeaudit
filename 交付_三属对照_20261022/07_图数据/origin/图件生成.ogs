@@ -1,0 +1,46 @@
+// ============================================================
+// 图 2 / 图 3 生成脚本（LabTalk）
+// 用法：Origin → Window → Script Window（或 Shift+Alt+3），
+//       把本文件全部内容粘贴进去，选中全部行，按 Enter 执行。
+// ============================================================
+
+// ---------- 图 2：三属 × 四类机构（堆叠柱）----------
+newbook name:="Fig2" sheet:=1;
+wks.ncols=4;
+wks.nrows=3;
+col(1)={1085,850,542};      // CBS
+col(2)={286,21,36};         // ICMP
+col(3)={182,99,91};         // CGMCC
+col(4)={2080,3230,2601};    // 其他或不可核
+col(1)[L]$="CBS";
+col(2)[L]$="ICMP";
+col(3)[L]$="CGMCC";
+col(4)[L]$="其他或不可核";
+plotxy iy:=(1,2:4) plot:=213;   // 213 = 堆叠柱
+// 若上面一行报错，改用：选中 B~D 列 → Plot → Bar, Pie, Surface → Stacked Column
+
+// ---------- 图 3：三属不一致率 + 95% CI ----------
+newbook name:="Fig3" sheet:=1;
+wks.ncols=4;
+wks.nrows=3;
+col(1)={1,2,3};             // 横轴位置
+col(2)={12.3,14.6,10.3};    // 率（%）
+col(3)={10.8,12.6,8.2};     // CI 下限
+col(4)={14.0,17.0,12.8};    // CI 上限
+col(2)[L]$="Rate";
+col(3)[L]$="CI low";
+col(4)[L]$="CI high";
+plotxy iy:=(1,2) plot:=201;   // 201 = 散点
+layer.x.from=0.5; layer.x.to=3.5; layer.x.inc=1;
+layer.y.from=8;   layer.y.to=18;  layer.y.inc=2;
+// 置信区间：逐点画竖线（x, 下限）→（x, 上限）
+draw -l {1,10.8,1,14.0};
+draw -l {2,12.6,2,17.0};
+draw -l {3,8.2,3,12.8};
+// 合计率 12.6% 参考虚线
+draw -l {0.5,12.6,3.5,12.6};
+
+// ---------- 导出 ----------
+// 图 2 导出 PNG（把路径改成你自己的目录）
+// expGraph type:=png path:="D:/图件" filename:="图2_机构构成" overwrite:=replace;
+type "LabTalk 脚本执行完毕。";

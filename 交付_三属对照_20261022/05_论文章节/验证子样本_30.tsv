@@ -1,0 +1,31 @@
+﻿层	属	声明种	号	原标记	文献裁决	依据
+号不存在	Colletotrichum	Colletotrichum acutatum	CBS 126514	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	待核	命中 2 篇但正文未出现（疑在参考文献/元数据）
+号不存在	Colletotrichum	Colletotrichum boninense	CBS 129927	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	号存在（原判过强）	正文有引用：…Mexico JQ005219 JQ005306 JQ005393 JQ005480 JQ005567 JQ005653 JQ005740 CBS 129927 Anthurium sp. Thailand JQ005206 JQ005293 JQ005380…
+号不存在	Colletotrichum	Colletotrichum fragariae	CGMCC LC0576	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CGMCC 官网	待核	命中 4 篇但正文未出现（疑在参考文献/元数据）
+号不存在	Colletotrichum	Colletotrichum gloeosporioides	CBS 125968	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	支持原判	PMC 全文无该号
+号不存在	Colletotrichum	Colletotrichum gloeosporioides	CBS 132466	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	支持原判	PMC 全文无该号
+号不存在	Colletotrichum	Colletotrichum nigrum	CBS 132451	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	待核	命中 1 篇但正文未出现（疑在参考文献/元数据）
+号不存在	Colletotrichum	Colletotrichum trichellum	CBS 128516	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	支持原判	PMC 全文无该号
+号不存在	Trichoderma	Trichoderma strigosellum	CBS 102806	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	号存在（原判过强）	正文有引用：…for four strains of T. strigosellum sp. nov. (CBS 102805, CBS 102816, CBS 102806 and CBS 102817). Filled squares and circles corre…
+号不存在	Trichoderma	Trichoderma reesei	CBS _383.941	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	支持原判	PMC 全文无该号
+号不存在	Diaporthe	Diaporthe ovalispora	CGMCC 3.17256	号不存在（声明:GenBank 类型材料记录 /culture_collection ‖ 查无:CGMCC 官网返回 0	号存在（原判过强）	正文有引用：…398675 MK480610 MK502091 MK502087 NA D. ovalispora China Citrus limon CGMCC 3.17256* KJ490628 KJ490507 KJ490449 NA KJ490570 D. oxe…
+名称不一致	Colletotrichum	Colletotrichum alienum	CBS 516.97	并名冲突（须查原始出处）‖CBS 记 Colletotrichum gloeosporioides，MycoBank 亦	待核	PMC 全文检索无该号上下文
+名称不一致	Colletotrichum	Colletotrichum cliviigenum	CPC 38800	并名冲突（须查原始出处）‖CBS 记 Colletotrichum boninense，MycoBank 亦接受该名; 	文献支持 GenBank 一方：机构目录记名与原始发表不符	Fungal Planet 描述 C. cliviigenum 时写明 culture ex-type CPC 38800 = CBS 146825
+名称不一致	Colletotrichum	Colletotrichum nigrum	CBS 174.59	并名冲突（须查原始出处）‖CBS 记 Colletotrichum phomoides，MycoBank 接受名 col	待核	PMC 全文检索无该号上下文
+名称不一致	Colletotrichum	Colletotrichum siamense	CBS 125378	异名（非错）	文献支持原判（非错）	多篇论文将 CBS 125378 作为 C. siamense 的 ex-type 引用
+名称不一致	Trichoderma	Trichoderma britannicum	CBS 253.62	基名属	文献支持原判（非错）	文献标注 T. britannicum SB1 = CBS 253.62 (T)
+名称不一致	Trichoderma	Trichoderma aerugineum	CBS 120541	基名属	文献支持原判（非错）	文献标注 T. aerugineum Hypo 414 = CBS 120541 (T)
+名称不一致	Trichoderma	Trichoderma pachypallidum	CBS 122126	CBS 记为别种	文献支持 GenBank 一方：机构目录记名与原始发表不符	文献标注 T. pachypallidum CBS 122126 = Hypo 62 (T)，为该种模式
+名称不一致	Trichoderma	Trichoderma estonicum	CBS 111147	CBS 记为别种	文献支持 GenBank 一方：机构目录记名与原始发表不符	文献标注 H. estonica 的 Ex-type culture = G.J.S. 96-129 = CBS 111147
+名称不一致	Diaporthe	Diaporthe foeniculina	CBS 187.27	基名属	文献支持原判（非错）	文献中 CBS 187.27 作为 D. foeniculina/foeniculacea 模式株引用
+名称不一致	Diaporthe	Diaporthe rudis	ICMP 14194	并名冲突（须查原始出处）‖ICMP 记 Diaporthe phaseolorum (Cooke & Ellis) Sa	待核	PMC 全文检索无该号上下文
+模式地位	Colletotrichum	Colletotrichum acutatum	ATCC 56816	记录原文亦为 epitype，与 CBS 记为 Epitype 一致（非错）; 经映射→CBS 112996	文献支持原判（非错）	文献列出 CBS 112996, ATCC 56816, STE-U 5292 (T)，即模式材料
+模式地位	Colletotrichum	Colletotrichum citrulli	CGMCC 3.20769	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	原始描述：Holotype HMAS 351572, Ex-type culture CGMCC 3.20769 = CAASZT52
+模式地位	Colletotrichum	Colletotrichum gracile	CGMCC 3.16075	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	文献列表：C. gracile CGMCC 3.16075 (T)
+模式地位	Colletotrichum	Colletotrichum nymphaeae	CBS 515.78	记录原文亦为 epitype，与 CBS 记为 Epitype 一致（非错）	文献支持原判（非错）	文献标注 C. nymphaeae CBS 515.78 (T)
+模式地位	Colletotrichum	Colletotrichum spaethianum	CBS 167.49	记录原文亦为 epitype，与 CBS 记为 Epitype 一致（非错）	部分支持原判	文献以 CBS 167.49 作为 C. spaethianum 的代表菌株，但未直接提及 epitype 字样
+模式地位	Colletotrichum	Colletotrichum zhaoqingense	CGMCC 3.20536	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	原始描述：holotype HMAS 350646, ex-type culture CGMCC 3.20536 = LC13878
+模式地位	Trichoderma	Trichoderma zelobreve	CGMCC 3.19695	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	文献列表：T. zelobreve CGMCC 3.19695 (T)
+模式地位	Trichoderma	Trichoderma zayuense	CGMCC 3.18391	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	原始描述：Ex-type culture CGMCC 3.18391
+模式地位	Trichoderma	Trichoderma strictipile	CBS 338.93	NCBI 声明为模式号，机构无此记录	待核	PMC 命中 3 篇但正文未出现，疑在参考文献/元数据
+模式地位	Diaporthe	Diaporthe acuta	CGMCC 3.19600	NCBI 声明为模式号，机构无此记录	文献支持 GenBank 一方：原始发表确认其为 ex-type，机构目录未收录	文献列表：D. acuta CGMCC 3.19600 (T)

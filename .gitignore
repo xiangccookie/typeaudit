@@ -58,3 +58,10 @@ data/*.meta.json
 # 本机临时文件（端口记录、抓取中间态等）
 _*.txt
 _link_port.txt
+
+# ---- 超大增强表：119 MB，超 GitHub 单文件 100 MB 硬限 ----
+#     可用 tools/import_mycobank.py 从 MycoBank MBlist 重新生成
+mycobank_authors.tsv
+
+# ---- 临时测试目录 ----
+_tmp_guard_test/
