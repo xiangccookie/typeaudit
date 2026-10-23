@@ -119,6 +119,15 @@ def from_species(out_dir, classify):
                              "来源": "四方核验·名称分歧",
                              "证据": "status={} ｜ taxid={}".format(
                                  d.get("status", ""), r.get("NCBI_taxid", ""))})
+            elif d.get("verdict") == "词尾变体":
+                # 词尾变体：同一词干、属名性别不同导致词尾不同（-um / -a）。
+                # 与拼写变体同属「名字不同 ≠ 物种不同」，归非错。
+                rows.append({"层级": "名字", "类别": "词尾变体（非错）",
+                             "对象": sp,
+                             "发现": "同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid",
+                             "归类": "非错",
+                             "来源": "四方核验·名称分歧",
+                             "证据": "taxid={}".format(r.get("NCBI_taxid", ""))})
             elif d.get("verdict") == "分歧":
                 rows.append({"层级": "名字", "类别": "异名/独立种分歧",
                              "对象": sp,

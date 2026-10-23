@@ -2201,34 +2201,34 @@
 2200	号	无公开数据库	Trichoderma viride / WU 24093	无公开数据库	不确定	三列表·模式菌列	out=out_trichoderma ｜ 列=模式菌 ｜ 号=WU 24093
 2201	名字	异名/独立种分歧	Trichoderma crystallinum	NCBI：独立 taxid(3687506) ｜ MycoBank：独立（crystalligenum）	矛盾	四方核验·名称分歧	taxid=3687506 ｜ 接受名=Trichoderma crystalligenum W.T. Qin & W.Y. Zhuang, Phytotaxa
 2202	名字	拼写变体（非错）	Trichoderma indica	MycoBank 标为 Orthographic variant（独立（indicum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3073394
-2203	名字	异名/独立种分歧	Trichoderma latizonatum	NCBI：独立 taxid(3121417) ｜ MycoBank：独立（latizonata）	矛盾	四方核验·名称分歧	taxid=3121417 ｜ 接受名=Hypocrea latizonata Peck, The North American Pyrenomycetes: 
+2203	名字	词尾变体（非错）	Trichoderma latizonatum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=3121417
 2204	名字	拼写变体（非错）	Trichoderma zhuangii	MycoBank 标为 Orthographic variant（独立（zhuangiae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3698429
 2205	名字	拼写变体（非错）	Trichoderma hipposiderocola	MycoBank 标为 Orthographic variant（独立（hipposidericola））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=3056457
 2206	名字	拼写变体（非错）	Trichoderma aquatica	MycoBank 标为 Orthographic variant（独立（aquaticum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2692700
-2207	名字	异名/独立种分歧	Trichoderma rugulosum	NCBI：独立 taxid(2589070) ｜ MycoBank：独立（rugulosa）	矛盾	四方核验·名称分歧	taxid=2589070 ｜ 接受名=Hypocrea rugulosa Berk. & Cooke, Grevillea 12 (63): 79 (1884
+2207	名字	词尾变体（非错）	Trichoderma rugulosum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=2589070
 2208	名字	拼写变体（非错）	Trichoderma tibetica	MycoBank 标为 Orthographic variant（独立（tibeticum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=2692705
 2209	名字	拼写变体（非错）	Trichoderma christiani	MycoBank 标为 Orthographic variant（独立（christianii））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1604594
 2210	名字	拼写变体（非错）	Trichoderma fassatiae	MycoBank 标为 Orthographic variant（独立（fassatiovae））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1672015
 2211	名字	拼写变体（非错）	Trichoderma longifialidicum	MycoBank 标为 Orthographic variant（独立（longiphialidicum））；NCBI 另立 taxid	非错	四方核验·名称分歧	status=Orthographic variant ｜ taxid=1684289
 2212	名字	异名/独立种分歧	Trichoderma neocrassum	NCBI：独立 taxid(1738390) ｜ MycoBank：独立（crassa）	矛盾	四方核验·名称分歧	taxid=1738390 ｜ 接受名=Hypocrea crassa P. Chaverri & Samuels, Stud. Mycol. 48: 61 (
 2213	名字	异名/独立种分歧	Trichoderma patellotropicum	NCBI：独立 taxid(1747394) ｜ MycoBank：独立（patella）	矛盾	四方核验·名称分歧	taxid=1747394 ｜ 接受名=Hypocrea patella f. tropica Yoshim. Doi, Bull. Natl. Sci. Mu
-2214	名字	异名/独立种分歧	Trichoderma protopulvinatum	NCBI：独立 taxid(1491003) ｜ MycoBank：独立（protopulvinata）	矛盾	四方核验·名称分歧	taxid=1491003 ｜ 接受名=Hypocrea protopulvinata Yoshim. Doi, Bull. Natl. Sci. Mus. T
-2215	名字	异名/独立种分歧	Trichoderma spinulosum	NCBI：独立 taxid(1491020) ｜ MycoBank：独立（spinulosa）	矛盾	四方核验·名称分歧	taxid=1491020 ｜ 接受名=Hypocrea spinulosa Fuckel, Jahrb. Nassauischen Vereins Natur
-2216	名字	异名/独立种分歧	Trichoderma sulphureum	NCBI：独立 taxid(1491022) ｜ MycoBank：独立（sulphurea）	矛盾	四方核验·名称分歧	taxid=1491022 ｜ 接受名=Hypocrea sulphurea (Schwein.) Sacc., Syll. Fung. 2: 535 (188
-2217	名字	异名/独立种分歧	Trichoderma danicum	NCBI：独立 taxid(1490985) ｜ MycoBank：独立（danica）	矛盾	四方核验·名称分歧	taxid=1490985 ｜ 接受名=Hypocrea danica Jaklitsch, Stud. Mycol. 63: 41 (2009)
-2218	名字	异名/独立种分歧	Trichoderma hispanicum	NCBI：独立 taxid(1490989) ｜ MycoBank：独立（hispanica）	矛盾	四方核验·名称分歧	taxid=1490989 ｜ 接受名=Hypocrea hispanica Jaklitsch & Voglmayr, Mycologia 104 (4): 
-2219	名字	异名/独立种分歧	Trichoderma neorufum	NCBI：独立 taxid(1490995) ｜ MycoBank：独立（neorufa）	矛盾	四方核验·名称分歧	taxid=1490995 ｜ 接受名=Hypocrea neorufa Samuels, Dodd & Lieckf., Mycol. Progr. 1 (4
-2220	名字	异名/独立种分歧	Trichoderma nybergianum	NCBI：独立 taxid(1490996) ｜ MycoBank：独立（nybergiana）	矛盾	四方核验·名称分歧	taxid=1490996 ｜ 接受名=Hypocrea nybergiana T. Ulvinen & H.L. Chamberlain, Karstenia
-2221	名字	异名/独立种分歧	Trichoderma ochroleucum	NCBI：独立 taxid(1490997) ｜ MycoBank：独立（ochroleuca）	矛盾	四方核验·名称分歧	taxid=1490997 ｜ 接受名=Hypocrea ochroleuca Berk. & Ravenel, Grevillea 4 (29): 14 (1
-2222	名字	异名/独立种分歧	Trichoderma orientale	NCBI：独立 taxid(1490998) ｜ MycoBank：独立（orientalis）	矛盾	四方核验·名称分歧	taxid=1490998 ｜ 接受名=Hypocrea orientalis Samuels & Petrini, Stud. Mycol. 41: 30 (
+2214	名字	词尾变体（非错）	Trichoderma protopulvinatum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1491003
+2215	名字	词尾变体（非错）	Trichoderma spinulosum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1491020
+2216	名字	词尾变体（非错）	Trichoderma sulphureum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1491022
+2217	名字	词尾变体（非错）	Trichoderma danicum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490985
+2218	名字	词尾变体（非错）	Trichoderma hispanicum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490989
+2219	名字	词尾变体（非错）	Trichoderma neorufum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490995
+2220	名字	词尾变体（非错）	Trichoderma nybergianum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490996
+2221	名字	词尾变体（非错）	Trichoderma ochroleucum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490997
+2222	名字	词尾变体（非错）	Trichoderma orientale	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=1490998
 2223	名字	异名/独立种分歧	Trichoderma glaucum	NCBI：独立 taxid(989263) ｜ MycoBank：独立（viride）	矛盾	四方核验·名称分歧	taxid=989263 ｜ 接受名=Trichoderma viride Pers., Neues Mag. Bot. 1: 92 (1794)
-2224	名字	异名/独立种分歧	Trichoderma megalocitrinum	NCBI：独立 taxid(213984) ｜ MycoBank：独立（megalocitrina）	矛盾	四方核验·名称分歧	taxid=213984 ｜ 接受名=Hypocrea megalocitrina Yoshim. Doi, Bull. Natl. Sci. Mus. To
-2225	名字	异名/独立种分歧	Trichoderma microcitrinum	NCBI：独立 taxid(398801) ｜ MycoBank：独立（microcitrina）	矛盾	四方核验·名称分歧	taxid=398801 ｜ 接受名=Hypocrea microcitrina Yoshim. Doi, Bull. Natl. Sci. Mus. Tok
+2224	名字	词尾变体（非错）	Trichoderma megalocitrinum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=213984
+2225	名字	词尾变体（非错）	Trichoderma microcitrinum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=398801
 2226	名字	待核	Trichoderma pseudokoningii	模式号归属待核	错值	四方核验	out=out_trichoderma ｜ 待核明细
-2227	名字	异名/独立种分歧	Trichoderma sulawesense	NCBI：独立 taxid(257808) ｜ MycoBank：独立（sulawesensis）	矛盾	四方核验·名称分歧	taxid=257808 ｜ 接受名=Hypocrea sulawesensis Yoshim. Doi, Mem. New York Bot. Gard. 
-2228	名字	异名/独立种分歧	Trichoderma virescentiflavum	NCBI：独立 taxid(257811) ｜ MycoBank：独立（virescentiflava）	矛盾	四方核验·名称分歧	taxid=257811 ｜ 接受名=Hypocrea virescentiflava Speg., Bol. Acad. Nac. Ci. 11 (4): 
+2227	名字	词尾变体（非错）	Trichoderma sulawesense	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=257808
+2228	名字	词尾变体（非错）	Trichoderma virescentiflavum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=257811
 2229	名字	异名/独立种分歧	Trichoderma album	NCBI：独立 taxid(189331) ｜ MycoBank：独立（polysporum）	矛盾	四方核验·名称分歧	taxid=189331 ｜ 接受名=Trichoderma polysporum (Link) Rifai, Mycol. Pap. 116: 18 (19
-2230	名字	异名/独立种分歧	Trichoderma peltatum	NCBI：独立 taxid(40694) ｜ MycoBank：独立（peltata）	矛盾	四方核验·名称分歧	taxid=40694 ｜ 接受名=Hypocrea peltata Berk., Hooker's J. Bot. Kew Gard. Misc. 3: 
+2230	名字	词尾变体（非错）	Trichoderma peltatum	同一词干、词尾不同（属名性别差异）；NCBI 另立 taxid	非错	四方核验·名称分歧	taxid=40694
 2231	名字	并名冲突（须查原始出处）	Trichoderma afarasin / CBS 130755	声明为 afarasin；该机构记名 Trichoderma afarasinum；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 2232	名字	有性型属名（非错）	Trichoderma ceraceum / CBS 114245	声明为 ceraceum；该机构记名 Hypocrea ceracea P. Chaverri & Samuels；MycoBank 接受名 —	非错	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name
 2233	名字	别的属（须查原始出处）	Trichoderma neocrassum / CBS 114230	声明为 neocrassum；该机构记名 Hypocrea crassa P. Chaverri & Samuels；MycoBank 接受名 —	错值	名字层·逐号	该机构 status/taxon_name + MycoBank.current_name

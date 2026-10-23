@@ -2180,14 +2180,29 @@ def species_status(name, sources, use_cgmcc=True, weights=None):
             # 两种写法，不是两个物种。判成「分歧」会让 127 条分歧里混进 7 条假分歧。
             _st = (out["myco"].get("status") or "").lower()
             _is_ortho = _st.startswith("orthographic")
+            # 词尾变体：同一个种加词、因属名性别不同而词尾不同
+            #   Trichoderma（中性）latizonatum ↔ Hypocrea（阴性）latizonata
+            # 这是「一菌一名」后两世代属名并存的产物，不是两个物种。
+            # 判据：去掉末尾 0–2 个字母后词干完全相同（词干至少 5 个字母）。
+            def _epi_variant(x, y):
+                for ca in (0, 1, 2):
+                    for cb in (0, 1, 2):
+                        sa = x[:len(x) - ca] if ca else x
+                        sb = y[:len(y) - cb] if cb else y
+                        if len(sa) >= 5 and sa == sb:
+                            return True
+                return False
+            _is_ending = (not same) and _epi_variant(name.split()[-1].lower(),
+                                                     accept.split()[-1].lower())
             nb = out["name_conflict"] = {
                 "ncbi": "独立 taxid({})".format(out["ncbi"]["taxid"]),
                 "mycobank": ("异名 → {}".format(accept.split()[-1]) if same
                              else "独立（{}）".format(accept.split()[-1])),
                 "status": out["myco"].get("status", ""),
                 "verdict": ("一致" if same
-                            else ("拼写变体" if _is_ortho else "分歧"))}
-            if not same and not _is_ortho:
+                            else ("拼写变体" if _is_ortho
+                                  else ("词尾变体" if _is_ending else "分歧")))}
+            if not same and not _is_ortho and not _is_ending:
                 lvl = "矛盾" if min(W["ncbi"], W["myco"]) >= 2 else "提示"
                 out["name_conflict"]["level"] = lvl
                 note = ("NCBI 把 {} 当独立种（taxid {}），MycoBank 把它的接受名判为 {}"
