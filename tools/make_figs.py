@@ -109,30 +109,30 @@ save(fig, "Fig1_audit_flow")
 
 # ══════════════════ 图 2：单面板（机构构成 + 柱顶可核率）══════════════════
 # 设计说明：绝对数（可核/不可核）交给表 4，图只承担「可核率差异来自机构构成」这一条论点。
-fig, ax = plt.subplots(figsize=(3.35, 3.15), dpi=600)      # 约 8.5 cm 单栏
+fig, ax = plt.subplots(figsize=(4.72, 3.15), dpi=600)      # 约 12.0 cm（1.5 栏）× 8.0 cm
 x = np.arange(3)
 tot = np.array(VERIF, float)
 p1 = np.array(CBS) / tot * 100
 p2 = np.array(ICMP) / tot * 100
 p3 = np.array(CGMCC) / tot * 100
-ax.bar(x, p1, 0.58, color=BLUE, label="CBS")
-ax.bar(x, p2, 0.58, bottom=p1, color=ORANGE, label="ICMP")
-ax.bar(x, p3, 0.58, bottom=p1 + p2, color=GREEN, label="CGMCC")
+ax.bar(x, p1, 0.62, color=BLUE, label="CBS")
+ax.bar(x, p2, 0.62, bottom=p1, color=ORANGE, label="ICMP")
+ax.bar(x, p3, 0.62, bottom=p1 + p2, color=GREEN, label="CGMCC")
 for i in range(3):
     ax.text(i, p1[i] / 2, "{:.0f}%".format(p1[i]), ha="center", va="center",
             color="white", fontsize=6.5)
     y_ic = p1[i] + p2[i] / 2
     txt = "ICMP {:.1f}%".format(p2[i])
-    if p2[i] > 8:
-        ax.text(i, y_ic, txt, ha="center", va="center", color="#4a2f00", fontsize=5.6)
-    else:
-        ax.text(i, y_ic + 3.0, txt, ha="center", va="bottom", color="#8a5a00", fontsize=5.6)
+    if p2[i] > 8:                                  # 橙段够厚 → 段内深棕字
+        ax.text(i, y_ic, txt, ha="center", va="center", color="#4a2f00", fontsize=6.0)
+    else:                                          # 橙段太薄 → 移到蓝段内、白字
+        ax.text(i, p1[i] - 4.0, txt, ha="center", va="center", color="white", fontsize=6.0)
     # 柱顶：该属可核率
     ax.text(i, 101.5, "{:.1f}%".format(100 * VERIF[i] / (VERIF[i] + UNVER[i])),
             ha="center", va="bottom", fontsize=6.5, color=BLUE, fontweight="bold")
-ax.set_xticks(x); ax.set_xticklabels(GEN, fontsize=6.3)
-ax.set_ylabel("占该属可核号的比例（%）", fontsize=6.8)
-ax.tick_params(labelsize=6.3)
+ax.set_xticks(x); ax.set_xticklabels(GEN, fontsize=6.8)
+ax.set_ylabel("占该属可核号的比例（%）", fontsize=7.2)
+ax.tick_params(labelsize=6.8)
 ax.set_ylim(0, 112); ax.set_yticks([0, 20, 40, 60, 80, 100])
 ax.legend(fontsize=6.3, frameon=False, loc="upper center", ncol=3,
           handlelength=1.2, columnspacing=1.0, bbox_to_anchor=(0.5, 1.06))
