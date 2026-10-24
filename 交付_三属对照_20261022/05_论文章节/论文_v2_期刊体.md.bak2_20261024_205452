@@ -1,0 +1,359 @@
+# 属级元数据审计：三个真菌属的保藏号、模式地位与名称一致性
+
+**A genus-level metadata audit of three fungal genera: culture numbers, type status and name consistency**
+
+〔作者姓名〕<sup>1*</sup>
+
+1. 〔单位、城市、国家〕
+\* 〔通讯邮箱〕
+
+> **文献信息**
+>
+> 引用格式：〔作者〕(2026) 属级元数据审计：三个真菌属的保藏号、模式地位与名称一致性。〔期刊〕〔卷〕: 〔页码〕。
+> 预印本 DOI：10.5281/zenodo.23595583（v1.2.0）
+> 数据与代码：https://github.com/xiangccookie/typeaudit
+> 收稿 〔日期〕 · 接收 〔日期〕 · 发表 〔日期〕
+
+**关于本文**　本文的全部计数来自一次可复现的流水线，数据快照固定为 2026 年 10 月 10 日；凡引用本文数字，请连同该日期一并给出。文中反复出现的三个量——全部号、可核号、号级不一致——各自的分母不同，第 2 节逐一交代。表 1–8 为数据表，图 1–3 为结果图，文末附「术语与名词解释」，按主题分组，逐条给出英文原词、通俗解释以及它在本文语境中的具体含义。
+
+---
+
+## 摘要
+
+公共数据库里的菌株保藏号、模式地位与名称，是分类学、植物病理与流行病学研究的共同基础。同一批菌株在 GenBank（由作者申报）、NCBI Taxonomy（由策展人核实）、MycoBank（跟进文献做名称合并）与各保藏中心的实体目录之间，可能给出彼此矛盾的记录，而这些矛盾长期缺乏系统性检验。本文不讨论理想中的标识符体系，而是问一个更朴素的问题：在当下已经存在的记录里，我们究竟能把「这一株菌叫什么、是不是模式、属于哪个种」核对到什么程度。我们以 Colletotrichum、Trichoderma、Diaporthe 三个真菌属为对象（合计 1,360 个规范双名、11,103 条「号 × 种」记录），把 GenBank 记录名、NCBI 分类名、MycoBank 接受名与 CBS、ICMP、CGMCC 三家保藏中心的公开目录四方交叉比对，并对全部种级分歧逐条查文献裁决。结果显示：只有 28.7% 的号能在机构目录中核对，而这一比例在属间相差约两倍，原因不在记录质量而在机构覆盖；以可核号为分母，号级不一致率为 12.6%（95% 置信区间 11.5–13.8%），且这一数字偏严、应视为上限；1,504 条号级不一致中，真正的多数（668 条，44.4%）是「号根本不是机构号」，只有 485 条涉及名称冲突；153 条种级分歧中 114 条支持 MycoBank、8 条提示其过度合并，且方向由单一属主导、不能外推。这些结果表明：用学名把菌株、序列与记录连接起来，本身并不可靠；而判断它在何处不可靠，必须先解决「有没有得比」——可核查率不是数据的附属信息，而是结论的一部分。
+
+**关键词**　元数据审计；保藏号；模式材料；同名异物；有性型属名；NCBI Taxonomy；MycoBank
+
+## Abstract
+
+Culture collection numbers, type status and names underpin taxonomic, plant-pathological and epidemiological research, yet the records that carry them are maintained by different parties with different practices: GenBank records are author-submitted, NCBI Taxonomy is curator-verified, MycoBank follows the literature when merging names, and holding collections register material in their own catalogues. Rather than proposing an ideal identifier scheme, we ask a simpler question: with the records that already exist, how far can we actually verify what a strain is called, whether it is a type, and to which species it belongs? We audited all accepted binomials of three fungal genera (Colletotrichum, Trichoderma, Diaporthe; 1,360 names, 11,103 number-by-species records), cross-checking GenBank record names, NCBI taxonomic names, MycoBank accepted names and the public catalogues of three collections (CBS, ICMP, CGMCC), and adjudicated every species-level conflict against the primary literature. Only 28.7% of numbers could be verified in a collection catalogue, and this fraction differed about two-fold among genera because of collection coverage rather than record quality. Among verifiable numbers, the number-level discrepancy rate was 12.6% (95% CI 11.5–13.8%) and should be read as an upper bound. Of the 1,504 discrepancies, the largest single class (668, 44.4%) involved numbers that are not institutional accessions at all, and only 485 involved name conflicts. Of 153 species-level conflicts, 114 favoured MycoBank and 8 suggested over-merging, but the direction was dominated by a single genus and cannot be extrapolated. Linking strains, sequences and records by scientific name is therefore intrinsically unreliable, and deciding where it fails requires first establishing what can be checked at all: verifiability is not ancillary information but part of the conclusion.
+
+**Keywords**　metadata audit; culture collection numbers; type material; homonyms; teleomorph genus names; NCBI Taxonomy; MycoBank
+
+## 数据、代码与资助
+
+**数据与代码可用性**　支撑本文结论的全部数据与代码公开于 GitHub（https://github.com/xiangccookie/typeaudit，MIT 许可），并以 Zenodo 永久归档：版本 DOI 10.5281/zenodo.23595583（v1.2.0），概念 DOI 10.5281/zenodo.23574863（始终指向最新版）。仓库包含审计流程源码、三属全部结果表（三列表、覆盖声明、发现汇总、四方核验、序列轴、分类库、反向审计、分歧裁决表、30 条验证子样本）、已知错误的回归测试集（32 例）与三个属的规范物种清单。为便于不具备编程基础的读者核对，仓库另附 Windows 启动器：解压后双击即可在浏览器中载入任一属的结果，无需联网、无需安装 Python、无需重跑流水线。复现三属结果的主命令为 `python tools/chain_genus.py --genus <属名> --chunk 40`。
+
+**版本对应**　本文全部数字对应 v1.2.0。较早的 v1.0.9（10.5281/zenodo.23575367）为剔除 41 条名字变体前的口径，与本文不可直接相减，差异细节见仓库 `CHANGELOG.md`。
+
+**资助与利益冲突**　〔待填〕
+
+## 引言
+
+关于生物多样性数据资源，有一个颇具吸引力的愿景：一片由相互连接的数字对象构成的云，每个对象带有一个可解析的全局唯一标识符，人与机器只需顺着这个标识符，就能从一件实物标本走到它的序列、图像与文献。在这个愿景里，菌株保藏号就是那个把「标本—序列—名称」三者串起来的铆钉：拿到一条序列记录，顺着它的保藏号去要菌株，再顺着菌株名去查这个种现在叫什么——这是分类学、植物病理诊断与多样性调查里每天都在做的动作。
+
+然而这根铆钉并不结实。它一端钉在 GenBank 里，那里的记录由作者自己申报，未经独立核对；另一端钉在保藏中心的目录里，而目录的公开程度因机构而异，有的提供可机读检索，有的只在网页上列一张表，还有的根本不公开；中间还夹着两个分类库——NCBI Taxonomy 由策展人主动核实并维护模式地位与菌株—序列关联，MycoBank 则跟进文献做名称合并——它们对同一个名字是否该被并入另一个名字，常常给出相反答案。于是同一株菌可以在四个地方留下四种说法，而这四种说法之间的分歧，从来没有被系统地数过。
+
+这并不是一个新问题，但以往的研究各自只覆盖了其中一段。一批工作从信息学角度诊断标识符本身的可靠性与管护实践，指出「三元组」（机构代码 + 馆藏代码 + 目录号）在实际部署中充斥着语义与句法错误；另一批工作从分类库一侧出发，讨论模式菌株与模式材料的记录质量，以及公共序列库中模式材料注释的缺失；还有一批工作专注两个名称库之间的合并分歧，检验某一次大规模修订是否站得住。三条线各自成熟，却缺一个把它们放在同一个分母下的属级量化：在一个属内，究竟有多少记录能核、核出来的不一致有多少、分歧偏向哪一方、以及按学名做跨库匹配会在哪里静默出错。
+
+本文要回答的就是这三个问题，且顺序不能颠倒：**一、在属级尺度上，保藏号与名称记录之间号级不一致的频率是多少，分母应当怎么取？二、当两个维护型数据库给出相反答案时，谁更可能对？三、按学名做跨库匹配，会在哪些地方静默出错？** 第一问决定了后两问能不能被回答——如果多数记录根本无从核对，那么任何「错误率」都必须先交代它覆盖了哪一部分。
+
+我们选择 Colletotrichum、Trichoderma、Diaporthe 三个属，依据有三：三者在 NCBI 分类库中有足够的种级记录（分别 2,277、2,574、1,600 个种级 taxon），过滤为规范双名后规模可比（408、445、507 种）；三者分属不同生态类群——植物病原（Colletotrichum）、生防与土壤真菌（Trichoderma）、内生与致病兼性（Diaporthe），使属间差异可被观察而不只是单属的偶然状况；其中 Diaporthe 近二十年大量拆种，且已被证明为并系属（paraphyletic，即该属并不包含其共同祖先的全部后代），理论上正是种级分歧最可能集中之处。这一点在后文得到验证，也成为我们不敢把结论外推的理由。
+
+## 材料与方法
+
+**数据从哪来。** 我们以 NCBI Taxonomy 的检索式为起点，取三个属内全部种级 taxon，再过滤为规范双名（两词、种加词小写；剔除 `sp.`、`cf.`、`aff.` 及仅到属名者），得到 Colletotrichum 408、Trichoderma 445、Diaporthe 507 种，合计 1,360 种。物种清单、命名人与模式材料取自 NCBI Taxonomy，序列与记录字段取自 NCBI Nucleotide，名字关系取自 MycoBank 本地导出（426,834 行），机构侧对照依据 CBS、ICMP、CGMCC 三家保藏中心的公开目录，分歧裁决依据 PubMed 与 PMC。全部查询完成于 2026 年 10 月 10 日，分类库与机构目录持续更新，本文的计数与结论仅对应这一天。
+
+**数什么、除以什么。** 我们统计的单位是「一个保藏号在一个种下的一次出现」，本文称为一个号级单元格：例如 CBS 126514 若同时出现在 *Diaporthe arecae* 与 *D. citri* 两个种下，就算 2 个号级单元格。这样定义是为了避免两种漏计——按号统计会漏掉「一株多名」，按种统计会忽略一个种下有多少条记录。分母只取可核号，即只有在三家保藏中心的公开机读目录里能核对到的号才进入分母；其余号的所在机构没有可机读目录、或只是研究者自己的工作编号，既不进分子也不进分母。这样取分母的理由很简单：若把核对不了的号算进分母，率会被稀释到没有意义；若把「查不了」当成「没问题」，又等于默认这一部分零错误。因此全文的「号级不一致率」一律是「号级不一致的单元格数 ÷ 可核号数」，且只描述可核号这一子集，不外推为三属整体。同理，可核率与不一致率都只按属报告、不排序：三个属的可核号来自不同机构，分母本就不同质，即便某一对差异在统计上显著，它反映的也可能是机构构成不同，而非记录质量更差。
+
+**遇到模糊情形怎么判。** 判断所依据的证据由强到弱分四档：原始发表（作者当年指定模式与编号，是真值）＞ 模式材料记录（二手转录，可能出错）＞ 保藏中心目录（实体登记方，但公开程度不一）＞ GenBank 记录（作者申报，未经独立核对）。核验分四层执行：号层（目录中是否有该号、登记名与模式地位是否相符）、名字层（NCBI 分类名、MycoBank 接受名、机构登记名与 GenBank 记录名四方交叉）、序列层（同一号是否被标成不同种）、分类层（同一号是否被多个种登记为正模）。在此基础上，有七条具体规则，每一条都对应一种实测中反复出现的误判。其一，学名不同不等于异名：「学名与当前接受名不同」涵盖性质完全不同的四种关系，加上「本来就相同」这一基线共五种（表 1），判据是种加词——种加词相同即同一物种改名（换属），种加词不同才是物种被合并（真异名）。其二，证据有强弱，不能把作者申报当已核实。其三，同名异物要「机器列候选、人指认」：同一双名可被不同作者在不同年份各描述一次，MycoBank 如实登记多行，晚出者标 `Illegitimate`，而 NCBI 只对应其中一个 taxon；完整导出含 `Authors` 与 `Year of effective publication`，可据此自动列出候选，但 NCBI Taxonomy 对这些种未登记命名人，因此「哪一行对应这个 taxon」无法自动匹配，流程的处理是不选取任何一行、置空并标「待消歧」，同时输出候选行供人判断。其四，目录查无不等于号是假的：对判为「号不存在」者须回查 GenBank 是否有其他记录引用过它，检索式要写成 `CBS:126514`（冒号、不加引号），写成 `CBS 126514` 会被分词为 `CBS` AND `126514`，返回大量无关记录。其五，有性型属名要按词干比对：「一菌一名」改革后有性世代属名并入无性世代属名（如 *Hypocrea* → *Trichoderma*），`cerace-a` 与 `cerace-um` 是同一物种，仅因属名语法性别而词尾不同。其六，拼写变体看 `Name status` 列：标为 `Orthographic variant` 的条目是同一个名字的两种拼写（如 *C. acidae* ↔ *C. acidi*），不计入种级分歧。其七，种级分歧按证据分级裁决（表 2）：A 级为同行评议论文正式列入异名表，可作结论；B 级为论文论证应合并但未做命名学处理，只能说「学界倾向」；C 级为未检索到修订文献，不可作结论；D 级为 MycoBank 的合并缺乏文献支持，标为候选；同名异物不属这个序列，须按命名人与模式材料对号后单独定案。
+
+**怎么检验自己的判定。** 三件事。其一，把限制显式记录下来而不是静默丢弃：单种记录数超过 1,500 条者只扫描前 1,500 条，受影响物种由程序逐一写入各属的「覆盖声明」。其二，以既有判定作回归测试，改版后判据与人工复核一致；但这批用例本身由同一流程早期产出，故它只证明改版没有破坏既有判断，不构成独立验证。其三，独立抽样复核：另设 30 条验证子样本，按三类判定各取 10 条，用确定性等距抽样（池内固定步长，可复现），以原始发表（protologue）为准逐条核对，只采信正文出现该号的上下文、仅命中检索计数不算，无上下文者记「待核」。需要说明的是，这 30 条是质性检验，只回答「机构目录会不会错」与「我们的判定偏严还是偏松」，不用于估计总体率——三层等额各取 10 条，而三层的真实池大小为 185、146、244（占 32%、25%、42%），等额分配会压低大层、抬高小层，合并后的比例不能代表总体，层内又各只有 10 条、区间宽达 10–83%，因此结果部分只报告层内计数与方向一致性。比例均给出 Wilson 95% 置信区间，组间比较用 Fisher 精确检验。
+
+**表 1**　名字关系的五种情形（判据表；各行在 MycoBank 中的实际占比见结果部分）
+
+| 关系 | 判据 | 是否同一物种 |
+|---|---|---|
+| 自己即接受名 | 两者相同 | — |
+| 换属（新组合） | 种加词相同、属名不同 | 是 |
+| 并入别的种（真异名） | 种加词不同 | 否 |
+| 拼写/性别更正 | 词干相同、词尾不同 | 是 |
+| 同名不同写法 | 仅标点/连字符差异 | 是 |
+
+**表 2**　分歧裁决的证据分级
+
+| 级别 | 判据 | 可否作为结论引用 |
+|---|---|---|
+| A 决定性 | 同行评议论文正式列入异名表 | 可以，须注明文献 |
+| B 倾向性 | 论文论证应合并但未做正式命名学处理 | 只能说「学界倾向」 |
+| C 待查 | 未检索到对应修订文献 | 不可作结论 |
+| D 反向候选 | MycoBank 的合并缺乏可查文献支持 | 标为候选 |
+
+## 结果
+
+先说分母有多大。三属合计 11,103 个号级单元格，其中能在 CBS、ICMP、CGMCC 三家公开机读目录中核对的只有 3,192 个，占 28.7%；其余 7,911 个（71.3%）所在机构没有可机读目录，或只是研究者自己的工作编号（表 3、图 1）。
+
+**表 3**　三个总数：全部号、可核号与不可核号
+
+| 总数 | 含义 | 数量 | 占全部 |
+|---|---|---|---|
+| 全部号 | 三属全部号级单元格 | 11,103 | 100% |
+| 可核号 | 所在机构有公开机读目录（CBS / ICMP / CGMCC） | 3,192 | 28.7% |
+| 不可核号 | 机构无可机读目录（NRRL、DAOM、HMAS、BRIP、CPC、MFLUCC 等），或为研究者工作编号 | 7,911 | 71.3% |
+
+![图 1　审计流程与三个分母](../07_图数据/figures/Fig1_audit_flow.png)
+
+**图 1**　审计流程与三个分母。从三属全部 11,103 个号级单元格出发，逐级筛选至最终的不一致数；右侧虚线引出每一步排除的数量与原因。百分比分别以「全部号」（前两级）与「可核号」（后两级）为分母。
+*Figure 1.* Flow of the audit from 11,103 number-level cells to the final discrepancy count. Each exclusion and its size are shown at the side. Denominators differ by level: all numbers (steps 1–2) and verifiable numbers (steps 3–4).
+
+这个 28.7% 并不是均匀分布的。三属可核率相差约两倍（42.7% ÷ 20.5% = 2.08），但原因不在记录质量：ICMP 在 Colletotrichum 的可核号中占 286 个（18.4%），在另两属仅 2.2% 与 5.4%（图 2B）。Colletotrichum 为植物病原菌，菌株大量存于植物病理保藏中心；Trichoderma 以生防与土壤来源为主，Diaporthe 以内生与致病兼性为主，均少存于 ICMP。更重要的是工作编号：Trichoderma 的「疑似非机构编号」中，G.J.S.、C.P.K. 等人名缩写占 223/396（56.3%），来自少数实验室的私人工作收藏。因此可核率反映的是「我们恰好有哪些机构的数据」，而非物种本身的记录质量，属间不可直接比较。
+
+![图 2　三属的可核率与机构构成](../07_图数据/figures/Fig2_verifiability_composition.png)
+
+**图 2**　三属的可核率与机构构成。**A** 各属号级单元格按「可核 / 不可核」堆叠（绝对数），柱顶为可核率（42.7%、23.1%、20.5%）。**B** 仅在可核号内，按保藏机构构成（CBS / ICMP / CGMCC，%）。ICMP 在 Colletotrichum 占 18.4%，另两属仅 2.2% 与 5.4%——可核率的属间差异主要来自机构覆盖，而非记录质量。
+*Figure 2.* **A**, number-level cells per genus, stacked as verifiable vs non-verifiable (absolute counts); the percentage above each bar is the verifiable fraction. **B**, within verifiable numbers only, composition by holding collection (%). ICMP accounts for 18.4% in *Colletotrichum* but only 2.2% and 5.4% in the other two genera.
+
+分母确定之后，再看分母之内有多少冲突。5,769 条发现按性质分四类，四者互斥：号级不一致 1,505 条、不确定 3,867 条、非错 237 条、种级分歧 160 条（表 4）。所谓「不确定」，指号没有可机读目录或记录未核，根本无从判断对错，其中「无公开数据库」3,122 条占全部发现的 54.1%，成因即上文的可核率限制；所谓「非错」，指看着不符、其实是正常差异——种加词换了属、同一物种在 *Hypocrea* 与 *Trichoderma* 两名下的词尾差异、拼写变体、机构只记到种下单元等。
+
+**表 4**　三属总体
+
+| 属 | 物种数 | 号级单元格 | 可核号 | 号级不一致 | 不确定 | 非错 | 种级分歧 | 合计发现 |
+|---|---|---|---|---|---|---|---|---|
+| Colletotrichum | 408 | 3,633 | 1,553 | 604 | 1,110 | 85 | 33 | 1,832 |
+| Trichoderma | 445 | 4,200 | 970 | 604 | 1,626 | 106 | 7 | 2,343 |
+| Diaporthe | 507 | 3,270 | 669 | 297 | 1,131 | 46 | 120 | 1,594 |
+| 合计 | 1,360 | 11,103 | 3,192 | 1,505 | 3,867 | 237 | 160 | 5,769 |
+
+四类互斥，逐属相加即为「合计发现」。各属可核率见图 2A（42.7%、23.1%、20.5%，合计 28.7%）。
+
+再看这 1,504 条号级不一致的内部构成，这一点比总数更能说明问题：其中「疑似非机构编号」668 条最多，其次为「申报模式而机构无记录」194 条（号级记录数，与下文「名字层面 194 条」不是同一个量，纯属数值巧合）与「号不存在」185 条，此三类合计 1,047 条（68.3%），余 485 条分散在并名冲突、基名属、别的属等次要类别。也就是说，问题的主体不是「名字打错」，而是「用来指认菌株的那个号本身不可核查」。
+
+问题最大的那一类需要单独处理。「号不存在」指声称用于某个种、但在该机构公开目录里查不到的号；但目录查不到不等于号是假的——也可能是机构没有把它登记进可检索的目录，若一概当作不存在，就等于指认保藏中心漏收或作者编造。因此我们对 185 条逐条回查 GenBank：其他记录若引用过该号，说明它确实存在过。结果是 156 条（84.3%）实为机构未收录；20 条属基因组级大记录、未能核对原文；5 条无引用，4 条查询失败。由于 1,504 个号级不一致中只有 558 个落在可核号内、进入分母，另 974 个（63.6%）落在 7,911 个不可核号内（它们的号没有机读目录可比对，只能比较记录名与分类名，口径不同），下面的比率只描述可核号这一子集（表 5、图 3）。
+
+**表 5**　反向审计前后号级不一致率（保守与乐观两种口径）
+
+| 属 | 可核号 | 修正前号级不一致（率） | 保守口径（仅移出已核对者） | 乐观口径（含 20 条大记录） |
+|---|---|---|---|---|
+| Colletotrichum | 1,553 | 302（19.4%） | 191（12.3%） | 180（11.6%） |
+| Trichoderma | 970 | 174（17.9%） | 142（14.6%） | 133（13.7%） |
+| Diaporthe | 669 | 82（12.3%） | 69（10.3%） | 69（10.3%） |
+| 合计 | 3,192 | 558（17.5%） | 402（12.6%） | 382（12.0%） |
+
+![图 3　三属的号级不一致率与 95% 置信区间](../07_图数据/figures/Fig3_rate_CI.png)
+
+**图 3**　三属的号级不一致率与 95% 置信区间。点为各属不一致率，竖线为 Wilson 95% 置信区间，虚线为三属合计率。灰色空心点为反向审计修正前（合计 17.5%），蓝色实心点为修正后保守口径（合计 12.6%）；分母为各属可核号数（1,553、970、669）。
+*Figure 3.* Genus-level discrepancy rates with Wilson 95% confidence intervals; dashed lines are the pooled rates. Open grey symbols, before reverse auditing (pooled 17.5%); filled blue symbols, conservative post-correction values (pooled 12.6%). Denominators: 1,553 / 970 / 669 verifiable accessions.
+
+本文以保守口径 12.6% 为主要结果：只把核对确认的 156 条计为「机构未收录」，20 条大记录仍计为「号不存在」；若它们也计为「机构未收录」，则为 12.0%。主结果的 95% 置信区间为 11.5–13.8%，修正前 17.5% 为 16.2–18.8%，乐观口径 12.0% 为 10.9–13.1%。三属两两比较（均基于修正后数据）仅 Trichoderma 与 Diaporthe 差异显著（*p* = 0.011），另两对不显著（*p* = 0.103、0.196）；但本文仍不作跨属排名。由此得到两个派生量：修正前的 558 条中 28.0% 是假阳性（156/558，乐观口径 31.5%），而单以机构目录为真值会把率报成修正值的 1.39 倍（17.5% ÷ 12.6%，乐观口径 1.46 倍）。
+
+最后要问的是，这个数本身可不可信。这里有两类互不替代的证据。其一是数据库自相矛盾：同一保藏号的 GenBank 记录被标注为两个不同种者，三属合计 147 条（Colletotrichum 72、Trichoderma 47、Diaporthe 28），其中 137 条为两个不同双名、10 条为同一物种下的不同种下单元——这一类是数据库自己写下的矛盾，不依赖任何判定规则，是最硬的证据；例如 Diaporthe infertilis 的 CBS 230.52 在 15 条记录中被分别标注为 *D. citri* 与 *D. infertilis*。其二是 30 条抽样复核，用来说明我们的判定会错到什么程度：按原始发表逐条核对后，12 条需修正（表 6）。
+
+**表 6**　30 条验证子样本的裁决分布
+
+| 层 | ① 判定过强 | ② 支持判定 | ②′ 部分支持 | ③ 机构记录与原始发表不一致 | ④ 待核 | 未裁 |
+|---|---|---|---|---|---|---|
+| 号不存在 | 3 | 4 | 0 | 0 | 3 | 0 |
+| 名称不一致 | 0 | 4 | 0 | 3 | 3 | 0 |
+| 模式地位 | 0 | 2 | 1 | 6 | 0 | 1 |
+| 合计 | 3 | 10 | 1 | 9 | 6 | 1 |
+
+注：③ 指「机构记录与原始发表不一致」，方向不一定是机构错。其中模式地位层的 6 条，原始发表确实指定了 ex-type culture，只是机构目录未公开该类型信息——属信息公开不足，非作者虚报；名称不一致层的 3 条才是机构记名与原始发表不符（如 CPC 38800）。
+
+三层各 10 条中判为「需修正」的分别是 3、3、6 条（依次为：该号其实存在、机构记名与原始发表不符、机构目录未公开类型信息），合计 23 条有明确文献结论，其中 11 条支持本文判定、12 条需修正，另 7 条无法判定。关键在于三层的修正方向一致：12 条中 9 条是「错在机构而非作者」，3 条是「号其实存在」——两者都指向同一结论，即本文的判定偏严，12.6% 应视为上限估计。三点结论随之成立：机构目录确实会错（名称不一致层 10 条中 3 条与原始发表不符，如 CPC 38800）；「机构无此记录」多数是信息公开不足而非作者过度申报（模式地位层 10 条中 6 条确为 ex-type culture）；「号不存在」判得过强（3 条在 PMC 全文中被引用，与前述反向审计一致）。最后需要强调，12 条中有 9 条只改变归因——号级不一致依然存在，只是错的一方由 GenBank 变为机构目录；另 3 条是「号其实存在」，与上文的 156 条同类。因此 12.6% 作为记录间冲突频率不受归因修正影响，但仍可能偏高，它是当前口径下的上限。
+
+号级问的是「记录对不对得上」，种级问的是「这个种该不该独立」。后者不涉及具体保藏号，只能一条一条查文献。三属合计 160 条种级分歧：Diaporthe 120 条（占该属物种的 23.1%、占全部分歧的 75.0%）、Colletotrichum 33 条、Trichoderma 7 条，按证据强度分七级的结果见表 7。
+
+**表 7**　三属 160 条种级分歧的逐条裁决结果
+
+| 级别 | Diaporthe | Colletotrichum | Trichoderma | 合计 | 判定依据 |
+|---|---|---|---|---|---|
+| A 决定性 | 94 | 13 | 4 | 111 | 同行评议论文正式列入异名表 |
+| I 同名异物（已对号） | 4 | 0 | 0 | 4 | 按命名人与模式材料对号 |
+| H 同名异物（无法对号） | 2 | 2 | 2 | 6 | 同一学名对应两行、指向不同物种；该库未登记命名人，无法判定取哪一行 |
+| D 反向候选 | 1 | 7 | 0 | 8 | MycoBank 的合并缺乏文献支持 |
+| B 倾向性 | 9 | 0 | 0 | 9 | 论文论证应合并、未做正式处理 |
+| C 待查 | 9 | 11 | 1 | 21 | 未检索到对应修订文献 |
+| T 类型冲突 | 1 | 0 | 0 | 1 | 一方标模式、另一方标非模式，正面对撞 |
+| 合计 | 120 | 33 | 7 | 160 | —— |
+
+但在讲「谁对」之前，必须先说清楚哪些根本不是分歧。有 41 条虽在 MycoBank 中指向别的名，经核对实为名字变体，不计入种级分歧：25 条是拼写变体（同一名字的两种拼写，MycoBank 标为 `Orthographic variant`），16 条是词尾变体——同一物种在 *Hypocrea*（阴性）与 *Trichoderma*（中性）两名下词尾不同（如 *T. latizonatum* ↔ *H. latizonata*）。若不剔除，这 41 条会被算成「物种被合并」，分歧数从 153 虚报成 194。顺带给出名字关系的总体构成（按 MycoBank 全表 426,834 行统计）：自己即接受名 247,077 行（57.9%）、换属 92,314 行（21.6%）、真异名 60,330 行（14.1%）、拼写/性别更正 27,061 行（6.3%）、同名不同写法 52 行（<0.1%）；换属占 21.6%，与真异名（14.1%）性质完全不同，把两者混为一谈会让异名数明显虚高。
+
+已定性的 123 条（即 A 111 加 I 4 加 D 8）中，支持 MycoBank 114 条、提示 MycoBank 过度合并 8 条、两库均无误 1 条；其余 37 条（B 9 加 C 21 加 H 6 加 T 1）不作结论。其中同名异物 4 条的处置需要交代：3 条经按命名人与模式材料对号后支持 MycoBank、1 条两库均无误，故「支持 MycoBank 114 条」等于 A 级 111 加 I 级 3，剩下的那 1 条计入「两库均无误」，核对关系为 123 = 111 + 4 + 8。方向是清楚的，但清楚的方向不等于可以外推：Diaporthe 占全部分歧的 76.5%，其 A 级又集中于同两篇修订（Pereira & Phillips 2023/2024），而 Colletotrichum 的 31 条里有 7 条是「MycoBank 可能并错」的反向候选（22.6%），方向与 Diaporthe 相反。因此「支持 MycoBank」这一总结论主要由 Diaporthe 提供，不能直接外推到其他属。
+
+最后一个可预见的质疑是数字对不上：Diaporthe 的 A 级 94 条与两篇修订所述种数（52 + 53 = 105）差 11。这个差额已核对清楚——105 个名字中有 94 个出现在本研究的 507 个规范双名内且全部构成分歧，其余 11 个不在清单内：其中 10 个在 NCBI 分类库中已无独立的物种级 taxon（NCBI 早已并入他名，因此不构成「NCBI 保留独立 taxon」这一分歧前提），另 1 个（*D. lithocarpi*）虽有 taxid（1344039），但在 NCBI 标注为 (nom. inval.)（无效名），被「规范双名」过滤规则剔除。所以 94 与 105 的差额不是漏计，而是分母不同：文献计的是「被并入的名字」，本研究计的是「既在物种清单内、又构成 NCBI–MycoBank 分歧的名字」。
+
+## 讨论
+
+本研究最重要的发现，不是「谁的错更多」，而是两库在不同策展对象上的投入不同（表 8）。把它们笼统说成「一个只增不并、一个主动合并」并不准确——NCBI 在模式材料一侧是主动策展的，保守只出现在命名学一侧。
+
+**表 8**　两库在不同策展对象上的分工
+
+| 策展对象 | NCBI Taxonomy | MycoBank | 本文中的体现 |
+|---|---|---|---|
+| 模式地位 / 菌株—序列关联 | 主动：核实文献后写入 `/type_material` | 不以此为主要对象 | 194 条「申报模式而机构无记录」中，抽样 10 条有 6 条确为 ex-type |
+| 命名学异名合并 | 保守：多保留独立 taxon | 主动：跟进修订文献做合并 | 160 条分歧中 114 条支持 MycoBank |
+| 过度合并的风险 | 低（合并少） | 存在：8 个候选缺乏文献支持 | Colletotrichum 7 条、Diaporthe 1 条 |
+
+机制上的解释是：两者的「工作对象」不同。NCBI 的策展人围着模式材料与菌株—序列关联转，他们的产出是「这株菌是不是模式、它的序列是哪条」；MycoBank 的策展人围着名称转，他们的产出是「这个名现在该叫什么、被谁并入了谁」。因此当问题落在「这株是不是模式菌株」时，NCBI 更可能对；当问题落在「这个名现在该叫什么」时，MycoBank 更可能对。把两者当成同一个问题的两个答案，是多数混乱的来源。
+
+这一分工也解释了为什么「单一来源」会系统性高估分歧。以机构目录为真值，号级不一致率会被报成修正值的 1.39 倍，同时把 156 个真实存在的号（占「号不存在」的 84.3%）冤枉成编造——前者伤害结论，后者伤害保藏中心与作者。反向审计之所以必要，正是因为它把「机构未收录」与「号是编造的」这两件事分开了。
+
+由此引出一条更普遍的纪律：可核查性本身应当被报告。「无公开数据库」占全部发现的 54.1%，可核率仅 28.7%，这意味着多数记录既不能被证实也不能被证伪；若研究只报告「错误率」，就会隐去这个更基础的限制。同理，分母无法定义的地方不应报告比例——本文按属报告号级不一致率，但不按保藏机构（CBS、ICMP、CGMCC）报告，原因不是数据不足，而是分母无法定义：「申报为模式材料、而机构目录无此记录」共 194 条（Colletotrichum 86、Trichoderma 73、Diaporthe 35），按机构高度集中（CGMCC 侧 174、CBS 侧 20、ICMP 侧 0），这种集中说明它是类型信息公开程度的差异，而非某一机构的质量问题。
+
+知道机制之后，具体该怎么做。对生物学研究者，有五条可操作的建议。第一，查到一个名字时，先在 NCBI 与 MycoBank 各查一次，再判断不一致属于哪一类：种加词相同（只是属名变了）是同一物种的换属；词干相同、词尾差一两个字母是拼写或属名性别差异；种加词完全不同才可能是两个物种，需查文献——本文 194 条「名字不同」中有 41 条（21.1%）属前两类，根本不是物种问题。第二，引用菌株号时写出完整机构代码，检索时用冒号形式：`CBS:126514` 能精确命中，`"CBS 126514"` 会被检索系统拆成两个词，实测返回两万余条无关记录。第三，判断「这株是不是模式菌株」不要只看 GenBank 的 `/type_material`——该字段由 NCBI 策展人核实文献后写入，可靠性较高，但机构目录可能根本不公开类型信息，本文 30 条抽样中 6 条「机构无此记录」实为机构未公开，据此判定作者虚报会冤枉人，两者冲突时应以原始发表为准。第四，发表新种后隔一段时间回查 MycoBank，本文找到 8 个「新种被并入老名」的候选，最典型的一例是 2024 年发表的新种被并入 2013 年的老种，而两篇主要修订均未收录它。第五，引用异名时区分「换属」与「真异名」，换属（占 MycoBank 记录的 21.6%）只是属名变了、物种没变，规范写法为「新属名 种加词（旧作者）新作者」，真异名（14.1%）才是物种被合并。
+
+对数据库与元数据提交方，有两条建议。其一是把 `/strain`、`/culture_collection`、`/type_material` 三个字段写全、写规范：本文 71.3% 的号无法核对，主因不是记录错，而是所在机构没有可机读目录、或作者用了非标准写法，须注意「字段完整」不等于「可关联」——即便三个字段都填了，只要写法与机构目录不一致，三元组依然对不上（30 条抽样中有 9 条属此类）；INSDC 已于 2023 年 3 月收紧标本元数据的提交要求，本文结果可作为该规则适用面的补充证据。其二是机构目录公开类型信息，收益远大于成本：本文「申报为模式材料而机构目录无记录」共 194 条，按机构高度集中，说明这是公开程度的差异而非作者普遍虚报，补上这一个字段可一次性消除这一整类「疑似错误」。
+
+最后是本文不能回答的问题，须逐条说明以免被过度引用。第一，不能外推到其他属：只审计了三个属，而三者可核率相差约两倍且差异来自机构覆盖而非属本身的记录质量，本文的率不能套到别的属上。第二，71.3% 的号无法核对：只覆盖三家有公开机读目录的保藏中心，NRRL、DAOM、CPC、MFLUCC 等机构的号只能比对 GenBank 记录名与 NCBI 分类名，既没有进分子也没有进分母。第三，判定的是「记录冲突」而不是「物种真相」：两库都不是真值，只有 153 条种级分歧做过逐条文献核查（其中 123 条可定性），号级不一致没有逐条查原始发表，30 条抽样只能给方向。第四，没有使用序列证据：本文不判断「这株菌是否真的属于这个种」，公共库中同种内 ITS 差异可达 9.42%（*D. arecae* 6 条记录两两比较），单个位点的距离不足以支撑种级判定，须用多基因、模式株与 GCPSR 流程。第五，时间点固定：全部查询完成于 2026 年 10 月 10 日，引用本文数字时应连同日期一起引用。第六，若干技术性截断：单种记录数超过 1,500 条者只扫描前 1,500 条（受影响物种 71 个，见各属「覆盖声明」）、20 条基因组级大记录未能逐条核对（占「号不存在」的 10.8%）、本地 MycoBank 导出无作者列使同名异物只能人工消歧（12,413 个）。
+
+## 结论
+
+用学名把菌株、序列与记录连接起来，本身并不可靠；而判断它在何处不可靠，必须先解决「有没有得比」。三个属 1,360 个种、11,103 条「号 × 种」记录中，只有 28.7% 能在机构目录中核对，且这一比例反映的是机构覆盖而非记录质量；在可核号内，号级不一致率为 12.6%（95% 置信区间 11.5–13.8%），而它偏严、应视为上限。更值得注意的是不一致的形态：1,504 条中 668 条（44.4%）的「号」根本不是机构号，只有 485 条涉及名称冲突，另有 147 条同一保藏号被标成两个种——问题的主体是「号不可核查」而非「名字写错」。种级层面，153 条分歧中 114 条支持 MycoBank、8 条提示其过度合并，但方向由 Diaporthe 主导（76.5%），不能外推到另两属；两库的差异并非随机对错，而是策展对象不同造成的分工——问「这株是不是模式菌株」看 NCBI，问「这个名现在该叫什么」看 MycoBank。因此，任何「错误率」都必须与可核率、分母同时报告，并读作记录间冲突频率而非数据库错误率；机构目录自身也会错（30 条抽样中 12 条需修正），而单一来源判定会把率报高 1.39 倍、把 156 个真实存在的号冤枉成编造。把这些规则显式化，比寻找一个「最权威的数据库」更有用。
+
+## 致谢
+
+〔待填：基金、数据提供方、协助核对的同行〕
+
+## 参考文献
+
+1. Guralnick R, Conlin T, Deck J, Stucky BJ, Cellinese N. The trouble with triplets in biodiversity informatics: a data-driven case against current identifier practices. *PLoS ONE*. 2014;9(12):e114069. doi:10.1371/journal.pone.0114069.
+2. Kannan S, Sharma S, Ciufo S, Clark K, Turner S, Kitts PA, Schoch CL, DiCuccio M, Kimchi A. Collection and curation of prokaryotic genome assemblies from type strains at NCBI. *International Journal of Systematic and Evolutionary Microbiology*. 2023;73:005707. doi:10.1099/ijsem.0.005707.
+3. Renner SS, Scherz MD, Schoch CL, Gottschling M, Vences M. Improving the gold standard in NCBI GenBank and related databases: DNA sequences from type specimens and type strains. *Systematic Biology*. 2024;73(2):486–494. doi:10.1093/sysbio/syad068.
+4. Hawksworth DL. The Amsterdam Declaration on fungal nomenclature. *IMA Fungus*. 2011;2:105–112. PMID: 22679594.
+5. Taylor JW. One Fungus = One Name: DNA and fungal nomenclature twenty years after PCR. *IMA Fungus*. 2011;2:113–120. PMID: 22679595.
+6. Réblová M, Nekvindová J, Bauchová L, Hernández-Restrepo M. Pleurophragmium parvisporum (Ascomycota): one name, seven stories — a case highlighting the need for verification of strains from public culture collections. *IMA Fungus*. 2025;16. doi:10.3897/imafungus.16.173033. PMID: 41347007.
+7. Kennedy AH, Schoch CL, Marrero G, Brover V, Robbertse B. Publicly available and validated DNA reference sequences are critical to fungal identification and global plant protection efforts: a use-case in Colletotrichum. *Plant Disease*. 2022;106(6). doi:10.1094/PDIS-09-21-2083-SR. PMID: 35538602.
+8. Pereira DS, Hilário S, Gonçalves MFM, Phillips AJL. Diaporthe species on palms: molecular re-assessment and species boundaries delimitation in the D. arecae species complex. *Microorganisms*. 2023;11:2717. PMID: 38004729.
+9. Pereira DS, Phillips AJL. Diaporthe species on palms — integrative taxonomic approach for species boundaries delimitation in the genus Diaporthe, with the description of D. pygmaeae sp. nov. *Studies in Mycology*. 2024;109:487–594. PMID: 39717652.
+10. Hilário S, Gonçalves MFM, Alves A. Using genealogical concordance and coalescent-based species delimitation to assess species boundaries in the Diaporthe eres complex. *Journal of Fungi*. 2021;7:507. PMID: 34202282.
+11. Hilário S, Santos L, Alves A. Diaporthe amygdali, a species complex or a complex species? *Fungal Biology*. 2021;125:505–518. PMID: 34140147.
+12. Gao Y, Liu F, Duan W, Crous PW, Cai L. Diaporthe is paraphyletic. *IMA Fungus*. 2017;8:153–187. PMID: 28824846.
+
+## 术语与名词解释
+
+这一组是读「方法」与「结果」之前必须知道的词。本文的整套判定算法，就是围绕「哪一个字段可能藏着一条可靠的身份信息」展开的。
+
+### 一 · 收藏与菌株
+
+**保藏号（culture collection number）**
+*culture collection number / accession number*
+保藏中心给每一份实物菌株编的固定编号，格式为「机构代码 + 号」，如 CBS 126514。
+本文中：保藏号是把「标本—序列—名称」串起来的铆钉，也是全部分歧的落点。
+
+**号级单元格（number-level cell）**
+*number-by-species record*
+「一个保藏号在一个种下的一次出现」。同一个号若出现在两个种下，算两个单元格。
+本文中：全文 11,103 个号级单元格，是所有比例的分母来源。
+
+**模式菌株与 ex-type culture**
+*type strain / ex-type culture*
+描述新种时作者指定为代表该种的那份菌株；由它衍生的培养物称 ex-type culture。
+本文中：194 条记录申报为模式材料而机构目录无记录，抽样 10 条有 6 条确为 ex-type，说明多数是机构未公开而非虚报。
+
+**研究者工作编号（working collection number）**
+*personal / working collection number*
+实验室自己给菌株起的编号，不是任何机构正式登记的保藏号，如 G.J.S. 172。
+本文中：668 条「号级不一致」属于这一类，是问题数量最多的一类。
+
+### 二 · 数据库与分类库
+
+**GenBank**
+*GenBank*
+NCBI 的公共序列数据库，记录由提交者（多为作者本人）申报，未经独立核对。
+本文中：它提供 `/organism`、`/strain`、`/type_material` 等字段，是四方比对的一方。
+
+**NCBI Taxonomy**
+*NCBI Taxonomy*
+NCBI 的分类数据库，由策展人核实文献后维护种级 taxon、模式地位与菌株—序列关联。
+本文中：它在模式地位一侧主动策展，在命名学异名合并一侧相对保守。
+
+**MycoBank**
+*MycoBank*
+由荷兰威斯特代克研究所维护的真菌名称登记库，主动跟进修订文献做名称合并。
+本文中：它给出「这个名现在叫什么」，是另一个关键方向；其过度合并候选共 8 条。
+
+**机构目录（institutional catalogue）**
+*collection catalogue*
+保藏中心自己维护的实体登记册，公开程度差异极大：有的提供可机读检索，有的只有网页表格。
+本文中：只有 CBS、ICMP、CGMCC 三家的目录可机读，因此可核率仅 28.7%。
+
+### 三 · 名字与命名学
+
+**接受名（accepted name）**
+*current / accepted name*
+在某个时刻被认为正确、应当使用的那个学名。
+本文中：MycoBank 的接受名列是判断「这个名字现在该叫什么」的依据。
+
+**异名（synonym）**
+*synonym*
+指向同一个物种的另一个学名，通常因为物种被并入而不再使用。
+本文中：与「换属」严格区分，后者物种并未改变。
+
+**换属 / 新组合（new combination）**
+*new combination*
+物种不变，只把属名换成另一个属，种加词原样保留。
+本文中：占 MycoBank 名字关系的 21.6%，若当成异名会让异名数虚增 44.8%。
+
+**同名异物（homonym）**
+*homonym*
+同一个双名被不同作者在不同年份各描述一次，指向不同物种；晚出者通常标 `Illegitimate`。
+本文中：17,404 个学名在 MycoBank 中对应多行，流程不选任何一行而标「待消歧」。
+
+**拼写变体（orthographic variant）**
+*orthographic variant*
+同一个名字的两种拼写，如 *C. acidae* 与 *C. acidi*。
+本文中：25 条，MycoBank 在 `Name status` 列直接标注，不计入分歧。
+
+**词尾变体（gender ending variant）**
+*inflectional / gender variant*
+同一物种在语法性别不同的两个属名下，种加词词尾不同，如 *T. latizonatum* 与 *H. latizonata*。
+本文中：16 条，全部出现在 *Hypocrea* 与 *Trichoderma* 之间。
+
+**有性型属名（teleomorph genus name）**
+*teleomorph / sexual morph genus*
+真菌的有性世代曾用独立属名（如 *Hypocrea*），「一菌一名」改革后并入无性世代属名（*Trichoderma*）。
+本文中：判定时须按词干比对，否则会把这 16 条误算成分歧。
+
+### 四 · 统计与判定用语
+
+**可核率（verifiability）**
+*verifiable fraction*
+能在公开机读目录中核对到的号占全部号级单元格的比例。
+本文中：28.7%，且属间相差约两倍；这一比例本身是结论的一部分，不是附属信息。
+
+**号级不一致（number-level discrepancy）**
+*number-level discrepancy*
+同一个保藏号在「名称」或「号本身」上与机构目录对不上，含「名称不符」与「号本身有问题」两个子类。
+本文中：1,504 条，其中 68.3% 属「号本身」问题；不可读作「名字写错」。
+
+**种级分歧（species-level conflict）**
+*species-level conflict*
+两库对「这个种该不该独立」意见不同，不涉及具体保藏号。
+本文中：160 条，逐条查文献裁决。
+
+**反向审计（reverse audit）**
+*reverse audit*
+对判为「号不存在」者回查 GenBank 是否有记录引用过它，以区分「机构未收录」与「号是编造的」。
+本文中：185 条中 156 条（84.3%）经此改判为机构未收录。
+
+**Wilson 置信区间（Wilson interval）**
+*Wilson score interval*
+一种在小样本下比正态近似更稳的比例置信区间算法。
+本文中：主结果 12.6% 的 95% 区间为 11.5–13.8%。
+
+**分层抽样（stratified sampling）**
+*stratified sampling*
+按类别分层、在每层内独立抽取样本的做法。
+本文中：30 条验证子样本按三类判定各取 10 条，等额分配不能合并成总体率。
+
+**假阳性（false positive）**
+*false positive*
+本来存在却被判成不存在（或有问题）。
+本文中：修正前的 558 条中 28.0% 属此类。
+
+### 五 · 机构与缩写
+
+**CBS / ICMP / CGMCC**
+*Westerdijk Institute / ICMP / CGMCC*
+本文使用的三家有公开机读目录的保藏中心：荷兰威斯特代克真菌生物多样性研究所、新西兰国际植物标本馆菌物保藏、中国普通微生物菌种保藏管理中心。
+本文中：可核与否完全取决于号是否落在这三家。
+
+**INSDC**
+*International Nucleotide Sequence Database Collaboration*
+GenBank、ENA、DDBJ 三家序列库的合作体，统一元数据提交规则。
+本文中：其 2023 年 3 月收紧标本元数据要求，本文结果可作为适用面的补充证据。
+
+**GCPSR**
+*genealogical concordance phylogenetic species recognition*
+基因谱系一致性系统发育物种识别，用多基因 genealogical concordance 划定物种边界的方法。
+本文中：本文未使用序列证据，故不作种级判定，须由 GCPSR 流程补足。

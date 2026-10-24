@@ -32,13 +32,13 @@ BLUE, ORANGE, GREEN, GREY = "#0072B2", "#E69F00", "#009E73", "#999999"
 
 # ── 数据 ───────────────────────────────────────────────
 TOTAL, VERIF_T, UNVER_T = 11103, 3192, 7911
-SAME, DIFF, REAL, FALSEP = 2634, 558, 402, 156
+SAME, DIFF, REAL, FALSEP = 2481, 559, 403, 156
 GEN = ["Colletotrichum", "Trichoderma", "Diaporthe"]
-VERIF = [1553, 970, 669]
-UNVER = [2080, 3230, 2601]
+VERIF = [1487, 946, 607]
+UNVER = [2146, 3254, 2663]
 CBS, ICMP, CGMCC = [1085, 850, 542], [286, 21, 36], [182, 99, 91]
-BEFORE = [(19.4, 17.6, 21.5), (17.9, 15.7, 20.5), (12.3, 10.0, 15.0)]
-AFTER = [(12.3, 10.8, 14.0), (14.6, 12.6, 17.0), (10.3, 8.2, 12.8)]
+BEFORE = [(20.1, 18.1, 22.2), (18.3, 16.0, 20.9), (14.3, 11.8, 17.3)]
+AFTER = [(12.6, 11.0, 14.4), (14.9, 12.8, 17.3), (12.2, 9.8, 15.0)]
 
 
 def save(fig, stem):
@@ -164,10 +164,10 @@ for i, (m, lo, hi) in enumerate(BEFORE):
 for i, (m, lo, hi) in enumerate(AFTER):
     ax.plot([i + off] * 2, [lo, hi], color=BLUE, lw=1.0)
     ax.plot(i + off, m, "o", ms=4.2, mfc=BLUE, mec=BLUE, zorder=3)
-ax.axhline(17.5, color=GREY, ls=(0, (4, 2)), lw=0.8)
-ax.axhline(12.6, color=BLUE, ls=(0, (4, 2)), lw=0.8)
-ax.text(-0.45, 17.85, "合计 17.5%", fontsize=6, color=GREY, ha="left")
-ax.text(-0.45, 12.95, "合计 12.6%", fontsize=6, color=BLUE, ha="left")
+ax.axhline(18.4, color=GREY, ls=(0, (4, 2)), lw=0.8)
+ax.axhline(13.3, color=BLUE, ls=(0, (4, 2)), lw=0.8)
+ax.text(-0.45, 17.85, "合计 18.4%", fontsize=6, color=GREY, ha="left")
+ax.text(-0.45, 12.95, "合计 13.3%", fontsize=6, color=BLUE, ha="left")
 ax.set_xticks(x); ax.set_xticklabels(GEN, fontsize=6.8)
 ax.set_ylabel("号级不一致率（%）", fontsize=7.2)
 ax.set_ylim(7, 23); ax.set_xlim(-0.5, 2.5); ax.tick_params(labelsize=6.5)
