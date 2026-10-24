@@ -357,8 +357,8 @@
 356	号	无公开数据库	Colletotrichum citrus-medicae / HGUP 1554	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=HGUP 1554
 357	号	无公开数据库	Colletotrichum clidemiae / C 1317.1	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=C 1317.1
 358	号	无公开数据库	Colletotrichum clidemiae / PDD 101997	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=PDD 101997
-359	号	CBS 记为别种	Colletotrichum cliviicola / CBS 125375	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 125375
-360	号	CBS 记为别种	Colletotrichum cliviicola / CBS 133705	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 133705
+359	号	有性型/异名（目录记 Colletotrichum cliviae，该种现名 colletotrichum cliviicola）	Colletotrichum cliviicola / CBS 125375	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 125375 ｜ 判据: 现名/词干一致（Colletotrichum cliviae ↔ colletotrichum cliviicola）
+360	号	有性型/异名（目录记 Colletotrichum cliviae，该种现名 colletotrichum cliviicola）	Colletotrichum cliviicola / CBS 133705	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 133705 ｜ 判据: 现名/词干一致（Colletotrichum cliviae ↔ colletotrichum cliviicola）
 361	号	未核	Colletotrichum cliviicola / CBS 133705	未核	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 133705
 362	号	无公开数据库	Colletotrichum cliviicola / GFCC 15503	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=GFCC 15503
 363	号	疑似非机构编号	Colletotrichum cliviicola / CSSK 4	疑似非机构编号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CSSK 4
@@ -1235,7 +1235,7 @@
 1234	号	标本号	Colletotrichum pisicola / CBS H-21644	标本号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CBS H-21644
 1235	号	无公开数据库	Colletotrichum pisicola / IMI 317934	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=IMI 317934
 1236	号	疑似非机构编号	Colletotrichum pisicola / LARS 60	疑似非机构编号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=LARS 60
-1237	号	CBS 记为别种	Colletotrichum plurivorum / CBS 101	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 101
+1237	号	号已改派（CBS 101 现记为 Schizosaccharomyces japonicus，目级不同）	Colletotrichum plurivorum / CBS 101	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 101 ｜ 判据: MycoBank 目级不同（Schizosaccharomycetales vs Glomerellales）
 1238	号	未核	Colletotrichum plurivorum / CBS 101	未核	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 101
 1239	号	无公开数据库	Colletotrichum plurivorum / KUNCC 24-17938	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=KUNCC 24-17938
 1240	号	无公开数据库	Colletotrichum plurivorum / LIPP COLL1B	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=LIPP COLL1B
@@ -1443,8 +1443,8 @@
 1442	号	疑似非机构编号	Colletotrichum sinuatum / NN 055266	疑似非机构编号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=NN 055266
 1443	号	无公开数据库	Colletotrichum sloanei / IMI 364297	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=IMI 364297
 1444	号	无公开数据库	Colletotrichum sojae / ATCC 62257	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=ATCC 62257
-1445	号	CBS 记为别种	Colletotrichum sojae / CBS 103	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 103
-1446	号	CBS 记为别种	Colletotrichum sojae / CBS 104	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 104
+1445	号	号已改派（CBS 103 现记为 Schizosaccharomyces japonicus，目级不同）	Colletotrichum sojae / CBS 103	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 103 ｜ 判据: MycoBank 目级不同（Schizosaccharomycetales vs Glomerellales）
+1446	号	号已改派（CBS 104 现记为 Hanseniaspora uvarum，目级不同）	Colletotrichum sojae / CBS 104	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 104 ｜ 判据: MycoBank 目级不同（Saccharomycodaceae vs Glomerellales）
 1447	号	标本号	Colletotrichum sojae / CBS H-21495	标本号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CBS H-21495
 1448	号	无公开数据库	Colletotrichum sojae / CPC 19367	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CPC 19367
 1449	号	未核	Colletotrichum somersetense / CBS 131601	未核	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 131601
@@ -1611,7 +1611,7 @@
 1610	号	疑似非机构编号	Colletotrichum tropicicola / MFLUCC<THA> 100167	疑似非机构编号	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=MFLUCC<THA> 100167
 1611	号	疑似非机构编号	Colletotrichum tropicicola / BCC 38877	疑似非机构编号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=BCC 38877
 1612	号	无公开数据库	Colletotrichum tropicicola / MFLU 110013	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=MFLU 110013
-1613	号	CBS 记为别种	Colletotrichum truncatum / CBS 102	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 102
+1613	号	号已改派（CBS 102 现记为 Schizosaccharomyces japonicus，目级不同）	Colletotrichum truncatum / CBS 102	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 102 ｜ 判据: MycoBank 目级不同（Schizosaccharomycetales vs Glomerellales）
 1614	号	未核	Colletotrichum truncatum / CBS 102	未核	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 102
 1615	号	基名属	Colletotrichum truncatum / CBS 120709	基名属	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 120709
 1616	号	未核	Colletotrichum truncatum / CBS 125327	未核	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 125327
@@ -1645,7 +1645,7 @@
 1644	号	无公开数据库	Colletotrichum viniferum / MFLUCC 18-0748	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=MFLUCC 18-0748
 1645	号	无公开数据库	Colletotrichum viniferum / MFLUCC 18-1179	无公开数据库	不确定	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=MFLUCC 18-1179
 1646	号	无公开数据库	Colletotrichum viniferum / GZAAS 5.08601	无公开数据库	不确定	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=GZAAS 5.08601
-1647	号	CBS 记为别种	Colletotrichum vittalense / CBS 12625	CBS 记为别种	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 12625
+1647	号	号已改派（CBS 12625 现记为 Scheffersomyces quercinus，目级不同）	Colletotrichum vittalense / CBS 12625	CBS 记为别种	非错	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 12625 ｜ 判据: MycoBank 目级不同（Debaryomycetaceae vs Glomerellales）
 1648	号	书写错误	Colletotrichum vittalense / CBS 18182	书写错误（应为 CBS 181.82）	错值	三列表·菌株号列	out=Colletotrichum ｜ 列=菌株号 ｜ 号=CBS 18182
 1649	号	标本号	Colletotrichum vittalense / CBS H-21498	标本号	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CBS H-21498
 1650	号	NCBI 声明为模式号，机构无此记录	Colletotrichum vulgaris / CGMCC 3.18940	NCBI 声明为模式号，机构无此记录	错值	三列表·模式菌列	out=Colletotrichum ｜ 列=模式菌 ｜ 号=CGMCC 3.18940

@@ -365,6 +365,158 @@ def from_quality(classify):
     return rows
 
 
+
+# ---------- 别名补判：号已改派 / 有性型异名（MBList 驱动）----------
+# 为什么需要这一段：CBS 的低号段（101/102/103/142…）在历史上被回收再分配，
+# 今天可能指向完全不相关的真菌（如 Schizosaccharomyces）。此时目录那一行描述的
+# 是另一株菌，与声明种「无从比对」——把它判成「目录记为别种」是冤枉保藏中心。
+# 反之，Hypocrea ↔ Trichoderma 是有性型与无性型的关系，同一物种换个属名，
+# 判成「记为别种」则是事实错误（实测 19 条）。
+# 判据全部来自 MycoBank 导出，不靠手工清单：
+#   · Classification 前 4 级（亚门级）不同 ⇒ 不同生物 ⇒ 号已改派
+#   · Current name 两边能对上 ⇒ 同一物种 ⇒ 有性型/异名
+def _mb_maps(repo):
+    cur, cls = {}, {}
+    p2 = os.path.join(repo, "data", "mb_class.tsv")
+    if os.path.exists(p2):
+        with io.open(p2, encoding="utf-8", errors="replace") as f:
+            f.readline()
+            for line in f:
+                k, _, v = line.rstrip("\n").partition("\t")
+                if k: cls[k.strip().lower()] = v.strip()
+    p1 = os.path.join(repo, "data", "mb_current.tsv")
+    if os.path.exists(p1):
+        with io.open(p1, encoding="utf-8", errors="replace") as f:
+            f.readline()
+            for line in f:
+                k, _, v = line.rstrip("\n").partition("\t")
+                if k: cur[k.strip().lower()] = v.strip().lower()
+    return cur, cls
+
+
+def _cbs_index(repo):
+    d = {}
+    p = os.path.join(repo, "data", "cbs_catalogue.tsv")
+    if not os.path.exists(p):
+        return d
+    with io.open(p, encoding="utf-8", errors="replace") as f:
+        h = f.readline().rstrip("\n").split("\t")
+        try:
+            i_n, i_t, i_s = h.index("cbs_number"), h.index("taxon_name"), h.index("status")
+        except ValueError:
+            return d
+        for line in f:
+            q = line.rstrip("\n").split("\t")
+            if len(q) < len(h):
+                continue
+            num = q[i_n].replace("CBS", "").strip()
+            if num and num not in d:
+                d[num] = (q[i_t].strip(), q[i_s].strip())
+    return d
+
+
+TELEOMORPH = {"hypocrea": "trichoderma", "glomerella": "colletotrichum",
+              "vermicularia": "colletotrichum", "gloeosporium": "colletotrichum",
+              "phomopsis": "diaporthe"}
+
+
+def _clade(s):
+    """分类串取到【目】级（前 7 级）。目不同 ⇒ 不可能是同一物种 ⇒ 号已改派。
+    实测：Colletotrichum=Glomerellales、Diaporthe=Diaporthales、Trichoderma/Stachybotrys=Hypocreales，
+    而 Hypocrea 与 Trichoderma 同属 Hypocreales —— 正好把「有性型」与「改派」分开。"""
+    if not s:
+        return ""
+    return " > ".join(x.strip() for x in s.split(",")[:7] if x.strip())
+
+
+def _order(s):
+    p = [x.strip() for x in (s or "").split(",") if x.strip()]
+    return p[6] if len(p) > 6 else ""
+
+
+def _stem(epi):
+    """种加词的词干：去性别词尾 a/um/us/ae/es/i/o，去连字符"""
+    e = (epi or "").lower().replace("-", "")
+    for suf in ("ibus", "arum", "orum", "ensis", "ense", "anus", "anum", "ana",
+                "icus", "icum", "ica", "atus", "atum", "ata", "alis", "ale",
+                "us", "um", "ae", "is", "es", "os", "on", "a", "e", "i", "o"):
+        if e.endswith(suf) and len(e) - len(suf) >= 4:
+            return e[: -len(suf)]
+    return e
+
+
+def _name_in_status(status):
+    m = re.search(r"\bof\s+(.+)$", status or "", re.I)
+    if not m:
+        return ""
+    w = m.group(1).split()
+    return " ".join(w[:2]) if len(w) >= 2 else ""
+
+
+def reclassify_aliases(rows, repo=None):
+    """把「目录记为别种」细分为三类（判据全部来自 MycoBank，不靠手工清单）：
+       ① 目不同                → 号已改派（非错）
+       ② 同一物种（现名或词干对上）→ 有性型/异名（非错）
+       ③ 有性型属但无法证实同种   → 存疑待查（不确定）
+    """
+    repo = repo or REPO
+    cur, cls = _mb_maps(repo)
+    cbs = _cbs_index(repo)
+    n_re = n_hy = n_q = 0
+    for r in rows:
+        if "记为别种" not in ((r.get("类别") or "") + (r.get("发现") or "")):
+            continue
+        obj = r.get("对象") or ""
+        if " / " not in obj:
+            continue
+        sp = obj.split(" / ")[0].strip()
+        m = re.search(r"\b(CBS|ICMP|CGMCC)\b\s*([\d\.]+)", obj)
+        if not m or m.group(1) != "CBS":
+            continue
+        rec = cbs.get(m.group(2).split(".")[0])
+        if not rec:
+            continue
+        taxon, status = rec
+        cat = taxon or _name_in_status(status)
+        if not cat:
+            continue
+        sp_g, cat_g = sp.split()[0].lower(), cat.split()[0].lower()
+        # ① 目级不同 → 号已改派
+        o_cat = _order(cls.get(cat.lower(), ""))
+        o_sp = _order(cls.get(sp.lower(), ""))
+        if o_cat and o_sp and o_cat != o_sp:
+            r["类别"] = "号已改派（CBS {} 现记为 {}，目级不同）".format(m.group(2), cat)
+            r["归类"] = "非错"
+            r["证据"] = (r.get("证据") or "") + " ｜ 判据: MycoBank 目级不同（{} vs {}）".format(o_cat, o_sp)
+            n_re += 1
+            continue
+        # ② 同一物种：现名一致 或 词干一致
+        c_cur = cur.get(cat.lower(), cat.lower())
+        s_cur = cur.get(sp.lower(), sp.lower())
+        same = (c_cur == s_cur or c_cur == sp.lower() or s_cur == cat.lower())
+        if not same:
+            e_cat = cat.split()[1] if len(cat.split()) > 1 else ""
+            e_sp = sp.split()[1] if len(sp.split()) > 1 else ""
+            same = bool(e_cat and e_sp and _stem(e_cat) == _stem(e_sp))
+        if same:
+            r["类别"] = "有性型/异名（目录记 {}，该种现名 {}）".format(cat, c_cur)
+            r["归类"] = "非错"
+            r["证据"] = (r.get("证据") or "") + " ｜ 判据: 现名/词干一致（{} ↔ {}）".format(cat, c_cur)
+            n_hy += 1
+            continue
+        # ③ 有性型属但无法证实同种 → 存疑
+        if TELEOMORPH.get(cat_g) == sp_g:
+            r["类别"] = "有性型待查（目录记 {}，与 {} 是否同种须查原始发表）".format(cat, sp)
+            r["归类"] = "不确定"
+            r["证据"] = (r.get("证据") or "") + " ｜ 判据: 属名为有性型（{}→{}），但现名与词干均未对上".format(
+                cat_g, sp_g)
+            n_q += 1
+    if n_re or n_hy or n_q:
+        print("  别名补判：号已改派 {} 条、有性型/异名 {} 条（→非错）、有性型待查 {} 条（→不确定）".format(
+            n_re, n_hy, n_q))
+    return n_re, n_hy, n_q
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="out_audit")
@@ -444,6 +596,9 @@ def main():
                 r["归类"] = new
         if n_chg:
             print("  归类统一：{} 条按「除未核/无公开数据库外一律错值」重定".format(n_chg))
+
+    # 别名补判（号已改派 / 有性型异名）——必须在归类统一之后，否则会被改回错值
+    reclassify_aliases(rows)
 
     for i, r in enumerate(rows, 1):
         r["序号"] = i

@@ -878,7 +878,7 @@
 877	号	无公开数据库	Diaporthe rudis / MFLUCC 17-1658	无公开数据库	不确定	三列表·菌株号列	out=Diaporthe ｜ 列=菌株号 ｜ 号=MFLUCC 17-1658
 878	号	无公开数据库	Diaporthe rudis / AR 3422	无公开数据库	不确定	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=AR 3422
 879	号	无公开数据库	Diaporthe rudis / BPI 748231	无公开数据库	不确定	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=BPI 748231
-880	号	CBS 记为别种	Diaporthe rudis / CBS 109292	CBS 记为别种	错值	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=CBS 109292
+880	号	号已改派（CBS 109292 现记为 Stachybotrys chartarum，目级不同）	Diaporthe rudis / CBS 109292	CBS 记为别种	非错	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=CBS 109292 ｜ 判据: MycoBank 目级不同（Hypocreales vs Diaporthales）
 881	号	未核	Diaporthe rudis / CBS 109292	未核	不确定	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=CBS 109292
 882	号	记录原文亦为 epitype，与 CBS 记为 Epitype 一致	Diaporthe rudis / CBS 113201	记录原文亦为 epitype，与 CBS 记为 Epitype 一致（非错）	非错	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=CBS 113201
 883	号	无公开数据库	Diaporthe rudis / CPC 5683	无公开数据库	不确定	三列表·模式菌列	out=Diaporthe ｜ 列=模式菌 ｜ 号=CPC 5683

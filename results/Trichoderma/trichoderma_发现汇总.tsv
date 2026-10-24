@@ -475,7 +475,7 @@
 474	号	无公开数据库	Trichoderma neocrassum / NRRL 64597	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=NRRL 64597
 475	号	无公开数据库	Trichoderma neocrassum / NRRL 64602	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=NRRL 64602
 476	号	无公开数据库	Trichoderma neocrassum / BPI 843647	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843647
-477	号	CBS 记为别种	Trichoderma neocrassum / CBS 114230	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114230
+477	号	有性型/异名（目录记 Hypocrea crassa，该种现名 hypocrea crassa）	Trichoderma neocrassum / CBS 114230	CBS 记为别种	非错	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114230 ｜ 判据: 现名/词干一致（Hypocrea crassa ↔ hypocrea crassa）
 478	号	无公开数据库	Trichoderma neocrassum / DAOM 232834	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=DAOM 232834
 479	号	疑似非机构编号	Trichoderma neocrassum / G.J.S. 01-227	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 01-227
 480	号	疑似非机构编号	Trichoderma neocrassum / GJS 01-227	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 01-227
@@ -620,7 +620,7 @@
 619	号	无公开数据库	Trichoderma priscilae / S 168	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=S 168
 620	号	无公开数据库	Trichoderma priscilae / WU 33327	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 33327
 621	号	未核	Trichoderma protopulvinatum / CBS 121274	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 121274
-622	号	CBS 记为别种	Trichoderma protopulvinatum / CBS 739.83	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 739.83
+622	号	号已改派（CBS 739.83 现记为 Zygosaccharomyces casei，目级不同）	Trichoderma protopulvinatum / CBS 739.83	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 739.83 ｜ 判据: MycoBank 目级不同（Saccharomycetaceae vs Hypocreales）
 623	号	模式地位不精确	Trichoderma protopulvinatum / CBS 739.83	模式地位不精确（记录只写 type material，CBS 记为 Isotype）	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 739.83
 624	号	无公开数据库	Trichoderma protopulvinatum / NY 00965650	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=NY 00965650
 625	号	疑似非机构编号	Trichoderma protopulvinatum / TNS-F- 223421	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=TNS-F- 223421
@@ -790,7 +790,7 @@
 789	号	无公开数据库	Trichoderma corneum / BPI 745564	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 745564
 790	号	疑似非机构编号	Trichoderma corneum / G.J.S. 97-75	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 97-75
 791	号	疑似非机构编号	Trichoderma corneum / GJS 97-75	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 97-75
-792	号	CBS 记为别种	Trichoderma danicum / CBS 121273	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 121273
+792	号	有性型/异名（目录记 Hypocrea danica，该种现名 hypocrea danica）	Trichoderma danicum / CBS 121273	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 121273 ｜ 判据: 现名/词干一致（Hypocrea danica ↔ hypocrea danica）
 793	号	疑似非机构编号	Trichoderma danicum / C.P.K. 2448	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=C.P.K. 2448
 794	号	疑似非机构编号	Trichoderma danicum / Hypo 402	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=Hypo 402
 795	号	无公开数据库	Trichoderma danicum / WU 29046	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29046
@@ -833,7 +833,7 @@
 832	号	疑似非机构编号	Trichoderma lycogaloides / CLL 8032	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CLL 8032
 833	号	无公开数据库	Trichoderma lycogaloides / S L	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=S L
 834	号	无公开数据库	Trichoderma lycogaloides / WU 32096	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 32096
-835	号	CBS 记为别种	Trichoderma neorufum / CBS 111144	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 111144
+835	号	有性型/异名（目录记 Hypocrea neorufa，该种现名 hypocrea neorufa）	Trichoderma neorufum / CBS 111144	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 111144 ｜ 判据: 现名/词干一致（Hypocrea neorufa ↔ hypocrea neorufa）
 836	号	未核	Trichoderma neorufum / CBS 119498	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 119498
 837	号	无公开数据库	Trichoderma neorufum / BPI 744493	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 744493
 838	号	疑似非机构编号	Trichoderma neorufum / G.J.S. 96-135	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 96-135
@@ -1094,7 +1094,7 @@
 1093	号	无公开数据库	Trichoderma strigosellum / HUA 179963	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=HUA 179963
 1094	号	无公开数据库	Trichoderma surrotundum / DAOM 231315	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 231315
 1095	号	无公开数据库	Trichoderma surrotundum / BPI 843668	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843668
-1096	号	CBS 记为别种	Trichoderma surrotundum / CBS 111145	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 111145
+1096	号	有性型/异名（目录记 Hypocrea surrotunda，该种现名 hypocrea surrotunda）	Trichoderma surrotundum / CBS 111145	CBS 记为别种	非错	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 111145 ｜ 判据: 现名/词干一致（Hypocrea surrotunda ↔ hypocrea surrotunda）
 1097	号	疑似非机构编号	Trichoderma surrotundum / G.J.S. 88-73	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 88-73
 1098	号	疑似非机构编号	Trichoderma surrotundum / GJS 88-73	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 88-73
 1099	号	未核	Trichoderma tawa / CBS 246.63	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 246.63
@@ -1109,7 +1109,7 @@
 1108	号	无公开数据库	Trichoderma thailandicum / ATCC MYA-3233	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=ATCC MYA-3233
 1109	号	无公开数据库	Trichoderma thailandicum / BPI 745832	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 745832
 1110	号	无公开数据库	Trichoderma thailandicum / BPI 843670	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843670
-1111	号	CBS 记为别种	Trichoderma thailandicum / CBS 114234	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114234
+1111	号	有性型/异名（目录记 Hypocrea thailandica，该种现名 hypocrea thailandica）	Trichoderma thailandicum / CBS 114234	CBS 记为别种	非错	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114234 ｜ 判据: 现名/词干一致（Hypocrea thailandica ↔ hypocrea thailandica）
 1112	号	疑似非机构编号	Trichoderma thailandicum / G.J.S. 97-61	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 97-61
 1113	号	未核	Trichoderma thelephoricola / CBS 120925	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120925
 1114	号	无公开数据库	Trichoderma thelephoricola / DAOM 232843	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 232843
@@ -1200,7 +1200,7 @@
 1199	号	无公开数据库	Trichoderma leucopus / WU 29231a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29231a
 1200	号	无公开数据库	Trichoderma lieckfeldtiae / BPI 878745	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 878745
 1201	号	疑似非机构编号	Trichoderma lieckfeldtiae / GJS 00-14	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 00-14
-1202	号	CBS 记为别种	Trichoderma longipile / CBS 120953	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120953
+1202	号	有性型待查（目录记 Hypocrea longipilosa，与 Trichoderma longipile 是否同种须查原始发表）	Trichoderma longipile / CBS 120953	CBS 记为别种	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120953 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1203	号	未核	Trichoderma longipile / CBS 135570	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 135570
 1204	号	无公开数据库	Trichoderma longipile / DAOM 177227	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 177227
 1205	号	无公开数据库	Trichoderma longipile / DAOM 231313	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 231313
@@ -1208,20 +1208,20 @@
 1207	号	无公开数据库	Trichoderma longipile / SZMC 24291	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=SZMC 24291
 1208	号	无公开数据库	Trichoderma longipile / BPI 1112864	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 1112864
 1209	号	无公开数据库	Trichoderma longipile / BPI 843660	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843660
-1210	号	CBS 记为别种	Trichoderma longipile / CBS 111148	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 111148
+1210	号	有性型待查（目录记 Hypocrea cuneispora，与 Trichoderma longipile 是否同种须查原始发表）	Trichoderma longipile / CBS 111148	CBS 记为别种	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 111148 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1211	号	无公开数据库	Trichoderma longipile / DAOM 177227-1a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=DAOM 177227-1a
-1212	号	CBS 记为别种	Trichoderma luteocrystallinum / CBS 123828	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 123828
+1212	号	有性型/异名（目录记 Hypocrea luteocrystallina，该种现名 hypocrea luteocrystallina）	Trichoderma luteocrystallinum / CBS 123828	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 123828 ｜ 判据: 现名/词干一致（Hypocrea luteocrystallina ↔ hypocrea luteocrystallina）
 1213	号	疑似非机构编号	Trichoderma luteocrystallinum / C.P.K. 3537	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=C.P.K. 3537
 1214	号	疑似非机构编号	Trichoderma luteocrystallinum / CPK 3537	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CPK 3537
 1215	号	疑似非机构编号	Trichoderma luteocrystallinum / Hypo 598	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=Hypo 598
 1216	号	疑似非机构编号	Trichoderma luteocrystallinum / WJ 3212	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WJ 3212
 1217	号	无公开数据库	Trichoderma luteocrystallinum / WU 29237	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29237
 1218	号	无公开数据库	Trichoderma luteocrystallinum / WU 29237a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29237a
-1219	号	CBS 记为别种	Trichoderma luteoeffusum / CBS 120537	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120537
+1219	号	有性型待查（目录记 Hypocrea luteffusa，与 Trichoderma luteoeffusum 是否同种须查原始发表）	Trichoderma luteoeffusum / CBS 120537	CBS 记为别种	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120537 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1220	号	疑似非机构编号	Trichoderma luteoeffusum / C.P.K. 2018	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=C.P.K. 2018
 1221	号	无公开数据库	Trichoderma luteoeffusum / WU 29236	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29236
 1222	号	无公开数据库	Trichoderma luteoeffusum / WU 29236a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29236a
-1223	号	CBS 记为别种	Trichoderma margaretense / CBS 120540	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120540
+1223	号	有性型/异名（目录记 Hypocrea margaretensis，该种现名 hypocrea margaretensis）	Trichoderma margaretense / CBS 120540	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120540 ｜ 判据: 现名/词干一致（Hypocrea margaretensis ↔ hypocrea margaretensis）
 1224	号	无公开数据库	Trichoderma margaretense / HMAS 266645	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=HMAS 266645
 1225	号	无公开数据库	Trichoderma margaretense / HMAS 266648	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=HMAS 266648
 1226	号	疑似非机构编号	Trichoderma margaretense / C.P.K. 3127	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=C.P.K. 3127
@@ -1235,11 +1235,11 @@
 1234	号	无公开数据库	Trichoderma moravicum / WU 29283a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29283a
 1235	号	疑似非机构编号	Trichoderma neorufoides / CPK 993	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CPK 993
 1236	号	无公开数据库	Trichoderma neorufoides / WU 29296a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29296a
-1237	号	CBS 记为别种	Trichoderma pachypallidum / CBS 122126	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 122126
+1237	号	有性型/异名（目录记 Hypocrea pachypallida，该种现名 hypocrea pachypallida）	Trichoderma pachypallidum / CBS 122126	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 122126 ｜ 判据: 现名/词干一致（Hypocrea pachypallida ↔ hypocrea pachypallida）
 1238	号	无公开数据库	Trichoderma pachypallidum / WU 29327a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29327a
 1239	号	未核	Trichoderma parepimyces / CBS 122768	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 122768
 1240	号	无公开数据库	Trichoderma parepimyces / WU 29107a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29107a
-1241	号	CBS 记为别种	Trichoderma parestonicum / CBS 120636	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120636
+1241	号	有性型/异名（目录记 Hypocrea parestonica，该种现名 hypocrea parestonica）	Trichoderma parestonicum / CBS 120636	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120636 ｜ 判据: 现名/词干一致（Hypocrea parestonica ↔ hypocrea parestonica）
 1242	号	疑似非机构编号	Trichoderma parestonicum / C.P.K. 2474	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=C.P.K. 2474
 1243	号	疑似非机构编号	Trichoderma parestonicum / CPK 2474	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CPK 2474
 1244	号	无公开数据库	Trichoderma parestonicum / WU 29110a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29110a
@@ -1291,7 +1291,7 @@
 1290	号	无公开数据库	Trichoderma pleuroticola / KCTC 26315	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=KCTC 26315
 1291	号	无公开数据库	Trichoderma silvae-virgineae / WU 29227a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29227a
 1292	号	无公开数据库	Trichoderma subalpinum / WU 29481a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29481a
-1293	号	CBS 记为别种	Trichoderma subeffusum / CBS 120929	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120929
+1293	号	有性型/异名（目录记 Hypocrea subeffusa，该种现名 hypocrea subeffusa）	Trichoderma subeffusum / CBS 120929	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120929 ｜ 判据: 现名/词干一致（Hypocrea subeffusa ↔ hypocrea subeffusa）
 1294	号	未核	Trichoderma subeffusum / CBS 136989	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 136989
 1295	号	无公开数据库	Trichoderma subeffusum / WU 29487a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29487a
 1296	号	无公开数据库	Trichoderma theobromicola / COAD 2406	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=COAD 2406
@@ -1310,7 +1310,7 @@
 1309	号	未核	Trichoderma tremelloides / CBS 121140	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 121140
 1310	号	无公开数据库	Trichoderma tremelloides / WU 29508	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29508
 1311	号	无公开数据库	Trichoderma tremelloides / WU 29508a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29508a
-1312	号	CBS 记为别种	Trichoderma valdunense / CBS 120923	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120923
+1312	号	有性型/异名（目录记 Hypocrea valdunensis，该种现名 hypocrea valdunensis）	Trichoderma valdunense / CBS 120923	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 120923 ｜ 判据: 现名/词干一致（Hypocrea valdunensis ↔ hypocrea valdunensis）
 1313	号	无公开数据库	Trichoderma valdunense / WU 29561	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29561
 1314	号	无公开数据库	Trichoderma valdunense / WU 29561a	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 29561a
 1315	号	无公开数据库	Trichoderma yunnanense / YMF 1.0169	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=YMF 1.0169
@@ -1396,7 +1396,7 @@
 1395	号	疑似非机构编号	Trichoderma flaviconidium / G.J.S. 99-49	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 99-49
 1396	号	疑似非机构编号	Trichoderma flaviconidium / G.J.S. 99-51	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 99-51
 1397	号	无公开数据库	Trichoderma flaviconidium / INB 3862698	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=INB 3862698
-1398	号	CBS 记为别种	Trichoderma flavipes / CBS 123070	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 123070
+1398	号	有性型待查（目录记 Hypocrea cinereoflava，与 Trichoderma flavipes 是否同种须查原始发表）	Trichoderma flavipes / CBS 123070	CBS 记为别种	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 123070 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1399	号	无公开数据库	Trichoderma flavipes / BPI 802847	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 802847
 1400	号	疑似非机构编号	Trichoderma flavipes / G.J.S. 92-102	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 92-102
 1401	号	无公开数据库	Trichoderma gamsii / BMCC LU732	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=BMCC LU732
@@ -1475,7 +1475,7 @@
 1474	号	无公开数据库	Trichoderma megalocitrinum / TNS F-223220	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=TNS F-223220
 1475	号	无公开数据库	Trichoderma melanomagnum / DAOM 232836	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 232836
 1476	号	无公开数据库	Trichoderma melanomagnum / BPI 843663	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843663
-1477	号	CBS 记为别种	Trichoderma melanomagnum / CBS 114236	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114236
+1477	号	有性型/异名（目录记 Hypocrea melanomagna，该种现名 hypocrea melanomagna）	Trichoderma melanomagnum / CBS 114236	CBS 记为别种	非错	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114236 ｜ 判据: 现名/词干一致（Hypocrea melanomagna ↔ hypocrea melanomagna）
 1478	号	疑似非机构编号	Trichoderma melanomagnum / GJS 99-153	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 99-153
 1479	号	疑似非机构编号	Trichoderma microcitrinum / G.J.S. 91-61	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 91-61
 1480	号	疑似非机构编号	Trichoderma microcitrinum / TNS-F- 223325	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=TNS-F- 223325
@@ -1490,7 +1490,7 @@
 1489	号	无公开数据库	Trichoderma protrudens / BPI 878378	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 878378
 1490	号	无公开数据库	Trichoderma protrudens / DIS 119f	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=DIS 119f
 1491	号	无公开数据库	Trichoderma pseudocandidum / BPI 843652	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843652
-1492	号	CBS 记为别种	Trichoderma pseudocandidum / CBS 114249	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114249
+1492	号	有性型待查（目录记 Hypocrea candida，与 Trichoderma pseudocandidum 是否同种须查原始发表）	Trichoderma pseudocandidum / CBS 114249	CBS 记为别种	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 114249 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1493	号	无公开数据库	Trichoderma pseudokoningii / CIRM-CF 867	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CIRM-CF 867
 1494	号	无公开数据库	Trichoderma pseudokoningii / DAOM 167678	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 167678
 1495	号	无公开数据库	Trichoderma pseudokoningii / DAOM 220793	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 220793
@@ -1720,7 +1720,7 @@
 1719	号	无公开数据库	Trichoderma erinaceum / ITCC<IND> 7288	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=ITCC<IND> 7288
 1720	号	无公开数据库	Trichoderma erinaceum / ITCC<IND> 7289	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=ITCC<IND> 7289
 1721	号	无公开数据库	Trichoderma erinaceum / UTHSC 07-1088	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=UTHSC 07-1088
-1722	号	CBS 记为别种	Trichoderma estonicum / CBS 111147	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 111147
+1722	号	有性型/异名（目录记 Hypocrea estonica，该种现名 hypocrea estonica）	Trichoderma estonicum / CBS 111147	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 111147 ｜ 判据: 现名/词干一致（Hypocrea estonica ↔ hypocrea estonica）
 1723	号	无公开数据库	Trichoderma estonicum / DAOM 231314	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=DAOM 231314
 1724	号	无公开数据库	Trichoderma estonicum / BPI 744577	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 744577
 1725	号	无公开数据库	Trichoderma estonicum / BPI 843661	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 843661
@@ -1860,7 +1860,7 @@
 1859	号	无公开数据库	Trichoderma minutisporum / NBRC 101779	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=NBRC 101779
 1860	号	无公开数据库	Trichoderma minutisporum / NBRC 9062	无公开数据库	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=NBRC 9062
 1861	号	无公开数据库	Trichoderma minutisporum / BPI 1109374	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=BPI 1109374
-1862	号	CBS 记为别种	Trichoderma minutisporum / CBS 112773	CBS 记为别种	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 112773
+1862	号	有性型待查（目录记 Hypocrea minutispora，与 Trichoderma minutisporum 是否同种须查原始发表）	Trichoderma minutisporum / CBS 112773	CBS 记为别种	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 112773 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1863	号	疑似非机构编号	Trichoderma minutisporum / G.J.S. 90-81	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=G.J.S. 90-81
 1864	号	疑似非机构编号	Trichoderma minutisporum / GJS 90-81	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=GJS 90-81
 1865	号	号不存在	Trichoderma novae-zelandiae / CBS 427.97	号不存在（声明:GenBank 记录 /strain·/culture_collection ‖ 查无:CBS 记录）	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 427.97
