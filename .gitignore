@@ -68,3 +68,9 @@ _tmp_guard_test/
 
 # ---- PDF 渲染临时页 ----
 _tmp_pdfpages/
+
+# ---- MBList 派生查找表（由 119 MB 的 mycobank_authors.tsv 生成，见 tools/build_mb_maps.py）----
+data/mb_current.tsv
+data/mb_class.tsv
+# ---- 结果文件的时间点备份 ----
+results/**/*.bak*
