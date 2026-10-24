@@ -31,7 +31,7 @@ os.makedirs(OUT, exist_ok=True)
 BLUE, ORANGE, GREEN, GREY = "#0072B2", "#E69F00", "#009E73", "#999999"
 
 # ── 数据 ───────────────────────────────────────────────
-TOTAL, VERIF_T, UNVER_T = 11103, 3192, 7911
+TOTAL, VERIF_T, UNVER_T = 11103, 3040, 8063
 SAME, DIFF, REAL, FALSEP = 2481, 559, 403, 156
 GEN = ["Colletotrichum", "Trichoderma", "Diaporthe"]
 VERIF = [1487, 946, 607]
@@ -94,16 +94,16 @@ def excl(y, text, num):
 box(YS[0], "三属全部号级单元格", TOTAL,
     "Colletotrichum 3,633 ｜ Trichoderma 4,200 ｜ Diaporthe 3,270", BLUE)
 arrow(YS[0] - BOX_H / 2 - 0.02, YS[1] + BOX_H / 2 + 0.02)
-excl((YS[0] + YS[1]) / 2, "无可机读目录，或仅为研究者工作编号", "n = 7,911（71.3%）")
+excl((YS[0] + YS[1]) / 2, "无可机读目录，或仅为研究者工作编号", "n = 8,063（72.6%）")
 box(YS[1], "可核号（CBS / ICMP / CGMCC）", VERIF_T,
-    "占全部号 28.7%；仅此部分进入率的分母", BLUE)
+    "占全部号 27.4%；仅此部分进入率的分母", BLUE)
 arrow(YS[1] - BOX_H / 2 - 0.02, YS[2] + BOX_H / 2 + 0.02)
-excl((YS[1] + YS[2]) / 2, "记录一致（GenBank 与机构目录无冲突）", "n = 2,634（82.5%）")
-box(YS[2], "号级不一致（修正前）", DIFF, "占可核号 17.5%", BLUE)
+excl((YS[1] + YS[2]) / 2, "记录一致（GenBank 与机构目录无冲突）", "n = 2,481（81.6%）")
+box(YS[2], "号级不一致（修正前）", DIFF, "占可核号 18.4%", BLUE)
 arrow(YS[2] - BOX_H / 2 - 0.02, YS[3] + BOX_H / 2 + 0.02)
-excl((YS[2] + YS[3]) / 2, "反向审计：判为机构未收录（实为假阳性）", "n = 156（28.0%）")
+excl((YS[2] + YS[3]) / 2, "反向审计：判为机构未收录（实为假阳性）", "n = 156（27.9%）")
 box(YS[3], "号级不一致（修正后）", REAL,
-    "占可核号 12.6%；保守口径（95% CI 11.5–13.8%）", ORANGE)
+    "占可核号 13.3%；保守口径（95% CI 12.1–14.5%）", ORANGE)
 print("[图 1]")
 save(fig, "Fig1_audit_flow")
 
