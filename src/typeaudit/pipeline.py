@@ -71,6 +71,31 @@ FLAG_MULTINAME = "一株多名"
 FLAG_DIGIT = "位数孤例"
 FLAG_ONLY_A = "仅数据库有"
 FLAG_ONLY_B = "仅文献有"
+# ---------- 目级分类查询（用于判定「号已改派」）----------
+# 为什么需要：CBS 的低号段（101/102/103/142…）历史上被回收再分配，今天可能指向
+# 完全不相干的真菌（如 Schizosaccharomyces、Naganishia）。此时目录那一行描述的是
+# 另一株菌，与声明种「无从比对」——判成「目录记为别种」是冤枉保藏中心。
+# 判据：两边分类取到【目】级；目不同 ⇒ 不可能是同一物种。
+_MB_CLASS_CACHE = {}
+
+
+def _mb_order(name):
+    """学名 → 目名（MycoBank Classification 的第 7 级）；查不到返回空串。"""
+    global _MB_CLASS_CACHE
+    if not _MB_CLASS_CACHE:
+        p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__)))), "data", "mb_class.tsv")
+        if os.path.exists(p):
+            with io.open(p, encoding="utf-8", errors="replace") as f:
+                f.readline()
+                for line in f:
+                    k, _, v = line.rstrip("\n").partition("\t")
+                    if k:
+                        _MB_CLASS_CACHE[k.strip().lower()] = v
+    parts = [x.strip() for x in _MB_CLASS_CACHE.get((name or "").strip().lower(), "").split(",") if x.strip()]
+    return parts[6] if len(parts) > 6 else ""
+
+
 FLAG_UNKNOWN = "未核"
 FLAG_NODIR = "无公开数据库"      # 该机构无公开机读目录，无法核验（**不等于号不存在**）
 FLAG_UNKNOWN_INST = "未知机构代码"   # 机构代码不在 Biocollections 登记表内 ⇒ **候选错值**（如 CGMG 少了 C）
@@ -932,7 +957,28 @@ def collect(species, genus, sources, note=None):
                                     fl.append("{}（须查原始出处）‖{} 记 {}{}，MycoBank 接受名 {}".format(
                                         FLAG_TWO_ACCEPTED, up, _cat_nm, _extra, acc))
                     elif myb_ok:
-                        fl.append("{} 记为别种".format(up))
+                        # 先判「号已改派」：目录所指生物与声明种不在同一个目
+                        # ⇒ 两条记录根本没在说同一件事，不是记录冲突（非错）。
+                        # 实测 CBS 101→Schizosaccharomyces japonicus、CBS 142→Naganishia albida。
+                        _oc, _os = _mb_order(nm), _mb_order(species)
+                        # 有性型/异名：目录名的现名（或声明种的现名）正好是对方
+                        # 实测 Hypocrea crassa ↔ Trichoderma neocrassum（同一物种，两个属名）
+                        _cur_sp = ""
+                        try:
+                            _cur_sp = " ".join((myb.current_name(species) or "").split()[:2]).lower()
+                        except Exception:
+                            _cur_sp = ""
+                        _nm2 = " ".join(nm.split()[:2]).lower()
+                        _pretty = " ".join([nm.split()[0].capitalize()] + nm.split()[1:]) if nm else nm
+                        if _oc and _os and _oc != _os:
+                            fl.append("{} 号已改派（目录现记为 {}，与声明种目级不同，非错）".format(
+                                up, _pretty))
+                        elif _cur_sp and _cur_sp == _nm2:
+                            fl.append("{} 有性型/异名（目录记 {}，该种现名 {}，非错）".format(
+                                up, _pretty, _cur_sp.split()[0].capitalize() + " " + _cur_sp.split()[1]
+                                if len(_cur_sp.split()) > 1 else _cur_sp))
+                        else:
+                            fl.append("{} 记为别种（目录记 {}）".format(up, _pretty))
                     else:
                         # MycoBank 不可用 ⇒ 无法判断是异名还是别的种。
                         # 此时说「目录记为别种」是无据断言，只能标「未核」。
