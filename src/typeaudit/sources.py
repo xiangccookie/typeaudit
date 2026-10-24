@@ -29,8 +29,10 @@ import os
 import re
 
 # ---------- 统一的状态串解析 ----------
-RANK_PAT = r"(Ex-holotype|Ex-type|Ex-neotype|Holotype|Neotype|Isotype|Epitype|Paratype|Syntype|Type)"
-RE_STATUS = re.compile(r"^\s*" + RANK_PAT + r"\s+of\s+(.+?)\s*$", re.I)
+# 模式等级词干：可带 ex- 前缀（连字符或空格皆可），也允许不带
+RANK_PAT = r"((?:ex[\s\-]?)?(?:holotype|neotype|isotype|epitype|paratype|syntype|lectotype|type))"
+# 允许三种写法：「Rank of Name」「Rank Name」「裸 Rank（无名字）」
+RE_STATUS = re.compile(r"^\s*" + RANK_PAT + r"(?:\s+of\s+|\s+)?(.+)?$", re.I)
 
 
 def parse_status(s):
@@ -47,10 +49,12 @@ def parse_status(s):
     m = RE_STATUS.match(s.strip())
     if not m:
         return None
-    rank = m.group(1)
-    rank = {"ex-holotype": "Ex-holotype", "ex-type": "Ex-type", "ex-neotype": "Ex-neotype"}.get(
-        rank.lower(), rank.capitalize())
-    return {"rank": rank, "name": m.group(2).strip()}
+    rank = re.sub(r"[\s\-]+", "-", m.group(1).strip().lower())   # 统一成小写连字符：ex holotype / ex-holotype → ex-holotype
+    if rank.startswith("ex-"):
+        rank = "ex-" + rank[3:]
+    rank = rank.capitalize() if not rank.startswith("ex-") else "Ex-" + rank[3:]
+    name = (m.group(2) or "").strip()
+    return {"rank": rank, "name": name or None}
 
 
 def norm_key(code, number):
