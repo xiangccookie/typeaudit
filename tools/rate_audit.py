@@ -76,27 +76,42 @@ def code_of(numkey):
     return m.group(1).upper() if m else ""
 
 
-def audit(genus, outdir, classify):
-    files = sorted(glob.glob(os.path.join(REPO, outdir, "c[0-9][0-9]", "*证据*.jsonl")))
-    cells = []          # 每个 (种, 号) 一条；同号在两列不会重复（证据链一号一条）
-    for f in files:
-        with io.open(f, encoding="utf-8", errors="replace") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line:
+PREFIX = re.compile(r"^\((?:strain|isolate|culture|specimen|other)\)\s*", re.I)
+TOK = re.compile(r"^([A-Za-z][\w\-\.]*)\s*[:#]?\s*([\d\.]+[A-Za-z]?)\s*(?:\[(.*?)\])?\s*$")
+
+
+def audit_genus(genus, slug, classify):
+    """主口径：三列表里 CBS/ICMP/CGMCC 号的出现次数（与展示一致，两列各计一次）。
+
+    为什么用三列表而不用证据链：证据链只落盘「有标记」的号（实测 1,871），
+    没有问题的号不入账；三列表把「[—]」也写出来，因此更接近文档的 3,192。
+    """
+    p = os.path.join(REPO, "results", genus, "{}_三列表.tsv".format(slug))
+    occ = wrong = 0
+    by_code = Counter()
+    if not os.path.exists(p):
+        return {"可核号": 0, "错值": 0, "按标记": {}}
+    for row in io.open(p, encoding="utf-8-sig").read().splitlines()[1:]:
+        c = row.split("\t")
+        if len(c) < 3:
+            continue
+        for cell in c[1:3]:
+            for seg in cell.split("｜"):
+                s = PREFIX.sub("", seg.strip())
+                if not s or s == "—":
                     continue
-                try:
-                    rec = json.loads(line)
-                except Exception:
+                m = TOK.match(s)
+                if not m:
                     continue
-                sp = rec.get("species") or ""
-                for k, v in (rec.get("numbers") or {}).items():
-                    cells.append((sp, k, code_of(k), v.get("flags") or []))
-    ver = [c for c in cells if c[2] in VERIFIABLE]
-    wrong = [c for c in ver if "错值" in {classify(x) for x in c[3] if x}]
-    return {"文件数": len(files), "号级单元格": len(cells),
-            "可核号": len(ver), "错值": len(wrong),
-            "按标记": dict(Counter(x[2] for x in ver))}
+                code = m.group(1).upper()
+                if code not in VERIFIABLE:
+                    continue
+                occ += 1
+                by_code[code] += 1
+                fl = (m.group(3) or "").strip()
+                if fl and fl != "—" and classify(fl) == "错值":
+                    wrong += 1
+    return {"可核号": occ, "错值": wrong, "按标记": dict(by_code)}
 
 
 def main():
@@ -106,21 +121,25 @@ def main():
     classify = load_classify()
 
     print("从证据链复算（口径见文件头说明）")
-    print("{:<16}{:>10}{:>10}{:>10}{:>12}".format("属", "证据文件", "可核号", "错值", "文档记录"))
+    print("{:<16}{:>10}{:>10}{:>12}".format("属", "可核号", "错值", "文档记录"))
     t_ver = t_err = 0
     detail = {}
     for g, gl, od in GENERA:
-        r = audit(g, od, classify)
+        r = audit_genus(g, gl, classify)
         detail[g] = r
         t_ver += r["可核号"]
         t_err += r["错值"]
         e_ver, e_err = LEGACY[g]
-        print("{:<16}{:>10}{:>10}{:>10}{:>12}".format(
-            g, r["文件数"], r["可核号"], r["错值"], "{} / {}".format(e_ver, e_err)))
-    print("{:<16}{:>10}{:>10}{:>10}{:>12}".format("合计", "", t_ver, t_err, "3192 / 558"))
+        print("{:<16}{:>10}{:>10}{:>12}".format(
+            g, r["可核号"], r["错值"], "{} / {}".format(e_ver, e_err)))
+    print("{:<16}{:>10}{:>10}{:>12}".format("合计", t_ver, t_err, "3192 / 558"))
     print("\n与文档的差：可核号 {:+.0f}（{:.1f}%），错值 {:+.0f}（{:.1f}%）".format(
         t_ver - 3192, 100.0 * (t_ver - 3192) / 3192, t_err - 558, 100.0 * (t_err - 558) / 558))
-    print("错值率（未扣反向审计）：{:.1f}%".format(100.0 * t_err / t_ver if t_ver else 0))
+    print("错值率（未扣反向审计）：{:.1f}%（文档 17.5%）".format(100.0 * t_err / t_ver if t_ver else 0))
+    for lbl, mv in (("保守", 156), ("乐观", 176)):
+        n = t_err - mv
+        print("  扣反向审计（{}，移出 {} 条）：{}/{} = {:.1f}%".format(
+            lbl, mv, n, t_ver, 100.0 * n / t_ver if t_ver else 0))
     if a.json:
         payload = {"各属": detail, "合计": {"可核号": t_ver, "错值": t_err},
                    "文档记录": {"可核号": 3192, "错值": 558}}
