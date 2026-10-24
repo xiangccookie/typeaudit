@@ -473,7 +473,8 @@ def reclassify_aliases(rows, repo=None):
         m = re.search(r"\b(CBS|ICMP|CGMCC)\b\s*([\d\.]+)", obj)
         if not m or m.group(1) != "CBS":
             continue
-        rec = cbs.get(m.group(2).split(".")[0])
+        _num = m.group(2)
+        rec = cbs.get(_num) or cbs.get(_num.split(".")[0])   # 带小数点的号（CBS 976.69）须先按全号查
         if not rec:
             continue
         taxon, status = rec
@@ -495,7 +496,12 @@ def reclassify_aliases(rows, repo=None):
         s_cur = cur.get(sp.lower(), sp.lower())
         same = (c_cur == s_cur or c_cur == sp.lower() or s_cur == cat.lower())
         if not same:
-            e_cat = cat.split()[1] if len(cat.split()) > 1 else ""
+            # 取「末端种加词」：跳过 var./f./subsp. 等标记，取最后一个形如种加词的词
+            # （实测 Hypocrea citrina var. americana 的种加词是 americana，不是 citrina）
+            def _last_epi(nm):
+                w = [x for x in nm.split() if re.match(r"^[a-z][a-z\-]+$", x)]
+                return w[-1] if w else ""
+            e_cat = _last_epi(cat)
             e_sp = sp.split()[1] if len(sp.split()) > 1 else ""
             same = bool(e_cat and e_sp and _stem(e_cat) == _stem(e_sp))
         if same:

@@ -620,7 +620,7 @@
 619	号	无公开数据库	Trichoderma priscilae / S 168	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=S 168
 620	号	无公开数据库	Trichoderma priscilae / WU 33327	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=WU 33327
 621	号	未核	Trichoderma protopulvinatum / CBS 121274	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 121274
-622	号	号已改派（CBS 739.83 现记为 Zygosaccharomyces casei，目级不同）	Trichoderma protopulvinatum / CBS 739.83	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 739.83 ｜ 判据: MycoBank 目级不同（Saccharomycetaceae vs Hypocreales）
+622	号	有性型/异名（目录记 Hypocrea protopulvinata，该种现名 hypocrea protopulvinata）	Trichoderma protopulvinatum / CBS 739.83	CBS 记为别种	非错	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 739.83 ｜ 判据: 现名/词干一致（Hypocrea protopulvinata ↔ hypocrea protopulvinata）
 623	号	模式地位不精确	Trichoderma protopulvinatum / CBS 739.83	模式地位不精确（记录只写 type material，CBS 记为 Isotype）	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=CBS 739.83
 624	号	无公开数据库	Trichoderma protopulvinatum / NY 00965650	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=NY 00965650
 625	号	疑似非机构编号	Trichoderma protopulvinatum / TNS-F- 223421	疑似非机构编号	错值	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=TNS-F- 223421
@@ -1565,7 +1565,7 @@
 1564	号	无公开数据库	Trichoderma aggressivum / DAOM 222156	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=DAOM 222156
 1565	号	无公开数据库	Trichoderma aggressivum / IMI 393971	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=IMI 393971
 1566	号	未核	Trichoderma americanum / CBS 122028	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 122028
-1567	号	CBS 记为别种	Trichoderma americanum / CBS 976.69	CBS 记为别种	错值	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 976.69
+1567	号	有性型待查（目录记 Hypocrea citrina，与 Trichoderma americanum 是否同种须查原始发表）	Trichoderma americanum / CBS 976.69	CBS 记为别种	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 976.69 ｜ 判据: 属名为有性型（hypocrea→trichoderma），但现名与词干均未对上
 1568	号	无公开数据库	Trichoderma americanum / ATCC 18574	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=ATCC 18574
 1569	号	无公开数据库	Trichoderma americanum / NY 0965597	无公开数据库	不确定	三列表·模式菌列	out=Trichoderma ｜ 列=模式菌 ｜ 号=NY 0965597
 1570	号	未核	Trichoderma andinense / CBS 345.97	未核	不确定	三列表·菌株号列	out=Trichoderma ｜ 列=菌株号 ｜ 号=CBS 345.97
