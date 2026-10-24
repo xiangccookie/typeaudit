@@ -74,3 +74,5 @@ data/mb_current.tsv
 data/mb_class.tsv
 # ---- 结果文件的时间点备份 ----
 results/**/*.bak*
+
+data/mycobank_full.tsv

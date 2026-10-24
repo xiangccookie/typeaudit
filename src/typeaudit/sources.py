@@ -462,6 +462,7 @@ _FALLBACK_PATHS = {
     "CBSCatalogue": ["data/cbs_catalogue.tsv",
                      r"C:\Users\Administrator\Desktop\DeepSeek\bio原理\out\cbs_catalogue.tsv"],
     "MycoBank": ["data/mycobank_full.tsv",
+                  r"交付_三属对照_20261022\08_MBList增强\mycobank_authors.tsv",  # 本地实际存在的那份（列名可自适配）
 # ⚠️ 2026-10 目录搬迁：Tool 从 Desktop\Tool 搬到 Desktop\sol\Tool，
 #    旧路径失效会让 MycoBank 静默空载 ⇒ 异名判定退化成「目录记为别种」的假阳性。
                  r"C:\Users\Administrator\Desktop\sol\Tool\脚本\调取mycobank数据，分析sp_curret,编码，是否为复合体\mycobank_full.tsv",

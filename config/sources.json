@@ -13,8 +13,8 @@
     },
     "mycobank": {
       "adapter": "MycoBank",
-      "path": "交付_三属对照_20261022/08_MBList增强/mycobank_authors.tsv",
-      "_说明": "指向 MBList 导出（含 Taxon name / Current name / Name status 三列，适配器会按表头自适配）。原始 data/mycobank_full.tsv 缺失时会退回这里；119 MB，加载约 4 秒。"
+      "path": "data/mycobank_full.tsv",
+      "_说明": "原始 MycoBank 导出（61 MB，394,009 条异名映射）。若缺失，sources._FALLBACK_PATHS 会依次退到 MBList 导出。"
     },
     "cgmcc": {
       "adapter": "CGMCCAPI",

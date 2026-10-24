@@ -77,6 +77,8 @@ FLAG_ONLY_B = "仅文献有"
 # 另一株菌，与声明种「无从比对」——判成「目录记为别种」是冤枉保藏中心。
 # 判据：两边分类取到【目】级；目不同 ⇒ 不可能是同一物种。
 _MB_CLASS_CACHE = {}
+# 判为「号已改派」的 (机构|目录名)：这类号与声明种无关，不再追加「未核」
+_REASSIGNED = set()
 
 
 def _mb_order(name):
@@ -971,6 +973,7 @@ def collect(species, genus, sources, note=None):
                         _nm2 = " ".join(nm.split()[:2]).lower()
                         _pretty = " ".join([nm.split()[0].capitalize()] + nm.split()[1:]) if nm else nm
                         if _oc and _os and _oc != _os:
+                            _REASSIGNED.add(up + "|" + str(nm))
                             fl.append("{} 号已改派（目录现记为 {}，与声明种目级不同，非错）".format(
                                 up, _pretty))
                         elif _cur_sp and _cur_sp == _nm2:
@@ -983,7 +986,7 @@ def collect(species, genus, sources, note=None):
                         # MycoBank 不可用 ⇒ 无法判断是异名还是别的种。
                         # 此时说「目录记为别种」是无据断言，只能标「未核」。
                         fl.append(FLAG_UNKNOWN)
-                if st.get("unannotated"):
+                if st.get("unannotated") and (up + "|" + str(nm)) not in _REASSIGNED:
                     fl.append(FLAG_UNKNOWN)
                 elif claimed_type and ("type_status" in st) and not (st.get("type_status") or "").strip():
                     # 记录把它当类型材料用，但该目录【没有】模式地位标注 ⇒ 无从核验。
