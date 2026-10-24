@@ -474,7 +474,10 @@ def enrich_worker(out_dir, genus, link=False):
     if not os.environ.get("NCBI_EMAIL"):
         os.environ["NCBI_EMAIL"] = env["NCBI_EMAIL"]
     # 建树：上限 3 对（每对 1–5 分钟）。写死在这里，让"自动"有明确边界。
-    args = ["--out", out_dir, "--genus", genus, "--tree", "3"] + (["--link"] if link else [])
+    # --seq-max 决定序列轴覆盖多少种（标题「一株多名」靠它）。默认 80 会让
+    # 「一株多名」少算一大截（实测 31 vs 69），与论文口径（600）不符。
+    args = ["--out", out_dir, "--genus", genus, "--tree", "3",
+            "--seq-max", "600"] + (["--link"] if link else [])
     try:
         rc = run_py_script("enrich.py", args, enrich_log, "补全")
         ENRICH_STATE.update(running=False, rc=rc)
@@ -2945,10 +2948,6 @@ def main():
         print("\n已停止服务。")
 
 
-if __name__ == "__main__":
-    main()
-
-
 def run_py_script(script, args, log, label=None):
     """在【进程内】执行另一个脚本的 main()。
 
@@ -2993,3 +2992,7 @@ def run_py_script(script, args, log, label=None):
         return 1
     finally:
         _sys.argv = old_argv
+
+
+if __name__ == "__main__":
+    main()

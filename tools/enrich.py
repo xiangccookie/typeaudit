@@ -272,7 +272,7 @@ def main():
     ap.add_argument("--email", default=os.environ.get("NCBI_EMAIL") or "audit@example.org",
                     help="NCBI 要求的邮箱（序列轴、反向审计都要）")
     ap.add_argument("--skip-seq", action="store_true", help="跳过序列轴（同号多名扫描）")
-    ap.add_argument("--seq-max", type=int, default=80,
+    ap.add_argument("--seq-max", type=int, default=600,   # 600 = 论文口径；80 会少算「一株多名」
                     help="序列轴最多检查多少个种（约 6 号/种，0.5 秒/号）")
     ap.add_argument("--phylo-bin",
                     default="/home/yelu/miniforge3/envs/phylo/bin",
