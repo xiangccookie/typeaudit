@@ -2173,10 +2173,55 @@ def species_status(name, sources, use_cgmcc=True, weights=None):
                                          "ncbi": ncbi_typ_nums, "cgmcc": cg_typ_nums,
                                          "level": "待核"})
 
+    # ---- ②.5 同名异物（MycoBank 同一学名多行、且各行现名互相矛盾）----
+    # 为什么单列这一步：dup_conflict 在 MycoBank 适配器里【已经算好】（实测 12,403 条），
+    # 但过去没有任何上层代码读它，于是两种坏结果都出现过：
+    #   · 猜取一行 —— 把撞名那一行的现名安到这个种头上（如 D. biguttulata 被判成 eres）；
+    #   · 直接返回 None —— 判定为空，问题从统计里静默消失。
+    # 正确做法：不猜、但报出来，附候选行供人按原始发表对号。
+    _dup = None
+    try:
+        if mb is not None:
+            _dup = (getattr(mb, "dup_conflict", None) or {}).get(str(name).strip().lower())
+    except Exception:
+        _dup = None
+    # ⚠️ dup_conflict 的键是「完整现名字符串」，含作者引证 —— 两行常只是作者不同，
+    #    物种其实同一个（实测 D. bicincta / celastrina / fibrosa / mali / melongenicola /
+    #    sinensis 两行现名的二名法完全相同）。因此必须**压到二名法再比**，
+    #    只有出现两个不同物种才算真·同名异物；拼写变体（Orthographic variant）也不算。
+    if _dup:
+        _binoms = set()
+        for _st, _cur in _dup:
+            _w = str(_cur or "").split()
+            if len(_w) >= 2:
+                _binoms.add("{} {}".format(_w[0], _w[1]).lower())
+        _has_ortho = any("orthographic" in str(_st or "").lower() for _st, _ in _dup)
+        if len(_binoms) <= 1 or _has_ortho:
+            _dup = None          # 重复登记 / 拼写变体，不是同名异物
+    if _dup:
+        _cands = []
+        for _st, _cur in _dup:
+            _p = str(_cur or "").split()
+            _nm = "{} {}".format(_p[0], _p[1]) if len(_p) >= 2 else str(_cur or "?")
+            _cands.append({"status": _st, "current": _nm})
+        out["name_conflict"] = {
+            "ncbi": ("独立 taxid({})".format(out["ncbi"]["taxid"])
+                     if out["ncbi"].get("taxid") else "查无"),
+            "mycobank": "同名异物（{} 行）".format(len(_dup)),
+            "verdict": "同名异物",
+            "level": "矛盾",
+            "candidates": _cands,
+        }
+        out["conflicts"].append(
+            "同名异物 ｜ {} 在 MycoBank 有 {} 行（{}），而 NCBI 只对应一个 taxon，"
+            "无法判断该取哪一行 → 须按原始发表对号".format(
+                name, len(_dup),
+                "；".join("{}{}".format(c["status"], "→" + c["current"]) for c in _cands)))
+
     # ---- ③ 异名 vs 独立种（NCBI ↔ MycoBank）----
     try:
         cur = out["myco"].get("current") or ""
-        if cur and out["ncbi"].get("ok"):
+        if cur and out["ncbi"].get("ok") and not _dup:
             w = str(cur).split()
             accept = "{} {}".format(w[0], w[1]) if len(w) >= 2 else str(cur)
             same = accept.split()[-1].lower() == name.split()[-1].lower()
