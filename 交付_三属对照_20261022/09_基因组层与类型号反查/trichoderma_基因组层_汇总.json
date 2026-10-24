@@ -1,0 +1,11 @@
+{
+  "属": "Trichoderma",
+  "种总数": 445,
+  "有基因组的种": 53,
+  "有模式菌株基因组的种": 14,
+  "基因组全部来自非模式菌株的种": 39,
+  "非模式占比%": 73.6,
+  "组装数": 237,
+  "官方判归属错误的组装": 1,
+  "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_genome\\trichoderma_基因组层.tsv"
+}

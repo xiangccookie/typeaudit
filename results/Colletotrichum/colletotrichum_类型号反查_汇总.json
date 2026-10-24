@@ -1,0 +1,11 @@
+{
+  "属": "colletotrichum",
+  "类型号数": 888,
+  "判定分布": {
+    "一致": 446,
+    "未检出记录": 113,
+    "两个及以上物种": 313,
+    "记为别的种": 16
+  },
+  "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_colleto_web\\colletotrichum_类型号反查.tsv"
+}

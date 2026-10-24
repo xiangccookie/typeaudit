@@ -132,6 +132,13 @@ def main():
         e_ver, e_err = LEGACY[g]
         print("{:<16}{:>10}{:>10}{:>12}".format(
             g, r["可核号"], r["错值"], "{} / {}".format(e_ver, e_err)))
+        # 机构构成分项 —— 图 2B 需要，与「可核号」同一口径
+        bc = r.get("按标记") or {}
+        if bc:
+            tot = sum(bc.values())
+            print("    └ 构成：CBS {:>5} ｜ ICMP {:>4} ｜ CGMCC {:>4}   （ICMP {:.1f}%）".format(
+                bc.get("CBS", 0), bc.get("ICMP", 0), bc.get("CGMCC", 0),
+                100.0 * bc.get("ICMP", 0) / tot if tot else 0))
     print("{:<16}{:>10}{:>10}{:>12}".format("合计", t_ver, t_err, "3192 / 558"))
     print("\n与文档的差：可核号 {:+.0f}（{:.1f}%），错值 {:+.0f}（{:.1f}%）".format(
         t_ver - 3192, 100.0 * (t_ver - 3192) / 3192, t_err - 558, 100.0 * (t_err - 558) / 558))

@@ -39,6 +39,7 @@ import subprocess
 import sys
 import threading
 import time
+import datetime
 from collections import deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
@@ -1817,6 +1818,13 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
  .item{margin-bottom:5px}
  .item:last-child{margin-bottom:0}
  .tiny{font-size:11px;color:#6b7280}
+  .tbl{width:100%;border-collapse:collapse;font-size:11px}
+  .tbl th{background:#f6f7f9;text-align:left;padding:4px 6px;border-bottom:1px solid #e5e7eb;font-weight:600}
+  .tbl td{padding:4px 6px;border-bottom:1px solid #f1f2f4;vertical-align:top}
+  .bad{color:#b91c1c}
+  .dim{color:#6b7280}
+  .mono{font-family:ui-monospace,Consolas,monospace}
+
  .filters{margin:4px 0 8px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
   .filters button{padding:2px 8px;font-size:12px;white-space:nowrap}.filters button{background:#e5e7eb;color:#111;margin-right:5px}
  .filters button.on{background:#2563eb;color:#fff}
@@ -1903,9 +1911,13 @@ PAGE = r"""<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
     <button id="tabNA" class="tabb" onclick="setTab('na')">暂无法判定</button>
     <button id="tabCov" class="tabb" onclick="setTab('cov')">📋 覆盖声明</button>
     <button id="tabT" class="tabb" onclick="setTab('tree')">🌳 并名裁决</button>
+    <button id="tabGen" class="tabb" onclick="setTab('gen')">🧬 基因组层</button>
+    <button id="tabTypec" class="tabb" onclick="setTab('typec')">🔁 类型号反查</button>
     <span class="tiny" id="errcnt"></span>
   </div>
   <div id="trustview" style="display:none"></div>
+  <div id="genview" style="display:none"></div>
+  <div id="typecview" style="display:none"></div>
   <div id="naview" style="display:none"></div>
   <div id="covview" style="display:none"></div>
   <div id="errview" style="display:none"></div>
@@ -2220,11 +2232,15 @@ async function setTab(t){
   $('tabTrust').classList.toggle('on',t==='trust');
   $('tabNA').classList.toggle('on',t==='na');
   $('tabT').classList.toggle('on',t==='tree');
+  $('tabGen').classList.toggle('on',t==='gen');
+  $('tabTypec').classList.toggle('on',t==='typec');
   $('tabCov').classList.toggle('on',t==='cov');
   $('trustview').style.display=(t==='trust')?'block':'none';
   $('naview').style.display=(t==='na')?'block':'none';
   $('treeview').style.display=(t==='tree')?'block':'none';
   $('covview').style.display=(t==='cov')?'block':'none';
+  $('genview').style.display=(t==='gen')?'block':'none';
+  $('typecview').style.display=(t==='typec')?'block':'none';
   // 「全部发现」已并入审稿区：只在「确定错」这一页显示
   $('findview').style.display=(t==='err')?'block':'none';
   $('errview').style.display='none';
@@ -2233,6 +2249,8 @@ async function setTab(t){
   $('cards').style.display=cardTab?'block':'none';
   $('empty').style.display='none';
   if(t==='trust')await renderTrust();
+  if(t==='gen')await renderGen();
+  if(t==='typec')await renderTypec();
   else if(t==='na')await renderNA();
   else if(t==='cov')await renderCov();
   else if(t==='err')await renderFind();
@@ -2557,6 +2575,63 @@ async function renderNA(){
   $('naview').innerHTML=h;
 }
 
+// ── 基因组层：模式菌株有没有基因组、多少组装被官方判为归属错误 ──
+let GEN=null, TYPEC=null;
+function _sumTable(s){
+  const keys=Object.keys(s||{}).filter(k=>k!=="明细");
+  if(!keys.length) return "";
+  let h='<table class="tbl" style="margin-bottom:10px"><tbody>';
+  for(const k of keys) h+='<tr><td style="width:220px"><b>'+k+'</b></td><td>'+(s[k]??'')+'</td></tr>';
+  return h+'</tbody></table>';
+}
+async function renderGen(){
+  if(GEN===null){
+    const r=await fetch('/api/genome?'+q()); const j=await r.json();
+    GEN=j;
+  }
+  const j=GEN, el=$('genview');
+  if(!j.rows.length){ el.innerHTML='<div class="tiny">'+ (j.note||'无数据') +'</div>'; return; }
+  const note=`<div class="tiny" style="margin-bottom:8px;background:#f9fafb;border-left:3px solid #9ca3af;padding:5px 9px">
+    <b>基因组层</b>：每个「种」的参考基因组是否来自它的<b>模式菌株</b>。
+    <br>判据：组装的 BioSample 属性里有 <code>type-material</code> 声明。
+    <br><b>边界</b>：没有声明 ≠ 一定不是模式菌株（可能只是没填）；未声明者按「非模式」计。
+    <br>来源：<code>${j.file}</code>${j.mtime?`（生成于 ${j.mtime}）`:''}</div>`;
+  let h=note+_sumTable(j.summary);
+  h+='<div class="tiny" style="margin:6px 0">共 '+j.rows.length+' 条组装记录（按种名排序，仅列前 300 条）</div>';
+  h+='<table class="tbl"><thead><tr><th>种</th><th>菌株</th><th>模式材料声明</th><th>官方备注</th></tr></thead><tbody>';
+  const rows=j.rows.slice().sort((a,b)=>(a["种"]||'').localeCompare(b["种"]||''));
+  for(const x of rows.slice(0,300)){
+    const tm=(x["type_material"]||'').trim();
+    h+='<tr><td>'+ (x["种"]||'') +'</td><td class="mono">'+ (x["strain"]||'') +'</td>'
+     + '<td class="'+(tm?'ok':'dim')+'">'+ (tm|| '—') +'</td>'
+     + '<td class="'+(/unverified/i.test(x["genome_notes"]||'')?'bad':'dim')+'">'+ (x["genome_notes"]||'—') +'</td></tr>';
+  }
+  el.innerHTML=h+'</tbody></table>';
+}
+// ── 类型号反查：该种声明的模式号，在 GenBank 里被标成了哪些种 ──
+async function renderTypec(){
+  if(TYPEC===null){
+    const r=await fetch('/api/typec?'+q()); const j=await r.json();
+    TYPEC=j;
+  }
+  const j=TYPEC, el=$('typecview');
+  if(!j.rows.length){ el.innerHTML='<div class="tiny">'+ (j.note||'无数据') +'</div>'; return; }
+  const note=`<div class="tiny" style="margin-bottom:8px;background:#f9fafb;border-left:3px solid #9ca3af;padding:5px 9px">
+    <b>类型号反查</b>：拿该种<b>声明为模式材料</b>的号，去 GenBank 看它出现在哪些物种名下。
+    <br><b>判定</b>：「一致」=只在本种；「记为别的种」=出现别的种加词；「两个及以上物种」=多个种加词；
+    「未检出记录」=查不到有效记录。
+    <br><b>边界</b>：只说明「GenBank 里的写法」，不判断哪一方对；拼写/词尾差异也会被算作「别的种」。
+    <br>来源：<code>${j.file}</code>${j.mtime?`（生成于 ${j.mtime}）`:''}</div>`;
+  let h=note+_sumTable(j.summary);
+  h+='<table class="tbl"><thead><tr><th>种</th><th>类型号</th><th>记录数</th><th>GenBank 里的物种</th><th>判定</th></tr></thead><tbody>';
+  for(const x of j.rows){
+    const v=(x["判定"]||'');
+    h+='<tr><td>'+(x["种"]||'')+'</td><td class="mono">'+(x["类型号"]||'')+'</td><td>'+(x["记录数"]||'')+'</td>'
+     + '<td class="tiny">'+(x["GenBank 里的物种"]||'')+'</td>'
+     + '<td class="'+(v==='一致'?'ok':(v==='未检出记录'?'dim':'bad'))+'">'+v+'</td></tr>';
+  }
+  el.innerHTML=h+'</tbody></table>';
+}
 async function renderTrust(){  if(TRUSTED===null){
     const r=await fetch('/api/trusted?'+q());const j=await r.json();
     TRUSTED=j.rows||[];TSRC={file:j.file,mtime:j.mtime,sources:j.sources||[]};
@@ -2669,6 +2744,40 @@ class H(BaseHTTPRequestHandler):
             except Exception as e:
                 d = {"error": "{}: {}".format(type(e).__name__, str(e)[:80])}
             return self._json(d)
+        if u.path in ("/api/genome", "/api/typec"):
+            # 基因组层 / 类型号反查 —— 都是「补充表」，与主审计单位不同：
+            #   主审计按「号 × 种」，基因组层按「组装」，反查按「声明为模式材料的号」。
+            # 故各自独立成页，不混进主流程按钮。
+            slug = (qs.get("genus") or "").lower()
+            gdir = os.path.join(REPO, "out_genome")
+            od = qs.get("out", "")
+            if od and not os.path.isabs(od):
+                od = os.path.join(REPO, od)
+            if u.path == "/api/genome":
+                tsv = os.path.join(gdir, "{}_基因组层.tsv".format(slug))
+                js = os.path.join(gdir, "{}_基因组层_汇总.json".format(slug))
+            else:
+                tsv = os.path.join(od, "{}_类型号反查.tsv".format(slug))
+                js = os.path.join(od, "{}_类型号反查_汇总.json".format(slug))
+            out = {"file": os.path.relpath(tsv, REPO) if os.path.exists(tsv) else "",
+                   "summary": {}, "rows": [], "note": ""}
+            if not os.path.exists(tsv):
+                out["note"] = "尚无该属结果：先跑 tools/{}".format(
+                    "genome_scan.py" if u.path == "/api/genome" else "type_number_check.py")
+                return self._json(out)
+            try:
+                out["summary"] = json.load(io.open(js, encoding="utf-8")) if os.path.exists(js) else {}
+            except Exception:
+                pass
+            lines = io.open(tsv, encoding="utf-8-sig").read().splitlines()
+            head = lines[0].split("\t")
+            for l in lines[1:]:
+                c = l.split("\t")
+                if len(c) >= len(head) and any(x.strip() for x in c):
+                    out["rows"].append(dict(zip(head, c)))
+            out["mtime"] = datetime.datetime.fromtimestamp(
+                os.path.getmtime(tsv)).strftime("%Y-%m-%d %H:%M")
+            return self._json(out)
         if u.path == "/api/coverage":
             # 覆盖声明：哪些种因为 GenBank 记录太多，本次只扫了一部分。
             # 为什么要单开一个接口：这件事决定「这张表可信到什么程度」，

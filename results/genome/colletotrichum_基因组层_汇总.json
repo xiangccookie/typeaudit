@@ -1,0 +1,11 @@
+{
+  "属": "Colletotrichum",
+  "种总数": 408,
+  "有基因组的种": 104,
+  "有模式菌株基因组的种": 43,
+  "基因组全部来自非模式菌株的种": 61,
+  "非模式占比%": 58.7,
+  "组装数": 435,
+  "官方判归属错误的组装": 8,
+  "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_genome\\colletotrichum_基因组层.tsv"
+}

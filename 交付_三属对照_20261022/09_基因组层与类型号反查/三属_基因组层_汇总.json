@@ -1,0 +1,35 @@
+[
+  {
+    "属": "Colletotrichum",
+    "种总数": 408,
+    "有基因组的种": 104,
+    "有模式菌株基因组的种": 43,
+    "基因组全部来自非模式菌株的种": 61,
+    "非模式占比%": 58.7,
+    "组装数": 435,
+    "官方判归属错误的组装": 8,
+    "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_genome\\colletotrichum_基因组层.tsv"
+  },
+  {
+    "属": "Trichoderma",
+    "种总数": 445,
+    "有基因组的种": 53,
+    "有模式菌株基因组的种": 14,
+    "基因组全部来自非模式菌株的种": 39,
+    "非模式占比%": 73.6,
+    "组装数": 237,
+    "官方判归属错误的组装": 1,
+    "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_genome\\trichoderma_基因组层.tsv"
+  },
+  {
+    "属": "Diaporthe",
+    "种总数": 507,
+    "有基因组的种": 26,
+    "有模式菌株基因组的种": 3,
+    "基因组全部来自非模式菌株的种": 23,
+    "非模式占比%": 88.5,
+    "组装数": 63,
+    "官方判归属错误的组装": 0,
+    "明细": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_genome\\diaporthe_基因组层.tsv"
+  }
+]

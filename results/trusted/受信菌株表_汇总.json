@@ -1,0 +1,23 @@
+[
+  {
+    "属": "colletotrichum",
+    "有受信号的种": 159,
+    "受信号（去重）": 377,
+    "受信号（人次）": 526,
+    "文件": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_supp\\colletotrichum_受信菌株表.tsv"
+  },
+  {
+    "属": "trichoderma",
+    "有受信号的种": 170,
+    "受信号（去重）": 192,
+    "受信号（人次）": 318,
+    "文件": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_supp\\trichoderma_受信菌株表.tsv"
+  },
+  {
+    "属": "diaporthe",
+    "有受信号的种": 99,
+    "受信号（去重）": 123,
+    "受信号（人次）": 206,
+    "文件": "C:\\Users\\Administrator\\Desktop\\sol\\奇怪\\colleto-type-audit\\out_supp\\diaporthe_受信菌株表.tsv"
+  }
+]

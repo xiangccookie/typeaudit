@@ -1,13 +1,31 @@
 种	号	GenBank里出现的种名	判定	记录数	登录号
-Trichoderma breve	SZMC 20853	Trichoderma breve ｜ Trichoderma harzianum	两个不同的种	2	OR667334,JX173841
 Trichoderma afroharzianum	NRRL 54021	Trichoderma afroharzianum ｜ Trichoderma harzianum	两个不同的种	2	QB124616,GQ328858
 Trichoderma afroharzianum	NRRL 54022	Trichoderma afroharzianum ｜ Trichoderma harzianum	两个不同的种	2	QB124617,GQ328856
 Trichoderma afroharzianum	NRRL 54023	Trichoderma afroharzianum ｜ Trichoderma harzianum	两个不同的种	2	QB124618,GQ328857
 Trichoderma afroharzianum	SZMC 1664	Trichoderma afroharzianum ｜ Trichoderma harzianum	两个不同的种	3	OR667376,OR667322,DQ345862
 Trichoderma afroharzianum	SZMC 20770	Trichoderma afroharzianum ｜ Trichoderma harzianum	两个不同的种	2	OR667379,JX173856
+Trichoderma aggressivum	DAOM 222156	Trichoderma aggressivum ｜ Trichoderma aggressivum f. aggressivum ｜ Trichoderma aggressivum f. europaeum	同一个种 + 种下单元	40	MH874312,PZ225550,PZ225549,PZ273137,BK074413,PX069521,OR777068,OR777067
+Trichoderma aggressivum	IMI 393971	Trichoderma aggressivum ｜ Trichoderma aggressivum f. aggressivum ｜ Trichoderma aggressivum f. europaeum	同一个种 + 种下单元	40	MH874312,PZ225550,PZ225549,PZ273137,BK074413,PX069521,OR777068,OR777067
+Trichoderma albocorneum	CBS 115344	Trichoderma albocorneum ｜ Trichoderma harzianum	两个不同的种	5	KX373313,EF191253,FJ577690,EF191319,EF191315
+Trichoderma albocorneum	GJS 97-28	Trichoderma albocorneum ｜ Trichoderma guizhouense	两个不同的种	5	FJ442379,KX373313,FJ442532,DQ018116,AY937440
+Trichoderma albofulvum	G.J.S. 01-265	Trichoderma albofulvum ｜ Trichoderma ochroleucum	两个不同的种	5	DQ835512,KR094870,DQ835524,DQ835494,DQ846668
+Trichoderma andinense	GJS 90-140	Trichoderma andinense ｜ Trichoderma citrinoviride	两个不同的种	36	PZ832385,PZ454048,MN519084,MN519083,EU280042,MK044248,MK044155,MK086991
+Trichoderma arundinaceum	ATCC 90237	Trichoderma arundinaceum ｜ Trichoderma brevicompactum ｜ Trichoderma lixii	两个不同的种	5	EU330927,EU338291,EU338326,DQ080074,AJ784992
+Trichoderma arundinaceum	CBS 112446	Trichoderma arundinaceum ｜ Trichoderma brevicompactum	两个不同的种	3	EU330925,EU338273,EU338301
+Trichoderma asperelloides	NRRL 5242	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124762,AF127145
+Trichoderma asperelloides	NRRL 6418	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124763,GQ221864
+Trichoderma asperelloides	NRRL 66052	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124764,KM078038
+Trichoderma atroviride	CBS 185.69	Trichoderma atroviride ｜ Trichoderma lixii	两个不同的种	2	MH871023,Z68190
+Trichoderma aureoviride	CBS 245.63	Trichoderma aureoviride ｜ Trichoderma lixii	两个不同的种	11	MH869883,MH858276,AY956322,AY605749,AF545509,AF534575,Z48819,AF400750
+Trichoderma breve	SZMC 20853	Trichoderma breve ｜ Trichoderma harzianum	两个不同的种	2	OR667334,JX173841
+Trichoderma britannicum	CBS 354.33	Trichoderma britannicum ｜ Trichoderma harzianum ｜ Trichoderma lixii	两个不同的种	40	MH866925,MH855457,JAWRVH000000000,JAWRVH010000001,JAWRVH010000002,JAWRVH010000003,JAWRVH010000004,JAWRVH010000005
+Trichoderma caribbaeum	CBS 119055	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale	同一个种 + 种下单元	6	MH874602,MH863048,NG_069883,NR_163687,KJ842143,KT028596
+Trichoderma caribbaeum	CBS 119093	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
+Trichoderma caribbaeum	BPI 746700B	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
+Trichoderma caribbaeum	G.J.S. 97-3	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
+Trichoderma caribbaeum	GJS 97-3	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
+Trichoderma citrinoviride	CBS 243.63	Trichoderma citrinoviride ｜ Trichoderma orientale ｜ Trichoderma sp. CBS 243.63	两个不同的种	11	MH869881,MH858274,EU401557,DQ368601,HQ260616,AY937421,EU401592,EU401512
 Trichoderma endophyticum	NRRL 13019	Trichoderma endophyticum ｜ Trichoderma harzianum	两个不同的种	2	QB124636,AY625068
-Trichoderma neocrassum	BPI 843647	Trichoderma crassum ｜ Trichoderma neocrassum	两个不同的种	21	QB124668,QB124667,QB124666,QB124665,QB124587,PV627016,MT075515,MT075514
-Trichoderma neocrassum	GJS 01-227	Trichoderma crassum ｜ Trichoderma neocrassum	两个不同的种	22	QB124668,QB124667,QB124666,QB124665,QB124587,PV627016,MT075515,MT075514
 Trichoderma europaeum	CBS 121276	Trichoderma europaeum ｜ Trichoderma minutisporum	两个不同的种	40	KJ665491,KJ665490,KJ665489,KJ665488,KJ665487,KJ665486,KJ665485,KJ665484
 Trichoderma guizhouense	SZMC 1630	Trichoderma guizhouense ｜ Trichoderma harzianum	两个不同的种	3	OR667387,OR667328,DQ345828
 Trichoderma guizhouense	SZMC 1633	Trichoderma guizhouense ｜ Trichoderma harzianum	两个不同的种	3	OR667391,OR667329,DQ345831
@@ -16,33 +34,15 @@ Trichoderma guizhouense	SZMC 1644	Trichoderma guizhouense ｜ Trichoderma harzia
 Trichoderma guizhouense	SZMC 1665	Trichoderma guizhouense ｜ Trichoderma harzianum	两个不同的种	3	OR667383,OR667330,DQ345863
 Trichoderma guizhouense	SZMC 1668	Trichoderma guizhouense ｜ Trichoderma harzianum	两个不同的种	3	OR667386,OR667333,DQ345866
 Trichoderma guizhouense	SZMC 20761	Trichoderma guizhouense ｜ Trichoderma harzianum	两个不同的种	3	OR667390,OR667331,JX173832
-Trichoderma sulphureum	CBS 500.67	Trichoderma sulphureum ｜ Trichoderma victoriense	两个不同的种	7	MH870761,MH859043,HM466665,DQ000634,AY937439,JN133608,DQ835466
-Trichoderma britannicum	CBS 354.33	Trichoderma britannicum ｜ Trichoderma harzianum ｜ Trichoderma lixii	两个不同的种	40	MH866925,MH855457,JAWRVH000000000,JAWRVH010000001,JAWRVH010000002,JAWRVH010000003,JAWRVH010000004,JAWRVH010000005
-Trichoderma orientale	CBS 243.63	Trichoderma citrinoviride ｜ Trichoderma orientale ｜ Trichoderma sp. CBS 243.63	两个不同的种	11	MH869881,MH858274,EU401557,DQ368601,HQ260616,AY937421,EU401592,EU401512
+Trichoderma longibrachiatum	NFCCI 4070	Trichoderma asperellum ｜ Trichoderma longibrachiatum	两个不同的种	2	MN021196,MH018019
+Trichoderma minutisporum	ATCC 28012	Trichoderma hamatum ｜ Trichoderma minutisporum	两个不同的种	7	AY240862,AY240856,AY240227,AY240197,AY240210,AF011994,X93975
+Trichoderma neocrassum	BPI 843647	Trichoderma crassum ｜ Trichoderma neocrassum	两个不同的种	21	QB124668,QB124667,QB124666,QB124665,QB124587,PV627016,MT075515,MT075514
+Trichoderma neocrassum	GJS 01-227	Trichoderma crassum ｜ Trichoderma neocrassum	两个不同的种	22	QB124668,QB124667,QB124666,QB124665,QB124587,PV627016,MT075515,MT075514
+Trichoderma parareesei	TAMA 153	Trichoderma parareesei ｜ Trichoderma reesei	两个不同的种	3	AB807652,AB807640,AB570241
 Trichoderma paraviridescens	ATCC 20898	Trichoderma paraviridescens ｜ Trichoderma viridescens	两个不同的种	4	DQ315434,DQ307518,EU252009,HM535608
 Trichoderma paraviridescens	CBS 274.79	Trichoderma koningii ｜ Trichoderma paraviridescens	两个不同的种	7	MH861204,FJ442426,DQ315428,FJ442592,DQ307513,EU252010,X93984
-Trichoderma trixiae	ATCC 32630	Trichoderma trixiae ｜ Trichoderma viride	两个不同的种	5	DQ315445,KC285736,DQ307526,KC285770,AF188924
-Trichoderma albofulvum	G.J.S. 01-265	Trichoderma albofulvum ｜ Trichoderma ochroleucum	两个不同的种	5	DQ835512,KR094870,DQ835524,DQ835494,DQ846668
-Trichoderma parareesei	TAMA 153	Trichoderma parareesei ｜ Trichoderma reesei	两个不同的种	3	AB807652,AB807640,AB570241
-Trichoderma asperelloides	NRRL 5242	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124762,AF127145
-Trichoderma asperelloides	NRRL 6418	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124763,GQ221864
-Trichoderma asperelloides	NRRL 66052	Trichoderma asperelloides ｜ Trichoderma viride	两个不同的种	2	QB124764,KM078038
-Trichoderma albocorneum	CBS 115344	Trichoderma albocorneum ｜ Trichoderma harzianum	两个不同的种	5	KX373313,EF191253,FJ577690,EF191319,EF191315
-Trichoderma albocorneum	GJS 97-28	Trichoderma albocorneum ｜ Trichoderma guizhouense	两个不同的种	5	FJ442379,KX373313,FJ442532,DQ018116,AY937440
-Trichoderma arundinaceum	ATCC 90237	Trichoderma arundinaceum ｜ Trichoderma brevicompactum ｜ Trichoderma lixii	两个不同的种	5	EU330927,EU338291,EU338326,DQ080074,AJ784992
-Trichoderma arundinaceum	CBS 112446	Trichoderma arundinaceum ｜ Trichoderma brevicompactum	两个不同的种	3	EU330925,EU338273,EU338301
-Trichoderma caribbaeum	CBS 119055	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale	同一个种 + 种下单元	6	MH874602,MH863048,NG_069883,NR_163687,KJ842143,KT028596
-Trichoderma caribbaeum	CBS 119093	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
-Trichoderma caribbaeum	BPI 746700B	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
-Trichoderma caribbaeum	G.J.S. 97-3	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
-Trichoderma caribbaeum	GJS 97-3	Trichoderma caribbaeum ｜ Trichoderma caribbaeum var. aequatoriale ｜ Trichoderma caribbaeum var. caribbaeum	同一个种 + 种下单元	40	PZ117461,PZ666157,MH874605,MH874602,MH863051,MH863048,CEUIUG000000000,PV164963
-Trichoderma taiwanense	NRRL 66011	Trichoderma erinaceum ｜ Trichoderma taiwanense	两个不同的种	2	QB124732,KM011997
-Trichoderma aggressivum	DAOM 222156	Trichoderma aggressivum ｜ Trichoderma aggressivum f. aggressivum ｜ Trichoderma aggressivum f. europaeum	同一个种 + 种下单元	40	MH874312,PZ225550,PZ225549,PZ273137,BK074413,PX069521,OR777068,OR777067
-Trichoderma aggressivum	IMI 393971	Trichoderma aggressivum ｜ Trichoderma aggressivum f. aggressivum ｜ Trichoderma aggressivum f. europaeum	同一个种 + 种下单元	40	MH874312,PZ225550,PZ225549,PZ273137,BK074413,PX069521,OR777068,OR777067
-Trichoderma andinense	GJS 90-140	Trichoderma andinense ｜ Trichoderma citrinoviride	两个不同的种	36	PZ832385,PZ454048,MN519084,MN519083,EU280042,MK044248,MK044155,MK086991
-Trichoderma atroviride	CBS 185.69	Trichoderma atroviride ｜ Trichoderma lixii	两个不同的种	2	MH871023,Z68190
-Trichoderma aureoviride	CBS 245.63	Trichoderma aureoviride ｜ Trichoderma lixii	两个不同的种	11	MH869883,MH858276,AY956322,AY605749,AF545509,AF534575,Z48819,AF400750
-Trichoderma minutisporum	ATCC 28012	Trichoderma hamatum ｜ Trichoderma minutisporum	两个不同的种	7	AY240862,AY240856,AY240227,AY240197,AY240210,AF011994,X93975
 Trichoderma polysporum	CBS 182.69	Trichoderma longibrachiatum ｜ Trichoderma polysporum	两个不同的种	2	MH878453,GU186435
 Trichoderma spirale	DAOM 177714	Trichoderma atroviride ｜ Trichoderma spirale	两个不同的种	2	AY750896,AF011944
-Trichoderma longibrachiatum	NFCCI 4070	Trichoderma asperellum ｜ Trichoderma longibrachiatum	两个不同的种	2	MN021196,MH018019
+Trichoderma sulphureum	CBS 500.67	Trichoderma sulphureum ｜ Trichoderma victoriense	两个不同的种	7	MH870761,MH859043,HM466665,DQ000634,AY937439,JN133608,DQ835466
+Trichoderma taiwanense	NRRL 66011	Trichoderma erinaceum ｜ Trichoderma taiwanense	两个不同的种	2	QB124732,KM011997
+Trichoderma trixiae	ATCC 32630	Trichoderma trixiae ｜ Trichoderma viride	两个不同的种	5	DQ315445,KC285736,DQ307526,KC285770,AF188924

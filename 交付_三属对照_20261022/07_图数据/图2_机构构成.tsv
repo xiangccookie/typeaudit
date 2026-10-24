@@ -1,4 +1,5 @@
-﻿属	CBS	ICMP	CGMCC	其他或不可核	合计
-Colletotrichum	1085	286	182	2080	3633
-Trichoderma	850	21	99	3230	4200
-Diaporthe	542	36	91	2601	3270
+﻿属	CBS	ICMP	CGMCC	可核合计	该属全部单元格
+Colletotrichum	1032	280	175	1487	3633
+Trichoderma	837	21	88	946	4200
+Diaporthe	494	36	77	607	3270
+合计	2363	337	340	3040	11103
